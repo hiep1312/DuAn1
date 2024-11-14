@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-<!-- Mirrored from sociolib.com/html/keen/Contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 12:51:37 GMT -->
+<html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang chủ - Kalimba</title>
     <link
       href="library/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,7 +16,7 @@
     <link rel="stylesheet" href="dist/css/style.css" />
   </head>
   <body>
-    <!-- Scroll indikator -->
+    <!-- Scroll indicator -->
     <div id="scroll-indicator">
       <svg width="50" height="50" viewBox="0 0 100 100">
         <circle
@@ -90,13 +88,13 @@
               <a
                 class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
                 style="font-size: 12px"
-                href="index.html"
+                href="Home1.php"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Home 1
+                Trang chủ 1
               </a>
               <ul
                 class="dropdown-menu bg-primary-custom"
@@ -107,32 +105,32 @@
                 <a
                   class="dropdown-item font-krona-one text-uppercase text-white"
                   style="font-size: 12px"
-                  href="index.html"
-                  >Home 1</a
+                  href="Home1.php"
+                  >Trang chủ 1</a
                 >
               </li> 
               <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Home2.html"
-                    >Home 2</a
+                    href="Home2.php"
+                    >Trang chủ 2</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Home3.html"
-                    >Home 3</a
+                    href="Home3.php"
+                    >Trang chủ 3</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="LandingPage.html"
-                    >Landing Page</a
+                    href="LandingPage.php"
+                    >Trang Đích</a
                   >
                 </li>
               </ul>
@@ -148,7 +146,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Pages
+                Danh sách trang
               </a>
               <ul
                 class="dropdown-menu bg-primary-custom"
@@ -159,40 +157,40 @@
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="About.html"
-                    >About</a
+                    href="About.php"
+                    >Giới thiệu</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Pricing.html"
-                    >Pricing</a
+                    href="Pricing.php"
+                    >Mua Hàng</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Single-work.html"
-                    >Single Work</a
+                    href="Single-work.php"
+                    >Làm việc</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Reviews.html"
-                    >Reviews</a
+                    href="Reviews.php"
+                    >Đánh giá</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Blog.html"
-                    >Blog</a
+                    href="Blog.php"
+                    >Bài viết</a
                   >
                 </li>
                 <li>
@@ -200,15 +198,15 @@
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
                     href="Post.html"
-                    >Post</a
+                    >Tin tức</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="404.html"
-                    >404</a
+                    href="404.php"
+                    >Lỗi truy cập</a
                   >
                 </li>
               </ul>
@@ -218,13 +216,13 @@
               <a
                 class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
                 style="font-size: 12px"
-                href="Services.html"
+                href="Services.php"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Services
+                Dịch vụ
               </a>
               <ul
                 class="dropdown-menu bg-primary-custom"
@@ -236,7 +234,7 @@
                     class="text-white font-krona-one fw-light"
                     style="font-size: 12px"
                   >
-                    BRANDING
+                    Thương hiệu
                   </h6>
                   <a class="dropdown-item text-white" href="#">Design</a>
                   <a class="dropdown-item text-white" href="#">Graphic</a>
@@ -248,7 +246,7 @@
                     class="text-white font-krona-one fw-light mt-3"
                     style="font-size: 12px"
                   >
-                    MARKETING
+                    Quảng cáo
                   </h6>
                   <a class="dropdown-item text-white" href="#">Email</a>
                   <a class="dropdown-item text-white" href="#">Content</a>
@@ -260,7 +258,7 @@
                     class="text-white font-krona-one fw-light mt-3"
                     style="font-size: 12px"
                   >
-                    STRATEGY
+                    Xã hội
                   </h6>
                   <a class="dropdown-item text-white" href="#">Social Media</a>
                   <a class="dropdown-item text-white" href="#">Search Engine</a>
@@ -272,7 +270,7 @@
                     class="text-white font-krona-one fw-light mt-3"
                     style="font-size: 12px"
                   >
-                    WEBSITE
+                    Trang web
                   </h6>
                   <a class="dropdown-item text-white" href="#">Web Design</a>
                   <a class="dropdown-item text-white" href="#">Maintenance</a>
@@ -286,15 +284,15 @@
               <a
                 class="nav-link font-krona-one text-uppercase text-white"
                 style="font-size: 12px"
-                href="OurWorks.html"
-                >our works</a
+                href="OurWorks.php"
+                >Khuyến mãi</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link font-krona-one text-uppercase text-white"
                 style="font-size: 12px"
-                href="Contact.html"
+                href="Contact.php"
                 >Liên hệ</a
               >
             </li>
@@ -307,13 +305,13 @@
             <li class="nav-item dropdown" style="z-index: 100">
               <a
                 class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
-                href="index.html"
+                href="Home1.php"
                 id="navbarDropdownLg"
                 role="button"
                 aria-expanded="false"
                 style="font-size: 12px"
               >
-                <p class="mb-0">Home 1</p>
+                <p class="mb-0">Trang chủ 1</p>
                 <img
                   src="assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
@@ -329,24 +327,24 @@
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Home2.html"
-                    >Home 2</a
+                    href="Home2.php"
+                    >Trang chủ 2</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Home3.html"
-                    >Home 3</a
+                    href="Home3.php"
+                    >Trang chủ 3</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="LandingPage.html"
-                    >Landing Page</a
+                    href="LandingPage.php"
+                    >Trang đích</a
                   >
                 </li>
                 <!-- <li><hr class="dropdown-divider" /></li> -->
@@ -361,7 +359,7 @@
                 aria-expanded="false"
                 style="font-size: 12px"
               >
-                <p class="mb-0">Pages</p>
+                <p class="mb-0">Danh sách trang</p>
                 <img
                   src="assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
@@ -377,56 +375,56 @@
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="About.html"
-                    >About</a
+                    href="About.php"
+                    >Giới thiệu</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Pricing.html"
-                    >Pricing</a
+                    href="Pricing.php"
+                    >Mua hàng</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Single-work.html"
-                    >Single Work</a
+                    href="Single-work.php"
+                    >Công việc</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Reviews.html"
-                    >Reviews</a
+                    href="Reviews.php"
+                    >Đánh giá</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Blog.html"
-                    >Blog</a
+                    href="Blog.php"
+                    >Bài viết</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Post.html"
-                    >Post</a
+                    href="Post.php"
+                    >Tin tức</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="404.html"
-                    >404</a
+                    href="404.php"
+                    >Lỗi 404</a
                   >
                 </li>
                 <!-- <li><hr class="dropdown-divider" /></li> -->
@@ -436,13 +434,13 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
-                href="Services.html"
+                href="Services.php"
                 id="servicesDropdown"
                 role="button"
                 aria-expanded="false"
                 style="font-size: 12px"
               >
-                <p class="mb-0">Services</p>
+                <p class="mb-0">Dịch vụ</p>
                 <img
                   src="assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
@@ -456,7 +454,7 @@
                 <div class="row">
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      BRANDING
+                      Thương Hiệu
                     </h6>
                     <a class="dropdown-item" href="#">Design</a>
                     <a class="dropdown-item" href="#">Graphic</a>
@@ -465,7 +463,7 @@
                   </div>
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      MARKETING
+                      Quảng Cáo
                     </h6>
                     <a class="dropdown-item" href="#">Email</a>
                     <a class="dropdown-item" href="#">Content</a>
@@ -474,7 +472,7 @@
                   </div>
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      STRATEGY
+                      QC Xã hội
                     </h6>
                     <a class="dropdown-item" href="#">Social Media</a>
                     <a class="dropdown-item" href="#">Search Engine</a>
@@ -483,7 +481,7 @@
                   </div>
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      WEBSITE
+                      Trang web
                     </h6>
                     <a class="dropdown-item" href="#">Web Design</a>
                     <a class="dropdown-item" href="#">Maintenance</a>
@@ -498,15 +496,15 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase me-4"
                 style="font-size: 12px"
-                href="OurWorks.html"
-                >Our works</a
+                href="OurWorks.php"
+                >Khuyến mãi</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link text-white font-krona-one text-uppercase"
                 style="font-size: 12px"
-                href="Contact.html"
+                href="Contact.php"
                 >Liên hệ</a
               >
             </li>
@@ -514,287 +512,3 @@
         </nav>
       </div>
     </header>
-
-    <section class="container-fluid" style="z-index: 1">
-      <!-- Map Section -->
-      <div class="row">
-        <div class="col-12">
-          <div
-            class="map-container"
-            style="
-              position: relative;
-              padding-bottom: 30%;
-              height: 0;
-              overflow: hidden;
-            "
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8671759619015!2d105.74328887503171!3d21.037999980613627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1731549795417!5m2!1svi!2s"
-              width="600"
-              height="450"
-              style="
-                border: 0;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-              "
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-secondary-opacity-custom">
-      <div class="container custom-padding">
-        <!-- Contact Section -->
-        <div class="row">
-          <!-- Contact Information -->
-          <div class="col-lg-6 mb-4 padding-right-c">
-            <h1
-              data-aos="fade-up"
-              class="h-text font-krona-one text-uppercase mb-3"
-            >
-              Liên hệ chúng tôi
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-              <form>
-                <div class="mb-3">
-                  <div class="mb-3">
-                    <label for="nameContacts"  class="form-label">Name</label>
-                    <input type="text" placeholder="Tên của bạn" class="form-control" id="nameContacts">
-                  </div>
-                  <label for="emailContacts" class="form-label">Email address</label>
-                  <input type="email" placeholder="name123@gmail.com" class="form-control" id="emailContacts" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text text-light">Chúng tôi sẽ không bao giờ chia sẻ email này cho bất kì ai</div>
-                </div>
-                <div class="mb-3">
-                  <label for="phoneContacts" class="form-label">Phone</label>
-                  <input type="text" class="form-control" placeholder="0936784598" id="phoneContacts">
-                </div>
-                <div class="mb-3">
-                  <label for="messageContacts" class="form-label">Message</label>
-                  <textarea class="form-control" id="messageContacts" placeholder="Ý kiến muốn đóng góp hoặc yêu cầu của bạn" rows="3"></textarea>
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </p>
-          </div>
-          <!-- Office Information -->
-          <div class="col-lg-3 mb-4">
-            <h6 data-aos="fade-up" class="text-uppercase mb-5 font-krona-one">
-              Office
-            </h6>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Amphitheatre Parkway, <br />
-              Mountain View, California, <br />
-              94043
-            </p>
-            <h6
-              data-aos="fade-up"
-              class="text-uppercase mt-4 mb-5 font-krona-one"
-            >
-              Work Hours
-            </h6>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Monday – Friday (9 to 5)
-            </p>
-          </div>
-          <!-- Connect Information -->
-          <div class="col-lg-3 mb-4">
-            <h6 data-aos="fade-up" class="text-uppercase mb-5 font-krona-one">
-              Connect
-            </h6>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="d-flex align-items-center gap-3"
-            >
-              <i class="fa-regular fa-envelope" style="color: #c4fb6d"></i>
-              <p class="mb-0">mail@keen.co</p>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="d-flex align-items-center gap-3"
-            >
-              <i class="fa-solid fa-phone" style="color: #c4fb6d"></i>
-              <p class="mb-0">+789 456 123</p>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="d-flex align-items-center gap-3"
-            >
-              <i class="fa-solid fa-phone" style="color: #c4fb6d"></i>
-              <p class="mb-0">+123 456 789</p>
-            </div>
-            <h6
-              data-aos="fade-up"
-              class="text-uppercase mt-4 mb-5 font-krona-one"
-            >
-              Career
-            </h6>
-            <p data-aos="fade-up" data-aos-delay="200">
-              See
-              <a href="#" class="text-secondary-color text-decoration-none"
-                >Open Positions</a
-              >.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section Footer -->
-    <footer class="footer-section py-5">
-      <div class="container">
-        <!-- Row -->
-        <div class="row mb-5">
-          <!-- Col 1 30-->
-          <div class="col-lg-4 mb-5 mb-lg-0 pe-lg-5">
-            <img
-              data-aos="fade-up"
-              src="assets/image/logo.png"
-              class="mb-3"
-              alt=""
-            />
-            <p data-aos="fade-up" data-aos-delay="200" class="text-light my-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              class="d-flex gap-3 mt-5"
-            >
-              <a href="#"
-                ><i class="fa-brands fa-facebook" style="color: #c4fb6d"></i
-              ></a>
-              <a href="#"
-                ><i class="fa-brands fa-twitter" style="color: #c4fb6d"></i
-              ></a>
-              <a href="#"
-                ><i class="fa-brands fa-youtube" style="color: #c4fb6d"></i
-              ></a>
-            </div>
-          </div>
-          <!-- Col 2 30-->
-          <div class="col-lg-4 mb-5 mb-lg-0 pe-lg-5">
-            <h5
-              data-aos="fade-up"
-              class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light"
-            >
-              OFFICE
-            </h5>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="text-light mt-4 mb-3"
-            >
-              Amphitheatre Parkway,<br />Mountain View, California, 94043
-            </p>
-            <p
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="text-light mt-5 mb-2"
-            >
-              <i class="fa-regular fa-envelope" style="color: #c4fb6d"></i>
-              mail@keen.co
-            </p>
-            <p data-aos="fade-up" data-aos-delay="200" class="text-light">
-              <i class="fa-solid fa-phone" style="color: #c4fb6d"></i>
-              +123 456 789
-            </p>
-          </div>
-          <!-- Col 3 20-->
-          <div class="col-lg-2 mb-5 mb-lg-0">
-            <h5
-              data-aos="fade-up"
-              class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light"
-            >
-              MENU
-            </h5>
-            <ul class="list-unstyled mt-4">
-              <li data-aos="fade-up" data-aos-delay="200" class="mb-3">
-                <a href="#" class="text-light text-decoration-none">Services</a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="300" class="mb-3">
-                <a href="#" class="text-light text-decoration-none">Features</a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="400" class="mb-3">
-                <a href="#" class="text-light text-decoration-none">Pricing</a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="500" class="mb-3">
-                <a href="#" class="text-light text-decoration-none"
-                  >Testimonials</a
-                >
-              </li>
-            </ul>
-          </div>
-          <!-- Col 4 20-->
-          <div class="col-lg-2">
-            <h5
-              data-aos="fade-up"
-              class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light"
-            >
-              LINKS
-            </h5>
-            <ul class="list-unstyled mt-4">
-              <li data-aos="fade-up" data-aos-delay="200" class="mb-3">
-                <a href="#" class="text-light text-decoration-none">About Us</a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="300" class="mb-3">
-                <a href="#" class="text-light text-decoration-none">Contact</a>
-              </li>
-              <li data-aos="fade-up" data-aos-delay="400" class="mb-3">
-                <a href="#" class="text-light text-decoration-none"
-                  >Help Center</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <hr class="my-4" />
-        <div
-          class="footer-bottom d-flex justify-content-between flex-column flex-lg-row pt-2 pb-5"
-        >
-          <div data-aos="fade-up">
-            <span
-              >Powered by
-              <a href="https://sociolib.com/" class="text-decoration-none"
-                ><span class="text-secondary-color">SocioLib.</span></a
-              ></span
-            >
-          </div>
-          <div data-aos="fade-up" data-aos-delay="200" class="mt-3 mt-lg-0">
-            <a
-              href="#"
-              class="text-secondary-color text-decoration-none me-2 mx-lg-2"
-              >Privacy Policy</a
-            >
-            <span>|</span>
-            <a href="#" class="text-secondary-color text-decoration-none mx-2"
-              >Our Terms</a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="library/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="library/aos@3.0.0-beta.6/dist/aos.js"></script>
-    <script src="dist/js/navbar.js"></script>
-    <script src="dist/js/script.js"></script>
-  </body>
-
-<!-- Mirrored from sociolib.com/html/keen/Contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 12:51:37 GMT -->
-</html>
