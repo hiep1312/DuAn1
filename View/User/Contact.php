@@ -1,41 +1,7 @@
 <?php
 include "header.php" 
 ?>
-
-<section class="container-fluid" style="z-index: 1">
-      <!-- Map Section -->
-      <div class="row">
-        <div class="col-12">
-          <div
-            class="map-container"
-            style="
-              position: relative;
-              padding-bottom: 30%;
-              height: 0;
-              overflow: hidden;
-            "
-          >
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8671759619015!2d105.74328887503171!3d21.037999980613627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1731549795417!5m2!1svi!2s"
-              width="600"
-              height="450"
-              style="
-                border: 0;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-              "
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    
     <section class="bg-secondary-opacity-custom">
       <div class="container custom-padding">
         <!-- Contact Section -->
@@ -61,7 +27,7 @@ include "header.php"
                 </div>
                 <div class="mb-3">
                   <label for="phoneContacts" class="form-label">Phone</label>
-                  <input type="text" class="form-control" placeholder="0936784598" id="phoneContacts">
+                  <input type="text" class="form-control" placeholder="Mời bạn nhập sdt" id="phoneContacts">
                 </div>
                 <div class="mb-3">
                   <label for="messageContacts" class="form-label">Message</label>
@@ -76,29 +42,30 @@ include "header.php"
             </p>
           </div>
           <!-- Office Information -->
-          <div class="col-lg-3 mb-4">
-            <h6 data-aos="fade-up" class="text-uppercase mb-5 font-krona-one">
+          <div class="row col-lg-6 mb-4"> 
+          <div class="col-lg-6 mb-4">
+            <h6 data-aos="fade-up" class="text-uppercase mb-3 font-krona-one">
               Office
             </h6>
             <p data-aos="fade-up" data-aos-delay="200">
-              Amphitheatre Parkway, <br />
-              Mountain View, California, <br />
-              94043
+              Đường 48, Trịnh Văn Bô, <br />
+              Hoài Đức, Hà Nội <br />
+              Duan1_nhom7
             </p>
             <h6
               data-aos="fade-up"
-              class="text-uppercase mt-4 mb-5 font-krona-one"
+              class="text-uppercase mt-4 mb-3 font-krona-one"
             >
-              Work Hours
+              Giờ làm việc
             </h6>
             <p data-aos="fade-up" data-aos-delay="200">
-              Monday – Friday (9 to 5)
+              Thứ Hai – Thứ 6 (9h - 5h)
             </p>
           </div>
           <!-- Connect Information -->
-          <div class="col-lg-3 mb-4">
-            <h6 data-aos="fade-up" class="text-uppercase mb-5 font-krona-one">
-              Connect
+          <div class="col-lg-6 mb-4">
+            <h6 data-aos="fade-up" class="text-uppercase mb-3 font-krona-one">
+              Kết nối
             </h6>
             <div
               data-aos="fade-up"
@@ -106,7 +73,7 @@ include "header.php"
               class="d-flex align-items-center gap-3"
             >
               <i class="fa-regular fa-envelope" style="color: #c4fb6d"></i>
-              <p class="mb-0">mail@keen.co</p>
+              <p class="mb-0">ledan1234@gmail.com</p>
             </div>
             <div
               data-aos="fade-up"
@@ -126,21 +93,31 @@ include "header.php"
             </div>
             <h6
               data-aos="fade-up"
-              class="text-uppercase mt-4 mb-5 font-krona-one"
+              class="text-uppercase mt-4 mb-3 font-krona-one"
             >
-              Career
+              Tuyển dụng
             </h6>
             <p data-aos="fade-up" data-aos-delay="200">
-              See
+              Xem
               <a href="#" class="text-secondary-color text-decoration-none"
-                >Open Positions</a
+                >Chi tiết tuyển dụng</a
               >.
             </p>
           </div>
-        </div>
+          <div class="map_contact lg-container-fluid">
+          <iframe 
+              ata-aos="fade-up" data-aos-delay="200"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8671759619015!2d105.74328887503171!3d21.037999980613627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1731549795417!5m2!1svi!2s"
+              width="450"
+              height="300"
+              loading="lazy"
+          ></iframe>
+          </div>
+          </div>
       </div>
+      </div>
+      
     </section>
-
 
 <?php
 include "footer.php" 
