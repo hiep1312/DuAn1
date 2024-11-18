@@ -9,11 +9,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="library/aos@3.0.0-beta.6/dist/aos.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="library/font-awesome/6.6.0/css/all.min.css"
-    />
+    /> -->
     <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
   </head>
   <body>
     <!-- Scroll indicator -->
@@ -117,22 +119,22 @@
                     >Trang chủ 2</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
                     href="Home3.php"
                     >Trang chủ 3</a
                   >
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
                     href="LandingPage.php"
                     >Trang Đích</a
                   >
-                </li>
+                </li> -->
               </ul>
             </li>
 
@@ -169,7 +171,7 @@
                     >Mua Hàng</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
@@ -192,12 +194,12 @@
                     href="Blog.php"
                     >Bài viết</a
                   >
-                </li>
+                </li> -->
                 <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Post.html"
+                    href="Post.php"
                     >Tin tức</a
                   >
                 </li>
@@ -234,7 +236,7 @@
                     class="text-white font-krona-one fw-light"
                     style="font-size: 12px"
                   >
-                    Thương hiệu
+                    Gỗ
                   </h6>
                   <a class="dropdown-item text-white" href="#">Design</a>
                   <a class="dropdown-item text-white" href="#">Graphic</a>
@@ -246,7 +248,7 @@
                     class="text-white font-krona-one fw-light mt-3"
                     style="font-size: 12px"
                   >
-                    Quảng cáo
+                    Thép
                   </h6>
                   <a class="dropdown-item text-white" href="#">Email</a>
                   <a class="dropdown-item text-white" href="#">Content</a>
@@ -258,7 +260,7 @@
                     class="text-white font-krona-one fw-light mt-3"
                     style="font-size: 12px"
                   >
-                    Xã hội
+                    Nhựa
                   </h6>
                   <a class="dropdown-item text-white" href="#">Social Media</a>
                   <a class="dropdown-item text-white" href="#">Search Engine</a>
@@ -270,7 +272,7 @@
                     class="text-white font-krona-one fw-light mt-3"
                     style="font-size: 12px"
                   >
-                    Trang web
+                    Tre, Lứa
                   </h6>
                   <a class="dropdown-item text-white" href="#">Web Design</a>
                   <a class="dropdown-item text-white" href="#">Maintenance</a>
@@ -294,6 +296,22 @@
                 style="font-size: 12px"
                 href="Contact.php"
                 >Liên hệ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white font-krona-one text-uppercase ms-3"
+                style="font-size: 20px"
+                href="Pricing.php"
+                ><i class="fa-solid fa-cart-shopping"></i></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white font-krona-one text-uppercase ms-3"
+                style="font-size: 20px"
+                href="../Admin/pages/login-v3.php"
+                ><i class="fa-solid fa-user"></i></a
               >
             </li>
           </ul>
@@ -331,7 +349,7 @@
                     >Trang chủ 2</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
@@ -346,7 +364,7 @@
                     href="LandingPage.php"
                     >Trang đích</a
                   >
-                </li>
+                </li> -->
                 <!-- <li><hr class="dropdown-divider" /></li> -->
               </ul>
             </li>
@@ -387,7 +405,7 @@
                     >Mua hàng</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
@@ -409,7 +427,7 @@
                     style="font-size: 12px; z-index: 100"
                     href="Blog.php"
                     >Bài viết</a
-                  >
+                  > -->
                 </li>
                 <li>
                   <a
@@ -440,7 +458,7 @@
                 aria-expanded="false"
                 style="font-size: 12px"
               >
-                <p class="mb-0">Dịch vụ</p>
+                <p class="mb-0">Sản phẩm</p>
                 <img
                   src="assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
@@ -454,7 +472,7 @@
                 <div class="row">
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      Thương Hiệu
+                        Chất liệu = Gỗ
                     </h6>
                     <a class="dropdown-item" href="#">Design</a>
                     <a class="dropdown-item" href="#">Graphic</a>
@@ -463,7 +481,7 @@
                   </div>
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      Quảng Cáo
+                      Chất liệu = Thép
                     </h6>
                     <a class="dropdown-item" href="#">Email</a>
                     <a class="dropdown-item" href="#">Content</a>
@@ -472,7 +490,7 @@
                   </div>
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      QC Xã hội
+                      Chất liệu = tre, lứa
                     </h6>
                     <a class="dropdown-item" href="#">Social Media</a>
                     <a class="dropdown-item" href="#">Search Engine</a>
@@ -481,7 +499,7 @@
                   </div>
                   <div class="col-lg-3">
                     <h6 class="dropdown-header font-krona-one fw-light">
-                      Trang web
+                      Chất liệu = Nhôm
                     </h6>
                     <a class="dropdown-item" href="#">Web Design</a>
                     <a class="dropdown-item" href="#">Maintenance</a>
@@ -506,6 +524,22 @@
                 style="font-size: 12px"
                 href="Contact.php"
                 >Liên hệ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white font-krona-one text-uppercase ms-3"
+                style="font-size: 20px"
+                href="Pricing.php"
+                ><i class="fa-solid fa-cart-shopping"></i></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white font-krona-one text-uppercase ms-3"
+                style="font-size: 20px"
+                href="../Admin/pages/Account/login-v3.php"
+                ><i class="fa-solid fa-user"></i></a
               >
             </li>
           </ul>

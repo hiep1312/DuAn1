@@ -93,9 +93,10 @@ include "header.php"
   <section class="custom-section-bg text-white" style="z-index: 1">
       <div class="color-cover">
       <div class="container">
-        <div class="mb-3 py-3">
+        <div class="mb-3 py-3 position-relative">
                 <label for="exampleFormControlInput1" class="form-label">Bình luận (18)</label>
                 <input type="text" class="form-control" id="newcomments" placeholder="Chia sẻ ý kiến của bạn">
+                <span class="position-absolute top-50 end-0 translate-middle-y"><i class="fa-sharp fa-solid fa-paper-plane-top" style="color: #000000;"></i></span>
               </div>
               <i class="fa-solid fa-user"></i> <strong>Kiên Cường :</strong> Ngoại ngữ trình độ ko cao. 
                       Chuyên môn thì cũng khá đơn giản. Đâu có nổi bật so với lao động trẻ trong nước. <br>
@@ -122,11 +123,9 @@ include "header.php"
               </div>
             </div>
           </div> -->
-          <div class="mb-2 pb-2">
             <a id="togglee" class="text-info"  style="text-decoration: none; cursor: pointer;" type="text" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               Xem thêm sản phẩm
             </a>
-          </div>
             
             <script>
               document.getElementById("togglee").addEventListener("click", e => {
@@ -246,7 +245,7 @@ include "header.php"
             >
               <a
                 class="btn-cta font-krona-one text-uppercase button-text"
-                href="Contact.html"
+                href="Contact.php"
               >
                 <span class="me-2">Liên hệ</span>
                 <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
