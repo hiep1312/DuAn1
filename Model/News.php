@@ -8,8 +8,8 @@ class News extends Management
     }
     public function addData($data, $mode = [])
     {
-        $this->sql = "INSERT INTO {$this->tableName}(`title`, `content`, `image_url`, `user_id`, `created_at`) VALUES (?,?,?,?,?)";
-        $params = [$data['title'],$data['content'],$data['image_url'],$data['user_id'], date("Y-m-d", time())];
+        $this->sql = "INSERT INTO {$this->tableName}(`title`, `content`, `image_url`, `user_id`, `created_at`, `status`) VALUES (?,?,?,?,?,?)";
+        $params = [$data['title'],$data['content'],$data['image_url'],$data['user_id'], date("Y-m-d", time()), $data['status']];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
     public function updateData($id, $data, $mode = []){

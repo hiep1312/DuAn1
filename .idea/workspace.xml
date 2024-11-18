@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Model/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/News.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;hiep1312&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hiep1312/DuAn1.git&quot;,
+    &quot;accountId&quot;: &quot;b0b8aee2-2173-49ea-a360-f68341c4a70c&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ogbrgXZhyMRuRbaggWcxuqoURL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/laragon/www/DuAn1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\DuAn1\Api" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View\user" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View\view\dist\js" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View\view" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
+        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="" />
+      <created>1731294365514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731294365514</updated>
+      <workItem from="1731294366550" duration="9494000" />
+      <workItem from="1731325115814" duration="3295000" />
+      <workItem from="1731336664103" duration="4861000" />
+      <workItem from="1731341625387" duration="959000" />
+      <workItem from="1731342745888" duration="8329000" />
+      <workItem from="1731384611683" duration="2728000" />
+      <workItem from="1731388654851" duration="2203000" />
+      <workItem from="1731392278180" duration="2694000" />
+      <workItem from="1731395302642" duration="2846000" />
+      <workItem from="1731398284729" duration="3625000" />
+      <workItem from="1731411273759" duration="2102000" />
+      <workItem from="1731417314459" duration="547000" />
+      <workItem from="1731423322796" duration="12931000" />
+      <workItem from="1731465122587" duration="8542000" />
+      <workItem from="1731497564341" duration="3944000" />
+      <workItem from="1731510262506" duration="10033000" />
+      <workItem from="1731564036863" duration="1647000" />
+      <workItem from="1731569292171" duration="4439000" />
+      <workItem from="1731584348683" duration="32000" />
+      <workItem from="1731595811259" duration="9905000" />
+      <workItem from="1731649986484" duration="8867000" />
+      <workItem from="1731671535181" duration="5477000" />
+      <workItem from="1731681650852" duration="10367000" />
+      <workItem from="1731741899192" duration="6030000" />
+      <workItem from="1731749571920" duration="2806000" />
+      <workItem from="1731755277217" duration="197000" />
+      <workItem from="1731760571555" duration="1087000" />
+      <workItem from="1731772627659" duration="602000" />
+      <workItem from="1731804975841" duration="1873000" />
+      <workItem from="1731816076177" duration="452000" />
+      <workItem from="1731816657721" duration="1557000" />
+      <workItem from="1731818633556" duration="5000" />
+      <workItem from="1731819895355" duration="995000" />
+      <workItem from="1731825256853" duration="52000" />
+      <workItem from="1731850231445" duration="479000" />
+      <workItem from="1731852565081" duration="1075000" />
+      <workItem from="1731856854143" duration="68000" />
+      <workItem from="1731857983612" duration="14000" />
+      <workItem from="1731929629666" duration="1596000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
