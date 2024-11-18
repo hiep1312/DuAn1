@@ -1,164 +1,185 @@
 <?php
-include "header.php" 
+include "header.php"
 ?>
 
+
 <section class="custom-section-bg text-white" style="z-index: 1">
-      <div class="color-cover custom-padding">
-        <div class="container">
-          <h1
-            data-aos="fade-up"
-            class="font-krona-one h1-text text-uppercase text-center"
-          >
-            Digital Marketing
-          </h1>
-          <h1
+  <div class="color-cover custom-padding">
+    <div class="container">
+      <h1
+        data-aos="fade-up"
+        class="font-krona-one h1-text text-uppercase text-center">
+        TIN TỨC
+      </h1>
+      <!-- <p
             data-aos="fade-up"
             data-aos-delay="200"
-            class="font-krona-one h1-text text-uppercase text-center"
-          >
-            for small Business
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="400"
             class="sub-text-medium text-center"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p> -->
+    </div>
+</section>
+
+<!-- Main -->
+
+<div class="container">
+  <h5 class="pb-5 pt-5">TIN TỨC MỚI NHẤT</h5>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-6">
+
+      <div class="card article-card text-light">
+        <div class="anhtintuc">
+          <img src="assets/image/tin6.jpg" class="card-img-top" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cửa Hàng Nhạc Cụ Việt tổ chức triển lãm "Văn Hóa Âm Nhạc Việt Nam"</h5>
+          <p class="card-text text-secondary">Giới thiệu những loại nhạc cụ truyền thống
+            và hiện đại của Việt Nam, đồng thời tạo cơ hội cho khách tham quan tìm hiểu
+            sâu hơn về lịch sử và sự phát triển của âm nhạc dân tộc.</p>
+          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+        </div>
+      </div>
+
+      <div class="card article-card text-light pt-5">
+        <div class="anhtintuc">
+          <img src="assets/image/tin12.jpg" class="card-img-top" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Vũ Cát Tường hướng dẫn học trò nhí sử dụng nhạc cụ</h5>
+          <p class="card-text text-secondary">Ca sĩ "Vết mưa"
+            huấn luyện kỹ năng biểu diễn cho thí sinh trong đội "The Voice Kids 2016" tranh tài ở vòng liveshow. </p>
+          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="card article-card text-light">
+        <div class="anhtintuc">
+          <img src="assets/image/tin7.webp" class="card-img-top" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Ông lão dùng bát đũa chơi nhạc 'Mời anh về thăm quê em'</h5>
+          <p class="card-text text-secondary">Dùng đũa làm dùi, bát làm trống và người đàn ông đã có một 'siêu phẩm' ngay trên phố. Sự sáng tạo của con người là vô hạn, với những ai có tâm hồn nghệ sĩ thì nó còn 'bay cao' hơn nữa.</p>
+          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+        </div>
+      </div>
+
+      <div class="card article-card text-light pt-5">
+        <div class="anhtintuc">
+          <img src="assets/image/tin13.jpg" class="card-img-top" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Nghệ sĩ nhí gốc Việt mê ca hát, chơi 12 nhạc cụ</h5>
+          <p class="card-text text-secondary">Tối cuối tuần tại một góc Phố Cổ
+            Hà Nội, rất đông người nán lại say sưa nghe một nghệ sĩ nhí hát.</p>
+          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Tin tức liên quan -->
+<section class="our-blog custom-padding">
+  <div class="container">
+    <h5>TIN TỨC KHÁC</h5>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1400"
+      class="row blog-cards mt-5">
+      <!-- Col 1 -->
+      <a href="#" class="col-lg-4 col-md-6 text-decoration-none">
+        <div class="blog-card bg-primary-custom">
+          <div class="box-image">
+            <img
+              class="img-hover"
+              src="assets/image/tin1.jpg"
+              alt="" />
+          </div>
+          <p class="blog-card-title font-krona-one text-start h5-text">
+            Nhạc Cụ Việt thông báo lịch nghỉ lễ 2/9/2024
           </p>
         </div>
-      </div>
-    </section>
-
-    <section data-aos="fade-up" data-aos-delay="200" class="article-container">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat
-        ac felis donec. Nulla pharetra diam sit amet nisl suscipit. Duis
-        convallis convallis tellus id interdum velit. Tellus rutrum tellus
-        pellentesque eu tincidunt tortor aliquam nulla facilisi.
-      </p>
-      <p>
-        Enim eu turpis egestas pretium. Ullamcorper eget nulla facilisi etiam
-        dignissim diam quis enim. Risus quis varius quam quisque id diam.
-        Curabitur vitae congue mauris rhoncus aenean vel elit scelerisque.
-        Pretium lectus quam id leo in vitae turpis massa. Aliquet sagittis id
-        consectetur purus ut faucibus. Amet commodo nulla facilisi nullam
-        vehicula. Elementum nisi eu nisl eleifend quam adipiscing vitae proin
-        sagittis nisl.
-      </p>
-
-      <img src="assets/image/35.webp" alt="Image" />
-
-      <p>
-        Elementum curabitur vitae nunc sed. Facilisis sed odio morbi quis
-        commodo. Lacus id quis risus sed vulputate odio ut. Morbi quis commodo
-        odio aenean sed adipiscing diam donec adipiscing. Mauris vitae ultricies
-        leo integer malesuada nunc vel.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Congue eu consequat
-        ac felis donec. Nulla pharetra diam sit amet nisl suscipit. Duis
-        convallis convallis tellus id interdum velit. Tellus rutrum tellus
-        pellentesque eu tincidunt tortor aliquam nulla facilisi.
-      </p>
-
-      <div class="social-icons">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-twitter"></i></a>
-        <a href="#"><i class="bi bi-pinterest"></i></a>
-      </div>
-    </section>
-
-    <!-- Continue Blog -->
-    <section class="our-blog">
-      <div class="container">
-        <p data-aos="fade-up" class="font-krona-one fw-light text-center">Continue reading</p>
-        <!-- Row 1 -->
-        <div
-          data-aos="fade-up"
-          data-aos-duration="1400"
-          class="row blog-cards mt-5"
-        >
-          <!-- Col 1 -->
-          <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
-            <div class="blog-card bg-primary-custom">
-              <div class="box-image">
-                <img
-                  class="img-hover"
-                  src="assets/image/27.jpg"
-                  alt="Complete guide for Brand building process"
-                />
-              </div>
-              <p class="blog-card-title font-krona-one text-start h5-text">
-                Digital Marketing for Small Biz
-              </p>
-            </div>
-          </a>
-          <!-- Col 2 -->
-          <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
-            <div class="blog-card bg-primary-custom">
-              <div class="box-image">
-                <img
-                  class="img-hover"
-                  src="assets/image/29.jpg"
-                  alt="Complete guide for Brand building process"
-                />
-              </div>
-              <p class="blog-card-title font-krona-one text-start h5-text">
-                Marketing Terms You Need to Know
-              </p>
-            </div>
-          </a>
-          <!-- Col 3 -->
-          <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
-            <div class="blog-card bg-primary-custom h5-text">
-              <div class="box-image">
-                <img
-                  class="img-hover"
-                  src="assets/image/28.jpg"
-                  alt="Complete guide for Brand building process"
-                />
-              </div>
-              <p class="blog-card-title font-krona-one text-start">
-                Digital Guide for Beginner
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 10 CTA -->
-    <section class="container custom-padding-cta">
-      <div class="bg-img-c">
-        <div class="color-cover">
-          <!-- Row -->
-          <div class="row d-flex align-items-center py-4 py-lg-0 h-100">
-            <!-- Col 1 -->
-            <div data-aos="fade-up" class="col-lg-8 px-4 px-lg-5">
-              <h2 class="text-white text-uppercase font-krona-one cta-text">
-                Ready to get started?
-              </h2>
-            </div>
-            <!-- Col 2 -->
-            <div
-              data-aos="fade-up"
-              class="col-lg-4 px-4 px-lg-5 d-flex justify-content-lg-end mt-3 mt-lg-0"
-            >
-              <a
-                class="btn-cta font-krona-one text-uppercase button-text"
-                href="Contact.html"
-              >
-                <span class="me-2">contact</span>
-                <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
-              </a>
-            </div>
+      </a>
+      <!-- Col 2 -->
+      <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+        <div class="blog-card bg-primary-custom">
+          <div class="box-image">
+            <img
+              class="img-hover"
+              src="assets/image/tin5.jpg"
+              alt="Complete guide for Brand building process" />
           </div>
+          <p class="blog-card-title font-krona-one text-start h5-text">
+            Tưng bừng khai trương Nhạc Cụ Việt, chi nhánh TP HCM
+          </p>
         </div>
-      </div>
-    </section>
+      </a>
+      <!-- Col 3 -->
+      <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+        <div class="blog-card bg-primary-custom h5-text">
+          <div class="box-image">
+            <img
+              class="img-hover"
+              src="assets/image/tin3.jpg"
+              alt="" />
+          </div>
+          <p class="blog-card-title font-krona-one text-start">
+            Nhạc Cụ Việt lọt top cửa hàng uy tín, chất lượng hàng đầu Việt Nam
+          </p>
+        </div>
+      </a>
+      <br>
+      <!-- Col 1 -->
+      <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+        <div class="blog-card bg-primary-custom">
+          <div class="box-image">
+            <img
+              class="img-hover"
+              src="assets/image/tin9.jpg"
+              alt="" />
+          </div>
+          <p class="blog-card-title font-krona-one text-start h5-text">
+            Sự thật về nhạc cụ nguy hiểm nhất từng được chế tạo
+          </p>
+        </div>
+      </a>
+      <!-- Col 2 -->
+      <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+        <div class="blog-card bg-primary-custom">
+          <div class="box-image">
+            <img
+              class="img-hover"
+              src="assets/image/tin10.jpg"
+              alt="Creative ideas to promote your business" />
+          </div>
+          <p class="blog-card-title font-krona-one text-start h5-text">
+            Nhạc Cụ Việt đồng hành cùng người yêu nhạc gần 30 năm
+          </p>
+        </div>
+      </a>
+      <!-- Col 3 -->
+      <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+        <div class="blog-card bg-primary-custom">
+          <div class="box-image">
+            <img
+              class="img-hover"
+              src="assets/image/tin11.jpg"
+              alt="" />
+          </div>
+          <p class="blog-card-title font-krona-one text-start h5-text">
+            Chế nhạc cụ đồ chơi từ cà rốt hay chiếc bát gỗ
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
 <?php
-include "footer.php" 
+include "footer.php"
 ?>

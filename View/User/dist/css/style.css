@@ -24,6 +24,63 @@ body {
   letter-spacing: 0.5px;
 }
 
+li:hover{
+  color: rgb(27, 77, 186);
+}
+
+.anhkm>img{
+  width: 340px;
+  height: 190px;
+}
+
+.progress-item:hover{
+  color: #c4fb6d;
+}
+
+.tieudetintuc{
+  display: flex;
+  justify-content: center;
+  color: yellow;
+}
+
+.tieptucdoc:hover{
+  color: #c4fb6d;
+}
+
+.tieudegh:hover{
+  color: #c4fb6d;
+}
+
+.old-price { 
+  color: white; 
+  text-decoration: line-through;
+  font-size: small;
+ } 
+ .new-price {
+  color: red;
+  font-weight: bold; 
+  font-size: larger;
+}
+
+.mota{
+  border: 1px solid rgb(46, 88, 69);
+  padding: 10px;
+}
+
+.anhmota img{
+  width: 50px;
+  height: 50px;
+}
+
+.anhtintuc img{
+  width: 530px;
+  height: 300px;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
 .color-cover {
   background-color: rgba(28, 30, 26, 0.75);
   width: 100%;
