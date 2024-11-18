@@ -13,25 +13,26 @@ include "header.php"
                   class="text-uppercase font-krona-one text-white hero-text mb-0"
                   style="z-index: 1"
                 >
-                  DIGITAL
+                  ƯU ĐÃI
                 </h1>
                 <h1
                   class="text-uppercase font-krona-one text-white hero-text mb-0"
                   style="z-index: 1"
                 >
-                  PRODUCT
+                ĐẶC BIỆT
                 </h1>
                 <h1
                   class="text-uppercase font-krona-one text-white hero-text mb-0"
                   style="z-index: 1"
                 >
-                  CREATOR
+                  CHO BẠN
                 </h1>
               </div>
               <p class="transition-fade-up lead my-4 text-white sub-text-medium">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing elit. Ut elit tellus, luctus nec ullamcorper <br />
-                mattis, pulvinar dapibus leo adipiscing elit.
+              Giảm ngay 20% cho tất cả các mẫu Kalimba <br />
+              Quà tặng kèm: Hướng dẫn chơi cơ bản, túi đựng kalimba cao cấp<br />
+              Miễn phí vận chuyển toàn quốc
+
               </p>
               <div class="mt-5 transition-fade-up">
                 <button class="btn-color button-padding border-0">
@@ -39,7 +40,7 @@ include "header.php"
                     href="OurWorks.html"
                     class="text-decoration-none text-black text-uppercase font-krona-one button-text"
                   >
-                    <span class="me-2">OUR WORKS</span>
+                    <span class="me-2">XEM NGAY</span>
                     <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
                   </a>
                 </button>
@@ -63,7 +64,7 @@ include "header.php"
           data-aos-delay="0"
           class="m-0 text-primary-custom font-krona-one fw-light font-size-banner lh-sm text-uppercase"
         >
-        We design and develop creative digital products to solve problems. Trusted by millions of users.
+        Chúng tôi thiết kế và bán Kalimba chất lượng được nhiều khách hàng tin cậy
         </p>
       </div>
     </section>
@@ -73,12 +74,12 @@ include "header.php"
       <div class="container overflow-hidden">
         <div class="row mb-4">
           <div class="col-md-6">
-            <h2 data-aos="fade-up" class="h2-text font-krona-one">OUR WORKS</h2>
+            <h2 data-aos="fade-up" class="h2-text font-krona-one">KHUYẾN MÃI</h2>
           </div>
           <div class="col-md-6">
             <p data-aos="fade-up" class="text-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Với mong muốn mang đến cho khách hàng những sản phẩm Kalimba tốt, chất lượng
+              và kèm theo nhiều ưu đãi lớn dành cho khách hàng thân quen.
             </p>
             <a
               data-aos="fade-up"
@@ -86,7 +87,7 @@ include "header.php"
               href="OurWorks.html"
               class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text mt-3"
             >
-              <span class="me-2 text-uppercase">portfolios</span>
+              <span class="me-2 text-uppercase">xem thêm</span>
               <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
             </a>
           </div>
@@ -97,24 +98,24 @@ include "header.php"
           <div class="col-12 col-md-6 col-lg d-flex flex-column mt-4 mt-lg-4">
             <div data-aos="fade-up" class="card text-primary-custom text-light">
               <a href="Single-work.html"><img
-                src="assets/image/22.jpg"
+                src="assets/image/022.jpg"
                 class="card-img-top"
-                alt="Dashboard Kit"
+                alt="KALIMBA HỘP"
               />
               <div class="card-body">
-                <h5 class="font-krona-one text-start h5-text">DASHBOARD KIT</h5>
+                <h5 class="font-krona-one text-start h5-text">KALIMBA HỘP</h5>
               </div>
               </a>
             </div>
             <div data-aos="fade-up" class="card text-primary-custom text-light">
               <a href="Single-work.html"><img
-                src="assets/image/port2.webp"
+                src="assets/image/333.jpg"
                 class="card-img-top"
-                alt="BL*CK MEN STUFF"
+                alt="Đàn Kalimba Gecko Mini 8 phím"
               />
               <div class="card-body">
                 <h5 class="font-krona-one text-start h5-text">
-                  BL*CK MEN STUFF
+                  Đàn Kalimba Gecko Mini 8 phím
                 </h5>
               </div></a>
             </div>
@@ -128,12 +129,12 @@ include "header.php"
               class="card text-primary-custom text-light"
             >
             <a href="Single-work.html"><img
-                src="assets/image/port3.webp"
+                src="assets/image/333.jpg"
                 class="card-img-top"
-                alt="Hexa Magazine"
+                alt="Đàn Kalimba Gecko Mini 8 phím"
               />
               <div class="card-body">
-                <h5 class="font-krona-one text-start h5-text">HEXA MAGAZINE</h5>
+                <h5 class="font-krona-one text-start h5-text">Đàn Kalimba Gecko Mini 8 phím</h5>
               </div></a>
             </div>
             <div
@@ -142,12 +143,12 @@ include "header.php"
               class="card text-primary-custom text-light"
             >
             <a href="Single-work.html"><img
-                src="assets/image/port4.webp"
+                src="assets/image/222.jpg"
                 class="card-img-top"
-                alt="Lookbook Pro"
+                alt="Đàn kalimba gỗ gecko"
               />
               <div class="card-body">
-                <h5 class="font-krona-one text-start h5-text">LOOKBOOK PRO</h5>
+                <h5 class="font-krona-one text-start h5-text">Đàn kalimba gỗ Gecko</h5>
               </div></a>
             </div>
           </div>
@@ -162,13 +163,13 @@ include "header.php"
               class="card text-primary-custom text-light"
             >
             <a href="Single-work.html"><img
-                src="assets/image/port5.webp"
+                src="assets/image/022.jpg"
                 class="card-img-top"
-                alt="Digital UI Kit"
+                alt="KALIMBA HỘP"
               />
               <div class="card-body">
                 <h5 class="font-krona-one text-start h5-text">
-                  DIGITAL UI KIT
+                  KALIMBA HỘP
                 </h5>
               </div></a>
             </div>
@@ -178,12 +179,12 @@ include "header.php"
               class="card text-primary-custom text-light"
             >
             <a href="Single-work.html"><img
-                src="assets/image/port6.webp"
+                src="assets/image/333.jpg"
                 class="card-img-top"
-                alt="App Branding"
+                alt="Đàn Kalimba Gecko Mini 8 phím"
               />
               <div class="card-body">
-                <h5 class="font-krona-one text-start h5-text">APP BRANDING</h5>
+                <h5 class="font-krona-one text-start h5-text">Đàn Kalimba Gecko Mini 8 phím</h5>
               </div></a>
             </div>
           </div>
@@ -196,12 +197,12 @@ include "header.php"
       <div class="container overflow-hidden">
         <div class="row mb-4">
           <div data-aos="fade-up" class="col-md-6">
-            <h2 class="h2-text font-krona-one text-uppercase">what we do</h2>
+            <h2 class="h2-text font-krona-one text-uppercase">Về chúng tôi</h2>
           </div>
           <div class="col-md-6">
             <p data-aos="fade-up" class="text-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Luôn hỗ trợ bạn mọi lúc, mọi nơi nhằm mang lại trải nghiệm tốt
+               nhất đến cho bạn để được trải nghiệm âm nhạc một cách hoàn chỉnh
             </p>
             <a
               data-aos="fade-up"
@@ -209,7 +210,7 @@ include "header.php"
               href="Contact.html"
               class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text mt-3"
             >
-              <span class="me-2 text-uppercase">custom services</span>
+              <span class="me-2 text-uppercase">liên hệ</span>
               <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
             </a>
           </div>

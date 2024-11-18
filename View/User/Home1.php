@@ -12,17 +12,17 @@ include "header.php";
               <h1
                 class="transition-fade-left text-uppercase font-krona-one text-white hero-text mb-0"
               >
-                Creative
+                Nhạc cụ
               </h1>
               <h1
                 class="transition-fade-left text-uppercase font-krona-one text-white hero-text mb-0 d-flex justify-content-end"
               >
-                Digital
+                Kalimba
               </h1>
               <h1
                 class="transition-fade-left text-uppercase font-krona-one border-text hero-text mb-0 d-flex justify-content-center"
               >
-                Agency
+                Việt Nam
               </h1>
             </div>
             <!-- Col 2 -->
@@ -50,7 +50,7 @@ include "header.php";
                     class="text-uppercase fw-semibold font-krona-one mb-0 text-secondary"
                     style="font-size: 12px"
                   >
-                    4.59 Rating
+                    4.59 đánh giá
                   </p>
                   <div>
                     <img
@@ -93,15 +93,14 @@ include "header.php";
             <!-- Col 1 -->
             <div class="col-12 col-lg-3 d-flex align-items-center">
               <p class="transition-fade-left text-white sub-text-medium">
-                Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                leo adipiscing elit.
+                Khám phá niềm vui của Kalimba: Khơi dậy tiềm năng âm nhạc của bạn!
               </p>
             </div>
             <!-- Col 2 -->
             <div
               class="transition-fade-up col-12 col-lg-9 d-flex flex-column flex-lg-row align-items-end overflow-hidden"
             >
-              <img src="assets/image/42.jpg" class="w-100" alt="" />
+              <img src="./assets/image/42.png" class="w-100" alt="" />
               <div
                 data-aos="fade-left"
                 data-aos-duration="1000"
@@ -111,7 +110,7 @@ include "header.php";
                   class="mb-0 font-krona-one text-uppercase text-black text-decoration-none"
                   style="text-wrap: nowrap"
                 >
-                  Our Works <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
+                  Mua ngay <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
                 </a>
                 
               </div>
@@ -134,7 +133,7 @@ include "header.php";
                 data-aos-duration="1000"
                 class="text-uppercase text-white text-center font-krona-one mb-3 h2-text"
               >
-                Deliver Solution
+                Khám phá ngay !
               </h2>
             </div>
             <p
@@ -142,9 +141,8 @@ include "header.php";
               data-aos-duration="1500"
               class="text-white text-center mb-5"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec <br />
-              ullamcorper mattis, pulvinar dapibus leo.
+            Khám phá thế giới kỳ diệu của Kalimba: <br />
+            Hành trình tìm kiếm sự sáng tạo âm nhạc và niềm vui biểu diễn của bạn!
             </p>
           </div>
         </div>
@@ -162,7 +160,7 @@ include "header.php";
             <div class="card text-white bg-dark custom-card">
               <div class="card-image-wrapper">
                 <img
-                  src="assets/image/8.jpg"
+                  src="assets/image/anh01.webp"
                   class="card-img"
                   alt="Card image"
                 />
@@ -173,14 +171,14 @@ include "header.php";
               >
                 <div class="card-body" data-aos="fade-up" style="flex: none">
                   <h5 class="card-title font-krona-one text-uppercase">
-                    Marketing
+                  Gecko Kalimba UK 17 Keys
                   </h5>
-                  <p class="card-text mb-2">Lorem ipsum dolor sit amet.</p>
+                  <p class="card-text mb-2">Âm thanh vang to như tụi Mỹ</p>
                   <a href="Services.html"
                     class="bg-transparent d-flex align-items-center gap-3 text-secondary-color font-krona-one ps-0 text-decoration-none"
                     style="border: none"
                   >
-                    <p class="mb-0 text-uppercase">Learn More</p>
+                    <p class="mb-0 text-uppercase">Xem thêm</p>
                     <i
                       class="fa-solid fa-arrow-right"
                       style="color: #c4fb6d"
@@ -201,7 +199,7 @@ include "header.php";
             <div class="card text-white bg-dark custom-card">
               <div class="card-image-wrapper">
                 <img
-                  src="assets/image/17.jpg"
+                  src="assets/image/anh02.webp"
                   class="card-img"
                   alt="Card image"
                 />
@@ -212,14 +210,14 @@ include "header.php";
               >
               <div class="card-body" data-aos="fade-up" style="flex: none">
                 <h5 class="card-title font-krona-one text-uppercase">
-                  Branding
+                  Kalimba 17 Keys Con Cuerpo De caoba nat
                 </h5>
-                <p class="card-text mb-2">Lorem ipsum dolor sit amet.</p>
+                <p class="card-text mb-2">Nhạc cụ đến từ Brazil</p>
                 <a href="Services.html"
                   class="bg-transparent d-flex align-items-center gap-3 text-secondary-color font-krona-one ps-0 text-decoration-none"
                   style="border: none"
                 >
-                  <p class="mb-0 text-uppercase">Learn More</p>
+                  <p class="mb-0 text-uppercase">Xem thêm</p>
                   <i
                     class="fa-solid fa-arrow-right"
                     style="color: #c4fb6d"
@@ -240,7 +238,7 @@ include "header.php";
             <div class="card text-white bg-dark custom-card">
               <div class="card-image-wrapper">
                 <img
-                  src="assets/image/37.jpg"
+                  src="assets/image/anh03.webp"
                   class="card-img"
                   alt="Card image"
                 />
@@ -251,14 +249,14 @@ include "header.php";
               >
               <div class="card-body" data-aos="fade-up" style="flex: none">
                 <h5 class="card-title font-krona-one text-uppercase">
-                  Website
+                  Kalimba Double Layer Treble Thumb Finge
                 </h5>
-                <p class="card-text mb-2">Lorem ipsum dolor sit amet.</p>
+                <p class="card-text mb-2">Gấp đôi phím đàn, ultil âm nhạc</p>
                 <a href="Services.html"
                   class="bg-transparent d-flex align-items-center gap-3 text-secondary-color font-krona-one ps-0 text-decoration-none"
                   style="border: none"
                 >
-                  <p class="mb-0 text-uppercase">Learn More</p>
+                  <p class="mb-0 text-uppercase">Xem thêm</p>
                   <i
                     class="fa-solid fa-arrow-right"
                     style="color: #c4fb6d"
@@ -285,18 +283,18 @@ include "header.php";
                 class="text-uppercase font-krona-one text-white mb-4"
                 style="font-size: 12px"
               >
-                about us
+                về chúng tôi
               </h4>
               <div data-aos="fade-up">
                 <h1
                   class="text-uppercase font-krona-one border-text h2-text mb-0"
                 >
-                  creative
+                  Nhạc cụ
                 </h1>
                 <h1
                   class="text-uppercase font-krona-one border-text h2-text mb-0"
                 >
-                  agency
+                  Việt
                 </h1>
               </div>
             </div>
@@ -304,10 +302,13 @@ include "header.php";
             <!-- Col 2 -->
             <div class="col-xs-12 col-md-8 mt-4 mt-md-0">
               <p data-aos="fade-up" class="text-white sub-text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Varius morbi enim nunc faucibus a. Vulputate sapien nec sagittis
-                aliquam malesuada bibendum arcu.
+              Kalimba là một loại nhạc cụ gõ có nguồn gốc từ châu Phi, 
+              còn được gọi là "đàn piano ngón tay". Với thiết kế nhỏ gọn
+               và các phím kim loại được gắn trên mặt gỗ, người chơi sử 
+               dụng ngón tay cái để gảy các phím, tạo ra âm thanh trong
+                trẻo và êm dịu. Kalimba dễ học, phù hợp cho người mới 
+                bắt đầu và cả những người chơi nhạc chuyên nghiệp, 
+                mang đến trải nghiệm thư giãn và kết nối với âm nhạc một cách tự nhiên.
               </p>
               <a href="About.html"
                 data-aos="fade-up"
@@ -319,7 +320,7 @@ include "header.php";
                   class="mb-0 font-krona-one text-uppercase button-text"
                   style="text-wrap: nowrap"
                 >
-                  read more
+                  xem thêm
                 </p>
                 <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
               </a>
@@ -341,11 +342,11 @@ include "header.php";
               data-aos="fade-up"
               class="text-uppercase font-krona-one h2-text"
             >
-              What We Do
+              Chúng tôi làm gì
             </h1>
             <p data-aos="fade-up" class="my-4">
-              Ut elit tellus, luctus nec ullamcorper. Lorem ipsum dolor sit
-              amet. Ut elit tellus, luctus nec ullamcorper.
+              Với mong muốn mang đến cho khách hàng những trải nghiệm tốt để chơi đàn một cách
+              hiệu quả vượt mong đợi, đáp ứng mọi nhu cầu về nhạc cụ cho khách hàng.
             </p>
             <ul
               data-aos="fade-up"
@@ -353,18 +354,16 @@ include "header.php";
               class="list-unstyled mt-4 row"
             >
               <div class="col-md-6">
-                <li>✦ Digital Marketing</li>
-                <li>✦ Branding Design</li>
-                <li>✦ User Experience</li>
-                <li>✦ Website Design</li>
-                <li>✦ Mobile Apps</li>
+                <li>✦ Kalimba Treelf</li>
+                <li>✦ Kalimba Hluru</li>
+                <li>✦ Kalimba Kimi</li>
+                <li>✦ Kalimba Gecko</li>
               </div>
               <div class="col-md-6">
-                <li>✦ Social Media</li>
-                <li>✦ Content Strategy</li>
-                <li>✦ Digital Solution</li>
-                <li>✦ Graphic Design</li>
-                <li>✦ Creative Branding</li>
+                <li>✦ Kalimba Yael</li>
+                <li>✦ Kalimba Ling Ting</li>
+                <li>✦ Kalimba Walter</li>
+                <li>✦ Phụ kiện Kalimba</li>
               </div>
             </ul>
             <a
@@ -373,7 +372,7 @@ include "header.php";
               href="Services.html"
               class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text"
             >
-              <span class="me-2">All Services</span>
+              <span class="me-2">Xem thêm</span>
               <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
             </a>
           </div>
@@ -393,11 +392,11 @@ include "header.php";
             <i class="fa-brands fa-youtube" style="color: #c4fb6d"></i>
 
               <div class="my-4 my-md-3">
+                <h3 class="font-krona-one text-uppercase fs-5 mb-0">youtube</h3>
                 <h3 class="font-krona-one text-uppercase fs-5 mb-0">channel</h3>
-                <h3 class="font-krona-one text-uppercase fs-5 mb-0">booster</h3>
               </div>
               <p class="text-center mb-0 mb-3 mb-md-0">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Chuyên đăng tải, hướng dẫn cách chơi các bài nhạc bằng Kalimba
               </p>
             </div>
             <div class="overflow-hidden">
@@ -423,14 +422,14 @@ include "header.php";
             <div class="col-md-6 position-relative box-image-approach">
               <div data-aos="fade-up" class="image-position-approach-2">
                 <img
-                  src="assets/image/20.jpg"
+                  src="assets/image/020.jpg"
                   style="max-width: 100%; max-height: 100%"
                   alt=""
                 />
               </div>
               <div data-aos="fade-right" class="image-position-approach-1">
                 <img
-                  src="assets/image/13.jpg"
+                  src="assets/image/013.jpg"
                   style="
                     max-width: 100%;
                     max-height: 100%;
@@ -446,11 +445,11 @@ include "header.php";
                 data-aos="fade-up"
                 class="text-uppercase font-krona-one h2-text"
               >
-                Approach
+                Tiếp cận
               </h2>
               <p data-aos="fade-up" data-aos-delay="200">
-                Ut elit tellus, luctus nec ullamcorper. Lorem ipsum dolor sit
-                amet. Ut elit tellus, luctus nec ullamcorper.
+                Luôn tìm kiếm những sự trẻ trung, mới mẻ, chất lượng trong từng sản phẩm để
+                tạo sự hài lòng cho khách hàng .
               </p>
               <div
                 data-aos="fade-up"
@@ -460,13 +459,13 @@ include "header.php";
                 <span
                   id="item-monitor"
                   class="text-white clickable-item active-item text"
-                  >Monitor</span
+                  >Hình ảnh</span
                 >
                 <span id="item-analyze" class="text-white clickable-item"
-                  >Analyze</span
+                  >Chất lượng</span
                 >
                 <span id="item-multiply" class="text-white clickable-item"
-                  >Multiply</span
+                  >Âm thanh</span
                 >
               </div>
               <div>
@@ -476,26 +475,24 @@ include "header.php";
                   class="content-paragraph mb-5"
                   style="display: block"
                 >
-                  Content for Monitor. Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Veniam labore porro sequi numquam sed
-                  exercitationem?
+                  Luôn tìm kiếm và đưa ra những mẫu đàn bắt mắt, được decor vừa giản dị mà vẫn
+                  đẹp và đúng mục đích, mang đến sự hài lòng cho khách hàng.
                 </p>
                 <p
                   data-aos="fade-up"
                   id="paragraph-analyze"
                   class="content-paragraph mb-5"
                 >
-                  Content for Analyze. Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Velit ea error perspiciatis qui vel eius.
+                  Luôn luôn nhập khẩu những loại gỗ tốt để có thể mang đến sự chất lượng, bền bỉ
+                  trên từng cây đàn mà bạn dùng.
                 </p>
                 <p
                   data-aos="fade-up"
                   id="paragraph-multiply"
                   class="content-paragraph mb-5"
                 >
-                  Content for Multiply. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Sequi suscipit rerum ratione eaque, velit
-                  placeat.
+                  Các phím đàn được thiết kế tránh đau tay và âm thanh được vang nhất, mang 
+                  đến sự hài lòng cho bạn và xứng đáng số tiền mà bạn bỏ ra.
                 </p>
               </div>
 
@@ -506,7 +503,7 @@ include "header.php";
                   href="Services.html"
                   class="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-text"
                 >
-                  <span class="me-2">Process</span>
+                  <span class="me-2">Xem thêm</span>
                   <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
                 </a>
               </div>
@@ -535,7 +532,7 @@ include "header.php";
                 <h3 class="display-6">K</h3>
               </div>
               <p class="text-secondary font-krona-one" style="font-size: 12px">
-                Project
+                Sản phẩm
               </p>
             </div>
 
@@ -547,7 +544,7 @@ include "header.php";
             >
               <h3 id="counterClient" class="counter display-6 mb-0">0</h3>
               <p class="text-secondary font-krona-one" style="font-size: 12px">
-                Clients
+                Khách hàng
               </p>
             </div>
 
@@ -559,7 +556,7 @@ include "header.php";
             >
               <h3 id="counterCountries" class="counter display-6 mb-0">0</h3>
               <p class="text-secondary font-krona-one" style="font-size: 12px">
-                Countries
+                Đất nước
               </p>
             </div>
 
@@ -571,7 +568,7 @@ include "header.php";
             >
               <h3 id="counterCreatives" class="counter display-6 mb-0">0</h3>
               <p class="text-secondary font-krona-one" style="font-size: 12px">
-                Creatives
+                Quảng cáo
               </p>
             </div>
           </div>
@@ -585,7 +582,7 @@ include "header.php";
             <h1
               class="text-uppercase font-krona-one border-text border-text-size mb-0 d-flex justify-content-center"
             >
-              Creative
+              Kalimba
             </h1>
           </div>
 
@@ -601,7 +598,7 @@ include "header.php";
               style="height: 450px"
             >
               <img
-                src="assets/image/2.jpg"
+                src="assets/image/01.jpg"
                 class="img-fluid h-100"
                 alt="Image 1"
               />
@@ -612,7 +609,7 @@ include "header.php";
               style="height: 450px"
             >
               <img
-                src="assets/image/1.jpg"
+                src="assets/image/02.jpg"
                 class="img-fluid h-100 d-none d-lg-block"
                 alt="Image 2"
               />
@@ -620,7 +617,7 @@ include "header.php";
             <!-- Col 3 -->
             <div class="col-12 col-md-6 col-lg-4" style="height: 450px">
               <img
-                src="assets/image/6.jpg"
+                src="assets/image/06.jpg"
                 class="img-fluid h-100"
                 alt="Image 3"
               />
@@ -638,19 +635,19 @@ include "header.php";
         <div class="row">
           <div data-aos="fade-up" class="col-md-6">
             <h2 class="text-uppercase font-krona-one h2-text">
-              What They Said
+              Nhận xét của khách hàng
             </h2>
           </div>
           <div data-aos="fade-up" class="col-md-6 text-start">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Được nhận những đánh giá tích cực từ khách hàng, những khách hàng cũ đã quay
+              lại ủng hộ chúng tôi.
             </p>
             <a
-              href="Reviews.html"
+              href="Reviews.php"
               class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text"
             >
-              <span class="me-2">Testimonials</span>
+              <span class="me-2">Xem thêm</span>
               <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
             </a>
           </div>
@@ -669,16 +666,18 @@ include "header.php";
                 </div>
               </div>
               <p class="sub-text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Kalimba thực sự là một nhạc cụ dễ chơi và rất thư giãn! 
+              Âm thanh trong trẻo của nó khiến mình cảm thấy nhẹ nhàng
+              , đặc biệt là sau một ngày dài. Mình chỉ mất vài ngày để 
+              học vài bài đơn giản và cảm thấy rất hài lòng với trải nghiệm này.
               </p>
 
               <div
                 class="d-flex justify-content-between align-items-center mt-4"
               >
                 <div>
-                  <p class="mb-0 font-krona-one fw-light">Mike Lewis<br /></p>
-                  <p class="text-secondary-color">Twitter</p>
+                  <p class="mb-0 font-krona-one fw-light">Ngọc Minh<br /></p>
+                  <p class="text-secondary-color">Facebook</p>
                 </div>
                 <img src="assets/icons/IconBacktik.png" alt="" />
               </div>
@@ -693,16 +692,17 @@ include "header.php";
                 </div>
               </div>
               <p class="sub-text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Mình chưa từng nghĩ có thể chơi nhạc cụ nào cho đến khi thử Kalimba. 
+              Thiết kế nhỏ gọn, dễ mang theo và chỉ cần luyện tập một chút là có
+               thể tạo ra âm thanh rất hay. Mình rất thích nó và đã giới thiệu cho nhiều bạn bè.
               </p>
 
               <div
                 class="d-flex justify-content-between align-items-center mt-4"
               >
                 <div>
-                  <p class="mb-0 font-krona-one fw-light">John Doe<br /></p>
-                  <p class="text-secondary-color">Google</p>
+                  <p class="mb-0 font-krona-one fw-light">Hải Đăng<br /></p>
+                  <p class="text-secondary-color">Instagram</p>
                 </div>
                 <img src="assets/icons/IconBacktik.png" alt="" />
               </div>
@@ -717,16 +717,18 @@ include "header.php";
                 </div>
               </div>
               <p class="sub-text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Kalimba có âm thanh rất đặc biệt và êm dịu. Đây là món
+              quà mình tự thưởng cho bản thân để thư giãn và mình
+              thấy nó thật sự đáng giá. Chỉ cần dành ít thời gian
+               mỗi ngày, mình có thể tự chơi những giai điệu yêu thích!
               </p>
 
               <div
                 class="d-flex justify-content-between align-items-center mt-4"
               >
                 <div>
-                  <p class="mb-0 font-krona-one fw-light">John Doe<br /></p>
-                  <p class="text-secondary-color">Google</p>
+                  <p class="mb-0 font-krona-one fw-light">Quỳnh Chi<br /></p>
+                  <p class="text-secondary-color">Zalo</p>
                 </div>
                 <img src="assets/icons/IconBacktik.png" alt="" />
               </div>
@@ -741,16 +743,18 @@ include "header.php";
                 </div>
               </div>
               <p class="sub-text-medium">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Một nhạc cụ nhỏ nhưng đầy thú vị! Mình đã mua để thử và thấy việc
+               học rất dễ dàng. Âm thanh của Kalimba thực sự giúp mình giảm 
+               căng thẳng. Đây là lựa chọn tuyệt vời cho những ai muốn tìm 
+               đến âm nhạc mà không cần quá nhiều kỹ năng ban đầu.
               </p>
 
               <div
                 class="d-flex justify-content-between align-items-center mt-4"
               >
                 <div>
-                  <p class="mb-0 font-krona-one fw-light">John Doe<br /></p>
-                  <p class="text-secondary-color">Google</p>
+                  <p class="mb-0 font-krona-one fw-light">Thanh Sơn<br /></p>
+                  <p class="text-secondary-color">Threads</p>
                 </div>
                 <img src="assets/icons/IconBacktik.png" alt="" />
               </div>
@@ -777,7 +781,7 @@ include "header.php";
         <div class="row">
           <!-- Col 1 -->
           <div data-aos="fade-up" class="col-md-6">
-            <h2 class="section-title font-krona-one h2-text">Our Blog</h2>
+            <h2 class="section-title font-krona-one h2-text">Bài viết</h2>
           </div>
           <!-- Col 2 -->
           <div
@@ -786,14 +790,41 @@ include "header.php";
             class="col-md-6 text-start"
           >
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            Kalimba là một loại nhạc cụ gõ nhỏ gọn,
+             dễ học và dễ chơi, xuất phát từ châu 
+             Phi với âm thanh trong trẻo, êm dịu. 
+             <!-- Được gọi là "piano ngón tay," kalimba
+              có cấu tạo gồm các phím kim loại 
+              gắn trên mặt gỗ, người chơi sử dụng
+               ngón tay cái để tạo ra giai điệu. 
+               Với sự đơn giản nhưng cuốn hút, 
+               kalimba ngày càng được nhiều người
+                yêu thích, từ người mới bắt đầu 
+                đến người chơi nhạc chuyên nghiệp
+                . Đáp ứng nhu cầu đó, trang web 
+                Kalimba Việt (kalimbaviet.com) 
+                ra đời, trở thành điểm đến lý tưởng
+                 cho những người đam mê loại nhạc 
+                 cụ độc đáo này. Kalimba Việt cung 
+                 cấp nhiều dòng sản phẩm kalimba 
+                 với thiết kế, chất lượng và mức 
+                 giá đa dạng, phù hợp cho mọi 
+                 lứa tuổi và nhu cầu. Bên cạnh
+                  đó, trang web còn chia sẻ 
+                  kiến thức, hướng dẫn chơi,
+                   và những mẹo hay về cách 
+                   sử dụng kalimba. Kalimba 
+                   Việt cam kết mang đến trải
+                    nghiệm tốt nhất cho người 
+                    dùng, giúp mọi người dễ dàng tiếp 
+                    cận và tận hưởng vẻ đẹp của âm nhạc 
+                    từ chiếc đàn nhỏ gọn mà đầy mê hoặc này. -->
             </p>
             <a
-              href="Blog.html"
+              href="Blog.php"
               class="view-blog-link button-text font-krona-one fw-light"
             >
-              <span class="me-2">View Blog</span>
+              <span class="me-2">Xem bài viết</span>
               <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
             </a>
           </div>
@@ -810,11 +841,11 @@ include "header.php";
             <div class="blog-card bg-primary-custom">
               <img
                 class="img-hover"
-                src="assets/image/27.jpg"
-                alt="Digital Marketing for Small Biz"
+                src="assets/image/029.png"
+                alt="Nhạc cụ Kalimba – Xu Hướng Hiện Nay"
               />
               <p class="blog-card-title font-krona-one text-start h5-text">
-                Digital Marketing for Small Biz
+              Nhạc cụ Kalimba – Xu Hướng Hiện Nay
               </p>
             </div>
           </a>
@@ -823,11 +854,11 @@ include "header.php";
             <div class="blog-card bg-primary-custom">
               <img
                 class="img-hover"
-                src="assets/image/29.jpg"
-                alt="Marketing Terms You Need to Know"
+                src="assets/image/027.png"
+                alt="Nhạc cụ Kalimba - Chữa Lành Tâm Hồn"
               />
               <p class="blog-card-title font-krona-one text-start h5-text">
-                Marketing Terms You Need to Know
+                Nhạc cụ Kalimba - Chữa Lành Tâm Hồn
               </p>
             </div>
           </a>
@@ -836,11 +867,11 @@ include "header.php";
             <div class="blog-card bg-primary-custom h5-text">
               <img
                 class="img-hover"
-                src="assets/image/28.jpg"
-                alt="Digital Guide for Beginner"
+                src="assets/image/028.png"
+                alt="Những Tab Kalimba hay"
               />
               <p class="blog-card-title font-krona-one text-start">
-                Digital Guide for Beginner
+                Những Tab Kalimba hay
               </p>
             </div>
           </a>
@@ -857,7 +888,7 @@ include "header.php";
             <!-- Col 1 -->
             <div data-aos="fade-up" class="col-lg-8 px-4 px-lg-5">
               <h2 class="text-white text-uppercase font-krona-one cta-text">
-                Ready to get started?
+                Bạn cần hỗ trợ?
               </h2>
             </div>
             <!-- Col 2 -->
@@ -869,7 +900,7 @@ include "header.php";
                 class="btn-cta font-krona-one text-uppercase button-text"
                 href="Contact.html"
               >
-                <span class="me-2">contact</span>
+                <span class="me-2">Liên hệ</span>
                 <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
               </a>
             </div>

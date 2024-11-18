@@ -3,311 +3,107 @@
 include "header.php" 
 ?>
 
-<section class="custom-section-bg text-white" style="z-index: 1">
-      <div class="color-cover custom-padding">
-        <div class="container">
-          <h1
-            data-aos="fade-up"
-            class="font-krona-one h1-text text-uppercase text-center"
-          >
-            pricing
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="200"
-            class="sub-text-medium text-center"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section class="pricing-section custom-padding">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div
-            data-aos="fade-up"
-            class="col col-lg-custome bg-secondary-opacity-custom p-0 mx-2 mx-lg-0 mb-5 mb-lg-0"
-            style="height: fit-content"
-          >
-            <div class="text-center py-5 px-4 px-l-0">
-              <h4 class="text-ligh pb-4 font-krona-one text-uppercase">
-                Basic
-              </h4>
-              <p class="text-white m-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div
-              class="d-flex justify-content-center py-3 text-light font-krona-one bg-primarys-custom"
-            >
-              <p class="mb-0">$</p>
-              <h2 class="h2-text mx-2 mb-0">5.9</h2>
-              <p class="mb-0">Month</p>
-            </div>
-            <!-- <div> -->
-            <ul class="list-unstyled text-center text-light px-4 py-5">
-              <li class="mb-0">✔ Digital Marketing</li>
-              <li class="mb-0">✔ Content Strategy</li>
-            </ul>
-
-            <div class="d-flex justify-content-center">
-              <a
-                href="Contact.html"
-                class="btn-standar button-padding font-krona-one d-flex align-items-center border-0 text-decoration-none"
-              >
-                <p class="mb-0 me-3">choose plan</p>
-                <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
-            </a>
-            </div>
-            <!-- </div> -->
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            class="col col-lg-custome custom-pricing-bg p-0 mx-2 mx-lg-0 mb-5 mb-lg-0"
-            style="height: fit-content"
-          >
-            <div class="text-center py-5">
-              <h4
-                class="text-ligh pb-4 font-krona-one text-uppercase text-secondary-color"
-              >
-                Standard
-              </h4>
-              <p class="text-white m-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div
-              class="d-flex justify-content-center py-3 text-light font-krona-one bg-primarys-custom"
-            >
-              <p class="mb-0">$</p>
-              <h2 class="h2-text mx-2 mb-0">17.9</h2>
-              <p class="mb-0">Month</p>
-            </div>
-            <!-- <div> -->
-            <ul class="list-unstyled text-center text-light px-4 py-5">
-              <li class="mb-2">✔ Digital Marketing</li>
-              <li class="mb-2">✔ Content Strategy</li>
-              <li class="mb-2">✔ Branding Design</li>
-            </ul>
-
-            <div class="d-flex justify-content-center">
-              <a
-                href="Contact.html"
-                class="btn-standar button-padding font-krona-one d-flex align-items-center border-0 text-decoration-none"
-              >
-                <p class="mb-0 me-3">choose plan</p>
-                <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
-            </a>
-            </div>
-            <!-- </div> -->
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-            class="col col-lg-custome bg-secondary-opacity-custom p-0 mx-2 mx-lg-0 mb-5 mb-lg-0"
-            style="height: fit-content"
-          >
-            <div class="text-center py-5">
-              <h4 class="text-ligh pb-4 font-krona-one text-uppercase">
-                Premium
-              </h4>
-              <p class="text-white m-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-            </div>
-            <div
-              class="d-flex justify-content-center py-3 text-light font-krona-one bg-primarys-custom"
-            >
-              <p class="mb-0">$</p>
-              <h2 class="h2-text mx-2 mb-0">29.9</h2>
-              <p class="mb-0">Month</p>
-            </div>
-            <!-- <div> -->
-            <ul class="list-unstyled text-center text-light px-4 py-5">
-              <li class="mb-2">✔ Digital Marketing</li>
-              <li class="mb-2">✔ Content Strategy</li>
-              <li class="mb-2">✔ Branding Design</li>
-              <li class="mb-2">✔ Branding Design</li>
-              <li class="mb-2">✔ Web Inspection</li>
-              <li class="mb-2">✔ Social Campaign</li>
-            </ul>
-
-            <div class="d-flex justify-content-center">
-              <a
-                href="Contact.html"
-                class="btn-standar button-padding font-krona-one d-flex align-items-center border-0 text-decoration-none"
-              >
-                <p class="mb-0 me-3">choose plan</p>
-                <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
-            </a>
-            </div>
-            <!-- </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Faqs -->
-    <section class="bg-primary-custom custom-padding">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-lg-6">
-            <h2
-              data-aos="fade-up"
-              class="h2-text font-krona-one text-uppercase"
-            >
-              faqs
-            </h2>
-          </div>
-          <div class="col-lg-6">
-            <p data-aos="fade-up" class="text-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-            <a
-              data-aos="fade-up"
-              data-aos-delay="300"
-              href="Contact.html"
-              class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text mt-3"
-            >
-              <span class="me-2 text-uppercase">contact us</span>
-              <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
-            </a>
-          </div>
+<style>
+    .border-custom{
+        border-color: #c4fb6d !important;
+    }
+    #addon-wrapping:hover{
+        background-color: #c4fb6d;
+        color: #fff;
+    }
+    
+</style>
+<body>
+  <section class="bg-primary-custom custom-padding h-full w-100" style="z-index: 1">
+  <div class="container py-4">
+      <h2 class="transition-fade-left text-white font-krona-one border-text hero-text mb-0 d-flex justify-content-center">GIỎ HÀNG</h2>
+    <hr class="border border-custom border-2 opacity-75">
+        <!-- Thông báo -->
+        <div class=" alert">
+            <strong>“Đàn Kalimba Gecko 17 Phím K17CAP (Gỗ Long Não – Tone C hoặc B tùy chọn)”</strong> đã được thêm vào giỏ hàng.
         </div>
 
+        <!-- Giỏ hàng -->
         <div class="row">
-          <div class="col-lg-6 padding-right-c">
-            <details data-aos="fade-up" data-aos-delay="400" open class="my-4">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Payment Methods
-              </summary>
-              <p class="mt-3 pe-lg-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
+            <!-- Danh sách sản phẩm -->
+            <div class="col-md-8 ">
+                <h5 class="mb-4">GIỎ HÀNG</h5>
+                <table class="table table-striped text-center align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ẢNH</th>
+                            <th>SẢN PHẨM</th>
+                            <th>GIÁ</th>
+                            <th>SỐ LƯỢNG</th>
+                            <th>TỔNG</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-info">
+                        <tr>
+                            <td><img src="./assets/image/01.jpg" alt="Sản phẩm" class="img-thumbnail" style="max-width: 100px;"></td>
+                            <td>Đàn Kalimba Gecko 10 Phím K10B (Gỗ Bạch Dương – Mbira Thumb Finger Piano 10 Keys)</td>
+                            <td>4.900.000₫</td>
+                            <td>
+                                <input type="number" class="form-control text-center" value="1" min="1" style="width: 80px;">
+                            </td>
+                            <td>4.900.000₫</td>
+                            <td><button class="btn btn-danger btn-sm">Xóa</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="./assets/image/01.jpg" alt="Sản phẩm" class="img-thumbnail" style="max-width: 100px;"></td>
+                            <td>Đàn Kalimba Gecko 17 Phím K17CAP (Gỗ Long Não – Tone C hoặc B tùy chọn)</td>
+                            <td>4.000.000₫</td>
+                            <td>
+                                <input type="number" class="form-control text-center" value="1" min="1" style="width: 80px;">
+                            </td>
+                            <td>4.000.000₫</td>
+                            <td><button class="btn btn-danger btn-sm">Xóa</button></td>
+                        </tr>
+                        
+                <tr>
+                    <td colspan="6">
+                        <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                <button class="btn btn-primary">Tiếp tục mua hàng</button>
+                                <button class="btn btn-secondary">Xóa hết</button>
+                                <button class="btn btn-warning">Cập nhật</button>
+                                </div>
+                                <div class="input-group w-50 ">
+                                <input type="text" class="form-control" placeholder="Mã ưu đãi" aria-describedby="addon-wrapping">
+                                <button class="input-group-text" id="addon-wrapping">Áp dụng</button>
+                        </div>
+                        </div>
+                        
+                    </td>
+                </tr>
+                    </tbody>
+                </table>
 
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Billing System
-              </summary>
-              <p class="mt-3 pe-lg-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
+                <!-- Nút hành động -->
+                
+            </div>
 
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Branding Design
-              </summary>
-              <p class="mt-3 pe-lg-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Digital Downloads
-              </summary>
-              <p class="mt-3 pe-lg-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Content Marketing
-              </summary>
-              <p class="mt-3 pe-lg-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-          </div>
-
-          <div class="col-lg-6">
-            <details data-aos="fade-up" data-aos-delay="400" open class="my-4">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Warranty Service
-              </summary>
-              <p class="mt-3 padding-right-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Member area dashboard
-              </summary>
-              <p class="mt-3 padding-right-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                monthly report
-              </summary>
-              <p class="mt-3 padding-right-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Social Media Management
-              </summary>
-              <p class="mt-3 padding-right-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-
-            <details data-aos="fade-up" data-aos-delay="400">
-              <summary
-                class="font-krona-one text-secondary-color text-uppercase"
-              >
-                Sync Account Tools
-              </summary>
-              <p class="mt-3 padding-right-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </details>
-          </div>
+            <!-- Tổng giỏ hàng -->
+            <div class="col-md-4">
+                <h5 class="mb-4">CỘNG GIỎ HÀNG</h5>
+                <div class="card border bg-white ">
+                    <div class="card-body p-3">
+                        <div class="d-flex justify-content-between mb-5">
+                            <span>Tổng đơn:</span>
+                            <strong>4.900.000₫</strong>
+                        </div>
+                        <button class="btn btn-warning w-100">TIẾN HÀNH THANH TOÁN</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+    
+  </section>
+</body>
+  
+
 
 <?php
 include "footer.php" 

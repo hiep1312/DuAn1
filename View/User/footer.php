@@ -115,8 +115,8 @@
           <div data-aos="fade-up">
             <span
               >Powered by
-              <a href="https://sociolib.com/" class="text-decoration-none"
-                ><span class="text-secondary-color">SocioLib.</span></a
+              <a href="#" class="text-decoration-none"
+                ><span class="text-secondary-color">Nhóm 07</span></a
               ></span
             >
           </div>

@@ -54,9 +54,9 @@
         <a
           data-aos="fade-right"
           class="navbar-brand text-white ms-2 pt-0"
-          href="#"
+          href="Home1.php"
         >
-          <img src="assets/image/logo.png" style="width: 110px" alt="" />
+          <img src="./assets/image/logo1.png" style="width: 150px" alt="" />
         </a>
 
         <!-- Button Burger Menu -->
@@ -94,7 +94,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Trang chủ 1
+                Trang chủ
               </a>
               <ul
                 class="dropdown-menu bg-primary-custom"
@@ -106,10 +106,10 @@
                   class="dropdown-item font-krona-one text-uppercase text-white"
                   style="font-size: 12px"
                   href="Home1.php"
-                  >Trang chủ 1</a
+                  >Trang chủ</a
                 >
               </li> 
-              <li>
+              <!-- <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
@@ -133,7 +133,7 @@
                     >Trang Đích</a
                   >
                 </li>
-              </ul>
+              </ul> -->
             </li>
 
             <li class="nav-item dropdown">
@@ -216,13 +216,13 @@
               <a
                 class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
                 style="font-size: 12px"
-                href="Services.php"
+                href="Products.php"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dịch vụ
+                Sản Phẩm
               </a>
               <ul
                 class="dropdown-menu bg-primary-custom"
@@ -311,19 +311,19 @@
                 aria-expanded="false"
                 style="font-size: 12px"
               >
-                <p class="mb-0">Trang chủ 1</p>
-                <img
+                <p class="mb-0">Trang chủ</p>
+                <!-- <img
                   src="assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
                   class="dropdown-icon"
-                />
+                /> -->
               </a>
               <ul
                 class="dropdown-menu bg-primary-custom"
                 style="z-index: 100"
                 aria-labelledby="navbarDropdownLg"
               >
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
@@ -346,7 +346,7 @@
                     href="LandingPage.php"
                     >Trang đích</a
                   >
-                </li>
+                </li> -->
                 <!-- <li><hr class="dropdown-divider" /></li> -->
               </ul>
             </li>
@@ -434,13 +434,13 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
-                href="Services.php"
+                href="Products.php"
                 id="servicesDropdown"
                 role="button"
                 aria-expanded="false"
                 style="font-size: 12px"
               >
-                <p class="mb-0">Dịch vụ</p>
+                <p class="mb-0">Sản phẩm</p>
                 <img
                   src="assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
