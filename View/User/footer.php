@@ -8,12 +8,16 @@
           <div class="col-lg-4 mb-5 mb-md-0 pe-lg-5">
             <img
               data-aos="fade-up"
-              src="assets/image/logo.png"
+              src="assets/image/Artboard 1.png"
               class="mb-3"
-              alt=""
+              alt="" style="width: 200px;"
             />
             <p data-aos="fade-up" data-aos-delay="200" class="text-light my-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <b style="font-size: 20px; color: #c4fb6d;">VỀ CHÚNG TÔI</b> <br>
+              <li style="list-style-type: none;"><i class="fas fa-map-marker-alt"></i>Showroom và mua hàng: 28 Trịnh Văn Bô, Quận Nam Từ Liêm, Hà Nội</li> <br>
+              <li style="list-style-type: none;"><i class="fas fa-phone-alt"></i>Phone: 0123456JQK</li> <br>
+              <li style="list-style-type: none;"><i class="fas fa-envelope"></i>Email: Nhom7ahihu@gmail.com</li>
+              
             </p>
             <div
               data-aos="fade-up"
@@ -33,18 +37,26 @@
           </div>
           <!-- Col 2 30-->
           <div class="col-lg-4 mb-5 mb-md-0 pe-lg-5">
-            <h5
-              data-aos="fade-up"
-              class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light"
-            >
-              OFFICE
-            </h5>
             <p
+              
+              style="padding-top: 230px;"
+            >
+              <b style="font-size:20px; ;color: #c4fb6d;">CHÍNH SÁCH</b> <br>
+              <li style="list-style-type: none;">CHÍNH SÁCH BẢO HÀNH-SỬA CHỮA</li>
+              <li style="list-style-type: none;">CHÍNH SÁCH BẢO MẬT</li>
+              <li style="list-style-type: none;">CHÍNH SÁCH VẬN CHUYỂN</li>
+              <li style="list-style-type: none;">QUY ĐỊNH ĐỔI TRẢ</li>
+              <li style="list-style-type: none;">HÌNH THỨC THANH TOÁN</li> 
+              <li style="list-style-type: none;">ĐIỀU KHOẢN VÀ ĐIỀU KIỆN GIAO DỊCH</li> 
+
+          </p>
+            <!-- <p
               data-aos="fade-up"
               data-aos-delay="200"
               class="text-light mt-4 mb-3"
             >
-              Amphitheatre Parkway,<br />Mountain View, California, 94043
+            <li style="list-style-type: none;">Email: Nhom7vodich@gmail.com</li>
+              
             </p>
             <p
               data-aos="fade-up"
@@ -57,17 +69,12 @@
             <p data-aos="fade-up" data-aos-delay="200" class="text-light">
               <i class="fa-solid fa-phone" style="color: #c4fb6d"></i>
               +123 456 789
-            </p>
+            </p> -->
           </div>
           <!-- Col 3 20-->
-          <div class="col-lg-2 mb-5 mb-md-0">
-            <h5
-              data-aos="fade-up"
-              class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light"
-            >
-              MENU
-            </h5>
-            <ul class="list-unstyled mt-4">
+          <div class="col-lg-2 mb-5 mb-md-0" style="padding-top: 230px;">
+            <b style="font-size: 20px; color: #c4fb6d;">MAPS</b> <br>
+            <!-- <ul class="list-unstyled mt-4">
               <li data-aos="fade-up" data-aos-delay="200" class="mb-3">
                 <a href="#" class="text-light text-decoration-none">Services</a>
               </li>
@@ -82,10 +89,11 @@
                   >Testimonials</a
                 >
               </li>
-            </ul>
+            </ul> -->
+            <div ><iframe style="width: 350px; height: 180px; padding-top: 20px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59581.82289115897!2d105.67104414863282!3d21.038129800000032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1731573460372!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
           </div>
           <!-- Col 4 20-->
-          <div class="col-lg-2">
+          <!-- <div class="col-lg-2">
             <h5
               data-aos="fade-up"
               class="text-uppercase mb-3 font-krona-one footer-text-h-c fw-light"
@@ -105,11 +113,11 @@
                 >
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
 
         <hr class="my-4" />
-        <div
+        <!-- <div
           class="footer-bottom d-flex justify-content-between flex-column flex-md-row pt-2 pb-5"
         >
           <div data-aos="fade-up">
@@ -127,9 +135,11 @@
               >Privacy Policy</a
             >
             <span>|</span>
-            <a href="#" class="text-secondary-color text-decoration-none mx-2">Our Terms</a>
+            <a href="#" class="text-secondary-color text-decoration-none mx-2"
+              >Our Terms</a
+            >
           </div>
-        </div>
+        </div> -->
       </div>
     </footer>
 
