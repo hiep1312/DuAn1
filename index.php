@@ -53,3 +53,19 @@
 </html>
 
  -->
+<script>
+    const formdata = new FormData();
+    formdata.append("user_id", 1);
+    formdata.append("name", "Nguyen Tang Thanh");
+    formdata.append("phone", "234234535")
+    let data = async ()=>{
+        let res = await fetch("http://localhost/Duan1_nhom7/DuAn1/Api/Contacts/6", {
+            method: "DELETE",
+            body: formdata
+        })
+        let contact = await res.json();
+        // document.writeln(<pre/>);
+        console.log(contact)
+    }
+    data();
+</script>
