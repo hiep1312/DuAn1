@@ -169,7 +169,6 @@ class ProductsController
 
 $products = new ProductsController();
 echo "<pre>";
-echo date("Y-m-d", strtotime("+1 week"));
 print_r($products->getAll());
 /*print_r($products->create([
     "name" => "Bánh nhân hạnh",
