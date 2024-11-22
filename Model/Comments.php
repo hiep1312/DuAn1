@@ -1,8 +1,5 @@
 <?php
-<<<<<<< HEAD
     
-=======
->>>>>>> 9cd35bed520c7f5df90adb311be8dec4540d92de
     class Comments extends Management
     {
         public function getDataById($id, $mode = []){

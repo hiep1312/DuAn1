@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <!doctype html>
 <html lang="en">
 <head>
@@ -33,4 +31,4 @@ echo "<pre>";
 </body>
 </html>
 
- -->
+ 
