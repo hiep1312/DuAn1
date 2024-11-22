@@ -66,35 +66,7 @@ include "header.php"
                 <!-- Nút hành động -->
                 
             </div>
-            <div class="d-flex gap-5 mb-4">
-              <h2
-                data-aos="fade-zoom-in"
-                class="h2-text font-krona-one border-text">
-                2
-              </h2>
-              <div data-aos="fade-up">
-                <h3 class="h5-text font-krona-one">DEVELOPMENT</h3>
-                <p class="pe-lg-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
-                </p>
-              </div>
-            </div>
-            <div data-aos="fade-up" class="d-flex gap-5">
-              <h2
-                data-aos="fade-zoom-in"
-                class="step-number h2-text font-krona-one border-text">
-                3
-              </h2>
-              <div>
-                <h3 class="h5-text font-krona-one">STRATEGY</h3>
-                <p class="pe-lg-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
-                </p>
-              </div>
+            
             </div>
           </div>
         </div>

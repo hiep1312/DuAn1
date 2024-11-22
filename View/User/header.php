@@ -60,11 +60,12 @@
         >
           <img src="./assets/image/logo1.png" style="width: 150px" alt="" />
         </a>
+<<<<<<< HEAD
         
-                  <form class="search">
-                      <input type="search" name="search" id="" placeholder="Tìm kiếm..." style="padding-top: 3px; padding-bottom: 3px; padding-left: 5px; width: 230px; height: 35px;">
-                  </form>
+              
           
+=======
+>>>>>>> 9cd35bed520c7f5df90adb311be8dec4540d92de
         <!-- Button Burger Menu -->
         <button
           class="navbar-toggler border-0"
@@ -123,7 +124,7 @@
                     >Trang chủ 2</a
                   >
                 </li>
-                <!-- <li>
+                <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
@@ -141,7 +142,6 @@
                 </li>
               </ul> -->
             </li>
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"

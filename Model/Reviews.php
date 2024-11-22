@@ -28,4 +28,10 @@ class Reviews extends Management
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }
 }
+<<<<<<< HEAD
 
+=======
+// $reviews = new Reviews("reviews");
+// echo "<pre>";
+// print_r($reviews->getAllData([1]));
+>>>>>>> d586733831593df4ac7cd94a7c58e3ec25bb1d2a

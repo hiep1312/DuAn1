@@ -1,4 +1,6 @@
-<!-- <!doctype html>
+<<<<<<< HEAD
+=======
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,68 +10,27 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" method="post" enctype="multipart/form-data" id="form">
+<form action="" enctype="multipart/form-data" id="form" method="post">
     <input type="file" name="file[]" id="file" multiple>
-    <button type="submit">Send</button>
+    <button type="submit">Gui</button>
 </form>
-
-
 <script>
     document.getElementById("form").addEventListener("submit", async e => {
         e.preventDefault();
-        const formdata = new FormData();
-        /*formdata.append("title", "Toi qua met moi");
-        formdata.append("content", "Chan qua");*/
-        const json = JSON.stringify({
-            title: "Toi qua met moi",
-            content: "Chan qua"
-        });
-        console.log(...formdata, json);
-        const res = await fetch("http://localhost/DuAn1/Api/News/24", {
-            method: "PUT",
+        const formdata = new FormData(e.target);
+        const res = await fetch("http://localhost/DuAn1/temp.php", {
+            method: "POST",
             body: formdata
         });
-        const data = await res.text();
-        console.log(data);
-    }, false);
-    (async () => {
-        const res = await fetch("http://localhost/DuAn1/Api/News");
         const data = await res.json();
-        console.log(data.data);
-    })();
-    /*(async function () {
-        const formdata = new FormData();
-        formdata.append("name", "Le Danh Hiep");
-        formdata.append("age", 19);
-        const res = await fetch("http://localhost/DuAn1/Api/News", {
-            method: "GET"
-        });
-        const data = res.json();
-        console.log(data);
-
-    })();*/
+        console.log(data)
+    });
 </script>
+<?php
+echo "<pre>";
+    print_r(array_keys([13, 213, 54, 13, 54, 12, 32, 53], 13));
+?>
 </body>
 </html>
 
  -->
-<script>
-    let data = async() =>{
-    const formdata = new FormData();
-    formdata.append("comment", "3 em ngon qua di");
-    let res = await fetch ("http://localhost/DuAn1-Main/DuAn1/Api/Reviews/8",{
-        // method: "GET",
-
-        // method: "POST",
-        // body: formdata,
-
-         method: "PUT",
-         body: formdata,
-    });
-    let data2 = await res.json();
-    console.log(data2);
-    
-    // console.log(...formdata)
-};
-data();
-</script>
