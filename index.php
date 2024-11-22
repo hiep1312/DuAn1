@@ -1,4 +1,4 @@
-
+<!-- 
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!--<script>-->
+<script>-->
 <!--    let data = async() =>{-->
 <!--        const formdata = new FormData();-->
 <!--        formdata.append("name", "Nguyen Chi Binh");-->
@@ -44,27 +44,26 @@
     });
 </script>-->
 
-</body>
-</html>
-<<<<<<< HEAD
-<!--<script>
+<!-- </body>
+</html> -->
+<!-- <script>
     let data = async() =>{
         const formdata = new FormData();
-        formdata.append("name", "Duc lucifer dau cuc");
-        formdata.append("email", "dculf12@gmail.com");
-        formdata.append("phone", "023412552");
-        formdata.append("password", "12132447");
-        let res= await fetch("http://localhost/Duan1_nhom7/DuAn1/Api/Users/15",{
-            method: "PUT",
-            body: formdata,
+        formdata.append("material", "admin");
+        formdata.append("color", "mau do");
+        formdata.append("price", 100000);
+        formdata.append("price_reduce", 2300);
+        let res= await fetch("http://localhost/Duan1_nhom7/DuAn1/Api/Productvariants",{
+            method: "POST",
+            body: formdata
         });
         let data2 = await res.json();
         console.log(data2);
         // console.log(...formdata)
     };
     data();
-</script>-->
-<!--<script>
+</script> -->
+<script>
     let data = async() =>{
         const formdata = new FormData();
         formdata.append("material", "OKela");
@@ -85,14 +84,14 @@
         // formdata.append("updated_at", date("Y-m-d", time()))
         // formdata.append("phone", "023412552");
         // formdata.append("password", "12132447");
-        let res= await fetch("http://localhost/Duan1_nhom7/DuAn1/Api/Productvariants/14",{
-            method: "DELETE",
-            // body: formdata,
+        let res= await fetch("http://localhost/D%E1%BB%B1%20%C3%A1n%201/DuAn1/Api/Productvariants",{
+            method: "POST",
+            body: formdata,
         });
         let data2 = await res.json();
         console.log(data2);
         // console.log(...formdata)
     };
     data();
-</script>-->
+</script>
 
