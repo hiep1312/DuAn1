@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/ContactsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/ReviewsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/UsersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731477691Screenshot 2024-10-07 231442.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731480359Screenshot 2024-10-07 235056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731480460Screenshot 2024-10-07 231408.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731498458Screenshot 2024-11-05 230202.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731499661Screenshot 2024-10-16 221133.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731572060Screenshot 2024-10-07 201138.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/News/1731688488Screenshot 2024-10-07 235056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Comments.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Contacts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Reviews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/nhaccuviet.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/dashboard/chart/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/update.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/breadcrumb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/footer-block.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/footer-js.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/head-css.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/head-page-meta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/header-content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/layout-vertical.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/menu-list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/topbar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/other/ok/sample-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/other/sample-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/Account/forgot_pass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/Account/login-v3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/Account/register-v3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/About.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Contact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Home1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Home2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Home3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/LandingPage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Newsdetails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/OurWorks.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Post.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Pricing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Products.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Reviews.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Services.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/Single-work.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/022.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/027.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/028.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/029.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/222.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/333.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/Artboard 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anh01.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anh02.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anh03.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anhbl1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/giaykhen1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/giaykhen2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/logonhac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/mota1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/thanhtuu1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin7.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/chitietsp1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/thanhtoan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/News/17314117311667188972229-rsz_1656179273495-the-ukrainian-book-institute-purchases-3809-thousand-books-for-public-libraries1 (2).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/pcoded.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/pcoded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/dashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/elements/bc_typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/elements/bc_typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/layouts/head-page-meta.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/layouts/head-page-meta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/pages/login-v3.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/pages/login-v3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/OurWorks.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Khuyenmai.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Services.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/assets/image/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/assets/image/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/assets/image/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/assets/image/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/assets/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;assignee&quot;: &quot;hiep1312&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hiep1312/DuAn1.git&quot;,
+    &quot;accountId&quot;: &quot;b0b8aee2-2173-49ea-a360-f68341c4a70c&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2ogbrgXZhyMRuRbaggWcxuqoURL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.About.php.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/laragon/www/DuAn1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\DuAn1\Api" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View\user" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View\view\dist\js" />
+      <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1\View\view" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
+        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="" />
+      <created>1731294365514</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731294365514</updated>
+      <workItem from="1731294366550" duration="9494000" />
+      <workItem from="1731325115814" duration="3295000" />
+      <workItem from="1731336664103" duration="4861000" />
+      <workItem from="1731341625387" duration="959000" />
+      <workItem from="1731342745888" duration="8329000" />
+      <workItem from="1731384611683" duration="2728000" />
+      <workItem from="1731388654851" duration="2203000" />
+      <workItem from="1731392278180" duration="2694000" />
+      <workItem from="1731395302642" duration="2846000" />
+      <workItem from="1731398284729" duration="3625000" />
+      <workItem from="1731411273759" duration="2102000" />
+      <workItem from="1731417314459" duration="547000" />
+      <workItem from="1731423322796" duration="12931000" />
+      <workItem from="1731465122587" duration="8542000" />
+      <workItem from="1731497564341" duration="3944000" />
+      <workItem from="1731510262506" duration="10033000" />
+      <workItem from="1731564036863" duration="1647000" />
+      <workItem from="1731569292171" duration="4439000" />
+      <workItem from="1731584348683" duration="32000" />
+      <workItem from="1731595811259" duration="9905000" />
+      <workItem from="1731649986484" duration="8867000" />
+      <workItem from="1731671535181" duration="5477000" />
+      <workItem from="1731681650852" duration="10367000" />
+      <workItem from="1731741899192" duration="6030000" />
+      <workItem from="1731749571920" duration="2806000" />
+      <workItem from="1731755277217" duration="197000" />
+      <workItem from="1731760571555" duration="1087000" />
+      <workItem from="1731772627659" duration="602000" />
+      <workItem from="1731804975841" duration="1873000" />
+      <workItem from="1731816076177" duration="452000" />
+      <workItem from="1731816657721" duration="1557000" />
+      <workItem from="1731818633556" duration="5000" />
+      <workItem from="1731819895355" duration="995000" />
+      <workItem from="1731825256853" duration="52000" />
+      <workItem from="1731850231445" duration="479000" />
+      <workItem from="1731852565081" duration="1075000" />
+      <workItem from="1731856854143" duration="68000" />
+      <workItem from="1731857983612" duration="14000" />
+      <workItem from="1731929629666" duration="1596000" />
+      <workItem from="1731931248154" duration="3197000" />
+      <workItem from="1732016222996" duration="998000" />
+      <workItem from="1732027448554" duration="1929000" />
+      <workItem from="1732030484040" duration="54000" />
+      <workItem from="1732030547366" duration="3989000" />
+      <workItem from="1732035801498" duration="78000" />
+      <workItem from="1732035890506" duration="4244000" />
+      <workItem from="1732040228987" duration="419000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

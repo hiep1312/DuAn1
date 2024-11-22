@@ -1,9 +1,9 @@
 <?php
-require_once '../Model/Contacts.php';
-class ContactsController{
-    protected  $execute;
+require_once "../Model/Orders.php";
+class OrdersController{
+    protected $execute;
     public function __construct(){
-        $this->execute = new Contacts( "contacts" );
+        $this->execute = new Orders ('orders');
     }
     public function getAll(){
         return $this->execute->getAllData();
@@ -13,10 +13,8 @@ class ContactsController{
     }
     public function create($dataRequest){
         $dataRequest['user_id'] = isset($dataRequest['user_id']) ? $dataRequest['user_id']: null;
-        $dataRequest['name'] = isset($dataRequest['name']) ? $dataRequest['name']: null;
-        $dataRequest['email'] = isset($dataRequest['email']) ? $dataRequest['email']: null;
-        $dataRequest['phone'] = isset($dataRequest['phone']) ? $dataRequest['phone']: null;
-        $dataRequest['message'] = isset($dataRequest['message']) ? $dataRequest['message']: null;
+        $dataRequest['status'] = isset($dataRequest['status']) ? $dataRequest['status']: null;
+        $dataRequest['total_amount'] = isset($dataRequest['total_amount']) ? $dataRequest['total_amount']: null;
         return $this->execute->addData($dataRequest);
     }
     public function update($id, $dataRequest){
@@ -25,11 +23,10 @@ class ContactsController{
         endif;
         settype($dataOld, 'array');
         $dataRequest['user_id'] = isset($dataRequest['user_id']) ? $dataRequest['user_id']: $dataOld['user_id'];
-        $dataRequest['name'] = isset($dataRequest['name']) ? $dataRequest['name']: $dataOld['name'];
-        $dataRequest['email'] = isset($dataRequest['email']) ? $dataRequest['email']: $dataOld['email'];
-        $dataRequest['phone'] = isset($dataRequest['phone']) ? $dataRequest['phone']: $dataOld['phone'];
-        $dataRequest['message'] = isset($dataRequest['message']) ? $dataRequest['message']: $dataOld['message'];
+        $dataRequest['status'] = isset($dataRequest['status']) ? $dataRequest['status']: $dataOld['status'];
+        $dataRequest['total_amount'] = isset($dataRequest['total_amount']) ? $dataRequest['total_amount']: $dataOld['total_amount'];
         $dataRequest['created_at'] = isset($dataRequest['created_at']) ? $dataRequest['created_at']: $dataOld['created_at'];
+        $dataRequest['updated_at'] = isset($dataRequest['updated_at']) ? $dataRequest['updated_at']: $dataOld['updated_at'];
         return !$this->execute->updateData($id, $dataRequest)?false:$dataOld;
     }
     public function delete($id){
@@ -39,5 +36,4 @@ class ContactsController{
         settype($checkid, 'array');
         return !$this->execute->deleteDataById($id)?false:$checkid;
     }
-
 }

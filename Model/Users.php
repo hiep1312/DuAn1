@@ -7,14 +7,14 @@ class Users extends Management{
     }
     public function addData($data, $mode = [])
     {
-        $this->sql = "INSERT INTO {$this->tableName}(`name`, `email`, `password`, `phone`, `address`, `bio`, `avatar`, `role_id`, `created_at`, `updated_at`, `status`) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        $this->sql = "INSERT INTO {$this->tableName}(`name`, `email`, `password`, `phone`, `address`, `bio`, `avatar`, `role_id`, `created_at`, `updated_at`, `status`) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role_id'],date("Y-m-d", time()), null,$data['status']];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
     public function updateData($id, $data, $mode = [])
     {
-        $this->sql = "UPDATE {$this->tableName} SET `name`=?,`email`=?,`password`=?,`phone`=?,`address`=?,`bio`=?,`avatar`=?,`role`=?,`created_at`=?,`updated_at`=? WHERE `user_id`=?";
-        $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role'],$data['created_at'],$data['updated_at'], $id];
+        $this->sql = "UPDATE {$this->tableName} SET `name`=?,`email`=?,`password`=?,`phone`=?,`address`=?,`bio`=?,`avatar`=?,`role_id`=?,`created_at`=?,`updated_at`=?,`status`=? WHERE `user_id`=?";
+        $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role_id'],$data['created_at'],$data['updated_at'],$data['status'], $id];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
     public function deleteDataById($id, $mode = [])
@@ -28,20 +28,20 @@ class Users extends Management{
     }
     
 }
-$co = new Users("users");
-$co->addData([
-    "name" => 'Lê Văn Khánh',
-    "email" => 'oksds324@gmail.com',
-    "password" => 'Duy16902346',
-    "phone" => '0909123456',
-    "address" => 'Hà Tây',
-    "bio" => 'Tôi thích cây đàn kalimba loại nhỏ này',
-    "avatar" => 'https://harpstore.vn/wp-content/uploads/2020/10/dan-kalimba-rabi-rc09.jpg',
-    "role" => 0 
-]
-);
-echo "<pre>";
-print_r ($co->getAllData());
+//$co = new Users("users");
+//$co->addData([
+//    "name" => 'Lê Văn Khánh',
+//    "email" => 'oksds324@gmail.com',
+//    "password" => 'Duy16902346',
+//    "phone" => '0909123456',
+//    "address" => 'Hà Tây',
+//    "bio" => 'Tôi thích cây đàn kalimba loại nhỏ này',
+//    "avatar" => 'https://harpstore.vn/wp-content/uploads/2020/10/dan-kalimba-rabi-rc09.jpg',
+//    "role" => 0
+//]
+//);
+//echo "<pre>";
+//print_r ($co->getAllData());
 // echo "<pre>";
 // // print_r ($co->getAllData([1, 5]));
 // $co->updateData(1, [

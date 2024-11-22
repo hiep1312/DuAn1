@@ -1,5 +1,4 @@
 <?php
-    require_once "Management.php";
     class Comments extends Management
     {
         public function getDataById($id, $mode = []){
