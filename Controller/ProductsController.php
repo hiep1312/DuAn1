@@ -1,5 +1,4 @@
 <?php
-require_once "../Model/Management.php";
 require_once "../Model/Products.php";
 class ProductsController
 {
@@ -167,10 +166,10 @@ class ProductsController
     }
 }
 
-$products = new ProductsController();
-echo "<pre>";
-echo date("Y-m-d", strtotime("+1 week"));
-print_r($products->getAll());
+//$products = new ProductsController();
+//echo "<pre>";
+//echo date("Y-m-d", strtotime("+1 week"));
+//print_r($products->getAll());
 /*print_r($products->create([
     "name" => "Bánh nhân hạnh",
     "description" => "Bánh rất ngon đến từ trung quốc",

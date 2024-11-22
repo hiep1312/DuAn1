@@ -1,5 +1,4 @@
 <?php
-require_once "Management.php";
 class Contacts extends Management
 {   
     public function getDataById($id, $mode = [])
@@ -27,23 +26,3 @@ class Contacts extends Management
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }
 };
-
-$co = new Contacts("contacts");
-/* $co->addData([
-    "user_id" => null,
-    "name" => 'Lê Văn Khánh',
-    "email" => 'khanhlv@gmail.com',
-    "phone" => '0909123456',
-    "message" => 'Xin tư vấn cho tôi loại đàn phù hợp để bắt đầu học',
-]
-); */
-echo "<pre>";
-// print_r ($co->getAllData([1, 5]));
-$co->updateData(1, [
-    "user_id" => null,
-    "name" => 'Lê Văn Nam',
-    "email" => 'namvcl@gmail.com',
-    "phone" => '0909123456',
-    "message" => 'Xin tư vấn cho tôi loại đàn phù hợp để bắt đầu ',
-    "created_at" => "2023-12-21",
-], [0]);

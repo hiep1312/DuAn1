@@ -8,7 +8,7 @@ include "header.php"
         border-color: #c4fb6d !important;
     }
     #addon-wrapping:hover{
-        background-color: #c4fb6d;
+        background-color: orange;
         color: #fff;
     }
     
@@ -69,7 +69,7 @@ include "header.php"
                                 <button class="btn btn-secondary">Xóa hết</button>
                                 <button class="btn btn-warning">Cập nhật</button>
                                 </div>
-                                <div class="input-group w-50 ">
+                                <div class="input-group w-50">
                                 <input type="text" class="form-control" placeholder="Mã ưu đãi" aria-describedby="addon-wrapping">
                                 <button class="input-group-text" id="addon-wrapping">Áp dụng</button>
                         </div>
