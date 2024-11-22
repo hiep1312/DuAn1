@@ -14,7 +14,6 @@
 </head>
 <!-- [Head] end -->
 <!-- [Body] Start -->
-
 <body>
 <?php 
     include "../../layouts/layout-vertical.php"
@@ -52,7 +51,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeform()"></button>
             </div>
             <div class="modal-body">
-                            <!-- Horizontal Form -->
+                <!-- Horizontal Form -->
               <form id="frmnews" method="post" class="d-flex gap-3 flex-column" enctype="multipart/form-data">
                 <div class="row mb-3">
                   <label for="title" class="col-sm-2 col-form-label">Tiêu đề tin tức</label>
@@ -94,7 +93,7 @@
                 <div class= "d-none mb-3" id="message">
             
                 </div>
-              </form><!-- End Horizontal Form -->
+              </form><!-- End Horizontal Form --> 
             </div>
           </div>
         </div>
@@ -126,6 +125,15 @@
             
         </tbody>
     </table>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">Previous</button>
+            <button type="button" class="btn btn-outline-primary">1</button>
+            <button type="button" class="btn btn-outline-primary">2</button>
+            <button type="button" class="btn btn-outline-primary">3</button>
+            <button type="button" class="btn btn-outline-primary">Next</button>
+        </div>
+    </div>
     <script>
            const getNewss = async()=>{
                 const tbody = document.querySelector('tbody')
@@ -143,7 +151,7 @@
                             <td class="w-40">${news.created_at}</td>
                             <td >${news.status}</td>
                             <td>
-                            <div class="btn-group border border-light gap-2" role="group" aria-label="Third group">
+                            <div class="btn-group border border-none gap-3" role="group" aria-label="Third group">
                                   <button class="badge rounded-pill text-bg-info p-2 fs-5"  onclick="updateProduct(${news.news_id})">Update</button> 
                                   <button class="badge rounded-pill text-bg-danger p-2 fs-5" onclick="Deletenews(${news.news_id})">Delete</button>
                             </div>
@@ -163,10 +171,10 @@
                         method: 'DELETE',
                        })
                     if(res.ok){
-                        alert(`Delete thành công!!!!`)
-                        location.reload();
+                      alert(`Delete thành công!!!!`)
+                      location.reload();
                     }else{
-                        alert(`Delete không thành công!!!!`)
+                      alert(`Delete không thành công!!!!`)
                     }
                 } catch (error) {
                     alert(`Delete không thành công!!!!`)
@@ -174,7 +182,7 @@
                 }
             }
     // End danh sách tin tức
-    
+    // <button class="badge rounded-pill text-bg-info p-2 fs-5" ><a class="pt-2" href="show.php?id=${news.news_id}">Show</a> </button> Xem chi tiết sản phẩm
     // Bắt đầu update tin tức
         let newsId;
         const title = document.getElementById('title')
@@ -248,10 +256,10 @@
               // const productId = id
               if(validate(title.value, content.value)){
                 try {
-                       const res = await fetch(`http://localhost/Duan1_nhom7/DuAn1/Api/News/${newsId}/PUT`, {
-                          method: 'POST',
-                          body: formdata
-                       })
+                      const res = await fetch(`http://localhost/Duan1_nhom7/DuAn1/Api/News/${newsId}/PUT`, {
+                        method: 'POST',
+                        body: formdata
+                    })
                     if(res.ok){
                         setTimeout(() => {
                             location = 'list.php'
@@ -264,7 +272,7 @@
                         message.classList.remove('text-danger')
                         message.classList.add('text-info')
                     }else{
-                      message.innerHTML = `
+                        message.innerHTML = `
                             <pre>Cập nhật mới không thành công mời nhập lại!@!!</pre>
                         `
                         message.classList.remove('d-none')
@@ -302,6 +310,7 @@
                 title.trim().length>0&&content.trim().length>0
             )
         }
+        
         // End update tiin tức
       
     </script>
@@ -322,3 +331,45 @@
 <!-- [Body] end -->
 
 </html>
+
+
+    <!-- <script>  
+        const products = [  
+            'Sản phẩm 1', 'Sản phẩm 2', 'Sản phẩm 3', 'Sản phẩm 4',  
+            'Sản phẩm 5', 'Sản phẩm 6', 'Sản phẩm 7', 'Sản phẩm 8',  
+            'Sản phẩm 9', 'Sản phẩm 10', 'Sản phẩm 11', 'Sản phẩm 12'  
+        ];  
+        
+        const itemsPerPage = 4;  
+        let currentPage = 1;  
+
+        function displayProducts(page) {  
+            const startIndex = (page - 1) * itemsPerPage;  
+            const endIndex = startIndex + itemsPerPage;  
+            const pageProducts = products.slice(startIndex, endIndex);  
+
+            const productList = document.getElementById('product-list');  
+            productList.innerHTML = pageProducts.map(product => `<div class="product">${product}</div>`).join('');  
+
+            renderPagination();  
+        }  
+
+        function renderPagination() {  
+            const pageCount = Math.ceil(products.length / itemsPerPage);  
+            const pagination = document.getElementById('pagination');  
+            pagination.innerHTML = '';  
+
+            for (let i = 1; i <= pageCount; i++) {  
+                const pageDiv = document.createElement('div');  
+                pageDiv.textContent = i;  
+                pageDiv.className = 'page' + (i === currentPage ? ' active' : '');  
+                pageDiv.onclick = () => {  
+                    currentPage = i;  
+                    displayProducts(currentPage);  
+                };  
+                pagination.appendChild(pageDiv);  
+            }  
+        }  
+
+        displayProducts(currentPage);   
+    </script>   -->

@@ -5,12 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Controller/CartItemsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CartsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CommentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/OrderitemsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/OrdersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/ProductvariantsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/PromotionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Users/17314122031667188972229-rsz_1656179273495-the-ukrainian-book-institute-purchases-3809-thousand-books-for-public-libraries1 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Users/1731688488Screenshot 2024-10-07 235056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/CartItems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Carts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Orderitems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Productvariants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Promotions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ContactsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ContactsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/NewsController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ReviewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ReviewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Management.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/News.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Reviews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Pricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Pricing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Single-work.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Single-work.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/chitietsp1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/chitietsp1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +88,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.About.php.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/laragon/www/DuAn1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.About.php.executor": "Run",
+    "JavaScript Debug.index.php.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "C:/laragon/www/DuAn1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1" />
@@ -149,7 +184,7 @@
       <workItem from="1732248550743" duration="23278000" />
       <workItem from="1732274674266" duration="6715000" />
       <workItem from="1732284832020" duration="3940000" />
-      <workItem from="1732290704068" duration="3000" />
+      <workItem from="1732290704068" duration="796000" />
     </task>
     <servers />
   </component>

@@ -60,6 +60,20 @@
         >
           <img src="./assets/image/logo1.png" style="width: 150px" alt="" />
         </a>
+<<<<<<< HEAD
+        
+                  <!-- <form class="search">
+                      <input type="search" name="search" id="" placeholder="Tìm kiếm..." style="padding-top: 3px; padding-bottom: 3px; padding-left: 5px; width: 230px; height: 35px;">
+                  </form>
+           -->
+=======
+<<<<<<< HEAD
+        
+              
+          
+=======
+>>>>>>> 9cd35bed520c7f5df90adb311be8dec4540d92de
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
         <!-- Button Burger Menu -->
         <button
           class="navbar-toggler border-0"
@@ -118,7 +132,7 @@
                     >Trang chủ 2</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
@@ -136,6 +150,7 @@
                 </li>
               </ul> -->
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
@@ -169,15 +184,15 @@
                     >Giỏ Hàng</a
                   >
                 </li>
-                <!-- <li>
+                <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
                     href="Single-work.php"
-                    >Làm việc</a
+                    >Đơn hàng</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
@@ -403,15 +418,15 @@
                     >Giỏ hàng</a
                   >
                 </li>
-                <!-- <li>
+                <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
                     href="Single-work.php"
-                    >Công việc</a
+                    >Đơn hàng</a
                   >
                 </li>
-                <li>
+                <!-- <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
@@ -425,8 +440,8 @@
                     style="font-size: 12px; z-index: 100"
                     href="Blog.php"
                     >Bài viết</a
-                  > -->
-                </li>
+                  >
+                </li> -->
                 <li>
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"

@@ -1,5 +1,4 @@
 <?php
-require_once "../Model/Management.php";
 require_once "../Model/Products.php";
 class ProductsController
 {
@@ -166,33 +165,3 @@ class ProductsController
         return !$this->execute->deleteDataById($allId)?false:$checkId;
     }
 }
-
-$products = new ProductsController();
-echo "<pre>";
-print_r($products->getAll());
-/*print_r($products->create([
-    "name" => "Bánh nhân hạnh",
-    "description" => "Bánh rất ngon đến từ trung quốc",
-    "brand" => "nice4",
-    "stock_quantity" => 500,
-    "imageProducts" => json_encode([
-        ["album" => "nhanhanh.jpg"],
-        ["album" => "chan"]
-    ], JSON_UNESCAPED_UNICODE),
-    "productVariants" => json_encode([
-        ["material" => "Gỗ Đồng",
-        "color" => "Đỏ",
-        "price" => 200000,
-        "price_reduced" => 170000,
-        "stock_quantity" => 200,
-        "start_at" => "2024-01-01",
-        "end_at" => "2024-02-12"],
-        ["material" => "Gỗ Đồng 2",
-        "color" => "Đỏ xanh",
-        "price" => 223400,
-        "price_reduced" => 170000,
-        "stock_quantity" => 500,
-        "start_at" => "2024-01-01",
-        "end_at" => "2024-02-12"]
-    ], JSON_UNESCAPED_UNICODE)
-], []));*/

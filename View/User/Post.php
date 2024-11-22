@@ -37,7 +37,7 @@ include "header.php"
           <p class="card-text text-secondary">Giới thiệu những loại nhạc cụ truyền thống
             và hiện đại của Việt Nam, đồng thời tạo cơ hội cho khách tham quan tìm hiểu
             sâu hơn về lịch sử và sự phát triển của âm nhạc dân tộc.</p>
-          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+          <a href="../User/Newsdetails.php" class="btn btn-secondary">Đọc thêm</a>
         </div>
       </div>
 
@@ -49,7 +49,7 @@ include "header.php"
           <h5 class="card-title">Vũ Cát Tường hướng dẫn học trò nhí sử dụng nhạc cụ</h5>
           <p class="card-text text-secondary">Ca sĩ "Vết mưa"
             huấn luyện kỹ năng biểu diễn cho thí sinh trong đội "The Voice Kids 2016" tranh tài ở vòng liveshow. </p>
-          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+          <a href="../User/Newsdetails.php" class="btn btn-secondary">Đọc thêm</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@ include "header.php"
         <div class="card-body">
           <h5 class="card-title">Ông lão dùng bát đũa chơi nhạc 'Mời anh về thăm quê em'</h5>
           <p class="card-text text-secondary">Dùng đũa làm dùi, bát làm trống và người đàn ông đã có một 'siêu phẩm' ngay trên phố. Sự sáng tạo của con người là vô hạn, với những ai có tâm hồn nghệ sĩ thì nó còn 'bay cao' hơn nữa.</p>
-          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+          <a href="../User/Newsdetails.php" class="btn btn-secondary">Đọc thêm</a>
         </div>
       </div>
 
@@ -74,7 +74,7 @@ include "header.php"
           <h5 class="card-title">Nghệ sĩ nhí gốc Việt mê ca hát, chơi 12 nhạc cụ</h5>
           <p class="card-text text-secondary">Tối cuối tuần tại một góc Phố Cổ
             Hà Nội, rất đông người nán lại say sưa nghe một nghệ sĩ nhí hát.</p>
-          <a href="#" class="btn btn-secondary">Đọc thêm</a>
+          <a href="../User/Newsdetails.php" class="btn btn-secondary">Đọc thêm</a>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ include "header.php"
       data-aos-duration="1400"
       class="row blog-cards mt-5">
       <!-- Col 1 -->
-      <a href="#" class="col-lg-4 col-md-6 text-decoration-none">
+      <a href="../User/Newsdetails.php" class="col-lg-4 col-md-6 text-decoration-none">
         <div class="blog-card bg-primary-custom">
           <div class="box-image">
             <img
