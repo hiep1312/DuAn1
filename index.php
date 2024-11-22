@@ -1,55 +1,16 @@
-<!-- <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<form action="" method="post" enctype="multipart/form-data" id="form">
-    <input type="file" name="file[]" id="file" multiple>
-    <button type="submit">Send</button>
-</form>
-
-
 <script>
-    document.getElementById("form").addEventListener("submit", async e => {
-        e.preventDefault();
+    let data = async() =>{
         const formdata = new FormData();
-        /*formdata.append("title", "Toi qua met moi");
-        formdata.append("content", "Chan qua");*/
-        const json = JSON.stringify({
-            title: "Toi qua met moi",
-            content: "Chan qua"
-        });
-        console.log(...formdata, json);
-        const res = await fetch("http://localhost/DuAn1/Api/News/24", {
-            method: "PUT",
-            body: formdata
-        });
-        const data = await res.text();
-        console.log(data);
-    }, false);
-    (async () => {
-        const res = await fetch("http://localhost/DuAn1/Api/News");
-        const data = await res.json();
-        console.log(data.data);
-    })();
-    /*(async function () {
-        const formdata = new FormData();
-        formdata.append("name", "Le Danh Hiep");
-        formdata.append("age", 19);
-        const res = await fetch("http://localhost/DuAn1/Api/News", {
-            method: "GET"
-        });
-        const data = res.json();
-        console.log(data);
+        formdata.append("code","Minh Duc" );
+        formdata.append("discount",2050 );
+        formdata.append("usage_limit",20 );
 
-    })();*/
+        let res= await fetch("http://localhost/D%E1%BB%B1%20%C3%A1n%201/DuAn1/Api/Promotions",{
+            method: "GET",
+            // body: formdata
+        });
+        let data2 = await res.json();
+        console.log(data2);
+    };
+    data();
 </script>
-</body>
-</html>
-
- -->

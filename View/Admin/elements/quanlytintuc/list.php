@@ -52,7 +52,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="closeform()"></button>
             </div>
             <div class="modal-body">
-                            <!-- Horizontal Form -->
+                <!-- Horizontal Form -->
               <form id="frmnews" method="post" class="d-flex gap-3 flex-column" enctype="multipart/form-data">
                 <div class="row mb-3">
                   <label for="title" class="col-sm-2 col-form-label">Tiêu đề tin tức</label>
@@ -163,10 +163,10 @@
                         method: 'DELETE',
                        })
                     if(res.ok){
-                        alert(`Delete thành công!!!!`)
-                        location.reload();
+                      alert(`Delete thành công!!!!`)
+                      location.reload();
                     }else{
-                        alert(`Delete không thành công!!!!`)
+                      alert(`Delete không thành công!!!!`)
                     }
                 } catch (error) {
                     alert(`Delete không thành công!!!!`)
@@ -248,10 +248,10 @@
               // const productId = id
               if(validate(title.value, content.value)){
                 try {
-                       const res = await fetch(`http://localhost/Duan1_nhom7/DuAn1/Api/News/${newsId}/PUT`, {
-                          method: 'POST',
-                          body: formdata
-                       })
+                      const res = await fetch(`http://localhost/Duan1_nhom7/DuAn1/Api/News/${newsId}/PUT`, {
+                        method: 'POST',
+                        body: formdata
+                    })
                     if(res.ok){
                         setTimeout(() => {
                             location = 'list.php'
@@ -264,7 +264,7 @@
                         message.classList.remove('text-danger')
                         message.classList.add('text-info')
                     }else{
-                      message.innerHTML = `
+                        message.innerHTML = `
                             <pre>Cập nhật mới không thành công mời nhập lại!@!!</pre>
                         `
                         message.classList.remove('d-none')
