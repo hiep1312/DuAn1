@@ -58,11 +58,7 @@
           class="navbar-brand text-white ms-2 pt-0"
           href="Home1.php"
         >
-<<<<<<< HEAD
           <img src="./assets/image/logo1.png" style="width: 150px" alt="" />
-=======
-          <img src="assets/image/Artboard 1.png" style="width: 110px" alt="" />
->>>>>>> 213f4842c7846c7ca855278d6cb9953737a23292
         </a>
         
                   <form class="search">
@@ -142,13 +138,8 @@
                     href="LandingPage.php"
                     >Trang Đích</a
                   >
-<<<<<<< HEAD
                 </li>
               </ul> -->
-=======
-                </li> -->
-              </ul>
->>>>>>> 213f4842c7846c7ca855278d6cb9953737a23292
             </li>
 
             <li class="nav-item dropdown">

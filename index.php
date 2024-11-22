@@ -53,3 +53,23 @@
 </html>
 
  -->
+<script>
+    let data = async() =>{
+    const formdata = new FormData();
+    formdata.append("comment", "3 em ngon qua di");
+    let res = await fetch ("http://localhost/DuAn1-Main/DuAn1/Api/Reviews/8",{
+        // method: "GET",
+
+        // method: "POST",
+        // body: formdata,
+
+         method: "PUT",
+         body: formdata,
+    });
+    let data2 = await res.json();
+    console.log(data2);
+    
+    // console.log(...formdata)
+};
+data();
+</script>

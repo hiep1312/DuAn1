@@ -1,4 +1,5 @@
 <?php
+require_once "Management.php";
 class News extends Management
 {
     public function getDataById($id, $mode = [])
