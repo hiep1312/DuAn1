@@ -60,9 +60,12 @@
         >
           <img src="./assets/image/logo1.png" style="width: 150px" alt="" />
         </a>
+<<<<<<< HEAD
         
               
           
+=======
+>>>>>>> 9cd35bed520c7f5df90adb311be8dec4540d92de
         <!-- Button Burger Menu -->
         <button
           class="navbar-toggler border-0"
@@ -121,7 +124,7 @@
                     >Trang chủ 2</a
                   >
                 </li>
-                <!-- <li>
+                <li>
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
@@ -136,15 +139,9 @@
                     href="LandingPage.php"
                     >Trang Đích</a
                   >
-<<<<<<< HEAD
                 </li>
               </ul> -->
-=======
-                </li> -->
-              </ul>
->>>>>>> 213f4842c7846c7ca855278d6cb9953737a23292
             </li>
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
