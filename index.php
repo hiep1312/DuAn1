@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -45,6 +46,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
 <!--<script>
     let data = async() =>{
         const formdata = new FormData();
@@ -93,3 +95,4 @@
     };
     data();
 </script>-->
+

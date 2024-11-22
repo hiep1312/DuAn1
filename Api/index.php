@@ -1,4 +1,72 @@
 <?php
+<<<<<<< HEAD
+ini_set('display_errors', 0);
+require_once "init.php";
+require_once "Response.php";
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Content-Type: application/json; charset=UTF-8");
+$response = new Response();
+if ($_GET['page']) {
+    $page = $_GET['page'];
+    if ($page === "News") {
+        $connect = new NewsController();
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+            if ($id === "all") {
+                $data = $connect->getAll();
+                $response->setResponse(!$data ? 503 : 200, !$data ? null : "Get All News Success!", $data);
+            } else {
+                $data = $connect->getOne($id);
+                $response->setResponse(!$data ? 404 : 200, !$data ? null : "Get News Success!", $data);
+            }
+            $response->sendResponse();
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            if (isset($_GET["method"]) && $_GET["method"] === "PUT") {
+                $id = $_GET["id"];
+                if (empty($id)) {
+                    $response->setResponse(503);
+                } else {
+                    $data = $connect->update($id, $_POST, $_FILES);
+                    $response->setResponse(!$data ? 404 : 200, !$data ? null : "PUT News Success!", $data);
+                }
+            } elseif (!isset($_GET["method"])) {
+                $data = $connect->create($_POST, $_FILES);
+                $response->setResponse(!$data ? 503 : 200, !$data ? null : "POST News Success!");
+            } else {
+                $response->setResponse(400);
+            }
+            $response->sendResponse();
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
+            $id = $_GET["id"];
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u', file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            $_PUT = [];
+            if ($dataRawRequest === []) {
+                $_PUT = json_decode(file_get_contents("php://input"), true);
+            } else {
+                foreach ($dataRawRequest as $rawRequest) {
+                    $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
+                }
+            }
+            if (empty($id)) {
+                $response->setResponse(503);
+            } else {
+                $data = $connect->update($id, $_PUT, []);
+                $response->setResponse(!$data ? 404 : 200, !$data ? null : "PUT News Success!", $data);
+            }
+            $response->sendResponse();
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+            $id = $_GET["id"];
+            if (empty($id)) {
+                $response->setResponse(503);
+            } else {
+                $data = $connect->delete($id);
+                $response->setResponse(!$data ? 404 : 200, !$data ? null : "DELETE News Success!", $data);
+            }
+            $response->sendResponse();
+        } else {
+            $response->setResponse(405);
+=======
     ini_set('display_errors', 0);
     require_once "init.php";
     require_once "Response.php";
@@ -63,12 +131,116 @@
                     $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
                 }
                 $response->sendResponse();
+
             }else{
                 $response->setResponse(405);
                 $response->sendResponse();
             }
+<<<<<<< HEAD
         }elseif ($page === "Contacts"){
             $connect =  new ContactsController();
+=======
+        
+
+        }elseif($page === "Comments"){
+            $connect = new CommentsController();
+            if($_SERVER['REQUEST_METHOD'] === 'GET'){
+                $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+                if($id === "all"){
+                    $data = $connect->getAll();
+                    $response->setResponse(!$data?503:200, !$data?null:"Get All News Success!", $data);
+                }else{
+                    $data = $connect->getOne($id);
+                    $response->setResponse(!$data?404:200, !$data?null:"Get News Success!", $data);
+                }
+                $response->sendResponse();
+            }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
+                    $data = $connect->create($_POST);
+                    $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
+                    $response->sendResponse();
+            }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
+                $id = $_GET["id"];
+                preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+                $_PUT = [];
+                if($dataRawRequest===[]){
+                    $_PUT = json_decode(file_get_contents("php://input"), true);
+                }else{
+                    foreach($dataRawRequest as $rawRequest) {
+                        $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
+                    }
+                }
+                if(empty($id)){
+                    $response->setResponse(503);
+                }else{
+                    $data = $connect->update($id, $_PUT);
+                    $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
+                }
+                $response->sendResponse();
+            }elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
+                $id = $_GET["id"];
+                if(empty($id)){
+                    $response->setResponse(503);
+                }else{
+                    $data = $connect->delete($id);
+                    $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
+                }
+                $response->sendResponse();
+
+            }else{
+                $response->setResponse(405);
+                $response->sendResponse();
+            }
+        }elseif($page === "Carts"){
+            $connect = new CartsController();
+            if($_SERVER['REQUEST_METHOD'] === 'GET'){
+                $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+                if($id === "all"){
+                    $data = $connect->getAll();
+                    $response->setResponse(!$data?503:200, !$data?null:"Get All News Success!", $data);
+                }else{
+                    $data = $connect->getOne($id);
+                    $response->setResponse(!$data?404:200, !$data?null:"Get News Success!", $data);
+                }
+                $response->sendResponse();
+            }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
+                    $data = $connect->create($_POST);
+                    $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
+                    $response->sendResponse();
+            }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
+                $id = $_GET["id"];
+                preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+                $_PUT = [];
+                if($dataRawRequest===[]){
+                    $_PUT = json_decode(file_get_contents("php://input"), true);
+                }else{
+                    foreach($dataRawRequest as $rawRequest) {
+                        $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
+                    }
+                }
+                if(empty($id)){
+                    $response->setResponse(503);
+                }else{
+                    $data = $connect->update($id, $_PUT);
+                    $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
+                }
+                $response->sendResponse();
+            }elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
+                $id = $_GET["id"];
+                if(empty($id)){
+                    $response->setResponse(503);
+                }else{
+                    $data = $connect->delete($id);
+                    $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
+                }
+                $response->sendResponse();
+
+            }else{
+                $response->setResponse(405);
+                $response->sendResponse();
+            }
+        }elseif ($page === "CartItems"){
+            $connect =  new CartItemsController();
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             if($_SERVER['REQUEST_METHOD'] === 'GET'){
                 $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
                 if($id === "all"){
@@ -114,8 +286,13 @@
                 $response->setResponse(405);
                 $response->sendResponse();
             }
+<<<<<<< HEAD
         }elseif ($page === "Users"){
             $connect =  new UsersController();
+=======
+        }elseif($page === "Categories"){
+            $connect = new CategoriesController();
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             if($_SERVER['REQUEST_METHOD'] === 'GET'){
                 $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
                 if($id === "all"){
@@ -127,6 +304,7 @@
                 }
                 $response->sendResponse();
             }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
+<<<<<<< HEAD
                 if(isset($_GET["method"]) && $_GET["method"] === "PUT"){
                     $id = $_GET["id"];
                     if(empty($id)){
@@ -189,6 +367,11 @@
                 $data = $connect->create($_POST);
                 $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
                 $response->sendResponse();
+=======
+                    $data = $connect->create($_POST);
+                    $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
+                    $response->sendResponse();
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
                 $id = $_GET["id"];
                 preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
@@ -216,12 +399,21 @@
                     $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
                 }
                 $response->sendResponse();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             }else{
                 $response->setResponse(405);
                 $response->sendResponse();
             }
+<<<<<<< HEAD
         }elseif ($page === "Productvariants"){
             $connect =  new ProductvariantsController();
+=======
+        }elseif($page === "Promotions"){
+            $connect = new PromotionsController();
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             if($_SERVER['REQUEST_METHOD'] === 'GET'){
                 $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
                 if($id === "all"){
@@ -233,9 +425,15 @@
                 }
                 $response->sendResponse();
             }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
+<<<<<<< HEAD
                 $data = $connect->create($_POST);
                 $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
                 $response->sendResponse();
+=======
+                    $data = $connect->create($_POST);
+                    $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
+                    $response->sendResponse();
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
                 $id = $_GET["id"];
                 preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
@@ -263,10 +461,15 @@
                     $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
                 }
                 $response->sendResponse();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             }else{
                 $response->setResponse(405);
                 $response->sendResponse();
             }
+<<<<<<< HEAD
         }elseif ($page === "Orderitems"){
             $connect =  new OrderitemsController();
             if($_SERVER['REQUEST_METHOD'] === 'GET'){
@@ -316,10 +519,68 @@
             }
         }
         else{
+=======
+        }else {
+>>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
             $response->setResponse(404);
+>>>>>>> d586733831593df4ac7cd94a7c58e3ec25bb1d2a
             $response->sendResponse();
         }
-    }else{
-        $response->setResponse(400);
+    } elseif ($page === "Reviews") {
+        $connect = new ReviewsController();
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+            if ($id === "all") {
+                $data = $connect->getAll();
+                $response->setResponse(!$data ? 503 : 200, !$data ? null : "Get All News Success!", $data);
+            } else {
+                $data = $connect->getOne($id);
+                $response->setResponse(!$data ? 404 : 200, !$data ? null : "Get News Success!", $data);
+            }
+            $response->sendResponse();
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $data = $connect->create($_POST);
+            $response->setResponse(!$data ? 503 : 200, !$data ? null : "POST News Success!");
+            $response->sendResponse();
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
+            $id = $_GET["id"];
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u', file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            $_PUT = [];
+            if ($dataRawRequest === []) {
+                $_PUT = json_decode(file_get_contents("php://input"), true);
+            } else {
+                foreach ($dataRawRequest as $rawRequest) {
+                    $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
+                }
+            }
+            if (empty($id)) {
+                $response->setResponse(503);
+            } else {
+                $data = $connect->update($id, $_PUT);
+                $response->setResponse(!$data ? 404 : 200, !$data ? null : "PUT News Success!", $data);
+            }
+            $response->sendResponse();
+        } elseif ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
+            $id = $_GET["id"];
+            if (empty($id)) {
+                $response->setResponse(503);
+            } else {
+                $data = $connect->delete($id);
+                $response->setResponse(!$data ? 404 : 200, !$data ? null : "DELETE News Success!", $data);
+            }
+            $response->sendResponse();
+        } else {
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    } else {
+        $response->setResponse(404);
         $response->sendResponse();
     }
+<<<<<<< HEAD
+} else {
+    $response->setResponse(400);
+    $response->sendResponse();
+}
+=======
+>>>>>>> d586733831593df4ac7cd94a7c58e3ec25bb1d2a

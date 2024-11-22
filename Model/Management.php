@@ -18,4 +18,3 @@ abstract class Management
     abstract public function updateData($id, $data, $mode);
     abstract public function deleteDataById($id, $mode);
 }
-
