@@ -38,7 +38,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -86,7 +86,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -145,7 +145,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -192,7 +192,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -239,7 +239,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -286,7 +286,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -333,7 +333,7 @@ if($_GET['page']){
             $response->sendResponse();
         } elseif ($_SERVER['REQUEST_METHOD'] === 'PUT') {
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u', file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u', file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if ($dataRawRequest === []) {
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -380,7 +380,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -428,7 +428,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -453,7 +453,6 @@ if($_GET['page']){
                 $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
             }
             $response->sendResponse();
-
         }else{
             $response->setResponse(405);
             $response->sendResponse();
@@ -476,7 +475,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -535,7 +534,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -582,7 +581,7 @@ if($_GET['page']){
             $response->sendResponse();
         }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
             $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\s]+)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
             $_PUT = [];
             if($dataRawRequest===[]){
                 $_PUT = json_decode(file_get_contents("php://input"), true);
@@ -611,8 +610,134 @@ if($_GET['page']){
             $response->setResponse(405);
             $response->sendResponse();
         }
-    }
-    else {
+    }elseif($page === "Products"){
+        $connect = new ProductsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+            if($id === "all"){
+                $data = $connect->getAll();
+                $response->setResponse(!$data?503:200, !$data?null:"Get All News Success!", $data);
+            }else{
+                $data = $connect->getOne($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get News Success!", $data);
+            }
+            $response->sendResponse();
+        }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
+            if(isset($_GET["method"]) && $_GET["method"] === "PUT"){
+                $id = $_GET["id"];
+                if(empty($id)){
+                    $response->setResponse(503);
+                }else{
+                    $data = $connect->update($id, $_POST, $_FILES);
+                    $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
+                }
+            }elseif(!isset($_GET["method"])){
+                $data = $connect->create($_POST, $_FILES);
+                $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
+            }else{
+                $response->setResponse(400);
+            }
+            $response->sendResponse();
+        }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
+            $id = $_GET["id"];
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            $_PUT = [];
+            if($dataRawRequest===[]){
+                $_PUT = json_decode(file_get_contents("php://input"), true);
+            }else{
+                foreach($dataRawRequest as $rawRequest) {
+                    $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
+                }
+            }
+            if(empty($id)){
+                $response->setResponse(503);
+            }else{
+                $data = $connect->update($id, $_PUT, []);
+                $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
+            }
+            $response->sendResponse();
+        }elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
+            $id = $_GET["id"];
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            $_DELETE = null;
+            if($dataRawRequest===[]){
+                $_DELETE = json_decode(file_get_contents("php://input"), true);
+            }else{
+                foreach($dataRawRequest as $rawRequest) {
+                    $_DELETE[$rawRequest[1]] = trim($rawRequest[2]);
+                }
+            }
+            if(empty($id)){
+                $response->setResponse(503);
+            }else{
+                $data = $connect->delete($id, $_DELETE);
+                $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page === "Imageproducts"){
+        $connect = new ImageproductsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+            if($id === "all"){
+                $data = $connect->getAll();
+                $response->setResponse(!$data?503:200, !$data?null:"Get All News Success!", $data);
+            }else{
+                $data = $connect->getOne($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get News Success!", $data);
+            }
+            $response->sendResponse();
+        }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
+            if(isset($_GET["method"]) && $_GET["method"] === "PUT"){
+                $id = $_GET["id"];
+                if(empty($id)){
+                    $response->setResponse(503);
+                }else{
+                    $data = $connect->update($id, $_POST, $_FILES);
+                    $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
+                }
+            }elseif(!isset($_GET["method"])){
+                $data = $connect->create($_POST, $_FILES);
+                $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
+            }else{
+                $response->setResponse(400);
+            }
+            $response->sendResponse();
+        }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
+            $id = $_GET["id"];
+            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+            $_PUT = [];
+            if($dataRawRequest===[]){
+                $_PUT = json_decode(file_get_contents("php://input"), true);
+            }else{
+                foreach($dataRawRequest as $rawRequest) {
+                    $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
+                }
+            }
+            if(empty($id)){
+                $response->setResponse(503);
+            }else{
+                $data = $connect->update($id, $_PUT, []);
+                $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
+            }
+            $response->sendResponse();
+        }elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
+            $id = $_GET["id"];
+            if(empty($id)){
+                $response->setResponse(503);
+            }else{
+                $data = $connect->delete($id);
+                $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }else {
         $response->setResponse(404);
         $response->sendResponse();
     }

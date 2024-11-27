@@ -1,6 +1,6 @@
-
 <?php
-include "header.php"
+    $BASE_URL = "./";
+    include $BASE_URL . "View/User/header.php";
 ?>
 
 <section class="chitiet-section custom-padding">
@@ -272,8 +272,6 @@ include "header.php"
 
     </div>
 </div>
-
-
 <?php
-include "footer.php"
+    include $BASE_URL . "View/User/footer.php"
 ?>

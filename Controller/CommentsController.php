@@ -20,7 +20,7 @@
             $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : null;
             $dataRequest["news_id"] = isset($dataRequest["news_id"]) ? $dataRequest["news_id"] : null;
             $dataRequest["content"] = isset($dataRequest["content"]) ? $dataRequest["content"] : null;
-            $dataRequest["likes"] = isset($dataRequest["likes"]) ? $dataRequest["likes"] : null;
+            $dataRequest["likes"] = isset($dataRequest["likes"]) && ($dataRequest["likes"]==0 || $dataRequest["likes"]==1) ? $dataRequest["likes"] : 0;
             $dataRequest["parent_comment"] = isset($dataRequest["parent_comment"]) ? $dataRequest["parent_comment"] : null;
             return $this->execute->addData($dataRequest);
         }
@@ -30,11 +30,10 @@
             if(!$dataOld): return false;
             endif;
             settype($dataOld, 'array');
-
             $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : $dataOld["user_id"];
             $dataRequest["news_id"] = isset($dataRequest["news_id"]) ? $dataRequest["news_id"] : $dataOld["news_id"];
             $dataRequest["content"] = isset($dataRequest["content"]) ? $dataRequest["content"] : $dataOld["content"];
-            $dataRequest["likes"] = isset($dataRequest["likes"]) ? $dataRequest["likes"] : $dataOld["likes"];
+            $dataRequest["likes"] = isset($dataRequest["likes"]) && ($dataRequest["likes"]==0 || $dataRequest["likes"]==1) ? $dataRequest["likes"] : $dataOld["likes"];
             $dataRequest["parent_comment"] = isset($dataRequest["parent_comment"]) ? $dataRequest["parent_comment"] : $dataOld["parent_comment"];
             $dataRequest["created_at"] = isset($dataRequest["created_at"]) ? $dataRequest["created_at"] : $dataOld["created_at"];
             return !$this->execute->updateData($id, $dataRequest)? false : $dataOld;

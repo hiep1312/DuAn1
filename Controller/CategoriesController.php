@@ -27,7 +27,6 @@ class CategoriesController {
         if (!$dataOld): return false;
         endif;
         settype($dataOld, 'array');
-
         $dataRequest["name"] = isset($dataRequest["name"]) ? $dataRequest["name"] : $dataOld["name"];
         $dataRequest["description"] = isset($dataRequest["description"]) ? $dataRequest["description"] : $dataOld["description"];
         return !$this->execute->updateData($id, $dataRequest) ? false : $dataOld;

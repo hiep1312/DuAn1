@@ -40,14 +40,14 @@ class UsersController{
         endif;
         setType($dataOld, "array");
         $dataRequest['avatar'] = $dataOld['avatar'];
-        $dataRequest['name'] = isset($dataRequest["name"]) ? $dataRequest["name"] : null;
-        $dataRequest['email'] = isset($dataRequest["email"]) ? $dataRequest["email"] : null;
-        $dataRequest['password'] = isset($dataRequest["password"]) ? $dataRequest["password"] : null;
-        $dataRequest['phone'] = isset($dataRequest["phone"]) ? $dataRequest["phone"] : null;
-        $dataRequest['address'] = isset($dataRequest["address"]) ? $dataRequest["address"] : null;
-        $dataRequest['bio'] = isset($dataRequest["bio"]) ? $dataRequest["bio"] : null;
-        $dataRequest['role_id '] = isset($dataRequest["role_id "]) ? $dataRequest["role_id "] : null;
-        $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest["status"] : 1;
+        $dataRequest['name'] = isset($dataRequest["name"]) ? $dataRequest["name"] : $dataOld['name'];
+        $dataRequest['email'] = isset($dataRequest["email"]) ? $dataRequest["email"] : $dataOld['email'];
+        $dataRequest['password'] = isset($dataRequest["password"]) ? $dataRequest["password"] : $dataOld['password'];
+        $dataRequest['phone'] = isset($dataRequest["phone"]) ? $dataRequest["phone"] : $dataOld['phone'];
+        $dataRequest['address'] = isset($dataRequest["address"]) ? $dataRequest["address"] : $dataOld['address'];
+        $dataRequest['bio'] = isset($dataRequest["bio"]) ? $dataRequest["bio"] : $dataOld['bio'];
+        $dataRequest['role_id'] = isset($dataRequest["role_id"]) ? $dataRequest["role_id"] : $dataOld['role_id'];
+        $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest["status"] : $dataOld['status'];
         try {
             if($file["avatar"]['error']===UPLOAD_ERR_OK || (array_keys($file["avatar"]['error'], UPLOAD_ERR_OK, true) && is_array($file["avatar"]["error"]))){
                 if(gettype($file["avatar"]["name"])==="array"){

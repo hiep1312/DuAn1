@@ -2,14 +2,20 @@ class Validate{
     #messageNotificationDefault = {
         email: ["Email không hợp lệ!", "Email hợp lệ!"],
         phone: ["SĐT không hợp lệ", "SĐT hợp lệ"],
-        textLimit: ["Không đạt đủ số lượng chữ", "Đạt đủ số lượng chữ"],
-        image: ["Ảnh không hợp lệ", "Ảnh hợp lệ"]
+        textLimit: ["Không đạt đủ số lượng ký tự", "Đạt đủ số lượng ký tự"],
+        image: ["Ảnh không hợp lệ", "Ảnh hợp lệ"],
+        paragraph: ["Không đạt đủ số lượng chữ", "Đạt đủ số lượng chữ"],
+        number: ["Không phải là số!", "Số hợp lệ"],
+        date: ["Ngày không hợp lệ", "Ngày hợp lệ"]
     }
     #typeAndValidations = {
         email: /^[^@.]+@[a-zA-Z]{3,9}\.([a-zA-Z]{2,7}|[a-zA-Z]{2,7}\.[a-zA-Z]{2,7})$/,
         phone: /^(0|\+84|84)\d{9}$/,
         textLimit: "Code hidden",
-        image: "Code hidden"
+        image: "Code hidden",
+        paragraph: "Code hidden",
+        number: /^\s*\d+\s*$/,
+        date: /^(?:\d{4}-\d{2}-\d{2}|\d{4}\/\d{2}\/\d{2})$/
     }
     constructor(validate = false, type = false, message = [], options = null) {
         if(typeof validate === "object" && !type) this.checkFormAndDisplay(validate);
@@ -49,9 +55,17 @@ class Validate{
                 Object.defineProperty(this.#typeAndValidations,"textLimit", {
                     configurable: false,
                     enumerable: true,
-                    value: new RegExp(`\\w{${options.toFixed(0)},}`, "u"),
+                    value: new RegExp(`\^\\w{${options.toFixed(0)},}\$`, "u"),
                     writable: true
                 })
+            }else if(type==="paragraph" && typeof options === "number"){
+                options = options - 1;
+                Object.defineProperty(this.#typeAndValidations,"paragraph", {
+                    configurable: false,
+                    enumerable: true,
+                    value: new RegExp(`\\s*[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+(?:\\s+[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+){${options.toFixed(0)},}\$`, "ui"),
+                    writable: true
+                });
             }else if(!Object.keys(this.#typeAndValidations).some(value => value===type)){
                 throw new Error("Invalid type!");
             }
@@ -59,7 +73,6 @@ class Validate{
             else if(!Array.isArray(message) && typeof message !== "string") throw new Error("Invalid message!");
             formInput.addEventListener("submit", e => {
                 e.preventDefault();
-                const inputData = input.value;
                 const feedback = (input, type, message = '', status = 0) => {
                     const checkFeedbackOld = input.nextElementSibling;
                     if(checkFeedbackOld && (checkFeedbackOld.classList.contains("invalid-feedback") || checkFeedbackOld.classList.contains("valid-feedback"))){
@@ -74,36 +87,45 @@ class Validate{
                         input.after(feedbackElement);
                     }
                 }
-                if(type==="image"){
-                    let inputFile = input.files ?? false;
-                    if(inputFile.length > 0 && inputFile){
-                        inputFile = Array.from(inputFile);
-                        let checkImage = true;
-                        for(let file of inputFile){
-                            if(!file.type.includes("image/")){
-                                checkImage = false;
-                                break;
+                const check = () => {
+                    const inputData = input.value;
+                    if (type === "image") {
+                        let inputFile = input.files ?? false;
+                        if (inputFile.length > 0 && inputFile) {
+                            inputFile = Array.from(inputFile);
+                            let checkImage = true;
+                            for (let file of inputFile) {
+                                if (!file.type.includes("image/")) {
+                                    checkImage = false;
+                                    break;
+                                }
                             }
-                        }
-                        if(checkImage){
-                            input.classList.toggle("is-valid", true);
-                            input.classList.toggle("is-invalid", false);
-                            feedback(input, type, message[1] ?? false, 1);
+                            if (checkImage) {
+                                input.classList.toggle("is-valid", true);
+                                input.classList.toggle("is-invalid", false);
+                                feedback(input, type, message[1] ?? false, 1);
+                            } else {
+                                input.classList.toggle("is-invalid", true);
+                                input.classList.toggle("is-valid", false);
+                                feedback(input, type, message[0] ?? false, 0);
+                            }
                         }else{
                             input.classList.toggle("is-invalid", true);
                             input.classList.toggle("is-valid", false);
                             feedback(input, type, message[0] ?? false, 0);
                         }
+                    } else if (this.#typeAndValidations[type].test(inputData)) {
+                        input.classList.toggle("is-valid", true);
+                        input.classList.toggle("is-invalid", false);
+                        feedback(input, type, message[1] ?? false, 1);
+                    } else {
+                        input.classList.toggle("is-invalid", true);
+                        input.classList.toggle("is-valid", false);
+                        feedback(input, type, message[0] ?? false, 0);
                     }
-                }else if(this.#typeAndValidations[type].test(inputData)){
-                    input.classList.toggle("is-valid", true);
-                    input.classList.toggle("is-invalid", false);
-                    feedback(input, type, message[1] ?? false, 1);
-                }else{
-                    input.classList.toggle("is-invalid", true);
-                    input.classList.toggle("is-valid", false);
-                    feedback(input, type, message[0] ?? false, 0);
                 }
+                check();
+                input.addEventListener("input", () => check(), false);
             }, false);
         }catch(error){
             console.error(error);
@@ -114,51 +136,111 @@ class Validate{
             return undefined;
         }else{
             let checkOld = null;
-            Object.entries(inputs).forEach((input, location) => {
-                if(typeof input[1] !== "object"){
-                    return undefined;
-                }else{
-                    if(!input[1].type){
-                        console.error(`Type not found in inputs! index ${location}!`);
+            try{
+                Object.entries(inputs).forEach((input, location) => {
+                    if(typeof input[1] !== "object"){
+                        throw "Undefined";
                     }else{
-                        checkOld = this.check(input[0], input[1].type, input[1].options) ?? false;
-                        if(checkAll || !checkOld){
-                            return false;
-                        }else if(!checkAll || checkOld){
-                            return true;
+                        if(!input[1].type){
+                            console.error(`Type not found in inputs! index ${location}!`);
+                        }else{
+                            checkOld = this.check(input[0], input[1].type, input[1].options) ?? false;
+                            if(checkAll && !checkOld){
+                                throw "False";
+                            }else if(!checkAll && checkOld){
+                                throw "True";
+                            }
                         }
                     }
-                }
-            });
+                });
+            }catch (error){
+                if(error==="False") return false;
+                else if(error==="True") return true;
+                else return undefined;
+            }
             return checkAll;
         }
     }
     check(data, type, options = null){
-        if(type==="textLimit" && typeof options === "number"){
-            Object.defineProperty(this.#typeAndValidations,"textLimit", {
-                configurable: false,
-                enumerable: true,
-                value: new RegExp(`\\w{${options.toFixed(0)},}`, "u"),
-                writable: true
-            });
-        }else if(!Object.keys(this.#typeAndValidations).some(value => value===type)){
+        try {
+            let input;
+            if (data instanceof Element) {
+                input = data
+            } else if (data instanceof NodeList || data instanceof HTMLCollection) {
+                input = data.item(0);
+            } else {
+                input = document.querySelector(data);
+            }
+            if(type!=="image") input = input.value;
+            data = input;
+            if (type === "textLimit" && typeof options === "number") {
+                Object.defineProperty(this.#typeAndValidations, "textLimit", {
+                    configurable: false,
+                    enumerable: true,
+                    value: new RegExp(`\\w{${options.toFixed(0)},}`, "u"),
+                    writable: true
+                });
+            } else if (type === "paragraph" && typeof options === "number") {
+                options = options - 1;
+                Object.defineProperty(this.#typeAndValidations, "paragraph", {
+                    configurable: false,
+                    enumerable: true,
+                    value: new RegExp(`\\s*[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+(?:\\s+[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+){${options.toFixed(0)},}\$`, "ui"),
+                    writable: true
+                });
+            } else if (!Object.keys(this.#typeAndValidations).some(value => value === type)) {
+                return undefined;
+            }
+            if (type === "image") {
+                let dataFile = data.files ?? false;
+                if (dataFile && dataFile.length > 0) {
+                    dataFile = Array.from(dataFile);
+                    let checkImage = true;
+                    for (let file of dataFile) {
+                        if (!file.type.includes("image/")) {
+                            checkImage = false;
+                            break;
+                        }
+                    }
+                    return checkImage;
+                }
+                return false;
+            }
+            return this.#typeAndValidations[type].test(data);
+        }catch(error){
+            console.error("Error: A fatal error has occurred!");
+            console.error(error);
             return undefined;
         }
-        if(type==="image"){
-            let data = data.files ?? false;
-            if(data && data.length > 0){
-                data = Array.from(data);
-                let checkImage = true;
-                for(let file of data){
-                    if(!file.type.includes("image/")){
-                        checkImage = false;
-                        break;
-                    }
-                }
-                return checkImage;
+    }
+    resetForm(selector){
+        try {
+            let input;
+            if (selector instanceof Element) {
+                input = selector;
+            } else if (selector instanceof NodeList || selector instanceof HTMLCollection) {
+                input = selector.item(0);
+            } else {
+                input = document.querySelector(selector);
             }
+            if(!(input instanceof HTMLFormElement)) throw new Error("This is not a Form Element");
+            input.querySelectorAll("input, textarea").forEach(item => {
+                item.classList.remove("is-valid", "is-invalid");
+                item.value = "";
+            });
+            input.querySelectorAll("img").forEach(image => {
+                image.src = "";
+            });
+            input.querySelectorAll("select").forEach(select => {
+                select.firstElementChild.selected = true;
+                while(select.nextElementSibling!==null){
+                    select.nextElementSibling.selected = false;
+                }
+            });
+            input.querySelectorAll(".valid-feedback, .invalid-feedback").forEach(item => item.remove());
+        }catch (error){
+            console.error(error);
         }
-        return this.#typeAndValidations[type].test(data);
     }
     setMessageDefault(type, message){
         if(!Object.keys(this.#messageNotificationDefault).some(value => value===type) || !Array.isArray(message) || (message.length<2 && Array.isArray(message))) return false;

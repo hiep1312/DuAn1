@@ -16,6 +16,7 @@ class HTTPRequest{
     };
     #count = 20;
     #page = 0;
+    #status;
     constructor(tableName) {
         this.#tableName = tableName ?? false;
         this.#API_BASE = APIServer.BASE_URL;
@@ -26,6 +27,7 @@ class HTTPRequest{
         initApi.method = method;
         if(data) initApi.body = data;
         const response = await fetch(api, initApi);
+        this.#status = response.status;
         if(!response.ok){
             console.error(`Fetch API Error: ${this.#typeResponse[response.type]}`);
             throw new Error("Fetch API failed");
@@ -65,7 +67,7 @@ class HTTPRequest{
         if(typeof image !== "boolean") console.error("Parameter image Invalid!");
         data = data || this.#dataAPI;
         if(!(data instanceof FormData)) throw new Error("Data must be an object FormData!");
-        return await this.#request(null, "POST", data, image);
+        return await this.#request(null, "POST", data, false);
     }
 
     async put(id, data, image = false){
@@ -74,7 +76,7 @@ class HTTPRequest{
         if(typeof image !== "boolean") console.error("Parameter image Invalid!");
         data = data || this.#dataAPI;
         if(!(data instanceof FormData)) throw new Error("Data must be an object FormData!");
-        return await this.#request(id, "PUT", data, image);
+        return await this.#request(id, image?"POST":"PUT", data, image);
     }
 
     async delete(id){
@@ -107,6 +109,9 @@ class HTTPRequest{
         }else{
             throw new Error("Parameter cannot be converted");
         }
+    }
+    getStatus(){
+        return this.#status;
     }
     set tableName(value){
         this.#tableName = value;

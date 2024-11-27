@@ -1,5 +1,6 @@
-<?php 
-include "header.php";
+<?php
+$BASE_URL = "./";
+include $BASE_URL . "View/User/header.php";
 ?>
 
 <!-- Hero Section -->
@@ -365,6 +366,6 @@ include "header.php";
       </div>
     </section>
 
-<?php 
-include "footer.php";
+<?php
+include $BASE_URL . "View/User/footer.php"
 ?>

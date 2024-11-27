@@ -1,8 +1,7 @@
-
 <?php
-include "header.php" 
+$BASE_URL = "./";
+include $BASE_URL . "View/User/header.php";
 ?>
-
 <style>
     .border-custom{
         border-color: #c4fb6d !important;
@@ -11,7 +10,6 @@ include "header.php"
         background-color: orange;
         color: #fff;
     }
-    
 </style>
 <body>
   <section class="bg-primary-custom custom-padding h-full w-100" style="z-index: 1">
@@ -106,5 +104,5 @@ include "header.php"
 
 
 <?php
-include "footer.php" 
+include $BASE_URL . "View/User/footer.php"
 ?>
