@@ -1,5 +1,6 @@
 <?php
-include "header.php"
+$BASE_URL = "./";
+include $BASE_URL . "View/User/header.php";
 ?>
 <section class="bg-secondary-opacity-custom">
       <div class="container custom-padding">
@@ -14,29 +15,32 @@ include "header.php"
               Liên hệ chúng tôi
             </h1>
             <p data-aos="fade-up" data-aos-delay="200">
-              <form>
+              <form id="formAdd" method="POST"  enctype="multipart/form-data" style="--bs-form-invalid-color: pink">
                 <div class="mb-3">
                   <div class="mb-3">
-                    <label for="nameContacts"  class="form-label">Name</label>
-                    <input type="text" placeholder="Tên của bạn" class="form-control" id="nameContacts">
+                    <label for="name"  class="form-label">Tên liên hệ</label>
+                    <input name="name" type="text" placeholder="Tên của bạn" class="form-control" id="name">
                   </div>
-                  <label for="emailContacts" class="form-label">Email address</label>
-                  <input type="email" placeholder="name123@gmail.com" class="form-control" id="emailContacts" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text text-light">Chúng tôi sẽ không bao giờ chia sẻ email này cho bất kì ai</div>
+                  <label for="email" class="form-label">Địa chỉ email</label>
+                  <input name="email" type="email" placeholder="name123@gmail.com" class="form-control" id="email" aria-describedby="emailHelp">
+<!--                  <div id="emailHelp" class="form-text text-light">Chúng tôi sẽ không bao giờ chia sẻ email này cho bất kì ai</div>-->
                 </div>
                 <div class="mb-3">
-                  <label for="phoneContacts" class="form-label">Phone</label>
-                  <input type="text" class="form-control" placeholder="Mời bạn nhập sdt" id="phoneContacts">
+                  <label for="phone" class="form-label">SDT</label>
+                  <input name="phone" type="text" class="form-control" placeholder="Mời bạn nhập sdt" id="phone">
                 </div>
                 <div class="mb-3">
-                  <label for="messageContacts" class="form-label">Message</label>
-                  <textarea class="form-control" id="messageContacts" placeholder="Ý kiến muốn đóng góp hoặc yêu cầu của bạn" rows="3"></textarea>
+                  <label for="message" class="form-label">Thắc mắc</label>
+                  <textarea name="message" class="form-control" id="message" placeholder="Ý kiến muốn đóng góp hoặc yêu cầu của bạn" rows="3"></textarea>
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  <label class="form-check-label" for="exampleCheck1">Hoàn thành</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Gửi liên hệ</button>
+                  <div class=" d-none my-3 alert" role="alert" id="alert">
+
+                  </div>
               </form>
             </p>
           </div>
@@ -117,8 +121,6 @@ include "header.php"
       </div>
       
     </section>
-
-
 <?php
-include "footer.php"
+include $BASE_URL . "View/User/footer.php"
 ?>

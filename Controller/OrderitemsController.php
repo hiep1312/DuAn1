@@ -9,7 +9,7 @@ class OrderitemsController{
         return $this->execute->getAllData();
     }
     public function getOne($id){
-        $this->execute->getDataById($id);
+        return $this->execute->getDataById($id);
     }
     public function create($dataRequest){
         $dataRequest['order_id'] = isset($dataRequest['order_id']) ? $dataRequest['order_id']: null;

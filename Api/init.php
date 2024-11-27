@@ -12,4 +12,4 @@
     require_once "../Controller/CartItemsController.php";
     require_once "../Controller/CategoriesController.php";
     require_once "../Controller/PromotionsController.php";
-?>
+    require_once "../Controller/ProductsController.php";

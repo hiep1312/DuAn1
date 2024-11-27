@@ -5,139 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Controller/ContactsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/ReviewsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controller/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731477691Screenshot 2024-10-07 231442.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731480359Screenshot 2024-10-07 235056.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731480460Screenshot 2024-10-07 231408.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731498458Screenshot 2024-11-05 230202.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731499661Screenshot 2024-10-16 221133.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731572060Screenshot 2024-10-07 201138.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Images/News/1731688488Screenshot 2024-10-07 235056.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Comments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Contacts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Reviews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/Users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Model/nhaccuviet.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/dashboard/chart/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/breadcrumb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/footer-block.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/footer-js.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/head-css.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/head-page-meta.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/header-content.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/layout-vertical.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/menu-list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/sidebar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/layouts/topbar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/other/ok/sample-page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/other/sample-page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/pages/Account/forgot_pass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/pages/Account/login-v3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/pages/Account/register-v3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/404.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/About.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Home1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Home2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Home3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/LandingPage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Newsdetails.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/OurWorks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Post.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Pricing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Products.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Reviews.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/Single-work.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/013.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/017.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/020.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/022.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/027.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/028.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/029.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/08.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/222.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/333.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/42.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/Artboard 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anh01.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anh02.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anh03.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/anhbl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/gh9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/giaykhen1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/giaykhen2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/km6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/logo1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/logonhac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/mota1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/thanhtuu1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin7.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/tin9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/chitietsp1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/thanhtoan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CartItemsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CartsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/CommentsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/OrderitemsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/OrdersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/ProductvariantsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Controller/PromotionsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Users/17314122031667188972229-rsz_1656179273495-the-ukrainian-book-institute-purchases-3809-thousand-books-for-public-libraries1 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/Users/1731688488Screenshot 2024-10-07 235056.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/CartItems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Carts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Orderitems.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Productvariants.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Model/Promotions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/show.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Images/News/17314117311667188972229-rsz_1656179273495-the-ukrainian-book-institute-purchases-3809-thousand-books-for-public-libraries1 (2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/init.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ContactsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ContactsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/NewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/NewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/ReviewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ReviewsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Management.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Management.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/News.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/News.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/pcoded.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/pcoded.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/dashboard/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/elements/bc_typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/elements/bc_typography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/layouts/head-page-meta.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/layouts/head-page-meta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/login-v3.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/pages/login-v3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/OurWorks.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Khuyenmai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Services.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/assets/image/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/assets/image/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/assets/image/42.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/assets/image/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/assets/image/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Reviews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/elements/quanlytintuc/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Pricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Pricing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Single-work.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Single-work.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/chitietsp1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/chitietsp1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,23 +88,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.About.php.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/laragon/www/DuAn1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.About.php.executor": "Run",
+    "JavaScript Debug.index.php.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "C:/laragon/www/DuAn1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ledan\OneDrive\Documents\codeinclass\DuAn1" />
@@ -271,7 +180,11 @@
       <workItem from="1732030547366" duration="3989000" />
       <workItem from="1732035801498" duration="78000" />
       <workItem from="1732035890506" duration="4244000" />
-      <workItem from="1732040228987" duration="419000" />
+      <workItem from="1732040228987" duration="1275000" />
+      <workItem from="1732248550743" duration="23278000" />
+      <workItem from="1732274674266" duration="6715000" />
+      <workItem from="1732284832020" duration="3940000" />
+      <workItem from="1732290704068" duration="796000" />
     </task>
     <servers />
   </component>

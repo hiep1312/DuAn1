@@ -1,65 +1,58 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-
-<!--<script>-->
-<!--    let data = async() =>{-->
-<!--        const formdata = new FormData();-->
-<!--        formdata.append("name", "Nguyen Chi Binh");-->
-<!--        formdata.append("phone", "023842347234");-->
-<!--        formdata.append("password", "123456789");-->
-<!--        let res= await fetch("http://localhost/Duan1_nhom7/DuAn1/Api/Users",{-->
-<!--            method: "POST",-->
-<!--            body: formdata,-->
-<!--        });-->
-<!--        let users = await res.json();-->
-<!--        console.log(users);-->
-<!--    };-->
-<!--    data();-->
-<!--</script>-->
-
-<!--
-<form action="" enctype="multipart/form-data" id="form" method="post">
-    <input type="file" name="file[]" id="file" multiple>
-    <button type="submit">Gui</button>
-</form>
-<script>
-    document.getElementById("form").addEventListener("submit", async e => {
-        e.preventDefault();
-        const formdata = new FormData(e.target);
-        const res = await fetch("http://localhost/DuAn1/Api/Users", {
-            method: "POST",
-            body: formdata
-        });
-        const data = await res.json();
-        console.log(data)
-    });
-</script>-->
-
-</body>
-</html>
-<script>
-    let data = async() =>{
-        const formdata = new FormData();
-        formdata.append("comment", "Hôm nay ăn j");
-        // formdata.append("descriptions", "OKOKOKOK");
-        // formdata.append("start_date", "2024-01-01");
-        // formdata.append("usage_limit", 16);
-        let res= await fetch("http://localhost/Duan1_nhom7/DuAn1/Api/Productvariants",{
-            method: "GET",
-            // body: formdata,
-        });
-        let data2 = await res.json();
-        console.log(data2);
-        // console.log(...formdata)
-    };
-    data();
-</script>
+<?php
+$role = $_GET["role"] ?? false;
+$page = $_GET["page"] ?? false;
+$function = $_GET["function"] ?? false;
+if($role==="admin"){
+    switch($page){
+        case "dashboard":
+            include "View/Admin/index.php";
+            break;
+            case "contacts":
+            if($function==="add"){
+                include "View/Admin/pages/Contacts/add.php";
+            }else{
+                include "View/Admin/pages/Contacts/index.php";
+            }
+            break;
+            case "orders":
+            if($function==="add"){
+                include "View/Admin/pages/Orders/add.php";
+            }else{
+                include "View/Admin/pages/Orders/index.php";
+            }
+            break;
+            case "orderitems":
+            if($function==="add"){
+                include "View/Admin/pages/Orderitems/add.php";
+            }else{
+                include "View/Admin/pages/Orderitems/index.php";
+            }
+            break;
+            case "news":
+            if($function==="add"){
+                include "View/Admin/pages/News/add.php";
+            }else{
+                include "View/Admin/pages/News/index.php";
+            }
+            break;
+            case "users":
+            if($function==="add"){
+                include "View/Admin/pages/Users/add.php";
+            }else{
+                include "View/Admin/pages/Users/index.php";
+            }
+            break;
+        default:
+            include "View/Admin/index.php";
+    }
+}else{
+    switch($page){
+        case "Contacts":
+            include "View/User/Contact.php";
+            break;
+        default:
+            include_once "View/User/404.php";
+            break;
+    }
+//    include_once "View/User/404.php";
+}
