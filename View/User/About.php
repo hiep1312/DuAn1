@@ -14,34 +14,37 @@ include $BASE_URL . "View/User/header.php";
                         <h4
                                 data-aos="fade-right"
                                 class="text-uppercase font-krona-one text-white mb-2"
-                                style="font-size: 24px; padding-left: 80px;">
+                                style="font-size: 36px; padding-left: 40px;">
                             GIỚI THIỆU
                         </h4>
                         <div data-aos="fade-up">
                             <img src="<?php $BASE_URL ?>View/User/assets/image/Artboard 1.png" alt="" style="width: 300px; height: 300px;">
-                            <!-- <h1
+                             <h1
                                   class="text-uppercase font-krona-one border-text h2-text mb-0"
                                 >
-                                  creative
+                                  Của Âm Nhạc
                                 </h1>
                                 <h1
                                   class="text-uppercase font-krona-one border-text h2-text mb-0"
                                 >
-                                  agency
-                                </h1> -->
+                                  Thế giới
+                                </h1>
                         </div>
                     </div>
 
                     <!-- Col 2 -->
                     <div class="col-xs-12 col-lg-8 mt-4 mt-lg-0">
-                        <p data-aos="fade-up" class="text-white sub-text-medium justify-text">
-                            Nhạc Cụ Việt là một trong những cửa hàng bán nhạc cụ trực
-                            tuyến lớn ở Việt Nam, cung cấp đa dạng các loại đàn, trong
-                            đó có đàn Kalimba Cửa hàng chuyên cung cấp đàn Kalimba với
-                            nhiều mẫu mã khác nhau, từ đàn Kalimba 8 phím, 17 phím,
-                            cho đến các mẫu đàn Kalimba cao cấp. Shop cung cấp thông tin
-                            chi tiết về từng loại đàn, bao gồm chất liệu, âm thanh và giá cả.
-                            Bạn cũng có thể tìm thấy các phụ kiện như bao đựng đàn, búa gõ, sách hướng dẫn.
+                        <p data-aos="fade-up" class="text-white fs-5 justify-text">
+                            <span class="fs-4">Nhiệm vụ: </span>
+                            Nhaccuviet có nhiệm vụ cung cấp một nền tảng tiện lợi và dễ dàng cho những ai yêu thích âm nhạc, đặc biệt là những người yêu thích âm thanh du dương, êm ái của đàn Kalimba.
+                        </p>
+                        <p data-aos="fade-up" class="text-white fs-5 justify-text">
+                            <span class="fs-4">Tầm nhìn: </span>
+                            Nhaccuviet hướng đến tầm nhìn trở thành nền tảng hàng đầu trong việc cung cấp đàn Kalimba và các sản phẩm âm nhạc liên quan, không chỉ tại Việt Nam mà còn trên thị trường quốc tế. Chúng tôi mong muốn kết nối những người yêu nhạc, từ người mới bắt đầu đến những nghệ sĩ chuyên nghiệp, tạo ra một cộng đồng âm nhạc mạnh mẽ, sáng tạo và đầy cảm hứng.
+                        </p>
+                        <p data-aos="fade-up" class="text-white fs-5 justify-text">
+                            <span class="fs-4">Sứ Mệnh: </span>
+                            Nhaccuviet không chỉ là nơi bán đàn Kalimba mà còn là một cộng đồng kết nối những người yêu nhạc, chia sẻ kinh nghiệm chơi đàn, cung cấp các hướng dẫn học đàn Kalimba và tạo ra không gian để mọi người có thể khám phá, sáng tạo và thư giãn cùng âm nhạc. Sứ mệnh của chúng tôi là giúp khách hàng tìm thấy sự hài lòng và niềm vui trong từng giai điệu mà đàn Kalimba mang lại, đồng thời nâng cao trải nghiệm mua sắm trực tuyến với sự tin tưởng và tiện lợi.
                         </p>
                         <a
                                 href="?page=Contacts"
@@ -87,6 +90,7 @@ include $BASE_URL . "View/User/header.php";
                                 class="position-absolute position-image-4"
                                 alt="" />
                     </div>
+
                 </div>
 
                 <!-- Col 2 -->
@@ -108,13 +112,12 @@ include $BASE_URL . "View/User/header.php";
                     <p class="justify-text">
                         - Tư vấn tận tình: Đội ngũ chuyên viên của chúng tôi sẵn sàng hỗ trợ bạn trong việc chọn lựa sản phẩm phù hợp nhất. <br>
                         - Giao hàng nhanh chóng: Chúng tôi cam kết giao hàng nhanh và đúng hẹn, đảm bảo bạn sẽ nhận được sản phẩm trong thời gian sớm nhất. <br>
-                        - Mua sắm trực tuyến dễ dàng: Website của chúng tôi thiết kế đơn giản, dễ sử dụng giúp bạn dễ dàng tìm kiếm và đặt mua các sản phẩm. <br>
                     </p>
                     </p>
                     <p data-aos="fade-up" data-aos-delay="200">
                         Ưu đãi hấp dẫn:
                     <div class="justify-text">
-                        Hãy theo dõi các chương trình khuyến mãi, giảm giá và các ưu đãi đặc biệt mà chúng tôi tổ chức thường xuyên để có cơ hội sở hữu các sản phẩm nhạc cụ chất lượng với giá tốt nhất.
+                        Hãy theo dõi các chương trình khyến mãi, giảm giá và các ưu đãi đặc biệt mà chúng tôi tổ chức thường xuyên để có cơ hội sở hữu các sản phẩm nhạc cụ chất lượng với giá tốt nhất.u
                     </div>
                     </p>
 
