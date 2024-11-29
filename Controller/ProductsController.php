@@ -12,6 +12,7 @@ class ProductsController
     public function getOne($id){
         return $this->execute->getDataById($id);
     }
+    
     public function create($dataRequest, $file){
         $dataRequest['name'] = isset($dataRequest['name'])?$dataRequest['name']:null;
         $dataRequest['description'] = isset($dataRequest['description'])?$dataRequest['description']:null;
@@ -21,6 +22,7 @@ class ProductsController
         $dataRequest['imageProducts'] = isset($dataRequest['imageProducts']) ? json_decode($dataRequest['imageProducts'], true):[];
         $dataRequest['productVariants'] = isset($dataRequest['productVariants'])?json_decode($dataRequest['productVariants'], true):[];
         $dataImageRequest = [];
+        try {
         if(isset($file['album']) && !is_array($file['album']['name']) && $file['album']['error']===UPLOAD_ERR_OK){
             $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $file['album']['name'];
             move_uploaded_file($file['album']['tmp_name'], $imagePath);
@@ -34,6 +36,7 @@ class ProductsController
                 }
             }, $file['album']['error']);
         }
+    }catch(Error){}
         if($dataRequest['imageProducts'] && gettype($dataRequest['imageProducts'][0]) !== "array"){
             $dataRequest['imageProducts']['location'] = isset($dataRequest['imageProducts']['location']) && ($dataRequest['imageProducts']['location']==0 || $dataRequest['imageProducts']['location']==1)?$dataRequest['imageProducts']['location']:1;
             $dataRequest['imageProducts']['status'] = isset($dataRequest['imageProducts']['status']) && ($dataRequest['imageProducts']['status']==0 || $dataRequest['imageProducts']['status']==1)?$dataRequest['imageProducts']['status']:1;
@@ -83,6 +86,7 @@ class ProductsController
         $dataRequest['imageProducts'] = isset($dataRequest['imageProducts']) ? json_decode($dataRequest['imageProducts'], true):$dataOld['imageProducts'];
         $dataRequest['productVariants'] = isset($dataRequest['productVariants'])?json_decode($dataRequest['productVariants'], true):$dataOld['productVariants'];
         $dataImageRequest = [];
+        try{
         if(isset($file['album']) && !is_array($file['album']['name']) && $file['album']['error']===UPLOAD_ERR_OK){
             $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $file['album']['name'];
             move_uploaded_file($file['album']['tmp_name'], $imagePath);
@@ -96,6 +100,7 @@ class ProductsController
                 }
             }, $file['album']['error']);
         }
+    }catch(Error){}
         if($dataRequest['imageProducts'] && gettype($dataRequest['imageProducts'][0]) !== "array" && isset($dataRequest['imageProducts']['id']) && !empty($dataOld['imageProducts'])){
             $idImageProducts = $dataRequest['imageProducts']['id'];
             foreach($dataOld['imageProducts'] as $imageProduct){
@@ -165,34 +170,3 @@ class ProductsController
         return !$this->execute->deleteDataById($allId)?false:$checkId;
     }
 }
-
-//$products = new ProductsController();
-//echo "<pre>";
-//echo date("Y-m-d", strtotime("+1 week"));
-//print_r($products->getAll());
-/*print_r($products->create([
-    "name" => "Bánh nhân hạnh",
-    "description" => "Bánh rất ngon đến từ trung quốc",
-    "brand" => "nice4",
-    "stock_quantity" => 500,
-    "imageProducts" => json_encode([
-        ["album" => "nhanhanh.jpg"],
-        ["album" => "chan"]
-    ], JSON_UNESCAPED_UNICODE),
-    "productVariants" => json_encode([
-        ["material" => "Gỗ Đồng",
-        "color" => "Đỏ",
-        "price" => 200000,
-        "price_reduced" => 170000,
-        "stock_quantity" => 200,
-        "start_at" => "2024-01-01",
-        "end_at" => "2024-02-12"],
-        ["material" => "Gỗ Đồng 2",
-        "color" => "Đỏ xanh",
-        "price" => 223400,
-        "price_reduced" => 170000,
-        "stock_quantity" => 500,
-        "start_at" => "2024-01-01",
-        "end_at" => "2024-02-12"]
-    ], JSON_UNESCAPED_UNICODE)
-], []));*/

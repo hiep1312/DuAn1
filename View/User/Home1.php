@@ -1,5 +1,6 @@
-<?php 
-include "header.php";
+<?php
+    $BASE_URL = "./";
+    include $BASE_URL . "View/User/header.php";
 ?>
 <!-- Section 1 - Banner Hero -->
 <section class="bg-hero h-full w-100" style="z-index: 1">
@@ -909,6 +910,6 @@ include "header.php";
       </div>
     </section>
 
-<?php 
-include "footer.php";
+<?php
+    include $BASE_URL . "View/User/footer.php"
 ?>

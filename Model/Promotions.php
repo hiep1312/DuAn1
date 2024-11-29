@@ -7,8 +7,7 @@ class Promotions extends Management
     }
 
     public function addData($data, $mode = []) {
-        $this->sql = "INSERT INTO {$this->tableName}(`code`, `discount`, `start_date`, `end_date`, `usage_limit`) 
-                      VALUES (?, ?, ?, ?, ?)";
+        $this->sql = "INSERT INTO {$this->tableName}(`code`, `discount`, `start_date`, `end_date`, `usage_limit`) VALUES (?, ?, ?, ?, ?)";
         $params = [
             $data['code'],
             $data['discount'],

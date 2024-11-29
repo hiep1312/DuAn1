@@ -26,29 +26,4 @@ class Users extends Management{
         $this->sql = "DELETE FROM {$this->tableName} WHERE `user_id`=?";
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }
-    
 }
-//$co = new Users("users");
-//$co->addData([
-//    "name" => 'Lê Văn Khánh',
-//    "email" => 'oksds324@gmail.com',
-//    "password" => 'Duy16902346',
-//    "phone" => '0909123456',
-//    "address" => 'Hà Tây',
-//    "bio" => 'Tôi thích cây đàn kalimba loại nhỏ này',
-//    "avatar" => 'https://harpstore.vn/wp-content/uploads/2020/10/dan-kalimba-rabi-rc09.jpg',
-//    "role" => 0
-//]
-//);
-//echo "<pre>";
-//print_r ($co->getAllData());
-// echo "<pre>";
-// // print_r ($co->getAllData([1, 5]));
-// $co->updateData(1, [
-//     "user_id" => null,
-//     "name" => 'Lê Văn Nam',
-//     "email" => 'namvcl@gmail.com',
-//     "phone" => '0909123456',
-//     "message" => 'Xin tư vấn cho tôi loại đàn phù hợp để bắt đầu ',
-//     "created_at" => "2023-12-21",
-// ], [0]);

@@ -1,5 +1,6 @@
 <?php
-include "header.php";
+$BASE_URL = "./";
+include $BASE_URL . "View/User/header.php";
 ?>
 
 <body>
@@ -16,7 +17,7 @@ include "header.php";
             <nav class="navbar w-50 h-50">
         <form class="w-75 h-75">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Tìm kiếm" aria-describedby="basic-addon1">
                 <span class="input-group-text" role="button" id="basic-addon1"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
             </div>
         </form>
@@ -187,5 +188,5 @@ include "header.php";
 </body>
 
 <?php
-include "footer.php";
+include $BASE_URL . "View/User/footer.php"
 ?>

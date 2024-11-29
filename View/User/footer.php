@@ -1,4 +1,4 @@
-
+<?php $BASE_URL = "./" ?>
     <!-- Section Footer -->
     <footer class="footer-section py-5">
       <div class="container">
@@ -143,11 +143,10 @@
       </div>
     </footer>
 
-    <script src="library/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="library/aos@3.0.0-beta.6/dist/aos.js"></script>
-    <script src="dist/js/navbar.js"></script>
-    <script src="dist/js/script.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/library/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/library/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/dist/js/navbar.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/dist/js/script.js"></script>
   </body>
-
 <!-- Mirrored from sociolib.com/html/keen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 12:51:06 GMT -->
 </html>
