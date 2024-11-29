@@ -2,6 +2,11 @@
 $BASE_URL = "./";
 include $BASE_URL . "View/User/header.php";
 ?>
+    <script src="<?= $BASE_URL ?>JS/config.js"></script>
+    <script src="<?= $BASE_URL ?>JS/main.js"></script>
+    <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
+    <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/dist/js/UserContacts.js"></script>
 <section class="bg-secondary-opacity-custom">
       <div class="container custom-padding">
         <!-- Contact Section -->

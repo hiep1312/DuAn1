@@ -182,6 +182,8 @@ class Products extends Management
         $this->connect->executeSql($this->sql, [$id], false, []);
         $this->sql = "UPDATE `productvariants` SET `product_id`= null WHERE `product_id`= ?";
         $this->connect->executeSql($this->sql, [$id], false, []);
+        $this->sql = "UPDATE `orderitems` SET `product_id`= null WHERE `product_id`= ?";
+        $this->connect->executeSql($this->sql, [$id], false, []);
         $this->sql = "DELETE FROM {$this->tableName} WHERE `product_id` = ?";
         return $this->connect->executeSql($this->sql, [$id], false, $mode);
     }

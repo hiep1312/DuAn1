@@ -26,38 +26,59 @@
                     <i class="ti ti-apps"></i>
                 </li>
                 <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="ti ti-typography"></i></span><span class="pc-mtext">Tin tức</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="ti ti-typography"></i></span><span class="pc-mtext">Tin tức</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=news&function=add">Thêm tin tức</a></li>
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=news">Danh sách tin tức</a></li>
                     </ul>
                 </li>
           <li class="pc-item pc-hasmenu">
-              <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-id-badge"></i></span><span class="pc-mtext">Liên hệ</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+              <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-id-badge"></i></span><span class="pc-mtext">Liên hệ</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
               <ul class="pc-submenu">
                   <li class="pc-item"><a class="pc-link" href="?role=admin&page=contacts&function=add">Thêm liên hệ</a></li>
                   <li class="pc-item"><a class="pc-link" href="?role=admin&page=contacts">Danh sách liên hệ</a></li>
               </ul>
           </li>
                 <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-bags-shopping"></i></span><span class="pc-mtext">Đơn hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-bags-shopping"></i></span><span class="pc-mtext">Đơn hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=orders&function=add">Thêm đơn hàng</a></li>
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=orders">Danh sách đơn hàng</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-inboxes"></i></span><span class="pc-mtext">Chi tiết đơn hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-inboxes"></i></span><span class="pc-mtext">Chi tiết đơn hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=orderitems&function=add">Thêm chi tiết</a></li>
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=orderitems">Danh sách chi tiết</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-duotone fa-solid fa-user-secret"></i></span><span class="pc-mtext">Tài khoản</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-duotone fa-solid fa-user-secret"></i></span><span class="pc-mtext">Tài khoản</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=users&function=add">Thêm tài khoản</a></li>
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=users">Danh sách tài khoản</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-sensor-fire"></i></span><span class="pc-mtext">Sản phẩm biển thể</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=productvariants&function=add">Thêm biến thể</a></li>
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=productvariants">Danh sách biến thể</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-piano"></i></span><span class="pc-mtext">Sản phẩm</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=products&function=add">Thêm sản phẩm</a></li>
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=products">Danh sách sản phẩm</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-images"></i></span><span class="pc-mtext">Ảnh sản phẩm</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=imageproducts&function=add">Thêm ảnh</a></li>
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=imageproducts">Danh sách ảnh</a></li>
                     </ul>
                 </li>
         <li class="pc-item">
@@ -151,17 +172,17 @@
 <div class="me-auto pc-mob-drp">
   <ul class="list-unstyled">
     <li class="pc-h-item header-mobile-collapse">
-      <a href="#" class="pc-head-link head-link-secondary ms-0" id="sidebar-hide">
+      <a role="button" class="pc-head-link head-link-secondary ms-0" id="sidebar-hide">
         <i class="ti ti-menu-2"></i>
       </a>
     </li>
     <li class="pc-h-item pc-sidebar-popup">
-      <a href="#" class="pc-head-link head-link-secondary ms-0" id="mobile-collapse">
+      <a role="button" class="pc-head-link head-link-secondary ms-0" id="mobile-collapse">
         <i class="ti ti-menu-2"></i>
       </a>
     </li>
     <li class="dropdown pc-h-item d-inline-flex d-md-none">
-      <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#"
+      <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" role="button"
         role="button" aria-haspopup="false" aria-expanded="false">
         <i class="ti ti-search"></i>
       </a>
@@ -187,7 +208,7 @@
 <div class="ms-auto">
   <ul class="list-unstyled">
     <li class="dropdown pc-h-item">
-      <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+      <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" role="button"
         role="button" aria-haspopup="false" aria-expanded="false">
         <i class="ti ti-bell"></i>
       </a>
@@ -234,7 +255,7 @@
       </div>
     </li>
     <li class="dropdown pc-h-item header-user-profile">
-      <a class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+      <a class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" role="button"
         role="button" aria-haspopup="false" aria-expanded="false">
         <img src="<?php $BASE_URL ?> View/Admin/assets/images/user/avatar-2.jpg" alt="user-image_url" class="user-avtar" >
         <span>

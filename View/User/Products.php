@@ -2,6 +2,8 @@
 $BASE_URL = "./";
 include $BASE_URL . "View/User/header.php";
 ?>
+    <script src="<?php $BASE_URL ?>JS/WebHistory.js"></script>
+    <script src="<?php $BASE_URL ?>View/User/dist/js/UserProducts.js"></script>
 
     <body>
     <section class="bg-hero h-full w-100" style="z-index: 1">
@@ -10,7 +12,6 @@ include $BASE_URL . "View/User/header.php";
 
             <!-- Tiêu đề -->
             <h2 class="transition-fade-left text-white font-krona-one border-text hero-text mb-0 d-flex justify-content-center">SẢN PHẨM</h2>
-
             <!-- Thanh tìm kiếm và bộ lọc -->
             <div class="d-flex justify-content-between mb-4 me-3">
                 <!-- Tìm kiếm -->
@@ -22,7 +23,6 @@ include $BASE_URL . "View/User/header.php";
                         </div>
                     </form>
                 </nav>
-
                 <!-- Bộ lọc -->
                 <div class="d-flex align-items-center">
                     <div class="me-3">

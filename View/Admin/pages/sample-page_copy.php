@@ -55,7 +55,7 @@
           <i class="ti ti-dashboard"></i>
         </li>
         <li class="pc-item">
-          <a href="../dashboard/index.html" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
+          <a href="../index.html" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
               class="pc-mtext">Default</span></a>
         </li>
 
@@ -139,7 +139,7 @@
           </ul>
         </li>
         <li class="pc-item">
-          <a href="../other/sample-page.html" class="pc-link">
+          <a href="sample-page.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-brand-chrome"></i></span>
             <span class="pc-mtext">Sample page</span>
           </a>
@@ -299,7 +299,7 @@
                 <h5 class="m-b-10">Sample Page</h5>
               </div>
               <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                 <li class="breadcrumb-item"><a href="javascript: void(0)">Other</a></li>
                 <li class="breadcrumb-item" aria-current="page">Sample Page</li>
               </ul>

@@ -3,7 +3,6 @@ $BASE_URL = "./";
 include $BASE_URL . "View/User/header.php";
 ?>
 
-
     <section class="custom-section-bg text-white" style="z-index: 1">
         <div class="color-cover custom-padding">
             <div class="container">

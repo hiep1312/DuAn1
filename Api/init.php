@@ -13,3 +13,4 @@
     require_once "../Controller/CategoriesController.php";
     require_once "../Controller/PromotionsController.php";
     require_once "../Controller/ProductsController.php";
+    require_once "../Controller/ImageproductsController.php";

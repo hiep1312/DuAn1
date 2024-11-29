@@ -13,7 +13,7 @@ class OrdersController{
     }
     public function create($dataRequest){
         $dataRequest['user_id'] = isset($dataRequest['user_id']) ? $dataRequest['user_id']: null;
-        $dataRequest['status'] = isset($dataRequest['status']) ? $dataRequest['status']: null;
+        $dataRequest['status'] = isset($dataRequest['status']) && ($dataRequest["status"]==0 || $dataRequest["status"]==1 || $dataRequest["status"]==2) ? $dataRequest['status']: 0;
         $dataRequest['total_amount'] = isset($dataRequest['total_amount']) ? $dataRequest['total_amount']: null;
         return $this->execute->addData($dataRequest);
     }
@@ -23,7 +23,7 @@ class OrdersController{
         endif;
         settype($dataOld, 'array');
         $dataRequest['user_id'] = isset($dataRequest['user_id']) ? $dataRequest['user_id']: $dataOld['user_id'];
-        $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) || $dataRequest["status"]==2 ? $dataRequest["status"] : $dataOld["status"];
+        $dataRequest['status'] = isset($dataRequest['status']) && ($dataRequest["status"]==0 || $dataRequest["status"]==1 || $dataRequest["status"]==2) ? $dataRequest['status']: $dataOld['status'];
         $dataRequest['total_amount'] = isset($dataRequest['total_amount']) ? $dataRequest['total_amount']: $dataOld['total_amount'];
         $dataRequest['created_at'] = isset($dataRequest['created_at']) ? $dataRequest['created_at']: $dataOld['created_at'];
         $dataRequest['updated_at'] = isset($dataRequest['updated_at']) ? $dataRequest['updated_at']: $dataOld['updated_at'];

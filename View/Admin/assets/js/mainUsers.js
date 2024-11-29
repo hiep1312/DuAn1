@@ -9,7 +9,6 @@ const data = async (location, count)=>{
             <td>${(location-1)*count+(index+1)}</td>
             <td>${item.name ?? ""}</td>
             <td>${item.email ?? ""}</td>
-            
             <td>${item.password ?? ""}</td>
             <td>${item.phone ?? ""}</td>
             <td>${item.address ?? ""}</td>
@@ -18,8 +17,8 @@ const data = async (location, count)=>{
                     ${item.bio ?? ""}
                 </div>
             </td>
-            <td><img style="max-width: 150px; max-height: 100px" src="${item.avatar.slice(1) ?? ""}" alt="anhloi"></td>
-            <td>${item.role_id == 1 ? "Quản trị viên" : (item.role_id == 2 ? "Người dùng" : "Default") ?? ""}</td>
+            <td><img style="max-width: 150px; max-height: 100px" src="${item.avatar?item.avatar.slice(1):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png'}" alt="anhloi"></td>
+            <td>${item.role_id == 1 ? "Quản trị viên" : (item.role_id == 2 ? "Người dùng" : "Người dùng") ?? ""}</td>
             <td>${item.created_at ?? ""}</td>
             <td>${item.updated_at ?? ""}</td>
             <td>${item.status === 0 ? "Khóa" : "Hoạt động"}</td>
@@ -98,13 +97,14 @@ async function editRow(id, currentPage){
     }, false);
 
     const dataOld = await request.getOne(id);
+    modal.querySelector(`#avatar`).value = "";
+    modal.querySelector("#img").src = dataOld.data.avatar?dataOld.data.avatar.slice(1):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png';
     modal.querySelector("#name").value = dataOld.data.name ?? "";
     modal.querySelector("#email").value = dataOld.data.email ?? "";
     modal.querySelector("#password").value = dataOld.data.password ?? "";
     modal.querySelector("#phone").value = dataOld.data.phone ?? "";
     modal.querySelector("#address").value = dataOld.data.address ?? "";
     modal.querySelector("#bio").value = dataOld.data.bio ?? "";
-    modal.querySelector("#img").src = dataOld.data.avatar.slice(1) ?? "";
     modal.querySelector("#role_id").src = dataOld.data.role_id ?? "";
     modal.querySelector("#created_at").value = dataOld.data.created_at ?? "";
     modal.querySelector("#updated_at").value = dataOld.data.updated_at ?? "";
@@ -138,10 +138,22 @@ async function editRow(id, currentPage){
             message: ["Vd: Sở thích, Tính cách ...?", "Thêm thành công thông tin này!!"],
             options: 2,
         },
-        "#avatar":{
-            type: "image",
+        "#avatar": {
+            type: "textLimit",
+            message: [" ", " "],
+            options: 0
         }
     })
+    document.getElementById("avatar").addEventListener("change", e => {
+        const imgUpload = e.target?.files?.item(0) ?? false;
+        const viewImg = document.getElementById("img");
+        viewImg.src = imgUpload?URL.createObjectURL(imgUpload):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png';
+        viewImg.onload = () => {URL.revokeObjectURL(imgUpload)};
+        checkforms["#avatar"] = checkforms["#avatar"].type==="image"?checkforms["#avatar"]:{
+            type: "image",
+            message: ["Ảnh không được để trống và tệp tải lên phải là ảnh!", "Ảnh hợp lệ!"]
+        }
+    }, false)
     validate.checkFormAndDisplay(checkforms)
     const handleSubmit = async e=> {
         e.preventDefault();

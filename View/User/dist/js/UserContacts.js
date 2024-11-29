@@ -35,11 +35,11 @@ function contacts () {
             validate.resetForm("#formAdd")
             if (request.getStatus() == 200) {
                 alert.classList.remove("d-none")
-                alert.classList.add('alert-success');
-                alert.textContent = "Thông tin của bạn của bạn đã được ~~";
+                alert.classList.add('alert-outline-success');
+                alert.textContent = "Thông tin của bạn của bạn đã được chúng tôi ghi nhận cám mơn đã liên hệ ~~";
             } else {
                 alert.classList.add('alert-danger');
-                alert.textContent = "Thêm mới liên hệ không thành công~~";
+                alert.textContent = "Thêm liên hệ không thành công~~";
             }
         }
     }, false);

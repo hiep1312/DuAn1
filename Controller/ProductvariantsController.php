@@ -20,7 +20,7 @@ class ProductvariantsController {
         $dataRequest['stock_quantity'] = isset($dataRequest['stock_quantity']) ? $dataRequest['stock_quantity']: null;
         $dataRequest['start_at'] = isset($dataRequest['start_at']) ? $dataRequest['start_at']: null;
         $dataRequest['end_at'] = isset($dataRequest['end_at']) ? $dataRequest['end_at']: null;
-        $dataRequest['status'] = isset($dataRequest['status']) ? $dataRequest['status']: null;
+        $dataRequest['status'] = isset($dataRequest['status']) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest['status']: 1;
         return $this->execute->addData($dataRequest);
     }
     public function update($id, $dataRequest){
@@ -36,7 +36,7 @@ class ProductvariantsController {
         $dataRequest['stock_quantity'] = isset($dataRequest['stock_quantity']) ? $dataRequest['stock_quantity']: $dataOld['stock_quantity'];
         $dataRequest['start_at'] = isset($dataRequest['start_at']) ? $dataRequest['start_at']: $dataOld['start_at'];
         $dataRequest['end_at'] = isset($dataRequest['end_at']) ? $dataRequest['end_at']: $dataOld['end_at'];
-        $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest["status"] : $dataOld["status"];
+        $dataRequest['status'] = isset($dataRequest['status']) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest['status']: $dataOld['status'];
         return !$this->execute->updateData($id, $dataRequest)?false:$dataOld;
     }
     public function delete($id){

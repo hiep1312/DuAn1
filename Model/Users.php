@@ -26,4 +26,8 @@ class Users extends Management{
         $this->sql = "DELETE FROM {$this->tableName} WHERE `user_id`=?";
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }
+    public function getDataByEmailAndPassword($email, $password, $mode = []){
+        $this->sql = "SELECT * FROM {$this->tableName} WHERE `email`=? AND `password`=?";
+        return $this->connect->executeSQL($this->sql, [$email, $password], false, $mode);
+    }
 }

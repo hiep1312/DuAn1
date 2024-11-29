@@ -14,7 +14,7 @@ const data = async (location, count)=>{
             <td>${(location-1)*count+(index+1)}</td>
             <td>${item.title ?? ""}</td>
             <td>${item.content ?? ""}</td>
-            <td><img style="max-width: 150px; max-height: 100px" src="${item.image_url.slice(1) ?? ""}" alt="anhloi"></td>
+            <td><img src="${item.image_url?item.image_url.slice(1):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png'}" style="max-width: 200px; max-height: 100px;" alt="Ảnh sản phẩm"></td>
             <td>
                 ${user?`<div class="accordion" id="accordionProducts">
                   <div class="accordion-item collapsed">
@@ -125,9 +125,10 @@ async function editRow(id, currentPage){
     });
     modal.querySelector("#title").value = dataOld.data.title ?? "";
     modal.querySelector("#content").value = dataOld.data.content ?? "";
-    modal.querySelector("#img").src = dataOld.data.image_url.slice(1) ?? "";
+    modal.querySelector("#image_url").value = "";
     modal.querySelector("#created_at").value = dataOld.data.created_at ?? "";
     modal.querySelector("#status").value = dataOld.data.status ?? "";
+    modal.querySelector("#img").src = dataOld.data.image_url?dataOld.data.image_url.slice(1):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png';
     const validate = new Validate();
     const checkforms = ({
         "#title": {
@@ -142,6 +143,16 @@ async function editRow(id, currentPage){
         type: "image",
     },
     })
+    document.getElementById("image_url").addEventListener("change", e => {
+            const imgUpload = e.target?.files?.item(0) ?? false;
+            const viewImg = document.getElementById("img");
+            viewImg.src = imgUpload?URL.createObjectURL(imgUpload):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png';
+            viewImg.onload = () => {URL.revokeObjectURL(imgUpload)};
+            checkforms["#image_url"] = checkforms["#image_url"].type==="image"?checkforms["#image_url"]:{
+                type: "image",
+                message: ["Ảnh không được để trống và tệp tải lên phải là ảnh!", "Ảnh hợp lệ!"]
+            }
+        },false)
     validate.checkFormAndDisplay(checkforms)
     const handleSubmit = async e=> {
         e.preventDefault();

@@ -15,6 +15,7 @@
       href="library/font-awesome/6.6.0/css/all.min.css"
     /> -->
     <link rel="stylesheet" href="<?= $BASE_URL ?>View/User/dist/css/style.css" />
+    <script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
 </head>
@@ -538,16 +539,11 @@
                     <a
                             class="nav-link text-white font-krona-one text-uppercase ms-3"
                             style="font-size: 20px"
-                            href="login-v3.php"
+                            href="?page=Login"
                     ><i class="fa-solid fa-user"></i></a
                     >
                 </li>
             </ul>
         </nav>
     </div>
-    <script src="<?= $BASE_URL ?>JS/config.js"></script>
-    <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
-    <script src="<?= $BASE_URL ?>JS/main.js"></script>
-    <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
-    <script src="<?= $BASE_URL ?>View/User/dist/js/UserContacts.js"></script>
 </header>

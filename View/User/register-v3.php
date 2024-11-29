@@ -3,14 +3,19 @@
 <html lang="en">
   <!-- [Head] start -->
   <head>
+
 <?php
-include "../../components/head-page-meta.php"
+$BASE_URL = "./";
+//include $BASE_URL . "View/User/header.php";
+include $BASE_URL . "View/Admin/components/head-page-meta.php"
 ?>
 
 <?php
-include "../../components/head-css.php"
+include $BASE_URL . "View/Admin/components/head-css.php"
 ?>
-
+      <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
+      <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
+      <script src="<?= $BASE_URL ?>View/User/dist/js/UserRegis.js"></script>
   </head>
   <!-- [Head] end -->
   <!-- [Body] Start -->
@@ -28,8 +33,8 @@ include "../../components/head-css.php"
         <div class="auth-form">
           <div class="card mt-5">
             <div class="card-body">
-              <a href="#" class="d-flex justify-content-center mt-3">
-                <img src="../Admin/assets/images/logo-dark.svg" alt="image" class="img-fluid brand-logo">
+              <a role="button" href="?page=Contacts" class="d-flex justify-content-center mt-3">
+                <img src="<?= $BASE_URL ?>View/Admin/assets/images/logo-dark.svg" alt="image">
               </a>
               <div class="row">
                 <div class="d-flex justify-content-center">
@@ -40,33 +45,35 @@ include "../../components/head-css.php"
                 </div>
               </div>
               <button type="button" class="btn mt-2 bg-light-primary bg-light text-muted" style="width: 100%">
-                <img src="#" alt="image">Đăng ký với google
+                <img src="<?= $BASE_URL ?>View/Admin/assets/images/logo-dark.svg" class="mb-2" alt="image">Đăng ký với google
               </button>
               <div class="saprator mt-3">
                 <span>or</span>
               </div>
               <h5 class="my-4 d-flex justify-content-center">Đăng ký với địa chỉ gmail</h5>
+                <form id="formAdd" method="POST"  enctype="multipart/form-data" style="--bs-form-invalid-color: pink">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="First Name" >
-                    <label for="floatingInput">Tên</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="First Name" >
+                    <label for="name">Tên</label>
                   </div>
                 </div>
+
                 <div class="col-md-6">
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput1" placeholder="Last Name" >
-                    <label for="floatingInput1">Họ</label>
+                    <input type="text" class="form-control" name="lastname" id="lastname"   placeholder="Last Name" >
+                    <label for="lastname">Họ</label>
                   </div>
                 </div>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput2" placeholder="Email Address / Username" >
-                <label for="floatingInput2">Email Address / Tên(biệt danh)</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email Address / Username" >
+                <label for="email">Địa chỉ email / Tên(biệt danh)</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput3" placeholder="Password" >
-                <label for="floatingInput3">Mật khẩu</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" >
+                <label for="password">Mật khẩu</label>
               </div>
               <div class="form-check mt-3s">
                 <input class="form-check-input input-primary" type="checkbox" id="customCheckc1" checked="" >
@@ -74,19 +81,25 @@ include "../../components/head-css.php"
                   <span class="h5 mb-0">Tôi đồng ý <span>Điều khoản và cá nhân</span></span>
                 </label>
               </div>
+
               <div class="d-grid mt-4">
-                <button type="button" class="btn btn-secondary p-2"><a role="button" style="text-decoration: none;" href="login-v3.php">Đăng ký</a></button>
+                <button type="submit" class="btn btn-secondary p-2">Đăng ký</button>
               </div>
+                    <div class=" d-none my-3 alert" style="color: wheat"  role="alert" id="alert">
+
+                    </div>
+                </form>
               <hr >
-              <h5 class="d-flex justify-content-center"><a role="button" style="text-decoration: none;" href="login-v3.php">Bạn đã có tài khoản?</a></h5>
+              <h5 class="d-flex justify-content-center"><a role="button" style="text-decoration: none;" href="?page=Login">Bạn đã có tài khoản?</a></h5>
+
             </div>
           </div>
         </div>
       </div>
     </div>
 <?php
-include "../../components/footer-js.php"
-?> 
+include $BASE_URL ."View/Admin/components/footer-js.php";
+?>
     
     
   </body>

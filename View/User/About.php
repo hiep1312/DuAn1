@@ -13,12 +13,12 @@ include $BASE_URL . "View/User/header.php";
                     <div class="col-xs-12 col-lg-4">
                         <h4
                                 data-aos="fade-right"
-                                class="text-uppercase font-krona-one text-white mb-4"
+                                class="text-uppercase font-krona-one text-white mb-2"
                                 style="font-size: 24px; padding-left: 80px;">
                             GIỚI THIỆU
                         </h4>
                         <div data-aos="fade-up">
-                            <img src="assets/image/Artboard 1.png" alt="" style="width: 300px; height: 300px;">
+                            <img src="<?php $BASE_URL ?>View/User/assets/image/Artboard 1.png" alt="" style="width: 300px; height: 300px;">
                             <!-- <h1
                                   class="text-uppercase font-krona-one border-text h2-text mb-0"
                                 >
@@ -44,7 +44,7 @@ include $BASE_URL . "View/User/header.php";
                             Bạn cũng có thể tìm thấy các phụ kiện như bao đựng đàn, búa gõ, sách hướng dẫn.
                         </p>
                         <a
-                                href="Contact.php"
+                                href="?page=Contacts"
                                 data-aos="fade-up"
                                 data-aos-duration="0"
                                 class="d-flex align-items-center justify-content-start gap-2 py-3 w-full border-0 mt-1 mt-lg-0 bg-transparent text-secondary-color ps-0 text-decoration-none"
@@ -71,14 +71,14 @@ include $BASE_URL . "View/User/header.php";
                         class="col-lg-6 position-relative display-image-about box-image-approach">
                     <div data-aos="fade-up" class="image-position-approach-3">
                         <img
-                                src="assets/image/giaykhen1.jpg"
+                                src="<?php $BASE_URL ?>View/User/assets/image/giaykhen1.jpg"
                                 style="max-width: 60%; max-height:60%;"
                                 class="position-absolute position-image-3"
                                 alt="" />
                     </div>
                     <div data-aos="fade-right" class="image-position-approach-4">
                         <img
-                                src="assets/image/giaykhen2.jpg"
+                                src="<?php $BASE_URL ?>View/User/assets/image/giaykhen2.jpg"
                                 style="
                   max-width: 80%;
                   max-height: 60%;
@@ -123,7 +123,7 @@ include $BASE_URL . "View/User/header.php";
                                 data-aos="fade-up"
                                 data-aos-delay="700"
                                 href="Services.php"
-                                class="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-text">
+                                class="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-textc">
                             <span class="me-2">DỊCH VỤ</span>
                             <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
                         </a>
@@ -247,7 +247,7 @@ include $BASE_URL . "View/User/header.php";
                     </div>
                     <div class="col-lg-6 padding-left-c margin-short-c">
                         <img
-                                src="assets/image/thanhtuu1.jpg"
+                                src="<?php $BASE_URL ?>View/User/assets/image/thanhtuu1.jpg"
                                 class="d-block w-100"
                                 alt="Image 1" />
                     </div>
