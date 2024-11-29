@@ -1,6 +1,6 @@
-
 <?php
-include "header.php"
+    $BASE_URL = "./";
+    include $BASE_URL . "View/User/header.php";
 ?>
 
 <section class="chitiet-section custom-padding">
@@ -160,14 +160,15 @@ include "header.php"
                 Hài lòng về sản phẩm và thái độ hợp tác của người bán. Giao hàng nhanh, nhân viên giao hàng thân thiện.
             </p>
             <hr>
-            <div class="mb-3">
-                <label for="messageContacts" class="form-label">Thêm đánh giá</label>
-                <textarea class="form-control" id="messageContacts" placeholder="Vui lòng nhập Tiếng Việt có dấu" rows="3"></textarea>
-            </div>
-            <div class="formsubmit" style="padding-left: 500px;">
-                <!-- <input type="text" placeholder="Tên của bạn" style="padding: 5px 4px; width:220px;">  -->
-                <button type="submit" class="btn btn-success">Gửi</button>
-            </div>
+            <form onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="messageContacts" class="form-label">Thêm đánh giá</label>
+                    <textarea class="form-control" id="messageContacts" placeholder="Vui lòng nhập Tiếng Việt có dấu" rows="3"></textarea>
+                </div>
+                <div class="formsubmit" style="padding-left: 500px;">
+                    <button type="submit" class="btn btn-success">Gửi</button>
+                </div>
+            </form>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tất cả đánh giá</h5>
@@ -272,8 +273,7 @@ include "header.php"
 
     </div>
 </div>
-
-
+<script src="<?= $BASE_URL ?>View/User/dist/js/chitietsp1.js"></script>
 <?php
-include "footer.php"
+    include $BASE_URL . "View/User/footer.php"
 ?>

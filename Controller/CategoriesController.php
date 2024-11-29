@@ -41,4 +41,3 @@ class CategoriesController {
         return !$this->execute->deleteDataById($id) ? false : $checkid;
     }
 }
-?>

@@ -37,5 +37,3 @@ class Categories extends Management
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }
 }
-
-?>

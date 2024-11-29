@@ -1,3 +1,6 @@
+<?php
+    $BASE_URL = "./";
+?>
 <title>Welcome to website</title>
 <!-- [Meta] -->
 <meta charset="utf-8">
@@ -8,4 +11,6 @@
 <meta name="author" content="codedthemes">
 
 <!-- [Favicon] icon -->
-<link rel="icon" href="../../assets/images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="<?= $BASE_URL ?>View/Admin/assets/images/favicon.svg" type="image/x-icon">
+<script src="<?= $BASE_URL ?>JS/config.js"></script>
+<script src="<?= $BASE_URL ?>JS/main.js"></script>

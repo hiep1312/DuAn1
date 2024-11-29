@@ -1,3 +1,4 @@
+<?php $BASE_URL = "./" ?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -5,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Trang chủ - Kalimba</title>
     <link
-      href="library/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="<?= $BASE_URL ?>View/User/library/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="library/aos@3.0.0-beta.6/dist/aos.css" />
+    <link rel="stylesheet" href="<?= $BASE_URL ?>View/User/library/aos@3.0.0-beta.6/dist/aos.css" />
     <!-- <link
       rel="stylesheet"
       href="library/font-awesome/6.6.0/css/all.min.css"
     /> -->
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="<?= $BASE_URL ?>View/User/dist/css/style.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
   </head>
@@ -58,22 +59,8 @@
           class="navbar-brand text-white ms-2 pt-0"
           href="Home1.php"
         >
-          <img src="./assets/image/logo1.png" style="width: 150px" alt="" />
+          <img src="./assets/image/Artboard 1.png" style="width: 150px" alt="" />
         </a>
-<<<<<<< HEAD
-        
-                  <!-- <form class="search">
-                      <input type="search" name="search" id="" placeholder="Tìm kiếm..." style="padding-top: 3px; padding-bottom: 3px; padding-left: 5px; width: 230px; height: 35px;">
-                  </form>
-           -->
-=======
-<<<<<<< HEAD
-        
-              
-          
-=======
->>>>>>> 9cd35bed520c7f5df90adb311be8dec4540d92de
->>>>>>> 521af44ff9fe59d6368545ef4226c552a89a6f15
         <!-- Button Burger Menu -->
         <button
           class="navbar-toggler border-0"
@@ -473,7 +460,7 @@
               >
                 <p class="mb-0">Sản phẩm</p>
                 <img
-                  src="assets/icons/IconArrowDown.png"
+                  src="./assets/icons/IconArrowDown.png"
                   alt="Dropdown Icon"
                   class="dropdown-icon"
                 />
@@ -551,7 +538,7 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase ms-3"
                 style="font-size: 20px"
-                href="../Admin/pages/Account/login-v3.php"
+                href="../Admin/pages/login-v3.php"
                 ><i class="fa-solid fa-user"></i></a
               >
             </li>
