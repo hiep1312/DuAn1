@@ -32,7 +32,7 @@
                 <h5 class="m-b-10">Thêm tin tức</h5>
               </div>
               <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../../dashboard/chart/index.php">Trang Chủ</a></li>
+                <li class="breadcrumb-item"><a href="../../index.php">Trang Chủ</a></li>
                 <li class="breadcrumb-item" aria-current="page">Thêm tin tức</li>
                 <li class="breadcrumb-item"><a href="../../elements/quanlytintuc/list.php">Danh sách tin tức</a></li>
               </ul>

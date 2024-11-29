@@ -56,10 +56,17 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link text-dark active" href="../Admin/dashboard/chart/index.php">Bảng điều khiển</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-dark" href="../Admin/index.php">Trang mở đầu</a>
+=======
+            <a class="nav-link text-dark active" href="index.php">Bảng điều khiển</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="home.php">Trang mở đầu</a>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
           </li>
           <li class="nav-item">
             <a class="btn btn-secondary" target="_blank" href="https://codedthemes.com/item/berry-bootstrap-5-admin-template/">Đăng ký ngay</a>
@@ -78,7 +85,11 @@
               class="text-primary">Admin</span></h1>
           <h4 class="mb-sm-4 text-muted wow fadeInUp" data-wow-delay="0.4s">Nhaccuvietadmin có thể giúp quản lý các thông số mà thông tin được chỉnh sửa chi tiết mà chặt chẽ.</h4>
             <div class="my-3 my-xl-5 wow fadeInUp" data-wow-delay="0.6s">
+<<<<<<< HEAD
                 <a href="../Admin/dashboard/chart/index.php" class="btn btn-secondary me-2">Điều khiển</a>
+=======
+                <a href="index.php" class="btn btn-secondary me-2">Điều khiển</a>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
               <a href="https://codedthemes.com/item/berry-bootstrap-5-admin-template/" class="btn btn-link-primary" target="_blank">Đăng ký ngay</a>
             </div>
         </div>

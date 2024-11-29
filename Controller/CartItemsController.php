@@ -29,7 +29,6 @@ class CartItemsController {
         if (!$dataOld): return false;
         endif;
         settype($dataOld, 'array');
-
         $dataRequest["cart_id"] = isset($dataRequest["cart_id"]) ? $dataRequest["cart_id"] : $dataOld["cart_id"];
         $dataRequest["product_id"] = isset($dataRequest["product_id"]) ? $dataRequest["product_id"] : $dataOld["product_id"];
         $dataRequest["quantity"] = isset($dataRequest["quantity"]) ? $dataRequest["quantity"] : $dataOld["quantity"];

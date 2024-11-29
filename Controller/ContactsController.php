@@ -39,5 +39,4 @@ class ContactsController{
         settype($checkid, 'array');
         return !$this->execute->deleteDataById($id)?false:$checkid;
     }
-
 }

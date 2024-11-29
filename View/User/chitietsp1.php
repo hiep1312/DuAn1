@@ -273,7 +273,13 @@
 
     </div>
 </div>
+<<<<<<< HEAD
 <script src="<?= $BASE_URL ?>View/User/dist/js/chitietsp1.js"></script>
 <?php
     include $BASE_URL . "View/User/footer.php"
 ?>
+=======
+<?php
+    include $BASE_URL . "View/User/footer.php"
+?>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd

@@ -56,6 +56,7 @@ class ProductsController
             $dataRequest['productVariants']['color'] = isset($dataRequest['productVariants']['color']) ? $dataRequest['productVariants']['color'] : null;
             $dataRequest['productVariants']['price'] = isset($dataRequest['productVariants']['price']) ? $dataRequest['productVariants']['price'] : null;
             $dataRequest['productVariants']['price_reduced'] = isset($dataRequest['productVariants']['price_reduced']) ? $dataRequest['productVariants']['price_reduced'] : null;
+            $dataRequest['productVariants']['stock_quantity'] = isset($dataRequest['productVariants']['stock_quantity']) ? $dataRequest['productVariants']['stock_quantity'] : null;
             $dataRequest['productVariants']['start_at'] = isset($dataRequest['productVariants']['start_at']) ? $dataRequest['productVariants']['start_at'] : null;
             $dataRequest['productVariants']['end_at'] = isset($dataRequest['productVariants']['end_at']) ? $dataRequest['productVariants']['end_at'] : null;
             $dataRequest['productVariants']['status'] = isset($dataRequest['productVariants']['status']) && ($dataRequest['productVariants']['status']==0 || $dataRequest['productVariants']['status']==1) ? $dataRequest['productVariants']['status'] : 1;
@@ -65,6 +66,7 @@ class ProductsController
                 $dataRequest['productVariants'][$index]['color'] = isset($variant['color']) ? $variant['color'] : null;
                 $dataRequest['productVariants'][$index]['price'] = isset($variant['price']) ? $variant['price'] : null;
                 $dataRequest['productVariants'][$index]['price_reduced'] = isset($variant['price_reduced']) ? $variant['price_reduced'] : null;
+                $dataRequest['productVariants'][$index]['stock_quantity'] = isset($variant['stock_quantity']) ? $variant['stock_quantity'] : null;
                 $dataRequest['productVariants'][$index]['start_at'] = isset($variant['start_at']) ? $variant['start_at'] : null;
                 $dataRequest['productVariants'][$index]['end_at'] = isset($variant['end_at']) ? $variant['end_at'] : null;
                 $dataRequest['productVariants'][$index]['status'] = isset($variant['status']) && ($variant['status']==0 || $variant['status']==1) ? $variant['status'] : 1;
@@ -132,6 +134,7 @@ class ProductsController
                     $dataRequest['productVariants']['color'] = isset($dataRequest['productVariants']['color']) ? $dataRequest['productVariants']['color'] : $productVariant->color;
                     $dataRequest['productVariants']['price'] = isset($dataRequest['productVariants']['price']) ? $dataRequest['productVariants']['price'] : $productVariant->price;
                     $dataRequest['productVariants']['price_reduced'] = isset($dataRequest['productVariants']['price_reduced']) ? $dataRequest['productVariants']['price_reduced'] : $productVariant->price_reduced;
+                    $dataRequest['productVariants']['stock_quantity'] = isset($dataRequest['productVariants']['stock_quantity']) ? $dataRequest['productVariants']['stock_quantity'] : $productVariant->stock_quantity;
                     $dataRequest['productVariants']['start_at'] = isset($dataRequest['productVariants']['start_at']) ? $dataRequest['productVariants']['start_at'] : $productVariant->start_at;
                     $dataRequest['productVariants']['end_at'] = isset($dataRequest['productVariants']['end_at']) ? $dataRequest['productVariants']['end_at'] : $productVariant->end_at;
                     $dataRequest['productVariants']['status'] = isset($dataRequest['productVariants']['status']) && ($dataRequest['productVariants']['status']==0 || $dataRequest['productVariants']['status']==1) ? $dataRequest['productVariants']['status'] : $productVariant->status;
@@ -146,6 +149,7 @@ class ProductsController
                     $dataRequest['productVariants'][$index]['color'] = isset($variant['color']) ? $variant['color'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->color;
                     $dataRequest['productVariants'][$index]['price'] = isset($variant['price']) ? $variant['price'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->price;
                     $dataRequest['productVariants'][$index]['price_reduced'] = isset($variant['price_reduced']) ? $variant['price_reduced'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->price_reduced;
+                    $dataRequest['productVariants'][$index]['stock_quantity'] = isset($variant['stock_quantity']) ? $variant['stock_quantity'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->stock_quantity;
                     $dataRequest['productVariants'][$index]['start_at'] = isset($variant['start_at']) ? $variant['start_at'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->start_at;
                     $dataRequest['productVariants'][$index]['end_at'] = isset($variant['end_at']) ? $variant['end_at'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->end_at;
                     $dataRequest['productVariants'][$index]['status'] = isset($variant['status']) && ($variant['status']==0 || $variant['status']==1) ? $variant['status'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->status;

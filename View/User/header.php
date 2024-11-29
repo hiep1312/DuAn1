@@ -310,7 +310,7 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase ms-3"
                 style="font-size: 20px"
-                href="../Admin/pages/login-v3.php"
+                href="login-v3.php"
                 ><i class="fa-solid fa-user"></i></a
               >
             </li>
@@ -538,7 +538,11 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase ms-3"
                 style="font-size: 20px"
+<<<<<<< HEAD
                 href="../Admin/pages/login-v3.php"
+=======
+                href="login-v3.php"
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
                 ><i class="fa-solid fa-user"></i></a
               >
             </li>

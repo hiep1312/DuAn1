@@ -13,6 +13,10 @@
     require_once "../Controller/CategoriesController.php";
     require_once "../Controller/PromotionsController.php";
     require_once "../Controller/ProductsController.php";
+<<<<<<< HEAD
     
 
 
+=======
+    require_once "../Controller/ImageproductsController.php";
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
