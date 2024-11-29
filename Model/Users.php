@@ -7,8 +7,8 @@ class Users extends Management{
     }
     public function addData($data, $mode = [])
     {
-        $this->sql = "INSERT INTO {$this->tableName}(`name`, `email`, `password`, `phone`, `address`, `bio`, `avatar`, `role_id`, `created_at`, `updated_at`, `status`) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
-        $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role_id'],date("Y-m-d", time()), null,$data['status']];
+        $this->sql = "INSERT INTO {$this->tableName}(`name`, `email`, `password`, `phone`, `address`, `bio`, `avatar`, `role_id`, `created_at`, `updated_at`, `status`, `sessionId`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+        $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role_id'],date("Y-m-d", time()), null,$data['status'], session_create_id() . session_create_id() . session_create_id() . session_create_id() . session_create_id() . session_create_id() . session_create_id() . session_create_id()];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
     public function updateData($id, $data, $mode = [])

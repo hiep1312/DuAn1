@@ -22,21 +22,21 @@ class ProductsController
         $dataRequest['imageProducts'] = isset($dataRequest['imageProducts']) ? json_decode($dataRequest['imageProducts'], true):[];
         $dataRequest['productVariants'] = isset($dataRequest['productVariants'])?json_decode($dataRequest['productVariants'], true):[];
         $dataImageRequest = [];
-        try {
-        if(isset($file['album']) && !is_array($file['album']['name']) && $file['album']['error']===UPLOAD_ERR_OK){
-            $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $file['album']['name'];
-            move_uploaded_file($file['album']['tmp_name'], $imagePath);
-            array_push($dataImageRequest, $imagePath);
-        }elseif(isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)){
-            array_walk($file['album']['name'], function($fileName, $location, $fileError) use ($file, $dataImageRequest){
-                if($fileError[$location] === UPLOAD_ERR_OK){
-                    $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
-                    move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
-                    array_push($dataImageRequest, $imagePath);
-                }
-            }, $file['album']['error']);
-        }
-    }catch(Error){}
+        try{
+            if(isset($file['album']) && !is_array($file['album']['name']) && $file['album']['error'] === UPLOAD_ERR_OK) {
+                $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $file['album']['name'];
+                move_uploaded_file($file['album']['tmp_name'], $imagePath);
+                array_push($dataImageRequest, $imagePath);
+            }elseif(isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)) {
+                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, $dataImageRequest) {
+                    if ($fileError[$location] === UPLOAD_ERR_OK) {
+                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
+                        move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
+                        array_push($dataImageRequest, $imagePath);
+                    }
+                }, $file['album']['error']);
+            }
+        }catch(Error){}
         if($dataRequest['imageProducts'] && gettype($dataRequest['imageProducts'][0]) !== "array"){
             $dataRequest['imageProducts']['location'] = isset($dataRequest['imageProducts']['location']) && ($dataRequest['imageProducts']['location']==0 || $dataRequest['imageProducts']['location']==1)?$dataRequest['imageProducts']['location']:1;
             $dataRequest['imageProducts']['status'] = isset($dataRequest['imageProducts']['status']) && ($dataRequest['imageProducts']['status']==0 || $dataRequest['imageProducts']['status']==1)?$dataRequest['imageProducts']['status']:1;
@@ -57,6 +57,7 @@ class ProductsController
             $dataRequest['productVariants']['color'] = isset($dataRequest['productVariants']['color']) ? $dataRequest['productVariants']['color'] : null;
             $dataRequest['productVariants']['price'] = isset($dataRequest['productVariants']['price']) ? $dataRequest['productVariants']['price'] : null;
             $dataRequest['productVariants']['price_reduced'] = isset($dataRequest['productVariants']['price_reduced']) ? $dataRequest['productVariants']['price_reduced'] : null;
+            $dataRequest['productVariants']['stock_quantity'] = isset($dataRequest['productVariants']['stock_quantity']) ? $dataRequest['productVariants']['stock_quantity'] : null;
             $dataRequest['productVariants']['start_at'] = isset($dataRequest['productVariants']['start_at']) ? $dataRequest['productVariants']['start_at'] : null;
             $dataRequest['productVariants']['end_at'] = isset($dataRequest['productVariants']['end_at']) ? $dataRequest['productVariants']['end_at'] : null;
             $dataRequest['productVariants']['status'] = isset($dataRequest['productVariants']['status']) && ($dataRequest['productVariants']['status']==0 || $dataRequest['productVariants']['status']==1) ? $dataRequest['productVariants']['status'] : 1;
@@ -66,6 +67,7 @@ class ProductsController
                 $dataRequest['productVariants'][$index]['color'] = isset($variant['color']) ? $variant['color'] : null;
                 $dataRequest['productVariants'][$index]['price'] = isset($variant['price']) ? $variant['price'] : null;
                 $dataRequest['productVariants'][$index]['price_reduced'] = isset($variant['price_reduced']) ? $variant['price_reduced'] : null;
+                $dataRequest['productVariants'][$index]['stock_quantity'] = isset($variant['stock_quantity']) ? $variant['stock_quantity'] : null;
                 $dataRequest['productVariants'][$index]['start_at'] = isset($variant['start_at']) ? $variant['start_at'] : null;
                 $dataRequest['productVariants'][$index]['end_at'] = isset($variant['end_at']) ? $variant['end_at'] : null;
                 $dataRequest['productVariants'][$index]['status'] = isset($variant['status']) && ($variant['status']==0 || $variant['status']==1) ? $variant['status'] : 1;
@@ -87,20 +89,20 @@ class ProductsController
         $dataRequest['productVariants'] = isset($dataRequest['productVariants'])?json_decode($dataRequest['productVariants'], true):$dataOld['productVariants'];
         $dataImageRequest = [];
         try{
-        if(isset($file['album']) && !is_array($file['album']['name']) && $file['album']['error']===UPLOAD_ERR_OK){
-            $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $file['album']['name'];
-            move_uploaded_file($file['album']['tmp_name'], $imagePath);
-            array_push($dataImageRequest, $imagePath);
-        }elseif(isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)){
-            array_walk($file['album']['name'], function($fileName, $location, $fileError) use ($file, $dataImageRequest){
-                if($fileError[$location] === UPLOAD_ERR_OK){
-                    $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
-                    move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
-                    array_push($dataImageRequest, $imagePath);
-                }
-            }, $file['album']['error']);
-        }
-    }catch(Error){}
+            if (isset($file['album']) && !is_array($file['album']['name']) && $file['album']['error'] === UPLOAD_ERR_OK) {
+                $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $file['album']['name'];
+                move_uploaded_file($file['album']['tmp_name'], $imagePath);
+                array_push($dataImageRequest, $imagePath);
+            } elseif (isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)) {
+                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, $dataImageRequest) {
+                    if ($fileError[$location] === UPLOAD_ERR_OK) {
+                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
+                        move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
+                        array_push($dataImageRequest, $imagePath);
+                    }
+                }, $file['album']['error']);
+            }
+        }catch(Error){}
         if($dataRequest['imageProducts'] && gettype($dataRequest['imageProducts'][0]) !== "array" && isset($dataRequest['imageProducts']['id']) && !empty($dataOld['imageProducts'])){
             $idImageProducts = $dataRequest['imageProducts']['id'];
             foreach($dataOld['imageProducts'] as $imageProduct){
@@ -133,6 +135,7 @@ class ProductsController
                     $dataRequest['productVariants']['color'] = isset($dataRequest['productVariants']['color']) ? $dataRequest['productVariants']['color'] : $productVariant->color;
                     $dataRequest['productVariants']['price'] = isset($dataRequest['productVariants']['price']) ? $dataRequest['productVariants']['price'] : $productVariant->price;
                     $dataRequest['productVariants']['price_reduced'] = isset($dataRequest['productVariants']['price_reduced']) ? $dataRequest['productVariants']['price_reduced'] : $productVariant->price_reduced;
+                    $dataRequest['productVariants']['stock_quantity'] = isset($dataRequest['productVariants']['stock_quantity']) ? $dataRequest['productVariants']['stock_quantity'] : $productVariant->stock_quantity;
                     $dataRequest['productVariants']['start_at'] = isset($dataRequest['productVariants']['start_at']) ? $dataRequest['productVariants']['start_at'] : $productVariant->start_at;
                     $dataRequest['productVariants']['end_at'] = isset($dataRequest['productVariants']['end_at']) ? $dataRequest['productVariants']['end_at'] : $productVariant->end_at;
                     $dataRequest['productVariants']['status'] = isset($dataRequest['productVariants']['status']) && ($dataRequest['productVariants']['status']==0 || $dataRequest['productVariants']['status']==1) ? $dataRequest['productVariants']['status'] : $productVariant->status;
@@ -147,6 +150,7 @@ class ProductsController
                     $dataRequest['productVariants'][$index]['color'] = isset($variant['color']) ? $variant['color'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->color;
                     $dataRequest['productVariants'][$index]['price'] = isset($variant['price']) ? $variant['price'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->price;
                     $dataRequest['productVariants'][$index]['price_reduced'] = isset($variant['price_reduced']) ? $variant['price_reduced'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->price_reduced;
+                    $dataRequest['productVariants'][$index]['stock_quantity'] = isset($variant['stock_quantity']) ? $variant['stock_quantity'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->stock_quantity;
                     $dataRequest['productVariants'][$index]['start_at'] = isset($variant['start_at']) ? $variant['start_at'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->start_at;
                     $dataRequest['productVariants'][$index]['end_at'] = isset($variant['end_at']) ? $variant['end_at'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->end_at;
                     $dataRequest['productVariants'][$index]['status'] = isset($variant['status']) && ($variant['status']==0 || $variant['status']==1) ? $variant['status'] : $dataOld['productVariants'][array_search($variant['id'], $idProductVariants)]->status;

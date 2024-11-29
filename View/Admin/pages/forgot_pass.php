@@ -2,12 +2,12 @@
 <html lang="en">
   <!-- [Head] start -->
   <head>
-<?php 
-    include "../../layouts/head-page-meta.php"
+<?php
+include "../../layouts/head-page-meta.php"
 ?>
 
-<?php 
-    include "../../layouts/head-css.php"
+<?php
+include "../../layouts/head-css.php"
 ?>
 
   </head>
@@ -50,8 +50,8 @@
         </div>
       </div>
     </div>
-<?php 
-    include "../../layouts/footer-js.php"
+<?php
+include "../../layouts/footer-js.php"
 ?>
     
     

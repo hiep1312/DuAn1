@@ -3,7 +3,7 @@
   <i class="ti ti-dashboard"></i>
 </li>
 <li class="pc-item">
-  <a href="../dashboard/index.html" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
+  <a href="../index.html" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
       class="pc-mtext">Default</span></a>
 </li>
 
@@ -35,13 +35,13 @@
   <i class="ti ti-news"></i>
 </li>
 <li class="pc-item">
-  <a href="../pages/login-v3.html" class="pc-link">
+  <a href="../../User/login-v3.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-lock"></i></span>
     <span class="pc-mtext">Login</span>
   </a>
 </li>
 <li class="pc-item">
-  <a href="../pages/register-v3.html" class="pc-link">
+  <a href="../../User/register-v3.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-user-plus"></i></span>
     <span class="pc-mtext">Register</span>
   </a>

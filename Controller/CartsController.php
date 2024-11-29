@@ -26,7 +26,6 @@ class CartsController {
         if (!$dataOld): return false;
         endif;
         settype($dataOld, 'array');
-
         $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : $dataOld["user_id"];
         $dataRequest["created_at"] = isset($dataRequest["created_at"]) ? $dataRequest["created_at"] : $dataOld["created_at"];
         return !$this->execute->updateData($id, $dataRequest) ? false : $dataOld;

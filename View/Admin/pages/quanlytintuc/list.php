@@ -33,7 +33,7 @@
                 <h5 class="m-b-10">Danh sách tin tức</h5>
               </div>
               <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../../dashboard/chart/index.php">Trang Chủ</a></li>
+                <li class="breadcrumb-item"><a href="../../index.php">Trang Chủ</a></li>
                 <li class="breadcrumb-item" aria-current="page">Danh sách tin tức</li>
                 <li class="breadcrumb-item"><a href="../../elements/quanlytintuc/add.php">Thêm tin tức mới</a></li>
               </ul>

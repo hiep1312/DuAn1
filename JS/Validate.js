@@ -61,9 +61,15 @@ class Validate{
             }else if(type==="paragraph" && typeof options === "number"){
                 options = options - 1;
                 Object.defineProperty(this.#typeAndValidations,"paragraph", {
+<<<<<<< HEAD
 configurable: false,
                     enumerable: true,
                     value: new RegExp(`\\s*\\p{L}+(?:\\s+\\p{L}+){${options.toFixed(0)},}\$`, "u"),
+=======
+                    configurable: false,
+                    enumerable: true,
+                    value: new RegExp(`\\s*[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+(?:\\s+[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+){${options.toFixed(0)},}\$`, "ui"),
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
                     writable: true
                 });
             }else if(!Object.keys(this.#typeAndValidations).some(value => value===type)){
@@ -109,6 +115,13 @@ configurable: false,
                                 input.classList.toggle("is-valid", false);
                                 feedback(input, type, message[0] ?? false, 0);
                             }
+<<<<<<< HEAD
+=======
+                        }else{
+                            input.classList.toggle("is-invalid", true);
+                            input.classList.toggle("is-valid", false);
+                            feedback(input, type, message[0] ?? false, 0);
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
                         }
                     } else if (this.#typeAndValidations[type].test(inputData)) {
                         input.classList.toggle("is-valid", true);
@@ -161,12 +174,22 @@ configurable: false,
         try {
             let input;
             if (data instanceof Element) {
+<<<<<<< HEAD
                 input = data.value
             } else if (data instanceof NodeList || data instanceof HTMLCollection) {
                 input = data.item(0).value;
             } else {
                 input = document.querySelector(data).value;
             }
+=======
+                input = data
+            } else if (data instanceof NodeList || data instanceof HTMLCollection) {
+                input = data.item(0);
+            } else {
+                input = document.querySelector(data);
+            }
+            if(type!=="image") input = input.value;
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
             data = input;
             if (type === "textLimit" && typeof options === "number") {
                 Object.defineProperty(this.#typeAndValidations, "textLimit", {
@@ -176,11 +199,19 @@ configurable: false,
                     writable: true
                 });
             } else if (type === "paragraph" && typeof options === "number") {
+<<<<<<< HEAD
 options = options - 1;
                 Object.defineProperty(this.#typeAndValidations, "paragraph", {
                     configurable: false,
                     enumerable: true,
                     value: new RegExp(`\\s*\\p{L}+(?:\\s+\\p{L}+){${options.toFixed(0)},}\$`, "u"),
+=======
+                options = options - 1;
+                Object.defineProperty(this.#typeAndValidations, "paragraph", {
+                    configurable: false,
+                    enumerable: true,
+                    value: new RegExp(`\\s*[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+(?:\\s+[\\p{L}\\p{N}\\p{P}\\p{M}\\p{S}\\p{Z}\\p{C}]+){${options.toFixed(0)},}\$`, "ui"),
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
                     writable: true
                 });
             } else if (!Object.keys(this.#typeAndValidations).some(value => value === type)) {
@@ -199,6 +230,7 @@ options = options - 1;
                     }
                     return checkImage;
                 }
+<<<<<<< HEAD
                 let data = data.files ?? false;
                 if (data && data.length > 0) {
                     data = Array.from(data);
@@ -211,6 +243,9 @@ options = options - 1;
                     }
                     return checkImage;
                 }
+=======
+                return false;
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
             }
             return this.#typeAndValidations[type].test(data);
         }catch(error){
@@ -230,10 +265,26 @@ options = options - 1;
                 input = document.querySelector(selector);
             }
             if(!(input instanceof HTMLFormElement)) throw new Error("This is not a Form Element");
+<<<<<<< HEAD
             input.querySelectorAll("input").forEach(item => {
                 item.classList.remove("is-valid", "is-invalid");
                 item.value = "";
             });
+=======
+            input.querySelectorAll("input, textarea").forEach(item => {
+                item.classList.remove("is-valid", "is-invalid");
+                item.value = "";
+            });
+            input.querySelectorAll("img").forEach(image => {
+                image.src = "";
+            });
+            input.querySelectorAll("select").forEach(select => {
+                select.firstElementChild.selected = true;
+                while(select.nextElementSibling!==null){
+                    select.nextElementSibling.selected = false;
+                }
+            });
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
             input.querySelectorAll(".valid-feedback, .invalid-feedback").forEach(item => item.remove());
         }catch (error){
             console.error(error);

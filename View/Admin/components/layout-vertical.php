@@ -7,7 +7,15 @@
 <nav class="pc-sidebar">
   <div class="navbar-wrapper">
     <div class="m-header">
+<<<<<<< HEAD
       <a href="?role=admin&page=dashboard" class="b-brand text-primary">
+=======
+<<<<<<< HEAD
+      <a href="?role=admin&page=dashboard" class="b-brand text-primary">
+=======
+    <a href="?role=admin&page=dashboard" class="b-brand text-primary">
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
         <img src="<?= $BASE_URL ?>View/Admin/assets/images/logo-dark.svg" alt="anhloi" class="logo">
       </a>
     </div>
@@ -18,23 +26,36 @@
           <i class="ti ti-dashboard"></i>
         </li>
         <li class="pc-item">
+<<<<<<< HEAD
           <a href="?role=admin&page=dashboard" class="pc-link"><span class="pc-micon"><i
                 class="ti ti-dashboard"></i></span><span class="pc-mtext">Bảng điều khiển</span></a>
         </li>
         <li class="pc-item pc-caption">
+=======
+          <a href="?role=admin&page=dashboard" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
+              class="pc-mtext">Bảng điều khiển</span></a>
+        </li>
+        <li class="pc-item pc-caption">
+<<<<<<< HEAD
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
           <label>Thành phần</label>
           <i class="ti ti-apps"></i>
         </li>
         <li class="pc-item">
+<<<<<<< HEAD
           <a href="../DuAn1/View/Admin/pages/quanlytintuc/list.php" class="pc-link"><span class="pc-micon"><i
                 class="ti ti-typography"></i></span><span class="pc-mtext">Tin tức</span><span class="pc-arrow"><i
                 data-feather="chevron-right"></i></span></a>
+=======
+          <a href="../DuAn1/View/Admin/pages/quanlytintuc/list.php" class="pc-link"><span class="pc-micon"><i class="ti ti-typography"></i></span><span class="pc-mtext">Tin tức</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
           <ul class="pc-submenu">
             <li class="pc-item"><a class="pc-link" href="?role=admin&page=news&function=add">Thêm sản phẩm</a></li>
             <li class="pc-item"><a class="pc-link" href="?role=admin&page=news">Danh sách sản phẩm</a></li>
           </ul>
         </li>
         <li class="pc-item pc-hasmenu">
+<<<<<<< HEAD
           <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-comments"></i></span><span
               class="pc-mtext">Bình luận</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
           <ul class="pc-submenu">
@@ -58,6 +79,36 @@
             <li class="pc-item"><a class="pc-link" href="?role=admin&page=cartItems">Danh sách chi tiết sản phẩm</a></li>
           </ul>
         </li>
+=======
+          <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-duotone fa-solid fa-address-card"></i></span><span class="pc-mtext">Liên hệ</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+          <ul class="pc-submenu">
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=contacts&function=add">Thêm sản phẩm</a></li>
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=contacts">Danh sách sản phẩm</a></li>
+          </ul>
+        </li>
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-sharp fa-solid fa-star-sharp-half-stroke"></i></span><span class="pc-mtext">Đánh giá</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+          <ul class="pc-submenu">
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=reviews&function=add">Thêm đánh giá</a></li>
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=reviews">Danh sách đánh giá</a></li>
+          </ul>
+        </li>
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-list"></i></span><span class="pc-mtext">Thể loại</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+          <ul class="pc-submenu">
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=categories&function=add">Thêm thể loại</a></li>
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=categories">Danh sách thể loại</a></li>
+          </ul>
+        </li>
+        <li class="pc-item pc-hasmenu">
+          <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-gift"></i></span><span class="pc-mtext">Khuyến mãi</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+          <ul class="pc-submenu">
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=promotions&function=add">Thêm khuyến mãi</a></li>
+            <li class="pc-item"><a class="pc-link" href="?role=admin&page=promotions">Danh sách khuyến mãi</a></li>
+          </ul>
+        </li>
+
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
         <li class="pc-item">
           <a href="../../elements/bc_color.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
@@ -71,6 +122,35 @@
           </a>
         </li>
 
+<<<<<<< HEAD
+=======
+=======
+          <label>Quản lý</label>
+          <i class="ti ti-apps"></i>
+        </li>
+          <li class="pc-item pc-hasmenu">
+              <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-sensor-fire"></i></span><span class="pc-mtext">Sản phẩm biển thể</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+              <ul class="pc-submenu">
+                  <li class="pc-item"><a class="pc-link" href="?role=admin&page=productvariants&function=add">Thêm biến thể</a></li>
+                  <li class="pc-item"><a class="pc-link" href="?role=admin&page=productvariants">Danh sách biến thể</a></li>
+              </ul>
+          </li>
+          <li class="pc-item pc-hasmenu">
+              <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-piano"></i></span><span class="pc-mtext">Sản phẩm</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+              <ul class="pc-submenu">
+                  <li class="pc-item"><a class="pc-link" href="?role=admin&page=products&function=add">Thêm sản phẩm</a></li>
+                  <li class="pc-item"><a class="pc-link" href="?role=admin&page=products">Danh sách sản phẩm</a></li>
+              </ul>
+          </li>
+          <li class="pc-item pc-hasmenu">
+              <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-images"></i></span><span class="pc-mtext">Ảnh sản phẩm</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+              <ul class="pc-submenu">
+                  <li class="pc-item"><a class="pc-link" href="?role=admin&page=imageproducts&function=add">Thêm ảnh</a></li>
+                  <li class="pc-item"><a class="pc-link" href="?role=admin&page=imageproducts">Danh sách ảnh</a></li>
+              </ul>
+          </li>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
         <li class="pc-item pc-caption">
           <label>Pages</label>
           <i class="ti ti-news"></i>
@@ -87,26 +167,47 @@
             <span class="pc-mtext">Register</span>
           </a>
         </li>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
         <li class="pc-item pc-caption">
           <label>Other</label>
           <i class="ti ti-brand-chrome"></i>
         </li>
+<<<<<<< HEAD
         <li class="pc-item pc-hasmenu">
           <a href="#!" class="pc-link"><span class="pc-micon"><i class="ti ti-menu"></i></span><span
               class="pc-mtext">Menu
+=======
+<<<<<<< HEAD
+        <li class="pc-item pc-hasmenu">
+          <a href="#!" class="pc-link"><span class="pc-micon"><i class="ti ti-menu"></i></span><span class="pc-mtext">Menu
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
               levels</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
           <ul class="pc-submenu">
             <li class="pc-item"><a class="pc-link" href="#!">Level 2.1</a></li>
             <li class="pc-item pc-hasmenu">
+<<<<<<< HEAD
               <a href="#!" class="pc-link">Level 2.2<span class="pc-arrow"><i
                     data-feather="chevron-right"></i></span></a>
+=======
+              <a href="#!" class="pc-link">Level 2.2<span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
               <ul class="pc-submenu">
                 <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
                 <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
                 <li class="pc-item pc-hasmenu">
+<<<<<<< HEAD
                   <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i
                         data-feather="chevron-right"></i></span></a>
+=======
+                  <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
                   <ul class="pc-submenu">
                     <li class="pc-item"><a class="pc-link" href="#!">Level 4.1</a></li>
                     <li class="pc-item"><a class="pc-link" href="#!">Level 4.2</a></li>
@@ -115,14 +216,22 @@
               </ul>
             </li>
             <li class="pc-item pc-hasmenu">
+<<<<<<< HEAD
               <a href="#!" class="pc-link">Level 2.3<span class="pc-arrow"><i
                     data-feather="chevron-right"></i></span></a>
+=======
+              <a href="#!" class="pc-link">Level 2.3<span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
               <ul class="pc-submenu">
                 <li class="pc-item"><a class="pc-link" href="#!">Level 3.1</a></li>
                 <li class="pc-item"><a class="pc-link" href="#!">Level 3.2</a></li>
                 <li class="pc-item pc-hasmenu">
+<<<<<<< HEAD
                   <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i
                         data-feather="chevron-right"></i></span></a>
+=======
+                  <a href="#!" class="pc-link">Level 3.3<span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
                   <ul class="pc-submenu">
                     <li class="pc-item"><a class="pc-link" href="#!">Level 4.1</a></li>
                     <li class="pc-item"><a class="pc-link" href="#!">Level 4.2</a></li>
@@ -132,6 +241,11 @@
             </li>
           </ul>
         </li>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
         <li class="pc-item">
           <a href="../../other/sample-page.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-brand-chrome"></i></span>
@@ -151,6 +265,10 @@
 <!-- [ Sidebar Menu ] end --> <!-- [ Header Topbar ] start -->
 <header class="pc-header">
   <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
     <div class="me-auto pc-mob-drp">
       <ul class="list-unstyled">
         <li class="pc-h-item header-mobile-collapse">
@@ -278,4 +396,135 @@
     </div>
   </div>
 </header>
+<<<<<<< HEAD
 <!-- [ Header ] end -->
+=======
+<!-- [ Header ] end -->
+=======
+<div class="me-auto pc-mob-drp">
+  <ul class="list-unstyled">
+    <li class="pc-h-item header-mobile-collapse">
+      <a href="#" class="pc-head-link head-link-secondary ms-0" id="sidebar-hide">
+        <i class="ti ti-menu-2"></i>
+      </a>
+    </li>
+    <li class="pc-h-item pc-sidebar-popup">
+      <a href="#" class="pc-head-link head-link-secondary ms-0" id="mobile-collapse">
+        <i class="ti ti-menu-2"></i>
+      </a>
+    </li>
+    <li class="dropdown pc-h-item d-inline-flex d-md-none">
+      <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#"
+        role="button" aria-haspopup="false" aria-expanded="false">
+        <i class="ti ti-search"></i>
+      </a>
+      <div class="dropdown-menu pc-h-dropdown drp-search">
+        <form class="px-3">
+          <div class="form-group mb-0 d-flex align-items-center">
+            <i data-feather="search"></i>
+            <input type="search" class="form-control border-0 shadow-none" placeholder="Search here. . ." >
+          </div>
+        </form>
+      </div>
+    </li>
+    <li class="pc-h-item d-none d-md-inline-flex">
+      <form class="header-search">
+        <i data-feather="search" class="icon-search"></i>
+        <input type="search" class="form-control" placeholder="Search here. . ." >
+        <button class="btn btn-light-secondary btn-search"><i class="ti ti-adjustments-horizontal"></i></button>
+      </form>
+    </li>
+  </ul>
+</div>
+<!-- [Mobile Media Block end] -->
+<div class="ms-auto">
+  <ul class="list-unstyled">
+    <li class="dropdown pc-h-item">
+      <a class="pc-head-link head-link-secondary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+        role="button" aria-haspopup="false" aria-expanded="false">
+        <i class="ti ti-bell"></i>
+      </a>
+      <div class="dropdown-menu dropdown-notification dropdown-menu-end pc-h-dropdown">
+        <div class="dropdown-header">
+          <a href="#!" class="link-primary float-end text-decoration-underline">Mark as all read</a>
+          <h5>All Notification <span class="badge bg-warning rounded-pill ms-1">01</span></h5>
+        </div>
+        <div class="dropdown-header px-0 text-wrap header-notification-scroll position-relative"
+          style="max-height: calc(100vh - 215px)">
+          <div class="list-group list-group-flush w-100">
+            <div class="list-group-item list-group-item-action">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <div class="user-avtar bg-light-success"><i class="ti ti-building-store"></i></div>
+                </div>
+                <div class="flex-grow-1 ms-1">
+                  <span class="float-end text-muted">3 min ago</span>
+                  <h5>Store Verification Done</h5>
+                  <p class="text-body fs-6">We have successfully received your request.</p>
+                  <div class="badge rounded-pill bg-light-danger">Unread</div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <img src="../../assets/images/user/avatar-3.jpg" alt="user-image_url" class="user-avtar" >
+                </div>
+                <div class="flex-grow-1 ms-1">
+                  <span class="float-end text-muted">10 min ago</span>
+                  <h5>Joseph William</h5>
+                  <p class="text-body fs-6">It is a long established fact that a reader will be distracted </p>
+                  <div class="badge rounded-pill bg-light-success">Confirmation of Account</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <div class="text-center py-2">
+          <a href="#!" class="link-primary">Mark as all read</a>
+        </div>
+      </div>
+    </li>
+    <li class="dropdown pc-h-item header-user-profile">
+      <a class="pc-head-link head-link-primary dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#"
+        role="button" aria-haspopup="false" aria-expanded="false">
+        <img src="<?= $BASE_URL ?>View/Admin/assets/images/user/avatar-2.jpg" alt="user-image_url" class="user-avtar" >
+        <span>
+          <i class="ti ti-settings"></i>
+        </span>
+      </a>
+      <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+        <div class="dropdown-header">
+          <h4>Good Morning, <span class="small text-muted"> John Doe</span></h4>
+          <p class="text-muted">Project Admin</p>
+          <hr >
+          <div class="profile-notification-scroll position-relative" style="max-height: calc(100vh - 280px)">
+            <div class="upgradeplan-block bg-light-warning rounded">
+              <h4>Explore full code</h4>
+              <p class="text-muted">Buy now to get full access of code files</p>
+              <a href="https://codedthemes.com/item/berry-bootstrap-5-admin-template/" target="_blank"
+                class="btn btn-warning">Buy Now</a>
+            </div>
+            <hr >
+            <a href="../../application/account-profile-v1.html" class="dropdown-item">
+              <i class="ti ti-settings"></i>
+              <span>Account Settings</span>
+            </a>
+            <a href="../../application/social-profile.html" class="dropdown-item">
+              <i class="ti ti-user"></i>
+              <span>Social Profile</span>
+            </a>
+            <a href="../../pages/login-v1.html" class="dropdown-item">
+              <i class="ti ti-logout"></i>
+              <span>Logout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> </div>
+</header>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e

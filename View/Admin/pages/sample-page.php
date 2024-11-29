@@ -13,6 +13,7 @@
   <meta name="author" content="codedthemes">
 
   <!-- [Favicon] icon -->
+<<<<<<< HEAD
 <link rel="icon" href="../../assets/images/favicon.svg" type="image/x-icon"> <!-- [Google Font] Family -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" id="main-font-link" >
 <!-- [Tabler Icons] https://tablericons.com -->
@@ -26,6 +27,21 @@
 <!-- [Template CSS Files] -->
 <link rel="stylesheet" href="../../assets/css/style.css" id="main-style-link" >
 <link rel="stylesheet" href="../../assets/css/style-preset.css" >
+=======
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/x-icon"> <!-- [Google Font] Family -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" id="main-font-link" >
+<!-- [Tabler Icons] https://tablericons.com -->
+<link rel="stylesheet" href="../assets/fonts/tabler-icons.min.css" >
+<!-- [Feather Icons] https://feathericons.com -->
+<link rel="stylesheet" href="../assets/fonts/feather.css" >
+<!-- [Font Awesome Icons] https://fontawesome.com/icons -->
+<link rel="stylesheet" href="../assets/fonts/fontawesome.css" >
+<!-- [Material Icons] https://fonts.google.com/icons -->
+<link rel="stylesheet" href="../assets/fonts/material.css" >
+<!-- [Template CSS Files] -->
+<link rel="stylesheet" href="../assets/css/style.css" id="main-style-link" >
+<link rel="stylesheet" href="../assets/css/style-preset.css" >
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
 
 </head>
 <!-- [Head] end -->
@@ -43,9 +59,15 @@
 <nav class="pc-sidebar">
   <div class="navbar-wrapper">
     <div class="m-header">
+<<<<<<< HEAD
       <a href="../../dashboard/index.html" class="b-brand text-primary">
         <!-- ========   Change your logo from here   ============ -->
         <img src="../../assets/images/logo-dark.svg" alt="" class="logo logo-lg">
+=======
+      <a href="../index.html" class="b-brand text-primary">
+        <!-- ========   Change your logo from here   ============ -->
+        <img src="../assets/images/logo-dark.svg" alt="" class="logo logo-lg">
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
       </a>
     </div>
     <div class="navbar-content">
@@ -55,7 +77,11 @@
           <i class="ti ti-dashboard"></i>
         </li>
         <li class="pc-item">
+<<<<<<< HEAD
           <a href="../dashboard/index.html" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
+=======
+          <a href="../index.html" class="pc-link"><span class="pc-micon"><i class="ti ti-dashboard"></i></span><span
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
               class="pc-mtext">Default</span></a>
         </li>
 
@@ -87,13 +113,21 @@
           <i class="ti ti-news"></i>
         </li>
         <li class="pc-item">
+<<<<<<< HEAD
           <a href="../pages/login-v3.html" class="pc-link">
+=======
+          <a href="../../User/login-v3.html" class="pc-link">
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
             <span class="pc-micon"><i class="ti ti-lock"></i></span>
             <span class="pc-mtext">Login</span>
           </a>
         </li>
         <li class="pc-item">
+<<<<<<< HEAD
           <a href="../pages/register-v3.html" class="pc-link">
+=======
+          <a href="../../User/register-v3.html" class="pc-link">
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
             <span class="pc-micon"><i class="ti ti-user-plus"></i></span>
             <span class="pc-mtext">Register</span>
           </a>
@@ -139,7 +173,11 @@
           </ul>
         </li>
         <li class="pc-item">
+<<<<<<< HEAD
           <a href="../other/sample-page.html" class="pc-link">
+=======
+          <a href="sample-page.html" class="pc-link">
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
             <span class="pc-micon"><i class="ti ti-brand-chrome"></i></span>
             <span class="pc-mtext">Sample page</span>
           </a>
@@ -299,7 +337,11 @@
                 <h5 class="m-b-10">Sample Page</h5>
               </div>
               <ul class="breadcrumb">
+<<<<<<< HEAD
                 <li class="breadcrumb-item"><a href="../dashboard/index.html">Home</a></li>
+=======
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
                 <li class="breadcrumb-item"><a href="javascript: void(0)">Other</a></li>
                 <li class="breadcrumb-item" aria-current="page">Sample Page</li>
               </ul>

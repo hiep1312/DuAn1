@@ -30,7 +30,6 @@ class PromotionsController {
         if (!$dataOld): return false;
         endif;
         settype($dataOld, 'array');
-
         $dataRequest["code"] = isset($dataRequest["code"]) ? $dataRequest["code"] : $dataOld["code"];
         $dataRequest["discount"] = isset($dataRequest["discount"]) ? $dataRequest["discount"] : $dataOld["discount"];
         $dataRequest["start_date"] = isset($dataRequest["start_date"]) ? $dataRequest["start_date"] : $dataOld["start_date"];

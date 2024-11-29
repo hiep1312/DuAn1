@@ -160,14 +160,15 @@
                 Hài lòng về sản phẩm và thái độ hợp tác của người bán. Giao hàng nhanh, nhân viên giao hàng thân thiện.
             </p>
             <hr>
-            <div class="mb-3">
-                <label for="messageContacts" class="form-label">Thêm đánh giá</label>
-                <textarea class="form-control" id="messageContacts" placeholder="Vui lòng nhập Tiếng Việt có dấu" rows="3"></textarea>
-            </div>
-            <div class="formsubmit" style="padding-left: 500px;">
-                <!-- <input type="text" placeholder="Tên của bạn" style="padding: 5px 4px; width:220px;">  -->
-                <button type="submit" class="btn btn-success">Gửi</button>
-            </div>
+            <form onsubmit="return validateForm()">
+                <div class="mb-3">
+                    <label for="messageContacts" class="form-label">Thêm đánh giá</label>
+                    <textarea class="form-control" id="messageContacts" placeholder="Vui lòng nhập Tiếng Việt có dấu" rows="3"></textarea>
+                </div>
+                <div class="formsubmit" style="padding-left: 500px;">
+                    <button type="submit" class="btn btn-success">Gửi</button>
+                </div>
+            </form>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tất cả đánh giá</h5>
@@ -272,6 +273,19 @@
 
     </div>
 </div>
+<<<<<<< HEAD
 <?php
     include $BASE_URL . "View/User/footer.php"
 ?>
+=======
+<<<<<<< HEAD
+<script src="<?= $BASE_URL ?>View/User/dist/js/chitietsp1.js"></script>
+<?php
+    include $BASE_URL . "View/User/footer.php"
+?>
+=======
+<?php
+    include $BASE_URL . "View/User/footer.php"
+?>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
