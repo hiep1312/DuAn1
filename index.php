@@ -124,6 +124,24 @@
         }
     }else{
         switch ($page) {
+            case "Contacts":
+                include "View/User/Contact.php";
+                break;
+            case "Login":
+                include "View/User/login-v3.php";
+                break;
+            case "Register":
+                include "View/User/register-v3.php";
+                break;
+            case "Forgotpass":
+                include "View/User/forgot_pass.php";
+                break;
+            case "About":
+                include "View/User/About.php";
+                break;
+            case "profile":
+                include "View/User/Profile.php";
+                break;
             case "news":
                 include_once "View/User/News.php";
                 break;
@@ -147,6 +165,9 @@
                 break;
             case "promotion":
                 include_once "View/User/Promotion.php";
+                break;
+            case "home":
+                include_once "View/User/Home1.php";
                 break;
             default:
                 include_once "View/User/404.php";
