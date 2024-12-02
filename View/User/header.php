@@ -23,7 +23,7 @@
     <script>
         function handleLogout() {
             const web = new WebHistory();
-            web.delete();
+            accessToken.removeToken();
             web.create(null, "?page=Login", false);
             location.reload();
         }

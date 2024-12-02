@@ -93,8 +93,8 @@ async function editRow(id, currentPage){
         "#stock_quantity": {
             type: "number",
             message: ["Tổng số lượng không được để trống và phải là số!", "Tổng số lượng hợp lệ!"],
-        },
-        /*"#description": {
+        }/*,
+        "#description": {
             type: "textLimit",
             message: [" ", " "],
             options: 0

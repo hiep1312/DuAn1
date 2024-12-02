@@ -1,5 +1,4 @@
 <?php
-
 class Categories extends Management
 {
     public function getDataById($id, $mode = [])
@@ -7,14 +6,10 @@ class Categories extends Management
         $this->sql = "SELECT * FROM {$this->tableName} WHERE `category_id` = ?";
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }
-
     public function addData($data, $mode = [])
     {
         $this->sql = "INSERT INTO {$this->tableName}(`name`, `description`) VALUES (?, ?)";
-        $params = [
-            $data['name'], 
-            isset($data['description']) ? $data['description'] : null
-        ];
+        $params = [$data['name'], $data['description']];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
 
@@ -23,11 +18,7 @@ class Categories extends Management
         $this->sql = "UPDATE {$this->tableName} 
                       SET `name` = ?, `description` = ? 
                       WHERE `category_id` = ?";
-        $params = [
-            $data['name'], 
-            isset($data['description']) ? $data['description'] : null, 
-            $id
-        ];
+        $params = [$data['name'], $data['description'], $id];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
 

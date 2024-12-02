@@ -12,6 +12,9 @@ class ReviewsController
     {
         return $this->execute->getAllData();
     }
+    public function getByProduct($id){
+        return $this->execute->getDataByProduct($id);
+    }
     public function getOne($id)
     {
         return $this->execute->getDataById($id);

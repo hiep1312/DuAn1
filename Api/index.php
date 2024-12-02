@@ -831,12 +831,101 @@ if($_GET['page']){
             $response->setResponse(405);
             $response->sendResponse();
         }
-    }
-    elseif($page==="Login"){
+    }elseif($page==="Login"){
         $connect = new UsersController();
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $data = $connect->checkLogin($_POST);
             $response->setResponse(!$data?503:200, (bool)$data, !$data?null:$data->user_id);
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="NewsComments"){
+        $connect = new CommentsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->getByNews($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Comments By News Success!", $data);
+            }else{
+                $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="ProductReviews"){
+        $connect = new ReviewsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->getByProduct($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Comments By News Success!", $data);
+            }else{
+                $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="FilterCategories"){
+        $connect = new ProductcategoriesController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->getByCategory($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Products By Category Success!", $data);
+            }else{
+                $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="CartsUser"){
+        $connect = new CartsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->getAllUser($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Products By Category Success!", $data);
+            }else{
+                $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="Vouchers"){
+        $connect = new MypromotionsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->getAllVouchers($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Vouchers Success!", $data);
+            }else{
+                $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="OrdersUser"){
+        $connect = new OrdersController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->getAllUser($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Products By Category Success!", $data);
+            }else{
+                $response->setResponse(503);
+            }
             $response->sendResponse();
         }else{
             $response->setResponse(405);

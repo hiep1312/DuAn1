@@ -19,10 +19,10 @@ class Users extends Management{
     }
     public function deleteDataById($id, $mode = [])
     {
-         $this->sql = "UPDATE {$this->tableName} SET `email`= null WHERE `user_id`=?";
-         $this->connect->executeSQL($this->sql, [$id], false, $mode);
-         $this->sql = "UPDATE {$this->tableName} SET `role_id`= null WHERE `user_id`=?";
-         $this->connect->executeSQL($this->sql, [$id], false, $mode);
+        $this->sql = "UPDATE {$this->tableName} SET `email`= null WHERE `user_id`=?";
+        $this->connect->executeSQL($this->sql, [$id], false, $mode);
+        $this->sql = "UPDATE {$this->tableName} SET `role_id`= null WHERE `user_id`=?";
+        $this->connect->executeSQL($this->sql, [$id], false, $mode);
         $this->sql = "DELETE FROM {$this->tableName} WHERE `user_id`=?";
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
     }

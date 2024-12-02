@@ -140,8 +140,8 @@ async function editRow(id, currentPage){
             options: 2,
         },
         "#image_url": {
-        type: "image",
-    },
+            type: "image",
+        },
     })
     document.getElementById("image_url").addEventListener("change", e => {
             const imgUpload = e.target?.files?.item(0) ?? false;

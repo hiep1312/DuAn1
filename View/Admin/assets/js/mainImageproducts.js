@@ -125,6 +125,7 @@ async function editRow(id, currentPage){
         },*/
         "#album": {
             type: "paragraph",
+            message: [" ", " "],
             options: 1
         }
     };

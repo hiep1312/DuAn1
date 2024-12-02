@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if ( request.getStatus() === 200 && res.message === true) {
                     await accessToken.handleTokenLocal(res.data);
                     accessToken.saveToken();
-                    console.log(accessToken.getInfo());
+                    // console.log(accessToken.getInfo());
                     // console.log(test.getInfo());
                     // Hiển thị thông báo thành công và chuyển hướng
                     alert.classList.add("alert-secondary");

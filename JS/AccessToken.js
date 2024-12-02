@@ -3,7 +3,7 @@ class AccessToken{
     #request;
     #role;
     #info;
-    async handleTokenLocal(id = null){
+    async handleTokenLocal(id){
         this.#request = new HTTPRequest("Users");
         if(id){
             const response = await this.#request.getOne(id);
