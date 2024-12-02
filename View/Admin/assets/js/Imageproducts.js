@@ -4,7 +4,7 @@ const objcheck = {
         type: "image",
         message: ["Ảnh không được để trống và tệp tải lên phải là ảnh!", "Ảnh hợp lệ!"]
     },
-    "#status": {
+    /*"#status": {
         type: "textLimit",
         message: [" ", " "],
         options: 0
@@ -13,7 +13,7 @@ const objcheck = {
         type: "textLimit",
         message: [" ", " "],
         options: 0
-    }
+    }*/
 };
 validate.checkFormAndDisplay(objcheck);
 document.getElementById("formAdd").addEventListener("submit", async e => {

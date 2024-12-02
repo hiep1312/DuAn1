@@ -10,13 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="<?= $BASE_URL ?>View/User/library/aos@3.0.0-beta.6/dist/aos.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="library/font-awesome/6.6.0/css/all.min.css"
-    /> -->
     <link rel="stylesheet" href="<?= $BASE_URL ?>View/User/dist/css/style.css" />
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <script src="<?= $BASE_URL ?>JS/config.js"></script>
+    <script src="<?= $BASE_URL ?>JS/main.js"></script>
+    <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
+    <script src="<?= $BASE_URL ?>JS/AccessToken.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
   </head>
   <body>
     <!-- Scroll indicator -->
@@ -167,7 +168,7 @@
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Pricing.php"
+                    href="Order.php"
                     >Giỏ Hàng</a
                   >
                 </li>
@@ -199,7 +200,7 @@
                   <a
                     class="dropdown-item font-krona-one text-uppercase text-white"
                     style="font-size: 12px"
-                    href="Post.php"
+                    href="News.php"
                     >Tin tức</a
                   >
                 </li>
@@ -286,7 +287,7 @@
               <a
                 class="nav-link font-krona-one text-uppercase text-white"
                 style="font-size: 12px"
-                href="OurWorks.php"
+                href="Promotion.php"
                 >Khuyến mãi</a
               >
             </li>
@@ -302,7 +303,7 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase ms-3"
                 style="font-size: 20px"
-                href="Pricing.php"
+                href="Order.php"
                 ><i class="fa-solid fa-cart-shopping"></i></a
               >
             </li>
@@ -401,7 +402,7 @@
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Pricing.php"
+                    href="Order.php"
                     >Giỏ hàng</a
                   >
                 </li>
@@ -433,7 +434,7 @@
                   <a
                     class="dropdown-item text-white font-krona-one text-uppercase"
                     style="font-size: 12px; z-index: 100"
-                    href="Post.php"
+                    href="News.php"
                     >Tin tức</a
                   >
                 </li>
@@ -514,7 +515,7 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase me-4"
                 style="font-size: 12px"
-                href="OurWorks.php"
+                href="Promotion.php"
                 >Khuyến mãi</a
               >
             </li>
@@ -530,7 +531,7 @@
               <a
                 class="nav-link text-white font-krona-one text-uppercase ms-3"
                 style="font-size: 20px"
-                href="Pricing.php"
+                href="Order.php"
                 ><i class="fa-solid fa-cart-shopping"></i></a
               >
             </li>

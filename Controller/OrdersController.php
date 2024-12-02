@@ -8,6 +8,9 @@ class OrdersController{
     public function getAll(){
         return $this->execute->getAllData();
     }
+    public function getAllUser($id){
+        return $this->execute->getDataByUser($id);
+    }
     public function getOne($id){
         return $this->execute->getDataById($id);
     }

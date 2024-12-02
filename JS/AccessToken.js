@@ -3,13 +3,13 @@ class AccessToken{
     #request;
     #role;
     #info;
-    async constructor(id = null) {
+    async handleTokenLocal(id){
         this.#request = new HTTPRequest("Users");
         if(id){
             const response = await this.#request.getOne(id);
             if(this.#request.getStatus()===200){
                 this.#token = response.data.sessionId;
-                this.#role = response.data.role_id;
+                this.#role = response.data.role_id===1?"Admin":"User";
                 this.#info = response.data;
             }else{
                 console.error("A very serious error has occurred! Request Error!");
@@ -20,13 +20,13 @@ class AccessToken{
                 if(this.#request.getStatus()===200){
                     const data = response.data;
                     const check = data.find(value => {
-                       if(value.sessionId===this.#getTokenLocal()){
-                           this.#token = value.sessionId;
-                           this.#role = value.role_id;
-                           this.#info = value;
-                           return true;
-                       }
-                       return false;
+                        if(value.sessionId===this.#getTokenLocal()){
+                            this.#token = value.sessionId;
+                            this.#role = value.role_id===1?"Admin":"User";
+                            this.#info = value;
+                            return true;
+                        }
+                        return false;
                     });
                     if(!check) localStorage.removeItem("sessionId");
                 }else{

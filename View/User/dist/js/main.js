@@ -1,3 +1,1 @@
-const sessionId = async () => {
-
-}
+const accessToken = new AccessToken();

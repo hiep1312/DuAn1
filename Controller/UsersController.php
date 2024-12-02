@@ -70,4 +70,12 @@ class UsersController{
         endif;
         return !$this->execute->deleteDataById($id)?false:$checkid;
     }
+    public function checkLogin($dataRequest)
+    {
+        $dataRequest['email'] = $dataRequest["email"] ?? false;
+        $dataRequest['password'] = $dataRequest["password"] ?? false;
+        if(!isset($dataRequest["email"]) || !isset($dataRequest["password"])): return false;
+        endif;
+        return $this->execute->getDataByEmailAndPassword($dataRequest["email"], $dataRequest["password"]);
+    }
 }

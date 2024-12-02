@@ -3,7 +3,6 @@ require_once "../Model/Categories.php";
 
 class CategoriesController {
     protected $execute;
-
     public function __construct() {
         $this->execute = new Categories("categories");
     }

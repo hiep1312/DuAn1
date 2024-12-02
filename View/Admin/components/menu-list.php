@@ -12,19 +12,19 @@
   <i class="ti ti-apps"></i>
 </li>
 <li class="pc-item">
-  <a href="../elements/bc_typography.html" class="pc-link">
+  <a href="../pages/bc_typography.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-typography"></i></span>
     <span class="pc-mtext">Typography</span>
   </a>
 </li>
 <li class="pc-item">
-  <a href="../elements/bc_color.html" class="pc-link">
+  <a href="../pages/bc_color.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
     <span class="pc-mtext">Color</span>
   </a>
 </li>
 <li class="pc-item">
-  <a href="../elements/icon-tabler.html" class="pc-link">
+  <a href="../pages/icon-tabler.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
     <span class="pc-mtext">Icons</span>
   </a>
@@ -87,7 +87,7 @@
   </ul>
 </li>
 <li class="pc-item">
-  <a href="../other/sample-page.html" class="pc-link">
+  <a href="../pages/sample-page.html" class="pc-link">
     <span class="pc-micon"><i class="ti ti-brand-chrome"></i></span>
     <span class="pc-mtext">Sample page</span>
   </a>

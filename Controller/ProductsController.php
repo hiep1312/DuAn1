@@ -27,9 +27,9 @@ class ProductsController
                 move_uploaded_file($file['album']['tmp_name'], $imagePath);
                 array_push($dataImageRequest, $imagePath);
             }elseif(isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)) {
-                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, $dataImageRequest) {
+                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, &$dataImageRequest) {
                     if ($fileError[$location] === UPLOAD_ERR_OK) {
-                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
+                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName;
                         move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
                         array_push($dataImageRequest, $imagePath);
                     }
@@ -93,9 +93,9 @@ class ProductsController
                 move_uploaded_file($file['album']['tmp_name'], $imagePath);
                 array_push($dataImageRequest, $imagePath);
             } elseif (isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)) {
-                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, $dataImageRequest) {
+                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, &$dataImageRequest) {
                     if ($fileError[$location] === UPLOAD_ERR_OK) {
-                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
+                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName;
                         move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
                         array_push($dataImageRequest, $imagePath);
                     }

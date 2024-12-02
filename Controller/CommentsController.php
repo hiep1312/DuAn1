@@ -3,15 +3,15 @@
 
     class CommentsController{
         protected $execute;
-
         public function __construct(){
             $this->execute = new Comments("comments");
         }
-
         public function getAll(){
             return $this->execute->getAllData();
         }
-
+        public function getByNews($id){
+            return $this->execute->getAllByNews($id);
+        }
         public function getOne($id){
             return $this->execute->getDataById($id);
         }

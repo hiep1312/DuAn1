@@ -30,7 +30,7 @@ class HTTPRequest{
         this.#status = response.status;
         if(!response.ok){
             console.error(`Fetch API Error: ${this.#typeResponse[response.type]}`);
-            throw new Error("Fetch API failed");
+            // throw new Error("Fetch API failed");
         }
         return await response.json();
     }

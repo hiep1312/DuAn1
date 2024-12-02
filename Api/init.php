@@ -14,3 +14,5 @@
     require_once "../Controller/PromotionsController.php";
     require_once "../Controller/ProductsController.php";
     require_once "../Controller/ImageproductsController.php";
+    require_once "../Controller/ProductcategoriesController.php";
+    require_once "../Controller/MypromotionsController.php";

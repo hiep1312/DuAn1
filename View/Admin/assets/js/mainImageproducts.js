@@ -113,7 +113,7 @@ async function editRow(id, currentPage){
     modal.querySelector("#viewImg").src = dataOld.data.album?dataOld.data.album.slice(1):'https://media.saco.asia/media/uploads/gbimg/other/sacoinc-404-page.png';
     const validate = new Validate();
     const objcheck = {
-        "#status": {
+        /*"#status": {
             type: "textLimit",
             message: [" ", " "],
             options: 0
@@ -122,11 +122,11 @@ async function editRow(id, currentPage){
             type: "textLimit",
             message: [" ", " "],
             options: 0
-        },
+        },*/
         "#album": {
-            type: "textLimit",
+            type: "paragraph",
             message: [" ", " "],
-            options: 0
+            options: 1
         }
     };
     document.getElementById("album").addEventListener("change", e => {

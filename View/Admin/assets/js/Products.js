@@ -130,7 +130,7 @@ document.getElementById("countVariants").addEventListener("input", e => {
                 objcheck[`#price${i}`] = {
                     type: "number",
                     message: ["Giá không được để trống và phải hợp lệ!", "Giá hợp lệ!"],
-                }
+                }/*
                 objcheck[`#price_reduced${i}`] ={
                     type: "textLimit",
                     message: [" ", " "],
@@ -150,7 +150,7 @@ document.getElementById("countVariants").addEventListener("input", e => {
                     type: "textLimit",
                     message: [" ", " "],
                     options: 0
-                }
+                }*/
                 objcheck[`#stock_quantity${i}`] = {
                     type: "number",
                     message: ["Số lượng hàng không được để trống và phải hợp lệ!", "Số lượng hàng hợp lệ!"],

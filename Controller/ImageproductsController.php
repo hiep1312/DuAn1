@@ -25,16 +25,16 @@ class ImageproductsController
                 move_uploaded_file($file['album']['tmp_name'], $imagePath);
                 array_push($dataImage, $imagePath);
             }elseif(isset($file['album']) && is_array($file['album']['name']) && array_keys($file['album']['error'], UPLOAD_ERR_OK, true)) {
-                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, $dataImage) {
+                array_walk($file['album']['name'], function ($fileName, $location, $fileError) use ($file, &$dataImage) {
                     if ($fileError[$location] === UPLOAD_ERR_OK) {
-                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName[$location];
+                        $imagePath = BASE_IMAGE . "ImageProducts/" . time() . $fileName;
                         move_uploaded_file($file['album']['tmp_name'][$location], $imagePath);
                         array_push($dataImage, $imagePath);
                     }
                 }, $file['album']['error']);
             }
         }catch(Error){}
-        if(count($dataImage) > 0){
+        if(count($dataImage) > 1){
             for($i = 0; $i < count($dataImage); $i++){
                 $dataRequest["album"] = $dataImage[$i];
                 $result = $this->execute->addData($dataRequest);

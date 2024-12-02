@@ -12,6 +12,4 @@
 <!-- [Template CSS Files] -->
 <link rel="stylesheet" href="<?= $BASE_URL ?>View/Admin/assets/css/style.css" id="main-style-link" >
 <link rel="stylesheet" href="<?= $BASE_URL ?>View/Admin/assets/css/style-preset.css" >
-<!-- Icon -->
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
-<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+<link rel="stylesheet"   href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">

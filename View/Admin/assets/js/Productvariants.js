@@ -1,10 +1,10 @@
 const validate = new Validate();
 const objcheck = {
-    "#product_id": {
+    /*"#product_id": {
         type: "textLimit",
         message: [" ", " "],
         options: 0
-    },
+    },*/
     "#material": {
         type: "paragraph",
         message: ["Chất liệu không được để trống!", "Chất liệu hợp lệ!"],
@@ -19,7 +19,7 @@ const objcheck = {
         type: "number",
         message: ["Giá không được để trống và phải hợp lệ!", "Giá hợp lệ!"],
     },
-    "#price_reduced": {
+    /*"#price_reduced": {
         type: "textLimit",
         message: [" ", " "],
         options: 0
@@ -38,7 +38,7 @@ const objcheck = {
         type: "textLimit",
         message: [" ", " "],
         options: 0
-    },
+    },*/
     "#stock_quantity": {
         type: "number",
         message: ["Số lượng hàng không được để trống và phải hợp lệ!", "Số lượng hàng hợp lệ!"],
