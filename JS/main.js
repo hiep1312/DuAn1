@@ -50,7 +50,7 @@ class HTTPRequest{
         this.#count = count<=0?this.#count:count;
         group = group || null;
         const dataResponse = await this.#request();
-        if(group){
+if(group){
             dataResponse.data = Object.groupBy(dataResponse.data, item => item[group]);
         }
         dataResponse.data = dataResponse.data.slice((this.#page-1) * this.#count, this.#page * this.#count);

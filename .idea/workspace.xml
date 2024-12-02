@@ -5,105 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/init.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/init.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CartsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CartsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CategoriesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/login-v3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/register-v3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/sample-pages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Admin/pages/sample-pages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/User/dist/js/chitietsp1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/CommentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CommentsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ImageproductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ImageproductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/OrdersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/ReviewsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/ReviewsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/AccessToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/AccessToken.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JS/WebHistory.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/WebHistory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/Validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/Validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JS/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JS/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/JS/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Carts.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Carts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Categories.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Orders.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Reviews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/css/landing.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/css/landing.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/css/plugins/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/css/plugins/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/css/style-preset.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/css/style-preset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/feather.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/feather.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/feather/feather.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/feather/feather.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome/fa-brands-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome/fa-regular-400.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/fontawesome/fa-solid-900.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/material.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/material.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/phosphor/duotone/Phosphor-Duotone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/phosphor/duotone/Phosphor-Duotone.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/phosphor/duotone/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/phosphor/duotone/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/tabler-icons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/tabler-icons.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/fonts/tabler/tabler-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/fonts/tabler/tabler-icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/images/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/images/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/images/logo-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/images/logo-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/images/logo-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/images/logo-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/images/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/Imageproducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/Imageproducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/Products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/Productvariants.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/Productvariants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/fonts/custom-font.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/fonts/custom-font.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/mainImageproducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/mainImageproducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/mainProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/mainProducts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/mainProductvariants.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/mainProductvariants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/pages/dashboard-default.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/pages/dashboard-default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/plugins/apexcharts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/plugins/apexcharts.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/plugins/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/plugins/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/plugins/clipboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/plugins/clipboard.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/plugins/feather.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/plugins/feather.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/plugins/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/plugins/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/plugins/simplebar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/plugins/simplebar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/breadcrumb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/breadcrumb.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/breadcrumb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/footer-block.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/footer-js.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/head-css.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/head-css.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/head-css.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/head-page-meta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/head-page-meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/head-page-meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/header-content.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/layout-vertical.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/layout-vertical.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/layout-vertical.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/loader.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/menu-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/menu-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/menu-list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/components/topbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/Imageproducts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/pages/Imageproducts/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/Products/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/pages/Products/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/Productvariants/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/pages/Productvariants/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/bc_color.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/bc_typography.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/forgot_pass.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/icon-tabler.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/quanlytintuc/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/quanlytintuc/list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/quanlytintuc/show.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/quanlytintuc/update.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/sample-page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/pages/sample-page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Newsdetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Newsdetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/OurWorks.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Promotion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/News.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Pricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Products.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/chitietsp1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Productdetails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/dist/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/thanhtoan.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Pay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Products.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,24 +61,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.About.php.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.index.php.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/DuAn1/View/Admin/pages/Imageproducts&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.About.php.executor": "Run",
+    "JavaScript Debug.index.php.executor": "Run",
+    "Node.js.main.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "last_opened_file_path": "C:/xampp/htdocs/DuAn1/View/Admin/pages/Imageproducts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\DuAn1\View\Admin\pages\Imageproducts" />
@@ -283,7 +198,7 @@
       <workItem from="1733051792248" duration="6594000" />
       <workItem from="1733066282537" duration="24860000" />
       <workItem from="1733124839532" duration="11228000" />
-      <workItem from="1733138679714" duration="2656000" />
+      <workItem from="1733138679714" duration="2868000" />
     </task>
     <servers />
   </component>

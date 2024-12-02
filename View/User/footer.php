@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+<?php $BASE_URL = "./" ?>
+=======
+<<<<<<< HEAD
+<?php $BASE_URL = "./" ?>
+=======
     <?php $BASE_URL = "./" ?>
+>>>>>>> af1d7b335a119224c5a0d4f5cb5babc2b21b62cd
+>>>>>>> aa3d8fab086c3fe93b328442f8e1c87bdfd4ff0e
     <!-- Section Footer -->
     <footer class="footer-section py-5">
       <div class="container">

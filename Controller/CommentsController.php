@@ -15,7 +15,9 @@
         public function getOne($id){
             return $this->execute->getDataById($id);
         }
-
+        public function getOneParents($id){
+            return $this->execute->getDataByIdParents($id);
+        }
         public function create($dataRequest){
             $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : null;
             $dataRequest["news_id"] = isset($dataRequest["news_id"]) ? $dataRequest["news_id"] : null;
