@@ -1,10 +1,10 @@
 const validate = new Validate();
 let countImage = null;
-let checkImg = {
+/*let checkImg = {
     type: "textLimit",
     message: [" ", " "],
     options: 0
-}
+}*/
 let objcheck = {
     "#name": {
         type: "paragraph",
@@ -20,7 +20,7 @@ let objcheck = {
         type: "number",
         message: ["Tổng số lượng không được để trống và phải là số!", "Tổng số lượng hợp lệ!"],
     },
-    "#description": {
+   /* "#description": {
         type: "textLimit",
         message: [" ", " "],
         options: 0
@@ -34,7 +34,7 @@ let objcheck = {
         type: "textLimit",
         message: [" ", " "],
         options: 0
-    },
+    },*/
     "#countVariants": {
         type: "number"
     },

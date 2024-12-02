@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Lắng nghe sự kiện submit của form
     document.getElementById("formAdd").addEventListener("submit", async (e) => {
         e.preventDefault();  // Ngừng hành động submit mặc định của form
-
         // Kiểm tra tính hợp lệ của form trước khi tiếp tục
         if (validate.checkForm(checkforms, true)) {
             const formdata = new FormData(e.target); // Lấy dữ liệu từ form trước khi gửi
@@ -26,16 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
             try {
                 // Gửi yêu cầu POST để đăng nhập
                 const res = await request.post(formdata); // Gọi hàm post và truyền FormData
-
+                console.log([...formdata.entries()]);
                 const alert = document.getElementById("alert");
-
                 // Kiểm tra phản hồi từ API
                 if ( request.getStatus() === 200 && res.message === true) {
-                    const accessToken =  new AccessToken();
                     await accessToken.handleTokenLocal(res.data);
                     accessToken.saveToken();
                     // console.log(test.getInfo());
-
                     // Hiển thị thông báo thành công và chuyển hướng
                     alert.classList.add("alert-secondary");
                     alert.textContent = "Đăng nhập thành công ~~";

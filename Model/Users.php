@@ -14,7 +14,7 @@ class Users extends Management{
     public function updateData($id, $data, $mode = [])
     {
         $this->sql = "UPDATE {$this->tableName} SET `name`=?,`email`=?,`password`=?,`phone`=?,`address`=?,`bio`=?,`avatar`=?,`role_id`=?,`created_at`=?,`updated_at`=?,`status`=? WHERE `user_id`=?";
-        $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role_id'],$data['created_at'],$data['updated_at'],$data['status'], $id];
+        $params = [$data['name'],$data['email'],$data['password'],$data['phone'],$data['address'],$data['bio'],$data['avatar'],$data['role_id'],$data['created_at'],date("Y-m-d", time()),$data['status'], $id];
         return $this->connect->executeSQL($this->sql, $params, false, $mode);
     }
     public function deleteDataById($id, $mode = [])

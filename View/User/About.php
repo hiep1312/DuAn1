@@ -142,17 +142,16 @@ include $BASE_URL . "View/User/header.php";
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-5">
                         <h4 data-aos="fade-up" class="font-krona-one h4-text">Chúng tôi cung cấp đa dạng sản phẩm và đã được kiểm chứng</h4> <br>
-                        <!-- <p data-aos="fade-up" data-aos-delay="200" class="section-subtitle mb-4">
-                                        Ut elit tellus, luctus nec ullamcorper. Lorem ipsum dolor sit
-                                        amet. Ut elit tellus, luctus nec ullamcorper.
-                                      </p> -->
+                         <p data-aos="fade-up" data-aos-delay="200" class="section-subtitle mb-4 fs-6">
+                                        Mọi người sang bên sản phẩm để xem chi tiết nhé!!!
+                                      </p>
                         <div
                                 data-aos="fade-up"
                                 data-aos-delay="400"
                                 class="progress-container">
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn piano</span>
-                                <!-- <div class="progress">
+                                 <div class="progress">
                                       <div
                                         class="progress-bar font-krona-one fw-light"
                                         data-target="50%"
@@ -160,11 +159,11 @@ include $BASE_URL . "View/User/header.php";
                                       >
                                         0
                                       </div>
-                                    </div> -->
+                                    </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn Organ</span>
-                                <!-- <div class="progress">
+                                 <div class="progress">
                                       <div
                                         class="progress-bar font-krona-one fw-light"
                                         data-target="90%"
@@ -172,11 +171,11 @@ include $BASE_URL . "View/User/header.php";
                                       >
                                         0
                                       </div>
-                                    </div> -->
+                                    </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn Guitar</span>
-                                <!-- <div class="progress">
+                                 <div class="progress">
                                       <div
                                         class="progress-bar font-krona-one fw-light"
                                         data-target="60%"
@@ -184,11 +183,11 @@ include $BASE_URL . "View/User/header.php";
                                       >
                                         0
                                       </div>
-                                    </div> -->
+                                    </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn ukulele</span>
-                                <!-- <div class="progress">
+                                 <div class="progress">
                                       <div
                                         class="progress-bar font-krona-one fw-light"
                                         data-target="60%"
@@ -196,11 +195,11 @@ include $BASE_URL . "View/User/header.php";
                                       >
                                         0
                                       </div>
-                                    </div> -->
+                                    </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn kalimba</span>
-                                <!-- <div class="progress">
+                                <<div class="progress">
                                       <div
                                         class="progress-bar font-krona-one fw-light"
                                         data-target="60%"
@@ -208,43 +207,7 @@ include $BASE_URL . "View/User/header.php";
                                       >
                                         0
                                       </div>
-                                    </div> -->
-                            </div>
-                            <div class="progress-item">
-                                <span class="font-krona-one fw-light h6-text text-uppercase">Đàn Violin</span>
-                                <!-- <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                  data-target="60%"
-                                        style="width: 0"
-                                      >
-                                        0
-                                      </div>
-                                    </div> -->
-                            </div>
-                            <div class="progress-item">
-                                <span class="font-krona-one fw-light h6-text text-uppercase">Amplifier</span>
-                                <!-- <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="60%"
-                                        style="width: 0"
-                                      >
-                                        0
-                                      </div>
-                                    </div> -->
-                            </div>
-                            <div class="progress-item">
-                                <span class="font-krona-one fw-light h6-text text-uppercase">Xem thêm <i class="fa-solid fa-chevron-down"></i></span>
-                                <!-- <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="60%"
-                                        style="width: 0"
-                                      >
-                                        0
-                                      </div>
-                                    </div> -->
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -259,7 +222,7 @@ include $BASE_URL . "View/User/header.php";
         </div>
     </section>
 
-    <!-- <section class="what-we-do-section bg-primary-custom custom-padding">
+     <!--<section class="what-we-do-section bg-primary-custom custom-padding">
           <div class="container">
             <div class="row mb-4">
               <div class="col-md-6">
@@ -318,7 +281,7 @@ include $BASE_URL . "View/User/header.php";
               </div>
             </div>
           </div>
-        </section> -->
+        </section>-->
 
 <?php
 include $BASE_URL . "View/User/footer.php"

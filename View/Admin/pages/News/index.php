@@ -112,7 +112,7 @@ header("Pragma: no-cache");
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
         <div id="liveToast" class="toast" role="alert">
             <div class="toast-header">
-                <img src="<?= $BASE_URL ?>View/Admin/assets/images/logo-dark.svg" class="rounded me-2" alt="Logo">
+                <img src="<?= $BASE_URL ?>View/User/assets/image/logo1.png" style="max-height: 70px; max-width: 100px;" class="rounded me-2" alt="Logo">
                 <strong class="me-auto"></strong>
                 <small>Now</small>
                 <button type="button" class="btn-close button-close" data-bs-dismiss="toast"></button>

@@ -46,6 +46,7 @@ class Products extends Management
         }
         return $OneData;
     }
+    
     public function addData($data, $mode = [])
     {
         $this->sql = "INSERT INTO {$this->tableName}(`name`, `description`, `brand`, `stock_quantity`, `status`) VALUES (?,?,?,?,?)";

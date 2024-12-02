@@ -6,7 +6,7 @@ function WebHistory(){
         if(typeof obj !== "object") throw new Error("Invalid parameter");
         if(typeof localSt !== "boolean") throw new Error("Invalid parameter LocalStorage!");
         this.data = obj;
-        this.hash = localSt?hash:`#${hash}`;
+        this.hash = hash;
         this.localSt = localSt;
         if(this.localSt) localStorage.setItem(this.hash, JSON.stringify(this.data));
         else history.pushState(this.data, "", this.hash);

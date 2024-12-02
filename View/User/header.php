@@ -15,7 +15,19 @@
       href="library/font-awesome/6.6.0/css/all.min.css"
     /> -->
     <link rel="stylesheet" href="<?= $BASE_URL ?>View/User/dist/css/style.css" />
+    <script src="<?= $BASE_URL ?>JS/config.js"></script>
+    <script src="<?= $BASE_URL ?>JS/main.js"></script>
+    <script src="<?= $BASE_URL ?>JS/AccessToken.js"></script>
     <script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
+    <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
+    <script>
+        function handleLogout() {
+            const web = new WebHistory();
+            web.delete();
+            web.create(null, "?page=Login", false);
+            location.reload();
+        }
+    </script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
 </head>
@@ -58,7 +70,7 @@
         <a
                 data-aos="fade-right"
                 class="navbar-brand text-white ms-2 pt-0"
-                href="Home1.php"
+                href="?page=home"
         >
             <img src="View/User/assets/image/logo1.png" style="width: 150px" alt="" />
         </a>
@@ -89,248 +101,14 @@
             <ul class="navbar-nav mx-3">
                 <li class="nav-item dropdown">
                     <a
-                            class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
-                            style="font-size: 12px"
-                            href="Home1.php"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        Trang chủ
-                    </a>
-                    <ul
-                            class="dropdown-menu bg-primary-custom"
-                            style="border: none"
-                            aria-labelledby="navbarDropdown"
-                    >
-                        <li>
-                            <a
-                                    class="dropdown-item font-krona-one text-uppercase text-white"
-                                    style="font-size: 12px"
-                                    href="Home1.php"
-                            >Trang chủ</a
-                            >
-                        </li>
-                        <!-- <li>
-                            <a
-                              class="dropdown-item font-krona-one text-uppercase text-white"
-                              style="font-size: 12px"
-                              href="Home2.php"
-                              >Trang chủ 2</a
-                            >
-                          </li>
-                          <!-- <li>
-                            <a
-                              class="dropdown-item font-krona-one text-uppercase text-white"
-                              style="font-size: 12px"
-                              href="Home3.php"
-                              >Trang chủ 3</a
-                            >
-                          </li> -->
-                        <!-- <li>
-                          <a
-                            class="dropdown-item font-krona-one text-uppercase text-white"
-                            style="font-size: 12px"
-                            href="LandingPage.php"
-                            >Trang Đích</a
-                          >
-                        </li>
-                      </ul> -->
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a
-                            class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
-                            style="font-size: 12px"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        Danh sách trang
-                    </a>
-                    <ul
-                            class="dropdown-menu bg-primary-custom"
-                            style="border: none"
-                            aria-labelledby="navbarDropdown"
-                    >
-                        <li>
-                            <a
-                                    class="dropdown-item font-krona-one text-uppercase text-white"
-                                    style="font-size: 12px"
-                                    href="About.php"
-                            >Giới thiệu</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    class="dropdown-item font-krona-one text-uppercase text-white"
-                                    style="font-size: 12px"
-                                    href="Pricing.php"
-                            >Giỏ Hàng</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    class="dropdown-item font-krona-one text-uppercase text-white"
-                                    style="font-size: 12px"
-                                    href="Single-work.php"
-                            >Đơn hàng</a
-                            >
-                        </li>
-                        <!-- <li>
-                          <a
-                            class="dropdown-item font-krona-one text-uppercase text-white"
-                            style="font-size: 12px"
-                            href="Reviews.php"
-                            >Đánh giá</a
-                          >
-                        </li>
-                        <li>
-                          <a
-                            class="dropdown-item font-krona-one text-uppercase text-white"
-                            style="font-size: 12px"
-                            href="Blog.php"
-                            >Bài viết</a
-                          >
-                        </li> -->
-                        <li>
-                            <a
-                                    class="dropdown-item font-krona-one text-uppercase text-white"
-                                    style="font-size: 12px"
-                                    href="Post.php"
-                            >Tin tức</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    class="dropdown-item font-krona-one text-uppercase text-white"
-                                    style="font-size: 12px"
-                                    href="404.php"
-                            >Lỗi truy cập</a
-                            >
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a
-                            class="nav-link font-krona-one text-uppercase text-white dropdown-toggle"
-                            style="font-size: 12px"
-                            href="Products.php"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        Sản Phẩm
-                    </a>
-                    <ul
-                            class="dropdown-menu bg-primary-custom"
-                            style="border: none"
-                            aria-labelledby="navbarDropdown"
-                    >
-                        <div>
-                            <h6
-                                    class="text-white font-krona-one fw-light"
-                                    style="font-size: 12px"
-                            >
-                                Gỗ
-                            </h6>
-                            <a class="dropdown-item text-white" href="#">Design</a>
-                            <a class="dropdown-item text-white" href="#">Graphic</a>
-                            <a class="dropdown-item text-white" href="#">Ideas</a>
-                            <a class="dropdown-item text-white" href="#">Brainstorm</a>
-                        </div>
-                        <div>
-                            <h6
-                                    class="text-white font-krona-one fw-light mt-3"
-                                    style="font-size: 12px"
-                            >
-                                Thép
-                            </h6>
-                            <a class="dropdown-item text-white" href="#">Email</a>
-                            <a class="dropdown-item text-white" href="#">Content</a>
-                            <a class="dropdown-item text-white" href="#">Digital</a>
-                            <a class="dropdown-item text-white" href="#">All-in-One</a>
-                        </div>
-                        <div>
-                            <h6
-                                    class="text-white font-krona-one fw-light mt-3"
-                                    style="font-size: 12px"
-                            >
-                                Nhựa
-                            </h6>
-                            <a class="dropdown-item text-white" href="#">Social Media</a>
-                            <a class="dropdown-item text-white" href="#">Search Engine</a>
-                            <a class="dropdown-item text-white" href="#">Social Ads</a>
-                            <a class="dropdown-item text-white" href="#">Affiliate</a>
-                        </div>
-                        <div>
-                            <h6
-                                    class="text-white font-krona-one fw-light mt-3"
-                                    style="font-size: 12px"
-                            >
-                                Tre, Lứa
-                            </h6>
-                            <a class="dropdown-item text-white" href="#">Web Design</a>
-                            <a class="dropdown-item text-white" href="#">Maintenance</a>
-                            <a class="dropdown-item text-white" href="#">Copywriting</a>
-                            <a class="dropdown-item text-white" href="#">Media</a>
-                        </div>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                            class="nav-link font-krona-one text-uppercase text-white"
-                            style="font-size: 12px"
-                            href="OurWorks.php"
-                    >Khuyến mãi</a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a
-                            class="nav-link font-krona-one text-uppercase text-white"
-                            style="font-size: 12px"
-                            href="?page=Contacts"
-                    >Liên hệ</a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a
-                            class="nav-link text-white font-krona-one text-uppercase ms-3"
-                            style="font-size: 20px"
-                            href="Pricing.php"
-                    ><i class="fa-solid fa-cart-shopping"></i></a
-                    >
-                </li>
-                <li class="nav-item">
-                    <a
-                            class="nav-link text-white font-krona-one text-uppercase ms-3"
-                            style="font-size: 20px"
-                            href="login-v3.php"
-                    ><i class="fa-solid fa-user"></i></a
-                    >
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Navbar for large screens -->
-        <nav class="d-none d-lg-block py-3 transition-fade-down">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item dropdown" style="z-index: 100">
-                    <a
-                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
-                            href="Home1.php"
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase"
+                            href="?page=home"
                             id="navbarDropdownLg"
                             role="button"
                             aria-expanded="false"
                             style="font-size: 12px"
                     >
-                        <p class="mb-0">Trang chủ</p>
+                        <li class="mb-0">Trang chủ</li>
                         <!-- <img
                           src="assets/icons/IconArrowDown.png"
                           alt="Dropdown Icon"
@@ -350,7 +128,7 @@
                             >Trang chủ 2</a
                           >
                         </li>
-                        <!-- <li>
+                         <li>
                           <a
                             class="dropdown-item text-white font-krona-one text-uppercase"
                             style="font-size: 12px; z-index: 100"
@@ -369,91 +147,116 @@
                         <!-- <li><hr class="dropdown-divider" /></li> -->
                     </ul>
                 </li>
+                <!--                <li class="nav-item dropdown" style="z-index: 100">-->
+                <!--                    <a-->
+                <!--                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"-->
+                <!--                            href="#"-->
+                <!--                            id="navbarDropdownLg"-->
+                <!--                            role="button"-->
+                <!--                            aria-expanded="false"-->
+                <!--                            style="font-size: 12px"-->
+                <!--                    >-->
+                <!--                        <p class="mb-0">Danh sách trang</p>-->
+                <!--                        <img-->
+                <!--                                src="View/User/assets/icons/IconArrowDown.png"-->
+                <!--                                alt="Dropdown Icon"-->
+                <!--                                class="dropdown-icon"-->
+                <!--                        />-->
+                <!--                    </a>-->
+                <!--                    <ul-->
+                <!--                            class="dropdown-menu bg-primary-custom"-->
+                <!--                            style="z-index: 100"-->
+                <!--                            aria-labelledby="navbarDropdownLg"-->
+                <!--                    >-->
+                <!--                        <li>-->
+                <!--                            <a-->
+                <!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+                <!--                                    style="font-size: 12px; z-index: 100"-->
+                <!--                                    href="About.php"-->
+                <!--                            >Giới thiệu</a-->
+                <!--                            >-->
+                <!--                        </li>-->
+                <!--                        <li>-->
+                <!--                            <a-->
+                <!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+                <!--                                    style="font-size: 12px; z-index: 100"-->
+                <!--                                    href="Pricing.php"-->
+                <!--                            >Giỏ hàng</a-->
+                <!--                            >-->
+                <!--                        </li>-->
+                <!--                        <li>-->
+                <!--                            <a-->
+                <!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+                <!--                                    style="font-size: 12px; z-index: 100"-->
+                <!--                                    href="Single-work.php"-->
+                <!--                            >Đơn hàng</a-->
+                <!--                            >-->
+                <!--                        </li>-->
+                <!--                         <li>-->
+                <!--                                          <a-->
+                <!--                                            class="dropdown-item text-white font-krona-one text-uppercase"-->
+                <!--                                            style="font-size: 12px; z-index: 100"-->
+                <!--                                            href="Reviews.php"-->
+                <!--                                            >Đánh giá</a-->
+                <!--                                          >-->
+                <!--                                        </li>-->
+                <!--                                        <li>-->
+                <!--                                          <a-->
+                <!--                                            class="dropdown-item text-white font-krona-one text-uppercase"-->
+                <!--                                            style="font-size: 12px; z-index: 100"-->
+                <!--                                            href="Blog.php"-->
+                <!--                                            >Bài viết</a-->
+                <!--                                          >-->
+                <!--                                        </li> -->
+                <!--                        <li>-->
+                <!--                            <a-->
+                <!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+                <!--                                    style="font-size: 12px; z-index: 100"-->
+                <!--                                    href="404.php"-->
+                <!--                            >Lỗi 404</a-->
+                <!--                            >-->
+                <!--                        </li>-->
+                <!--                         <li><hr class="dropdown-divider" /></li> -->
+                <!--                    </ul>-->
+                <!--                </li>-->
                 <li class="nav-item dropdown" style="z-index: 100">
                     <a
                             class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
-                            href="#"
+                            href="?page=news"
                             id="navbarDropdownLg"
                             role="button"
                             aria-expanded="false"
                             style="font-size: 12px"
                     >
-                        <p class="mb-0">Danh sách trang</p>
-                        <img
+                        <p class="mb-0">Tin tức</p>
+                        <!--<img
                                 src="View/User/assets/icons/IconArrowDown.png"
                                 alt="Dropdown Icon"
                                 class="dropdown-icon"
-                        />
+                        />-->
                     </a>
-                    <ul
-                            class="dropdown-menu bg-primary-custom"
-                            style="z-index: 100"
-                            aria-labelledby="navbarDropdownLg"
+                <li/>
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
+                            href="?page=About"
+                            id="navbarDropdownLg"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
                     >
-                        <li>
-                            <a
-                                    class="dropdown-item text-white font-krona-one text-uppercase"
-                                    style="font-size: 12px; z-index: 100"
-                                    href="About.php"
-                            >Giới thiệu</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    class="dropdown-item text-white font-krona-one text-uppercase"
-                                    style="font-size: 12px; z-index: 100"
-                                    href="Pricing.php"
-                            >Giỏ hàng</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    class="dropdown-item text-white font-krona-one text-uppercase"
-                                    style="font-size: 12px; z-index: 100"
-                                    href="Single-work.php"
-                            >Đơn hàng</a
-                            >
-                        </li>
-                        <!-- <li>
-                                          <a
-                                            class="dropdown-item text-white font-krona-one text-uppercase"
-                                            style="font-size: 12px; z-index: 100"
-                                            href="Reviews.php"
-                                            >Đánh giá</a
-                                          >
-                                        </li>
-                                        <li>
-                                          <a
-                                            class="dropdown-item text-white font-krona-one text-uppercase"
-                                            style="font-size: 12px; z-index: 100"
-                                            href="Blog.php"
-                                            >Bài viết</a
-                                          >
-                                        </li> -->
-                        <li>
-                            <a
-                                    class="dropdown-item text-white font-krona-one text-uppercase"
-                                    style="font-size: 12px; z-index: 100"
-                                    href="Post.php"
-                            >Tin tức</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    class="dropdown-item text-white font-krona-one text-uppercase"
-                                    style="font-size: 12px; z-index: 100"
-                                    href="404.php"
-                            >Lỗi 404</a
-                            >
-                        </li>
-                        <!-- <li><hr class="dropdown-divider" /></li> -->
-                    </ul>
-                </li>
-
+                        <p class="mb-0">Giới thiệu</p>
+                        <!--<img
+                                src="View/User/assets/icons/IconArrowDown.png"
+                                alt="Dropdown Icon"
+                                class="dropdown-icon"
+                        />-->
+                    </a>
+                <li/>
                 <li class="nav-item dropdown">
                     <a
                             class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
-                            href="Products.php"
+                            href="?page=category"
                             id="servicesDropdown"
                             role="button"
                             aria-expanded="false"
@@ -466,7 +269,7 @@
                                 class="dropdown-icon"
                         />
                     </a>
-                    <div
+                    <!--<div
                             class="dropdown-menu-services p-3 dropdown-services"
                             aria-labelledby="servicesDropdown"
                     >
@@ -508,16 +311,322 @@
                                 <a class="dropdown-item" href="#">Media</a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </li>
-
                 <li class="nav-item">
                     <a
-                            class="nav-link text-white font-krona-one text-uppercase me-4"
+                            class="nav-link text-white font-krona-one text-uppercase"
                             style="font-size: 12px"
-                            href="OurWorks.php"
-                    >Khuyến mãi</a
+                            href="?page=Contacts"
+                    >Liên hệ</a
                     >
+                </li>
+                <li class="row">
+                <li class="nav-item col-md-3">
+                    <a
+                            class="nav-link text-white font-krona-one text-uppercase ms-3"
+                            style="font-size: 20px"
+                            href="?page=cart"
+                    ><i class="fa-solid fa-cart-shopping"></i></a
+                    >
+                </li>
+                <li class="nav-item col-md-3">
+                    <a
+                            class="nav-link text-white font-krona-one text-uppercase ms-3"
+                            style="font-size: 20px"
+                            href="?page=Login"
+                    ><i class="fa-solid fa-user"></i></a
+                    >
+                </li>
+
+                <li class="nav-item dropdown colo-md-6" style="z-index: 100" >
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
+                            href="#"
+                            id="navbarDropdownLg"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
+                    >
+                        <p class="mb-0">Tài khoản</p>
+                        <img
+                                src="View/User/assets/icons/IconArrowDown.png"
+                                alt="Dropdown Icon"
+                                class="dropdown-icon"
+                        />
+                    </a>
+                    <ul
+                            class="dropdown-menu bg-primary-custom"
+                            style="z-index: 100"
+                            aria-labelledby="navbarDropdownLg"
+                    >
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px"
+                                    href="?page=order"
+                            >Đơn hàng của tôi</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px"
+                                    href="?page=promotions"
+                            >Khuyến mãi</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px; z-index: 100"
+                                    href="?page=profile"
+                            >Chỉnh sửa TK</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px; z-index: 100"
+                                    href="?page=Login"
+                            >Đăng nhập</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    id="logout"
+                                    role="button"
+                                    style="font-size: 12px; z-index: 100"
+                                    onclick="handleLogout()"
+                            >
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Navbar for large screens -->
+        <nav class="d-none d-lg-block py-3 transition-fade-down">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase"
+                            href="?page=home"
+                            id="navbarDropdownLg"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
+                    >
+                        <li class="mb-0">Trang chủ</li>
+                        <!-- <img
+                          src="assets/icons/IconArrowDown.png"
+                          alt="Dropdown Icon"
+        class="dropdown-icon"
+                        /> -->
+                    </a>
+                    <ul
+                            class="dropdown-menu bg-primary-custom"
+                            style="z-index: 100"
+                            aria-labelledby="navbarDropdownLg"
+                    >
+                        <!-- <li>
+                          <a
+                            class="dropdown-item text-white font-krona-one text-uppercase"
+                            style="font-size: 12px; z-index: 100"
+                            href="Home2.php"
+                            >Trang chủ 2</a
+                          >
+                        </li>
+                         <li>
+                          <a
+                            class="dropdown-item text-white font-krona-one text-uppercase"
+                            style="font-size: 12px; z-index: 100"
+                            href="Home3.php"
+                            >Trang chủ 3</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item text-white font-krona-one text-uppercase"
+                            style="font-size: 12px; z-index: 100"
+                            href="LandingPage.php"
+                            >Trang đích</a
+                          >
+                        </li> -->
+                        <!-- <li><hr class="dropdown-divider" /></li> -->
+                    </ul>
+                </li>
+<!--                <li class="nav-item dropdown" style="z-index: 100">-->
+<!--                    <a-->
+<!--                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"-->
+<!--                            href="#"-->
+<!--                            id="navbarDropdownLg"-->
+<!--                            role="button"-->
+<!--                            aria-expanded="false"-->
+<!--                            style="font-size: 12px"-->
+<!--                    >-->
+<!--                        <p class="mb-0">Danh sách trang</p>-->
+<!--                        <img-->
+<!--                                src="View/User/assets/icons/IconArrowDown.png"-->
+<!--                                alt="Dropdown Icon"-->
+<!--                                class="dropdown-icon"-->
+<!--                        />-->
+<!--                    </a>-->
+<!--                    <ul-->
+<!--                            class="dropdown-menu bg-primary-custom"-->
+<!--                            style="z-index: 100"-->
+<!--                            aria-labelledby="navbarDropdownLg"-->
+<!--                    >-->
+<!--                        <li>-->
+<!--                            <a-->
+<!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+<!--                                    style="font-size: 12px; z-index: 100"-->
+<!--                                    href="About.php"-->
+<!--                            >Giới thiệu</a-->
+<!--                            >-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a-->
+<!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+<!--                                    style="font-size: 12px; z-index: 100"-->
+<!--                                    href="Pricing.php"-->
+<!--                            >Giỏ hàng</a-->
+<!--                            >-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a-->
+<!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+<!--                                    style="font-size: 12px; z-index: 100"-->
+<!--                                    href="Single-work.php"-->
+<!--                            >Đơn hàng</a-->
+<!--                            >-->
+<!--                        </li>-->
+<!--                         <li>-->
+<!--                                          <a-->
+<!--                                            class="dropdown-item text-white font-krona-one text-uppercase"-->
+<!--                                            style="font-size: 12px; z-index: 100"-->
+<!--                                            href="Reviews.php"-->
+<!--                                            >Đánh giá</a-->
+<!--                                          >-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                          <a-->
+<!--                                            class="dropdown-item text-white font-krona-one text-uppercase"-->
+<!--                                            style="font-size: 12px; z-index: 100"-->
+<!--                                            href="Blog.php"-->
+<!--                                            >Bài viết</a-->
+<!--                                          >-->
+<!--                                        </li> -->
+<!--                        <li>-->
+<!--                            <a-->
+<!--                                    class="dropdown-item text-white font-krona-one text-uppercase"-->
+<!--                                    style="font-size: 12px; z-index: 100"-->
+<!--                                    href="404.php"-->
+<!--                            >Lỗi 404</a-->
+<!--                            >-->
+<!--                        </li>-->
+<!--                         <li><hr class="dropdown-divider" /></li> -->
+<!--                    </ul>-->
+<!--                </li>-->
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
+                            href="?page=news"
+                            id="navbarDropdownLg"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
+                    >
+                        <p class="mb-0">Tin tức</p>
+                        <!--<img
+                                src="View/User/assets/icons/IconArrowDown.png"
+                                alt="Dropdown Icon"
+                                class="dropdown-icon"
+                        />-->
+                    </a>
+                <li/>
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
+                            href="?page=About"
+                            id="navbarDropdownLg"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
+                    >
+                        <p class="mb-0">Giới thiệu</p>
+                        <!--<img
+                                src="View/User/assets/icons/IconArrowDown.png"
+                                alt="Dropdown Icon"
+                                class="dropdown-icon"
+                        />-->
+                    </a>
+                <li/>
+                <li class="nav-item dropdown">
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
+                            href="?page=category"
+                            id="servicesDropdown"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
+                    >
+                        <p class="mb-0">Sản phẩm</p>
+                        <img
+                                src="View/User/assets/icons/IconArrowDown.png"
+                                alt="Dropdown Icon"
+                                class="dropdown-icon"
+                        />
+                    </a>
+                    <div
+                            class="dropdown-menu-services p-3 dropdown-services"
+                            aria-labelledby="servicesDropdown"
+                    >
+                        <!--<div class="row">
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Chất liệu = Gỗ
+                                </h6>
+                                <a class="dropdown-item" href="#">Design</a>
+                                <a class="dropdown-item" href="#">Graphic</a>
+                                <a class="dropdown-item" href="#">Ideas</a>
+                                <a class="dropdown-item" href="#">Brainstorm</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Chất liệu = Thép
+                                </h6>
+                                <a class="dropdown-item" href="#">Email</a>
+                                <a class="dropdown-item" href="#">Content</a>
+                                <a class="dropdown-item" href="#">Digital</a>
+                                <a class="dropdown-item" href="#">All-in-One</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Chất liệu = tre, lứa
+                                </h6>
+                                <a class="dropdown-item" href="#">Social Media</a>
+                                <a class="dropdown-item" href="#">Search Engine</a>
+                                <a class="dropdown-item" href="#">Social Ads</a>
+                                <a class="dropdown-item" href="#">Affiliate</a>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="dropdown-header font-krona-one fw-light">
+                                    Chất liệu = Nhôm
+                                </h6>
+                                <a class="dropdown-item" href="#">Web Design</a>
+                                <a class="dropdown-item" href="#">Maintenance</a>
+                                <a class="dropdown-item" href="#">Copywriting</a>
+                                <a class="dropdown-item" href="#">Media</a>
+                            </div>
+                        </div>-->
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a
@@ -531,7 +640,7 @@
                     <a
                             class="nav-link text-white font-krona-one text-uppercase ms-3"
                             style="font-size: 20px"
-                            href="Pricing.php"
+                            href="?page=cart"
                     ><i class="fa-solid fa-cart-shopping"></i></a
                     >
                 </li>
@@ -543,7 +652,75 @@
                     ><i class="fa-solid fa-user"></i></a
                     >
                 </li>
+
+                <li class="nav-item dropdown" style="z-index: 100">
+                    <a
+                            class="nav-link d-flex align-items-center gap-3 text-white font-krona-one text-uppercase me-4"
+                            href="#"
+                            id="navbarDropdownLg"
+                            role="button"
+                            aria-expanded="false"
+                            style="font-size: 12px"
+                    >
+                        <p class="mb-0">Tài khoản</p>
+                        <img
+                                src="View/User/assets/icons/IconArrowDown.png"
+                                alt="Dropdown Icon"
+                                class="dropdown-icon"
+                        />
+                    </a>
+                    <ul
+                            class="dropdown-menu bg-primary-custom"
+                            style="z-index: 100"
+                            aria-labelledby="navbarDropdownLg"
+                    >
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px"
+                                    href="?page=order"
+                            >Đơn hàng của tôi</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px"
+                                    href="?page=promotions"
+                            >Khuyến mãi</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px; z-index: 100"
+                                    href="?page=profile"
+                            >Chỉnh sửa TK</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    style="font-size: 12px; z-index: 100"
+                                    href="?page=Login"
+                            >Đăng nhập</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                    class="dropdown-item text-white font-krona-one text-uppercase"
+                                    id="logout"
+                                    role="button"
+                                    style="font-size: 12px; z-index: 100"
+                                    onclick="handleLogout()"
+                            >
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </div>
+
 </header>

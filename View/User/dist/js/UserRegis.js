@@ -1,16 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const request = new HTTPRequest("Users");
     const validate = new Validate();
-
     const checkforms = {
         "#name": {
             type: "paragraph",
             message: ["Mời bạn nhập đủ tên ạ!!", "Tên đã đủ!!"],
-            options: 2,
-        },
-        "#lastname": {
-            type: "paragraph",
-            message: ["Mời bạn nhập đủ họ ạ!!", "Họ đã đủ!!"],
             options: 1,
         },
         "#email": {
@@ -26,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     validate.checkFormAndDisplay(checkforms);
 
     document.getElementById("formAdd").addEventListener("submit", async e => {
+        console.log(document.querySelector('#name'), document.querySelector('#email'), document.querySelector('#password'))
         e.preventDefault();
         if (validate.checkForm(checkforms, true)) {
             const formdata = new FormData(e.target);

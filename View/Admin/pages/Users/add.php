@@ -88,7 +88,7 @@ header("Pragma: no-cache");
     </div>
     </form>
 </div>
-</div>
+</div>d
 <?php
 include $BASE_URL . "View/Admin/components/footer-block.php";
 include $BASE_URL . "View/Admin/components/footer-js.php"

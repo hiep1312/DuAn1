@@ -94,7 +94,7 @@ async function editRow(id, currentPage){
             type: "number",
             message: ["Tổng số lượng không được để trống và phải là số!", "Tổng số lượng hợp lệ!"],
         },
-        "#description": {
+        /*"#description": {
             type: "textLimit",
             message: [" ", " "],
             options: 0
@@ -103,7 +103,7 @@ async function editRow(id, currentPage){
             type: "textLimit",
             message: [" ", " "],
             options: 0
-        }
+        }*/
     };
     validate.checkFormAndDisplay(objcheck);
     const handleSubmit = async e => {

@@ -2,17 +2,20 @@
 <html lang="en">
   <!-- [Head] start -->
   <head>
-      <?php $BASE_URL = "./";?>
+      <?php
+      $BASE_URL = "./";
+      //include $BASE_URL . "View/User/header.php";
+      include $BASE_URL . "View/Admin/components/head-page-meta.php"
+      ?>
       <script src="<?= $BASE_URL ?>JS/AccessToken.js"></script>
-<?php
-include $BASE_URL . "View/Admin/components/head-page-meta.php"
-?>
-      <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
       <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
+      <script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
+      <?php
+      include $BASE_URL . "View/Admin/components/head-css.php";
+      ?>
+
+      <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
       <script src="<?= $BASE_URL ?>View/User/dist/js/UserLogin.js"></script>
-<?php
-include $BASE_URL ."View/Admin/components/head-css.php"
-?>
 
   </head>
   <!-- [Head] end -->
@@ -31,20 +34,20 @@ include $BASE_URL ."View/Admin/components/head-css.php"
         <div class="auth-form">
           <div class="card my-5">
             <div class="card-body">
-              <a href="#" class="d-flex justify-content-center">
-                <img src="<?= $BASE_URL ?>View/Admin/assets/images/logo-dark.svg" alt="image" >
+              <a href="?page=Contacts" class="d-flex justify-content-center">
+                <img src="<?= $BASE_URL ?>View/User/assets/image/logo1.png" style="max-height: 100px; max-width: 150px;" alt="image" >
               </a>
               <div class="row">
                 <div class="d-flex justify-content-center">
                   <div class="auth-header">
-                    <h2 class="text-secondary mt-5"><b>Xin chào, mừng quay trở lại</b></h2>
+                    <h2 class="text-success my-3"><b>Xin chào, mừng quay trở lại</b></h2>
                     <p class="f-16 mt-2">Nhập thông tin đăng nhập để tiếp tục</p>
                   </div>
                 </div>
               </div>
               <div class="d-grid">
-                <button type="button" class="btn mt-2 bg-light-primary bg-light text-muted">
-                  <img src="<?= $BASE_URL ?>View/Admin/assets/images/logo.svg" width="100px" height="50px" class="mb-2" alt="image">Đăng nhập với Google
+                <button type="button" class="btn mt-2 bg-light-success bg-light text-muted">
+                  <img src="<?= $BASE_URL ?>View/User/assets/image/logo1.png" width="100px" height="70px" class="mb-2" alt="image">Đăng nhập với Nhaccuviet
                 </button>
               </div>
               <div class="saprator mt-3">
@@ -90,7 +93,7 @@ include $BASE_URL ."View/Admin/components/head-css.php"
                         </h5>
                     </div>
                     <div class="d-grid mt-4">
-                        <button type="submit" class="btn btn-secondary">Đăng nhập</button>
+                        <button type="submit" class="btn btn-outline-success">Đăng nhập</button>
                     </div>
                     <div
                             class="alert my-3"

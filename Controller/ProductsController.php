@@ -12,6 +12,7 @@ class ProductsController
     public function getOne($id){
         return $this->execute->getDataById($id);
     }
+    
     public function create($dataRequest, $file){
         $dataRequest['name'] = isset($dataRequest['name'])?$dataRequest['name']:null;
         $dataRequest['description'] = isset($dataRequest['description'])?$dataRequest['description']:null;
