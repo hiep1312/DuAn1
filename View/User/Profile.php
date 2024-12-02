@@ -62,7 +62,7 @@ include $BASE_URL . "View/User/header.php";
                             <div class="justify-content-lg-center mb-4">
                                 <button type="submit" class="btn btn-primary" >Cập nhật</button>
                                 <button type="submit" class="btn btn-primary">Đổi mật khẩu</button>
-                                <button type="submit" class="btn btn-primary">Trang Chủ</button>
+                                <a role="button" href="?page=home" class="btn btn-primary">Trang Chủ</a>
                             </div>
                         <div
                                 class="alert my-3"

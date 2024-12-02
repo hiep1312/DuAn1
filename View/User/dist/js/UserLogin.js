@@ -22,30 +22,35 @@ document.addEventListener("DOMContentLoaded", () => {
         if (validate.checkForm(checkforms, true)) {
             const formdata = new FormData(e.target); // Lấy dữ liệu từ form trước khi gửi
             const request = new HTTPRequest("Login");
-            try {
+            /*try {*/
                 // Gửi yêu cầu POST để đăng nhập
-                const res = await request.post(formdata); // Gọi hàm post và truyền FormData
-                console.log([...formdata.entries()]);
+            // console.log([...formdata.entries()]);
+                const res = await request.post(formdata, false);
+                // console.log(res);
                 const alert = document.getElementById("alert");
                 // Kiểm tra phản hồi từ API
                 if ( request.getStatus() === 200 && res.message === true) {
                     await accessToken.handleTokenLocal(res.data);
                     accessToken.saveToken();
+                    console.log(accessToken.getInfo());
                     // console.log(test.getInfo());
                     // Hiển thị thông báo thành công và chuyển hướng
                     alert.classList.add("alert-secondary");
                     alert.textContent = "Đăng nhập thành công ~~";
+                    setTimeout(() => {
+                        window.location.href = "?page=home";
+                    }, 4000);
                 } else {
                     // Đăng nhập thất bại
                     alert.classList.add("alert-danger");
                     alert.textContent = res.message;
                 }
-            } catch (error) {
+            /*} catch (error) {
                 console.error("Lỗi đăng nhập:", error);
                 const alert = document.getElementById("alert");
                 alert.classList.add("alert-danger");
                 alert.textContent = "Lỗi khi kết nối với server! Vui lòng thử lại sau.";
-            }
+            }*/
         }
     });
 });

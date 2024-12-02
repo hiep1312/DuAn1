@@ -5,17 +5,9 @@
       <?php
       $BASE_URL = "./";
       //include $BASE_URL . "View/User/header.php";
-      include $BASE_URL . "View/Admin/components/head-page-meta.php"
-      ?>
-      <script src="<?= $BASE_URL ?>JS/AccessToken.js"></script>
-      <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
-      <script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
-      <?php
+      include $BASE_URL . "View/Admin/components/head-page-meta.php";
       include $BASE_URL . "View/Admin/components/head-css.php";
       ?>
-
-      <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
-      <script src="<?= $BASE_URL ?>View/User/dist/js/UserLogin.js"></script>
 
   </head>
   <!-- [Head] end -->
@@ -110,7 +102,8 @@
         </div>
       </div>
     </div>
-
+    <script  src="<?= $BASE_URL ?>JS/Validate.js"></script>
+    <script src="<?= $BASE_URL ?>View/User/dist/js/UserLogin.js"></script>
 <?php
 include $BASE_URL ."View/Admin/components/footer-js.php"
 ?> 

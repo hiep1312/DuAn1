@@ -154,6 +154,9 @@ if($role==="admin"){
             case "profile":
             include "View/User/Profile.php";
             break;
+            case "home":
+            include "View/User/Home1.php";
+            break;
         default:
             include_once "View/User/404.php";
             break;

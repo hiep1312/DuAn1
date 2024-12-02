@@ -836,14 +836,13 @@ if($_GET['page']){
         $connect = new UsersController();
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $data = $connect->checkLogin($_POST);
-            $response->setResponse(!$data?503:200,  (bool)$data, !$data?null: $data->user_id);
+            $response->setResponse(!$data?503:200, (bool)$data, !$data?null:$data->user_id);
             $response->sendResponse();
         }else{
             $response->setResponse(405);
             $response->sendResponse();
         }
-    }
-    else {
+    }else {
         $response->setResponse(404);
         $response->sendResponse();
     }
