@@ -1,5 +1,5 @@
 <?php
-require_once "env.php";
+    require_once $config ?? "env.php";
 class ConnectDatabase
 {
     protected $connect, $sql, $prepare;

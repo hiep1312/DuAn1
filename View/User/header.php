@@ -348,7 +348,7 @@
                             aria-expanded="false"
                             style="font-size: 12px"
                     >
-                        <p class="mb-0">Tài khoản</p>
+                        <p class="mb-0">Tài kh oản</p>
                         <img
                                 src="View/User/assets/icons/IconArrowDown.png"
                                 alt="Dropdown Icon"
@@ -372,7 +372,7 @@
                             <a
                                     class="dropdown-item text-white font-krona-one text-uppercase"
                                     style="font-size: 12px"
-                                    href="?page=promotions"
+                                    href="?page=promotion"
                             >Khuyến mãi</a
                             >
                         </li>

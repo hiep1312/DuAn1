@@ -1,0 +1,15 @@
+{
+    "name": "nhaccuviet/app",
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./Model/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PhamVuDuy-poly",
+            "email": "duypvph49727@gmail.com"
+        }
+    ],
+    "require": {}
+}

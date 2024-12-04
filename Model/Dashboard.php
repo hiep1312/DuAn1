@@ -1,5 +1,6 @@
 <?php
-require_once "./ConnectDatabase.php";
+$config = "./Model/env.php";
+require_once "./Model/ConnectDatabase.php";
 class Dashboard{
     protected $connect = null, $sql = null;
     public function __construct(){
@@ -13,6 +14,74 @@ class Dashboard{
         $this->sql = "Select * from `orders` where `status` = 1";
         return $this->connect->executeSQL($this->sql);
     }
+    public function getAlltotalsOrders(){
+        $this->sql = "SELECT SUM(total) AS totals FROM ( SELECT SUM(ot.price * ot.quantity) 
+                        AS total FROM `orders` 
+                        AS od LEFT JOIN `orderitems` 
+                        AS ot ON ot.order_id = od.order_id WHERE od.status = 1 GROUP BY od.status ) AS totals;";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getAllCurrentMonth(){
+        $this->sql = "
+                        SELECT SUM(ot.price * ot.quantity) AS total
+                        FROM `orders` AS od
+                        LEFT JOIN `orderitems` AS ot ON ot.order_id = od.order_id
+                        WHERE od.status = 1 AND YEAR(od.created_at) = YEAR(CURRENT_DATE) AND MONTH(od.created_at) = MONTH(CURRENT_DATE);
+                    ";
+        return $this->connect->executeSQL($this->sql);
+
+    }public function getAllCurrentYear(){
+        $this->sql = "
+                        SELECT SUM(ot.price * ot.quantity) AS total
+                        FROM `orders` AS od
+                        LEFT JOIN `orderitems` AS ot ON ot.order_id = od.order_id
+                        WHERE od.status = 1 AND YEAR(od.created_at) = YEAR(CURRENT_DATE);
+                    ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getdaylyOrders()
+    {
+        $this->sql = "
+            SELECT SUM(ot.price * ot.quantity) AS total, od.created_at AS order_date FROM `orders` AS od
+            LEFT JOIN `orderitems` AS ot ON ot.order_id = od.order_id
+            WHERE od.status = 1
+            GROUP BY od.created_at;  
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getMonthOrders()
+    {
+        $this->sql = "
+            SELECT SUM(total) AS monthly_total, MONTH(order_date) AS order_month FROM (
+            SELECT SUM(ot.price * ot.quantity) AS total, DATE(od.created_at) AS order_date
+            FROM `orders` AS od
+            LEFT JOIN `orderitems` AS ot ON ot.order_id = od.order_id
+            WHERE od.status = 1
+            GROUP BY DATE(od.created_at)
+            ) AS monthly_totals
+            GROUP BY MONTH(order_date);
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function chartdanhmucSp()
+    {
+        $this->sql = "
+            SELECT 
+                p.brand AS product_brand, SUM(p.stock_quantity) AS Tongptonkho
+                FROM  products AS p
+                GROUP BY p.brand
+                ORDER BY p.brand;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function countLikes()
+    {
+        $this->sql = "
+           SELECT content, likes 
+            FROM comments ORDER BY  likes ASC ;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
     public function getAmountMoneyFromOrdersAccepted(){
         $orders = $this->getAllOrdersAccepted();
         $this->sql = "Select `order_id`, SUM(price) as `total_money` from `orderitems`";
@@ -24,7 +93,6 @@ class Dashboard{
         $this->sql .= " GROUP BY `order_id`";
         return $this->connect->executeSQL($this->sql);
     }
+
+
 }
-$dashboard = new Dashboard();
-echo "<pre>";
-print_r($dashboard->getAmountMoneyFromOrdersAccepted());
