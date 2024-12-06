@@ -101,13 +101,13 @@ include $BASE_URL . "View/User/header.php";
                     <div
                             class="transition-fade-up col-12 col-lg-9 d-flex flex-column flex-lg-row align-items-end overflow-hidden"
                     >
-                        <img src="./assets/image/42.png" class="w-100" alt="" />
+                        <img src="<?= $BASE_URL ?>View/User/assets/image/42.png" class="w-100" alt="" />
                         <div
                                 data-aos="fade-left"
                                 data-aos-duration="1000"
                                 class="transition-fade-right d-flex align-items-center justify-content-center gap-2 button-padding w-full border border-0 mt-5 me-5 me-lg-0 mt-lg-0 bg-secondary-custom custom-btn-ow"
                         >
-                            <a href="OurWorks.html"
+                            <a href="?page=category"
                                class="mb-0 font-krona-one text-uppercase text-black text-decoration-none"
                                style="text-wrap: nowrap"
                             >
@@ -161,7 +161,7 @@ include $BASE_URL . "View/User/header.php";
                     <div class="card text-white bg-dark custom-card">
                         <div class="card-image-wrapper">
                             <img
-                                    src="assets/image/anh01.webp"
+                                    src="<?= $BASE_URL ?>View/User/assets/image/prhome1.jpg"
                                     class="card-img"
                                     alt="Card image"
                             />
@@ -175,7 +175,7 @@ include $BASE_URL . "View/User/header.php";
                                     Gecko Kalimba UK 17 Keys
                                 </h5>
                                 <p class="card-text mb-2">Âm thanh vang to như tụi Mỹ</p>
-                                <a href="Services.html"
+                                <a href="?page=category"
                                    class="bg-transparent d-flex align-items-center gap-3 text-secondary-color font-krona-one ps-0 text-decoration-none"
                                    style="border: none"
                                 >
@@ -200,7 +200,7 @@ include $BASE_URL . "View/User/header.php";
                     <div class="card text-white bg-dark custom-card">
                         <div class="card-image-wrapper">
                             <img
-                                    src="assets/image/anh02.webp"
+                                    src="<?= $BASE_URL ?>View/User/assets/image/prhome2.jpg"
                                     class="card-img"
                                     alt="Card image"
                             />
@@ -214,7 +214,7 @@ include $BASE_URL . "View/User/header.php";
                                     Kalimba 17 Keys Con Cuerpo De caoba nat
                                 </h5>
                                 <p class="card-text mb-2">Nhạc cụ đến từ Brazil</p>
-                                <a href="Services.html"
+                                <a href="?page=category"
                                    class="bg-transparent d-flex align-items-center gap-3 text-secondary-color font-krona-one ps-0 text-decoration-none"
                                    style="border: none"
                                 >
@@ -239,7 +239,7 @@ include $BASE_URL . "View/User/header.php";
                     <div class="card text-white bg-dark custom-card">
                         <div class="card-image-wrapper">
                             <img
-                                    src="assets/image/anh03.webp"
+                                    src="<?= $BASE_URL ?>View/User/assets/image/prhome3.jpg"
                                     class="card-img"
                                     alt="Card image"
                             />
@@ -253,7 +253,7 @@ include $BASE_URL . "View/User/header.php";
                                     Kalimba Double Layer Treble Thumb Finge
                                 </h5>
                                 <p class="card-text mb-2">Gấp đôi phím đàn, ultil âm nhạc</p>
-                                <a href="Services.html"
+                                <a href="?page=category"
                                    class="bg-transparent d-flex align-items-center gap-3 text-secondary-color font-krona-one ps-0 text-decoration-none"
                                    style="border: none"
                                 >
@@ -311,7 +311,7 @@ include $BASE_URL . "View/User/header.php";
                             bắt đầu và cả những người chơi nhạc chuyên nghiệp,
                             mang đến trải nghiệm thư giãn và kết nối với âm nhạc một cách tự nhiên.
                         </p>
-                        <a href="About.html"
+                        <a href="<?= $BASE_URL ?>?page=About"
                            data-aos="fade-up"
                            data-aos-duration="0"
                            class="d-flex align-items-center justify-content-start gap-2 py-3 w-full border-0 mt-1 mt-lg-0 bg-transparent text-secondary-color ps-0 text-decoration-none"
@@ -370,7 +370,7 @@ include $BASE_URL . "View/User/header.php";
                     <a
                             data-aos="fade-up"
                             data-aos-duration="3000"
-                            href="Services.html"
+                            href="?page=category"
                             class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text"
                     >
                         <span class="me-2">Xem thêm</span>
@@ -403,7 +403,7 @@ include $BASE_URL . "View/User/header.php";
                     <div class="overflow-hidden">
                         <img
                                 data-aos="fade-left"
-                                src="assets/image/22.jpg"
+                                src="<?= $BASE_URL ?>View/User/assets/image/22.jpg"
                                 class="img-fluid"
                                 alt=""
                         />
@@ -423,14 +423,14 @@ include $BASE_URL . "View/User/header.php";
                     <div class="col-md-6 position-relative box-image-approach">
                         <div data-aos="fade-up" class="image-position-approach-2">
                             <img
-                                    src="assets/image/020.jpg"
+                                    src="<?= $BASE_URL ?>View/User/assets/image/020.jpg"
                                     style="max-width: 100%; max-height: 100%"
                                     alt=""
                             />
                         </div>
                         <div data-aos="fade-right" class="image-position-approach-1">
                             <img
-                                    src="assets/image/013.jpg"
+                                    src="<?= $BASE_URL ?>View/User/assets/image/013.jpg"
                                     style="
                     max-width: 100%;
                     max-height: 100%;
@@ -501,7 +501,7 @@ include $BASE_URL . "View/User/header.php";
                             <a
                                     data-aos="fade-up"
                                     data-aos-delay="700"
-                                    href="Services.html"
+                                    href="?page=news"
                                     class="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-text"
                             >
                                 <span class="me-2">Xem thêm</span>
@@ -595,30 +595,30 @@ include $BASE_URL . "View/User/header.php";
                 >
                     <!-- Col 1 -->
                     <div
-                            class="col-12 col-md-6 col-lg-4 d-none d-md-block"
+                            class="col-12 col-md-6 col-lg-4 opacity-75 d-none d-md-block"
                             style="height: 450px"
                     >
                         <img
-                                src="assets/image/01.jpg"
+                                src="<?= $BASE_URL ?>View/User/assets/image/01.jpg"
                                 class="img-fluid h-100"
                                 alt="Image 1"
                         />
                     </div>
                     <!-- Col 2 -->
                     <div
-                            class="col-12 col-md-6 col-lg-4 d-none d-lg-block"
+                            class="col-12 col-md-6 col-lg-4 opacity-75 d-none d-lg-block"
                             style="height: 450px"
                     >
                         <img
-                                src="assets/image/02.jpg"
+                                src="<?= $BASE_URL ?>View/User/assets/image/02.jpg"
                                 class="img-fluid h-100 d-none d-lg-block"
                                 alt="Image 2"
                         />
                     </div>
                     <!-- Col 3 -->
-                    <div class="col-12 col-md-6 col-lg-4" style="height: 450px">
+                    <div class="col-12 col-md-6 col-lg-4 opacity-75" style="height: 450px">
                         <img
-                                src="assets/image/06.jpg"
+                                src="<?= $BASE_URL ?>View/User/assets/image/06.jpg"
                                 class="img-fluid h-100"
                                 alt="Image 3"
                         />
@@ -645,8 +645,8 @@ include $BASE_URL . "View/User/header.php";
                             lại ủng hộ chúng tôi.
                         </p>
                         <a
-                                href="Reviews.php"
-                                class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text"
+                                href="?page=news"
+                                class="text-secondary   -color text-decoration-none text-uppercase font-krona-one button-text"
                         >
                             <span class="me-2">Xem thêm</span>
                             <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
@@ -822,7 +822,7 @@ include $BASE_URL . "View/User/header.php";
                                từ chiếc đàn nhỏ gọn mà đầy mê hoặc này. -->
                     </p>
                     <a
-                            href="Blog.php"
+                            href="?page=news"
                             class="view-blog-link button-text font-krona-one fw-light"
                     >
                         <span class="me-2">Xem bài viết</span>
@@ -838,11 +838,11 @@ include $BASE_URL . "View/User/header.php";
                     class="row blog-cards mt-5"
             >
                 <!-- Col 1 -->
-                <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+                <a href="?page=mews" class="col-lg-4 col-md-6 text-decoration-none">
                     <div class="blog-card bg-primary-custom">
                         <img
                                 class="img-hover"
-                                src="assets/image/029.png"
+                                src="<?= $BASE_URL ?>View/User/assets/image/tin8.jpg"
                                 alt="Nhạc cụ Kalimba – Xu Hướng Hiện Nay"
                         />
                         <p class="blog-card-title font-krona-one text-start h5-text">
@@ -851,11 +851,11 @@ include $BASE_URL . "View/User/header.php";
                     </div>
                 </a>
                 <!-- Col 2 -->
-                <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+                <a href="?page=category" class="col-lg-4 col-md-6 text-decoration-none">
                     <div class="blog-card bg-primary-custom">
                         <img
                                 class="img-hover"
-                                src="assets/image/027.png"
+                                src="<?= $BASE_URL ?>View/User/assets/image/tin9.jpg"
                                 alt="Nhạc cụ Kalimba - Chữa Lành Tâm Hồn"
                         />
                         <p class="blog-card-title font-krona-one text-start h5-text">
@@ -864,11 +864,11 @@ include $BASE_URL . "View/User/header.php";
                     </div>
                 </a>
                 <!-- Col 3 -->
-                <a href="Post.html" class="col-lg-4 col-md-6 text-decoration-none">
+                <a href="?page=category" class="col-lg-4 col-md-6 text-decoration-none">
                     <div class="blog-card bg-primary-custom h5-text">
                         <img
                                 class="img-hover"
-                                src="assets/image/028.png"
+                                src="<?= $BASE_URL ?>View/User/assets/image/tin10.jpg"
                                 alt="Những Tab Kalimba hay"
                         />
                         <p class="blog-card-title font-krona-one text-start">
@@ -899,7 +899,7 @@ include $BASE_URL . "View/User/header.php";
                     >
                         <a
                                 class="btn-cta font-krona-one text-uppercase button-text"
-                                href="Contact.html"
+                                href="?page=Contacts"
                         >
                             <span class="me-2">Liên hệ</span>
                             <i class="fa-solid fa-arrow-right" style="color: #232520"></i>

@@ -125,9 +125,9 @@ include $BASE_URL . "View/User/header.php";
                         <a
                                 data-aos="fade-up"
                                 data-aos-delay="700"
-                                href="Services.php"
+                                href="?page=news"
                                 class="btn-color button-padding text-uppercase font-krona-one text-black text-decoration-none button-textc">
-                            <span class="me-2">DỊCH VỤ</span>
+                            <span class="me-2">Tin tức</span>
                             <i class="fa-solid fa-arrow-right" style="color: #232520"></i>
                         </a>
                     </div>

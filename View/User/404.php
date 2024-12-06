@@ -28,7 +28,7 @@
         data-aos-delay="400"
         class="d-flex justify-content-center mt-4">
         <a
-          href="Home1.php"
+          href="?page=home"
           class="btn-standar button-padding font-krona-one d-flex align-items-center border-0 text-decoration-none">
           <p class="mb-0 me-3">Trang Chủ</p>
           <i class="fa-solid fa-arrow-right" style="color: #232520"></i>

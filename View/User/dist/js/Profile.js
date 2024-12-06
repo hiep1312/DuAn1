@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const alert = document.getElementById('alert');
         if (request.getStatus() == 200) {
             alert.classList.add('alert-success');
-            alert.textContent = "Thêm mới tài khoản thành công~~";
+            alert.textContent = "Cập nhật tài khoản thành công~~";
         }else {
             alert.classList.add('alert-danger');
-            alert.textContent = "Thêm mới tài khoản không thành công~~";
+            alert.textContent = "Cập nhật tài khoản không thành công~~";
         }
     }
 }, false);
