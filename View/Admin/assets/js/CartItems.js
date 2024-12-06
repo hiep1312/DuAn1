@@ -1,5 +1,12 @@
 const validate = new Validate();
-const checkforms = {};
+const checkforms = {
+  "#quantity": {
+    type: "number",
+  },
+  "#price": {
+    type: "number",
+  }
+};
 validate.checkFormAndDisplay(checkforms);
 document.getElementById("frmcartitems").addEventListener(
   "submit",

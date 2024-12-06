@@ -63,6 +63,64 @@ class Dashboard{
         ";
         return $this->connect->executeSQL($this->sql);
     }
+    public function layphoneContacts()
+    {
+        $this->sql = "
+        SELECT phone, 
+        COUNT(phone) AS contact_count FROM  contacts GROUP BY  phone
+        ORDER BY  contact_count DESC;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getPromotions()
+    {
+        $this->sql = "
+        SELECT code, usage_limit FROM promotions
+        ORDER BY usage_limit ASC;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getDUsers()
+    {
+        $this->sql = "
+             SELECT DATE(created_at) AS registration_date, 
+            COUNT(user_id) AS user_count FROM users GROUP BY DATE(created_at)
+        ORDER BY registration_date;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getMUsers()
+    {
+        $this->sql = "
+             SELECT MONTH(created_at) AS registration_month, COUNT(user_id) AS user_count
+            FROM users GROUP BY MONTH(created_at) ORDER BY registration_month;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getYUsers()
+    {
+        $this->sql = "
+             SELECT YEAR(created_at) AS registration_year, COUNT(user_id) AS user_count
+            FROM users GROUP BY YEAR(created_at) ORDER BY registration_year;
+        ";
+        return $this->connect->executeSQL($this->sql);
+    }
+    public function getYearOrders() {
+        $this->sql = "
+        SELECT YEAR(order_date) AS order_year, SUM(total) AS yearly_total 
+        FROM (
+            SELECT SUM(ot.price * ot.quantity) AS total, DATE(od.created_at) AS order_date
+            FROM `orders` AS od
+            LEFT JOIN `orderitems` AS ot ON ot.order_id = od.order_id
+            WHERE od.status = 1
+            GROUP BY DATE(od.created_at)
+        ) AS yearly_totals
+        GROUP BY YEAR(order_date)
+        ORDER BY order_year;
+    ";
+        return $this->connect->executeSQL($this->sql);
+    }
+
     public function chartdanhmucSp()
     {
         $this->sql = "

@@ -10,7 +10,7 @@ include $BASE_URL . "View/User/header.php";
         <div class="container-fluid overflow-hidden p-0">
             <div class="row align-items-center">
                 <!-- left image -->
-                <div data-aos="fade-right" class="col-lg-6 pe-0">
+                <div data-aos="fade-right"ata-aos="fade-right" class="col-lg-6 pe-0">
                     <img
                             src="assets/image/26-1.webp"
                             class="img-fluid"
