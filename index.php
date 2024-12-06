@@ -15,18 +15,7 @@
                 }
                 break;
             case "orders":
-                if($function==="add"){
-                    include "View/Admin/pages/Orders/add.php";
-                }else{
-                    include "View/Admin/pages/Orders/index.php";
-                }
-                break;
-            case "orderitems":
-                if($function==="add"){
-                    include "View/Admin/pages/Orderitems/add.php";
-                }else{
-                    include "View/Admin/pages/Orderitems/index.php";
-                }
+                include "View/Admin/pages/Orders/index.php";
                 break;
             case "news":
                 if($function==="add"){
@@ -91,19 +80,8 @@
                     include_once "View/Admin/pages/Comments/index.php";
                 }
                 break;
-            case "cartItems":
-                if($function==="add"){
-                    include_once "View/Admin/pages/CartItems/add.php";
-                }else{
-                    include_once "View/Admin/pages/CartItems/index.php";
-                }
-                break;
             case "carts":
-                if($function==="add"){
-                    include_once "View/Admin/pages/Carts/add.php";
-                }else{
-                    include_once "View/Admin/pages/Carts/index.php";
-                }
+                include_once "View/Admin/pages/Carts/index.php";
                 break;
             case "productcategories":
                 if($function==="add"){

@@ -27,7 +27,7 @@ include $BASE_URL . "View/User/header.php";
                     </div>
                     <p class="text-dark">Thông tin bổ sung</p>
                     <p class="text-dark">Ghi chú đơn hàng (tùy chọn)</p>
-                    <textarea class="form-control" id="messageContacts" placeholder="Nội dung*: ghi chú địa điểm cụ thể..." rows="2"></textarea>
+                    <textarea class="form-control" name="description" id="description" placeholder="Nội dung*: ghi chú địa điểm cụ thể..." rows="2" aria-label="Ghi chú"></textarea>
                 </div>
                 <div class="col-lg-6 p-4 border border-light rounded">
                     <h4 class="fs-3 mb-4">Đơn hàng của bạn</h4>

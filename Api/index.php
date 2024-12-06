@@ -457,53 +457,6 @@ if($_GET['page']){
             $response->setResponse(405);
             $response->sendResponse();
         }
-    }elseif ($page === "CartItems"){
-        $connect =  new CartItemsController();
-        if($_SERVER['REQUEST_METHOD'] === 'GET'){
-            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
-            if($id === "all"){
-                $data = $connect->getAll();
-                $response->setResponse(!$data?503:200, !$data?null:"Get All News Success!", $data);
-            }else{
-                $data = $connect->getOne($id);
-                $response->setResponse(!$data?404:200, !$data?null:"Get News Success!", $data);
-            }
-            $response->sendResponse();
-        }elseif($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $data = $connect->create($_POST);
-            $response->setResponse(!$data?503:200, !$data?null:"POST News Success!");
-            $response->sendResponse();
-        }elseif($_SERVER['REQUEST_METHOD'] === 'PUT'){
-            $id = $_GET["id"];
-            preg_match_all('/name="(\w+)"\s\n\s*([\w\-\s@.]+)(?=------)/u',file_get_contents("php://input"), $dataRawRequest, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
-            $_PUT = [];
-            if($dataRawRequest===[]){
-                $_PUT = json_decode(file_get_contents("php://input"), true);
-            }else{
-                foreach($dataRawRequest as $rawRequest) {
-                    $_PUT[$rawRequest[1]] = trim($rawRequest[2]);
-                }
-            }
-            if(empty($id)){
-                $response->setResponse(503);
-            }else{
-                $data = $connect->update($id, $_PUT);
-                $response->setResponse(!$data?404:200, !$data?null:"PUT News Success!", $data);
-            }
-            $response->sendResponse();
-        }elseif($_SERVER['REQUEST_METHOD'] === 'DELETE'){
-            $id = $_GET["id"];
-            if(empty($id)){
-                $response->setResponse(503);
-            }else{
-                $data = $connect->delete($id);
-                $response->setResponse(!$data?404:200, !$data?null:"DELETE News Success!", $data);
-            }
-            $response->sendResponse();
-        }else{
-            $response->setResponse(405);
-            $response->sendResponse();
-        }
     }elseif($page === "Categories"){
         $connect = new CategoriesController();
         if($_SERVER['REQUEST_METHOD'] === 'GET'){
@@ -886,21 +839,6 @@ if($_GET['page']){
             $response->setResponse(405);
             $response->sendResponse();
         }
-    }elseif($page==="CartsUser"){
-        $connect = new CartsController();
-        if($_SERVER['REQUEST_METHOD'] === 'GET'){
-            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
-            if($id){
-                $data = $connect->getAllUser($id);
-                $response->setResponse(!$data?404:200, !$data?null:"Get Products By Category Success!", $data);
-            }else{
-                $response->setResponse(503);
-            }
-            $response->sendResponse();
-        }else{
-            $response->setResponse(405);
-            $response->sendResponse();
-        }
     }elseif($page==="Vouchers"){
         $connect = new MypromotionsController();
         if($_SERVER['REQUEST_METHOD'] === 'GET'){
@@ -921,10 +859,42 @@ if($_GET['page']){
         if($_SERVER['REQUEST_METHOD'] === 'GET'){
             $id = !empty($_GET["id"]) ? $_GET["id"] : false;
             if($id){
-                $data = $connect->getAllUser($id);
-                $response->setResponse(!$data?404:200, !$data?null:"Get Products By Category Success!", $data);
+                $data = $connect->getAllUserId($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get Orders By User Id Success!", $data);
             }else{
                 $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="OrdersDetails"){
+        $connect = new OrdersController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+            if($id === "all"){
+                $data = $connect->getAllOrders();
+                $response->setResponse(!$data?503:200, !$data?null:"Get All Orders Details Success!", $data);
+            }else{
+                $data = $connect->getAllOrderId($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get All Orders Details By Id Success!", $data);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="CartsDetails"){
+        $connect = new CartsController();
+        if($_SERVER['REQUEST_METHOD'] === 'GET'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : "all";
+            if($id === "all"){
+                $data = $connect->getAllCarts();
+                $response->setResponse(!$data?503:200, !$data?null:"Get All Carts Details Success!", $data);
+            }else{
+                $data = $connect->getAllUserId($id);
+                $response->setResponse(!$data?404:200, !$data?null:"Get All Carts Details By Id Success!", $data);
             }
             $response->sendResponse();
         }else{

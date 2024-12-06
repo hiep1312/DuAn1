@@ -11,3 +11,9 @@ $BASE_URL = "./";
 <link rel="icon" href="<?= $BASE_URL ?>View/User/assets/image/logo1.png" type="image/x-icon">
 <script src="<?= $BASE_URL ?>JS/config.js"></script>
 <script src="<?= $BASE_URL ?>JS/main.js"></script>
+<script src="<?= $BASE_URL ?>JS/AccessToken.js"></script>
+<script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
+<script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
+<script>
+    const accessToken = new accessToken();
+</script>

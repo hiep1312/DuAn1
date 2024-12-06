@@ -18,29 +18,13 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chỉnh sửa giỏ hàng</h1>
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Chi tiết giỏ hàng</h1>
                         <button type="button" class="btn-close button-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" id="formEdit" method="POST" class="row g-3" enctype="multipart/form-data">
-                            <div class="col-md-6 my-2">
-                                <label for="user_id" class="form-label">Tên người dùng : </label>
-                                <select name="user_id" id="user_id" class="form-select">
-                                    <option value="">Mặc định</option>
-                                </select>
-                            </div>
-                            <div class="my-2">
-                                <label for="created_at" class="form-label">Thời gian bình luận: </label>
-                                <input type="date" name="created_at" id="created_at" class="form-control">
-                            </div>
+                        <form action="" id="formDetails">
                         </form>
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary button-close"
-                            data-bs-dismiss="modal">Hủy</button>
-                        <button type="submit" class="btn btn-primary" form="formEdit">Cập nhật</button>
                     </div>
                 </div>
             </div>
@@ -55,7 +39,7 @@
                                 <h5 class="m-b-10">Giỏ hàng</h5>
                             </div>
                             <ul class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="?role=admin&page=dashboard">Trang Chủ</a></li>
+                                <li class="breadcrumb-item"><a href="?role=admin&page=dashboard">Trang chủ</a></li>
                                 <li class="breadcrumb-item" aria-current="page">Danh sách giỏ hàng</li>
                             </ul>
                         </div>
@@ -67,10 +51,13 @@
                 <table class="table table-hover table-striped table-bordered border-light text-center">
                     <thead class="table-dark">
                         <tr>
-                            <th>ID</th>
-                            <th>Tên người dùng</th>
-                            <th>Ngày tạo</th>
-                            <th>Thao tác</th>
+                            <th>STT</th>
+                            <th>Người dùng</th>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Ngày thay đổi</th>
+                            <th>Công cụ</th>
                         </tr>
                     </thead>
                     <tbody class="table-group-divider table-light">
@@ -86,7 +73,7 @@
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div id="liveToast" class="toast" role="alert">
                 <div class="toast-header">
-                    <img src="<?= $BASE_URL ?>View/User/assets/image/logo1.png" style="max-height: 70px; max-width: 100px;" class="rounded me-2" alt="Logo">
+                    <img src="<?= $BASE_URL ?>View/User/assets/image/logo2.png" style="max-height: 70px; max-width: 100px;" class="rounded me-2" alt="Logo">
                     <strong class="me-auto"></strong>
                     <small>Now</small>
                     <button type="button" class="btn-close button-close" data-bs-dismiss="toast"></button>

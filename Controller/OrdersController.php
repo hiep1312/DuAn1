@@ -8,16 +8,23 @@ class OrdersController{
     public function getAll(){
         return $this->execute->getAllData();
     }
-    public function getAllUser($id){
-        return $this->execute->getDataByUser($id);
+    public function getAllOrders(){
+        return $this->execute->getAllDataOrders();
     }
     public function getOne($id){
         return $this->execute->getDataById($id);
+    }
+    public function getAllUserId($id){
+        return $this->execute->getDataByUserId($id);
+    }
+    public function getAllOrderId($id){
+        return $this->execute->getDataByOrderId($id);
     }
     public function create($dataRequest){
         $dataRequest['user_id'] = isset($dataRequest['user_id']) ? $dataRequest['user_id']: null;
         $dataRequest['status'] = isset($dataRequest['status']) && ($dataRequest["status"]==0 || $dataRequest["status"]==1 || $dataRequest["status"]==2) ? $dataRequest['status']: 0;
         $dataRequest['total_amount'] = isset($dataRequest['total_amount']) ? $dataRequest['total_amount']: null;
+        $dataRequest['description'] = isset($dataRequest['description']) ? $dataRequest['description']: null;
         return $this->execute->addData($dataRequest);
     }
     public function update($id, $dataRequest){
@@ -30,6 +37,7 @@ class OrdersController{
         $dataRequest['total_amount'] = isset($dataRequest['total_amount']) ? $dataRequest['total_amount']: $dataOld['total_amount'];
         $dataRequest['created_at'] = isset($dataRequest['created_at']) ? $dataRequest['created_at']: $dataOld['created_at'];
         $dataRequest['updated_at'] = isset($dataRequest['updated_at']) ? $dataRequest['updated_at']: $dataOld['updated_at'];
+        $dataRequest['description'] = isset($dataRequest['description']) ? $dataRequest['description']: $dataOld['description'];
         return !$this->execute->updateData($id, $dataRequest)?false:$dataOld;
     }
     public function delete($id){

@@ -14,7 +14,7 @@
         <div class="navbar-content">
             <ul class="pc-navbar">
                 <li class="pc-item pc-caption">
-                    <label>Nhà chính</label>
+                    <label>Trang chủ</label>
                     <i class="ti ti-dashboard"></i>
                 </li>
                 <li class="pc-item">
@@ -22,7 +22,7 @@
                                 class="pc-mtext">Bảng điều khiển</span></a>
                 </li>
                 <li class="pc-item pc-caption">
-                    <label>Quản lý</label>
+                    <label>Quản lý</label>
                     <i class="ti ti-apps"></i>
                 </li>
                 <li class="pc-item pc-hasmenu">
@@ -42,15 +42,14 @@
                 <li class="pc-item pc-hasmenu">
                     <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-bags-shopping"></i></span><span class="pc-mtext">Đơn hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=orders&function=add">Thêm đơn hàng</a></li>
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=orders">Danh sách đơn hàng</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
-                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-solid fa-inboxes"></i></span><span class="pc-mtext">Chi tiết đơn hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <a role="button" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-cart-shopping"></i></span><span
+                                class="pc-mtext">Giỏ hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=orderitems&function=add">Thêm chi tiết</a></li>
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=orderitems">Danh sách chi tiết</a></li>
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=carts">Danh sách giỏ hàng</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
@@ -108,22 +107,6 @@
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=comments&function=add">Thêm bình luận</a></li>
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=comments">Danh sách bình luận</a></li>
-                    </ul>
-                </li>
-                <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-cart-shopping"></i></span><span
-                                class="pc-mtext">Giỏ hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-                    <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=carts&function=add">Thêm sản phẩm</a></li>
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=carts">Danh sách sản phẩm</a></li>
-                    </ul>
-                </li>
-                <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-regular fa-cart-flatbed-boxes"></i></span><span
-                                class="pc-mtext">Chi tiết giỏ hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-                    <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=cartItems&function=add">Thêm chi tiết sản phẩm</a></li>
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=cartItems">Danh sách chi tiết sản phẩm</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">

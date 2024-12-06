@@ -6,7 +6,18 @@
 <script src="<?= $BASE_URL ?>View/Admin/assets/js/fonts/custom-font.js"></script>
 <script src="<?= $BASE_URL ?>View/Admin/assets/js/pcoded.js"></script>
 <script src="<?= $BASE_URL ?>View/Admin/assets/js/plugins/feather.min.js"></script>
-
+<script>
+    if(!pageLogin){
+        window.addEventListener("load", async () => {
+            await accessToken.handleTokenLocal();
+            if(!localStorage.getItem("sessionId") || accessToken.getRole()!=="Admin"){
+                const webHistory = new WebHistory();
+                webHistory.create(null, "?page=404", false);
+                location.reload();
+            }
+        }, false);
+    }
+</script>
 <script>layout_change('light');</script>
 <script>font_change("Roboto");</script>
 <script>change_box_container('false');</script>

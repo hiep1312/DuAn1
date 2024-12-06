@@ -9,11 +9,11 @@ class OrderitemsController{
         return $this->execute->getAllData();
     }
     public function getOne($id){
-        $this->execute->getDataById($id);
+        return $this->execute->getDataById($id);
     }
     public function create($dataRequest){
         $dataRequest['order_id'] = isset($dataRequest['order_id']) ? $dataRequest['order_id']: null;
-        $dataRequest['product_id'] = isset($dataRequest['product_id']) ? $dataRequest['product_id']: null;
+        $dataRequest['productVariant_id'] = isset($dataRequest['productVariant_id']) ? $dataRequest['productVariant_id']: null;
         $dataRequest['quantity'] = isset($dataRequest['quantity']) ? $dataRequest['quantity']: null;
         $dataRequest['price'] = isset($dataRequest['price']) ? $dataRequest['price']: null;
         return $this->execute->addData($dataRequest);
@@ -24,7 +24,7 @@ class OrderitemsController{
         endif;
         settype($dataOld, 'array');
         $dataRequest['order_id'] = isset($dataRequest['order_id']) ? $dataRequest['order_id']: $dataOld['order_id'];
-        $dataRequest['product_id'] = isset($dataRequest['product_id']) ? $dataRequest['product_id']: $dataOld['product_id'];
+        $dataRequest['productVariant_id'] = isset($dataRequest['productVariant_id']) ? $dataRequest['productVariant_id']: $dataOld['productVariant_id'];
         $dataRequest['quantity'] = isset($dataRequest['quantity']) ? $dataRequest['quantity']: $dataOld['quantity'];
         $dataRequest['price'] = isset($dataRequest['price']) ? $dataRequest['price']: $dataOld['price'];
         return !$this->execute->updateData($id, $dataRequest)?false:$dataOld;

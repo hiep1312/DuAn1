@@ -2,6 +2,29 @@
     $BASE_URL = "./";
     include $BASE_URL . "View/User/header.php";
 ?>
+    <div class="modal fade" tabindex="-1" style="top: 25vh;" id="messageSuccessAddToCart" data-bs-theme="dark">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><img src="./View/User/assets/image/logo2.png" alt="Logo" style="max-width: 70px;"></h5>
+                    <button type="button" class="btn-close btnClose" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-success d-flex align-items-center aos-init aos-animate" role="alert" data-aos="flip-up" data-aos-duration="1000">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 40px;">
+                            <path style="fill: currentcolor;" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                        <div>
+                            Thêm giỏ hàng thành công!
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary btnClose" data-bs-dismiss="modal">Đóng thông báo</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <section class="chitiet-section custom-padding">
     <div class="container">
         <h2 class="text-uppercase mb-3" data-aos="fade-right">Chi tiết sản phẩm</h2>
@@ -83,7 +106,6 @@
             </div>
         </div>
 </section>
-
 <div class="container">
     <p class="fw-bold" style="color: #a5cf44;" data-aos="fade-right" data-aos-duration="800">Mô Tả</p>
     <div class="border rounded border-light p-3 rounded-1" id="description" data-aos="fade-up" data-aos-duration="1000">

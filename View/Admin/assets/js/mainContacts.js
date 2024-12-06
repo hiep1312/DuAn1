@@ -115,6 +115,61 @@ async function editRow(id, currentPage){
     modal.querySelector("#email").value = dataOld.data.email ?? "";
     modal.querySelector("#phone").value = dataOld.data.phone ?? "";
     modal.querySelector("#message").value = dataOld.data.message ?? "";
+    /*modal.querySelector("#stock_quantity").value = dataOld.data.stock_quantity ?? "";
+    modal.querySelector("#start_at").value = dataOld.data.start_at ?? "";
+    modal.querySelector("#end_at").value = dataOld.data.end_at ?? "";
+    modal.querySelector(`#status>option[value='${dataOld.data.status}']`).setAttribute("selected", "");*/
+    // const validate = new Validate();
+    /*const objcheck = {
+        "#material": {
+            type: "paragraph",
+            message: ["Chất liệu không được để trống!", "Chất liệu hợp lệ!"],
+            options: 1
+        },
+        "#color": {
+            type: "paragraph",
+            options: 1
+        },
+        "#price": {
+            type: "number"
+        },
+        "#stock_quantity": {
+            type: "number"
+        }
+    };
+    validate.checkFormAndDisplay(objcheck);
+    const handleSubmit = async e => {
+        e.preventDefault();
+        if(validate.checkForm(objcheck, true)){
+            const formdata = new FormData(e.target);
+            const keysToDelete = [];
+            formdata.forEach((value, key) => {
+                if (value === "") {
+                    keysToDelete.push(key);
+                }
+            });
+            keysToDelete.forEach(key => formdata.delete(key));
+            const res = await request.put(id, formdata, false);
+            const liveToast = document.getElementById("liveToast");
+            validate.resetForm("#formEdit");
+            liveToast.querySelector('.button-close').addEventListener("click", e => {
+                liveToast.style.display = "none";
+            }, false);
+            modal.nextElementSibling.setAttribute("style", "");
+            if(request.getStatus()===200){
+                liveToast.setAttribute("style", "display: block; --bs-toast-bg: #b3ffabd9");
+                liveToast.querySelector("#message").textContent = "Cập nhật thành công!";
+                getDataByQuantity(currentPage);
+                modal.style.display = "none";
+            }else{
+                liveToast.setAttribute("style", "display: block; --bs-toast-bg: #ffababd9");
+                liveToast.querySelector("#message").textContent = "Cập nhật thất bại!";
+            }
+            document.getElementById("formEdit").removeEventListener("submit", handleSubmit);
+            setTimeout(() => liveToast.style.display = "none", 3000);
+        }
+    };
+    document.getElementById("formEdit").addEventListener("submit", handleSubmit, false);*/
     const validate = new Validate();
     const checkforms = ({
         "#name": {

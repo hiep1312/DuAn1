@@ -17,7 +17,7 @@ class AccessToken{
         }else{
             if(this.#getTokenLocal()){
                 const response = await this.#request.getAll();
-                if(this.#request.getStatus()===200){
+                if(response.status===200){
                     const data = response.data;
                     const check = data.find(value => {
                         if(value.sessionId===this.#getTokenLocal()){

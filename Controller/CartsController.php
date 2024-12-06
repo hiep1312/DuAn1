@@ -11,15 +11,20 @@ class CartsController {
     public function getAll() {
         return $this->execute->getAllData();
     }
-    public function getAllUser($id){
-        return $this->execute->getDataByUser($id);
+    public function getAllCarts(){
+        return $this->execute->getAllDataCarts();
     }
     public function getOne($id) {
         return $this->execute->getDataById($id);
     }
-
+    public function getAllUserId($id){
+        return $this->execute->getDataByUserId($id);
+    }
     public function create($dataRequest) {
         $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : null;
+        $dataRequest["productVariant_id"] = isset($dataRequest["productVariant_id"]) ? $dataRequest["productVariant_id"] : null;
+        $dataRequest["quantity"] = isset($dataRequest["quantity"]) ? $dataRequest["quantity"] : null;
+        $dataRequest["price"] = isset($dataRequest["price"]) ? $dataRequest["price"] : null;
         return $this->execute->addData($dataRequest);
     }
 
@@ -29,6 +34,9 @@ class CartsController {
         endif;
         settype($dataOld, 'array');
         $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : $dataOld["user_id"];
+        $dataRequest["productVariant_id"] = isset($dataRequest["productVariant_id"]) ? $dataRequest["productVariant_id"] : $dataOld["productVariant_id"];
+        $dataRequest["quantity"] = isset($dataRequest["quantity"]) ? $dataRequest["quantity"] : $dataOld["quantity"];
+        $dataRequest["price"] = isset($dataRequest["price"]) ? $dataRequest["price"] : $dataOld["price"];
         $dataRequest["created_at"] = isset($dataRequest["created_at"]) ? $dataRequest["created_at"] : $dataOld["created_at"];
         return !$this->execute->updateData($id, $dataRequest) ? false : $dataOld;
     }

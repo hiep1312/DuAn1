@@ -37,6 +37,7 @@ if(webHistory.get() && localStorage.getItem("sessionId")){
             await request.put(accessToken.getInfo().user_id, formdata,false);
             const now = new Date(Date.now());
             now.setDate(now.getDate() + 5);
+            const description= document.getElementById("description");
             if(request.getStatus()===200){
                 const changeToOrder = async () => {
                     const data = new FormData();
@@ -44,24 +45,23 @@ if(webHistory.get() && localStorage.getItem("sessionId")){
                     data.append("status", "0");
                     data.append("total_amount", "0");
                     data.append("updated_at", now.getFullYear() + "-" + now.getMonth() + "-" + now.getDate());
+                    description.value.trim()!=="" && data.append("description", description.value.trim());
                     await new HTTPRequest("Orders").post(data, false);
                     const orderId = await new HTTPRequest("Orders").getAll();
                     let total = 0;
                     for(let item of webHistory.get().data){
-                        const request = new HTTPRequest("CartItems");
-                        const cartItems = await request.delete(item.item_id);
-                        request.tableName = "Carts";
-                        await request.delete(item.cart_id);
+                        const request = new HTTPRequest("Carts");
+                        const cart = await request.delete(item.cart_id);
                         request.tableName = "Orderitems";
-                        delete cartItems.data.cart_id;
-                        delete cartItems.data.item_id;
-                        total += cartItems.data.quantity;
-                        cartItems.data.order_id = orderId.data?.at(-1).order_id;
-                        request.changeToData(cartItems.data);
+                        delete cart.data.cart_id;
+                        delete cart.data.created_at;
+                        total += cart.data.quantity;
+                        cart.data.order_id = orderId.data?.at(-1).order_id;
+                        request.changeToData(cart.data);
                         await request.post();
                     }
                     data.set("total_amount", total);
-                    await new HTTPRequest("Orders").put(orderId.data?.at(-1).order_id, formdata, false);
+                    await new HTTPRequest("Orders").put(orderId.data?.at(-1).order_id, data, false);
                     webHistory.create(null, "?page=order", false);
                     location.reload();
                 }
@@ -82,20 +82,18 @@ if(webHistory.get() && localStorage.getItem("sessionId")){
         const count = document.getElementById("count");
         const totalMoney = document.getElementById("totalMoney");
         const info = webHistory.get();
-        const filterName = [];
-        Array.from(info.data)?.forEach(name => filterName.includes(name.name) || filterName.push(name.name))
+        const filterName = Array.from(info.data).map(name => `${name.title ?? "Không xác định"}(${name.material ?? "..."} - ${name.color ?? "..."})(${name.quantity ?? 0})`);
         nameProducts.textContent = filterName.join(", ");
         const total = Array.from(info.data).reduce((total, count) => count.quantity + total, 0);
         count.textContent = total;
         const money = Array.from(info.data).reduce((total, money) => (money.price*money.quantity) + total, 0);
-        totalMoney.textContent = money;
+        totalMoney.textContent = money + 30000;
     }
     viewInfo().then();
     document.getElementById("transfer").addEventListener("click", e => {
         e.preventDefault();
         alert("Phương thức này hiện đang bị khóa!");
     }, false);
-    console.log(webHistory.get());
 }else{
     webHistory.create(null, "?page=cart", false);
     location.reload();

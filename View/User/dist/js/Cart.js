@@ -40,19 +40,17 @@ const viewAllCart = async () => {
     `;
     const applyVoucher = document.getElementById("applyVoucher");
     await accessToken.handleTokenLocal();
-    const data = await new HTTPRequest("CartsUser").getOne(accessToken.getInfo().user_id);
+    const data = await new HTTPRequest("CartsDetails").getOne(accessToken.getInfo().user_id);
     frameCart.querySelector("button#continue").addEventListener("click", e => {
         new WebHistory().create(null, "?page=category", false);
         location.reload();
     });
     frameCart.querySelector("button#deleteAll").addEventListener("click", async e => {
         if(window.confirm("Bạn có chắc chắn muốn xóa tất cả sản phẩm không?")){
-            const dataNews = await new HTTPRequest("CartsUser").getOne(accessToken.getInfo().user_id);
+            const dataNews = await new HTTPRequest("CartsDetails").getOne(accessToken.getInfo().user_id);
             if(dataNews.status===200){
                 for(let item of dataNews.data){
-                    const request = new HTTPRequest("CartItems");
-                    await request.delete(item.item_id);
-                    request.tableName = "Carts";
+                    const request = new HTTPRequest("Carts");
                     await request.delete(item.cart_id);
                 }
                 viewAllCart();
@@ -67,7 +65,7 @@ const viewAllCart = async () => {
             totalMoney += (item.quantity*item.price);
             row.innerHTML = `
                 <td style="color: black"><img src="${image.data?.filter(img => (img.location===0 && img.product_id===item.product_id))?.[0]?.album.slice(1) ?? `https://news.khangz.com/wp-content/uploads/2021/10/404-not-found-la-gi-1.jpg`}" alt="Ảnh sản phẩm" class="img-thumbnail" style="max-width: 100px; max-height: 80px"></td>
-                <td>${item.name ?? "Không xác định"}</td>
+                <td>${item.name ?? "Không xác định"}<br>(${item.material ?? "..."} - ${item.color ?? "..."})</td>
                 <td>${item.price ?? "..."}₫</td>
                 <td>
                     <input type="number" class="form-control text-center" value="${item.quantity ?? 1}" style="width: 80px;">
@@ -82,17 +80,15 @@ const viewAllCart = async () => {
                 }
             });
             row.querySelector("input[type=number]").addEventListener("change", async e => {
-                const request = new HTTPRequest("CartItems");
+                const request = new HTTPRequest("Carts");
                 const formdata = new FormData();
                 formdata.append("quantity", e.target.value);
-                await request.put(item.item_id, formdata, false);
+                await request.put(item.cart_id, formdata, false);
                 viewAllCart();
             });
             row.querySelector("button").addEventListener("click", async e => {
-                const request = new HTTPRequest("CartItems");
-                await request.delete(item.item_id ?? "undefined");
-                request.tableName = "Carts";
-                await request.delete(item.cart_id ?? "undefined");
+                const request = new HTTPRequest("Carts");
+                await request.delete(item.cart_id);
                 viewAllCart();
             });
             frameCart.prepend(row);
@@ -121,7 +117,7 @@ const viewAllCart = async () => {
             }
         }, false);
         buttonOrder.addEventListener("click", async e => {
-            const dataNews = await new HTTPRequest("CartsUser").getOne(accessToken.getInfo().user_id);
+            const dataNews = await new HTTPRequest("CartsDetails").getOne(accessToken.getInfo().user_id);
             if(dataNews.status===200){
                 new WebHistory().create(dataNews, "?page=pay", false);
                 location.reload();

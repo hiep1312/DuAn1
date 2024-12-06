@@ -46,8 +46,9 @@ class UsersController{
         $dataRequest['phone'] = isset($dataRequest["phone"]) ? $dataRequest["phone"] : $dataOld['phone'];
         $dataRequest['address'] = isset($dataRequest["address"]) ? $dataRequest["address"] : $dataOld['address'];
         $dataRequest['bio'] = isset($dataRequest["bio"]) ? $dataRequest["bio"] : $dataOld['bio'];
-        $dataRequest['role_id'] = isset($dataRequest["role_id"]) ? $dataRequest["role_id"] : $dataOld['role_id'];
-        $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest["status"] : $dataOld['status'];
+        $dataRequest['created_at'] = isset($dataRequest["created_at"]) ? $dataRequest["created_at"] : $dataOld['created_at'];
+        $dataRequest['role_id '] = isset($dataRequest["role_id "]) ? $dataRequest["role_id "] : $dataOld['role_id'];
+        $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest["status"] : $dataOld["status"];
         try {
             if($file["avatar"]['error']===UPLOAD_ERR_OK || (array_keys($file["avatar"]['error'], UPLOAD_ERR_OK, true) && is_array($file["avatar"]["error"]))){
                 if(gettype($file["avatar"]["name"])==="array"){
@@ -63,9 +64,9 @@ class UsersController{
     }
     public function delete($id){
         $checkid = $this->execute->getDataById($id);
-        if(!$checkid):return false;
+        if(!$checkid): return false;
         endif;
-        setType($checkid, "array");
+        settype($checkid, "array");
         if(isset($checkid["avatar"])): unlink($checkid["avatar"]);
         endif;
         return !$this->execute->deleteDataById($id)?false:$checkid;

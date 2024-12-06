@@ -137,12 +137,12 @@ async function editRow(id, currentPage){
             type: "paragraph",
             message: ["Vd: Sở thích, Tính cách ...?", "Thêm thành công thông tin này!!"],
             options: 2,
-        }/*,
+        },
         "#avatar": {
             type: "textLimit",
             message: [" ", " "],
             options: 0
-        }*/
+        }
     })
     document.getElementById("avatar").addEventListener("change", e => {
         const imgUpload = e.target?.files?.item(0) ?? false;

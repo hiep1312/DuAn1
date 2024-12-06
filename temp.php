@@ -8,15 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-<div id="temp">
-    <h3>Xin chào</h3>
-    <p>Tôi là ai</p>
-</div>
-<script>
-    let data =  document.getElementById("temp").innerHTML;
-    document.getElementById("temp").innerHTML = data.replaceAll(/<\/?\w+>/g, "");
+<?php
 
-</script>
+?>
 
 </body>
 </html>
