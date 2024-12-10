@@ -19,16 +19,16 @@ include $BASE_URL . "View/User/header.php";
                         </h4>
                         <div data-aos="fade-up">
                             <img src="<?php $BASE_URL ?>View/User/assets/image/Artboard 1.png" alt="" style="width: 300px; height: 300px;">
-                             <h1
-                                  class="text-uppercase font-krona-one border-text h2-text mb-0"
-                                >
-                                  Của Âm Nhạc
-                                </h1>
-                                <h1
-                                  class="text-uppercase font-krona-one border-text h2-text mb-0"
-                                >
-                                  Thế giới
-                                </h1>
+                            <h1
+                                    class="text-uppercase font-krona-one border-text h2-text mb-0"
+                            >
+                                Của Âm Nhạc
+                            </h1>
+                            <h1
+                                    class="text-uppercase font-krona-one border-text h2-text mb-0"
+                            >
+                                Thế giới
+                            </h1>
                         </div>
                     </div>
 
@@ -142,72 +142,72 @@ include $BASE_URL . "View/User/header.php";
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-5">
                         <h4 data-aos="fade-up" class="font-krona-one h4-text">Chúng tôi cung cấp đa dạng sản phẩm và đã được kiểm chứng</h4> <br>
-                         <p data-aos="fade-up" data-aos-delay="200" class="section-subtitle mb-4 fs-6">
-                                        Mọi người sang bên sản phẩm để xem chi tiết nhé!!!
-                                      </p>
+                        <p data-aos="fade-up" data-aos-delay="200" class="section-subtitle mb-4 fs-6">
+                            Mọi người sang bên sản phẩm để xem chi tiết nhé!!!
+                        </p>
                         <div
                                 data-aos="fade-up"
                                 data-aos-delay="400"
                                 class="progress-container">
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn piano</span>
-                                 <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="50%"
-                                        style="width: 0"
-                                      >
+                                <div class="progress">
+                                    <div
+                                            class="progress-bar font-krona-one fw-light"
+                                            data-target="50%"
+                                            style="width: 0"
+                                    >
                                         0
-                                      </div>
                                     </div>
+                                </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn Organ</span>
-                                 <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="90%"
-                                        style="width: 0"
-                                      >
+                                <div class="progress">
+                                    <div
+                                            class="progress-bar font-krona-one fw-light"
+                                            data-target="90%"
+                                            style="width: 0"
+                                    >
                                         0
-                                      </div>
                                     </div>
+                                </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn Guitar</span>
-                                 <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="60%"
-                                        style="width: 0"
-                                      >
+                                <div class="progress">
+                                    <div
+                                            class="progress-bar font-krona-one fw-light"
+                                            data-target="60%"
+                                            style="width: 0"
+                                    >
                                         0
-                                      </div>
                                     </div>
+                                </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn ukulele</span>
-                                 <div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="60%"
-                                        style="width: 0"
-                                      >
+                                <div class="progress">
+                                    <div
+                                            class="progress-bar font-krona-one fw-light"
+                                            data-target="60%"
+                                            style="width: 0"
+                                    >
                                         0
-                                      </div>
                                     </div>
+                                </div>
                             </div>
                             <div class="progress-item">
                                 <span class="font-krona-one fw-light h6-text text-uppercase">Đàn kalimba</span>
                                 <<div class="progress">
-                                      <div
-                                        class="progress-bar font-krona-one fw-light"
-                                        data-target="60%"
-                                        style="width: 0"
-                                      >
+                                    <div
+                                            class="progress-bar font-krona-one fw-light"
+                                            data-target="60%"
+                                            style="width: 0"
+                                    >
                                         0
-                                      </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -222,66 +222,66 @@ include $BASE_URL . "View/User/header.php";
         </div>
     </section>
 
-     <!--<section class="what-we-do-section bg-primary-custom custom-padding">
-          <div class="container">
-            <div class="row mb-4">
-              <div class="col-md-6">
-                <h2 class="h2-text font-krona-one text-uppercase">our services</h2>
-              </div>
-              <div class="col-md-6">
-                <p data-aos="fade-up" class="text-light">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                  tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                </p>
-                <a
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  href="Services.html"
-                  class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text mt-3"
-                >
-                  <span class="me-2 text-uppercase">all services</span>
-                  <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
-                </a>
-              </div>
-            </div>
+    <!--<section class="what-we-do-section bg-primary-custom custom-padding">
+         <div class="container">
+           <div class="row mb-4">
+             <div class="col-md-6">
+               <h2 class="h2-text font-krona-one text-uppercase">our services</h2>
+             </div>
+             <div class="col-md-6">
+               <p data-aos="fade-up" class="text-light">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+               </p>
+               <a
+                 data-aos="fade-up"
+                 data-aos-delay="300"
+                 href="Services.html"
+                 class="text-secondary-color text-decoration-none text-uppercase font-krona-one button-text mt-3"
+               >
+                 <span class="me-2 text-uppercase">all services</span>
+                 <i class="fa-solid fa-arrow-right" style="color: #c4fb6d"></i>
+               </a>
+             </div>
+           </div>
 
-            <div class="row text-center g-4 mt-4">
-              <div data-aos="fade-up" class="col-md-4">
-                <div class="icon-box text-md-start">
-                  <i class="fa-regular fa-lightbulb" style="color: #c4fb6d"></i>
-                  <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
-                    digital marketing
-                  </h5>
-                  <p class="text-light pe-md-4 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="200" class="col-md-4">
-    <div class="icon-box text-md-start">
-                  <i class="fa-regular fa-star" style="color: #c4fb6d"></i>
-                  <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
-                    branding design
-                  </h5>
-                  <p class="text-light pe-md-4 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-              <div data-aos="fade-up" data-aos-delay="400" class="col-md-4">
-                <div class="icon-box text-md-start">
-                  <i class="fa-regular fa-heart" style="color: #c4fb6d"></i>
-                  <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
-                    user experience
-                  </h5>
-                  <p class="text-light pe-md-4 mt-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>-->
+           <div class="row text-center g-4 mt-4">
+             <div data-aos="fade-up" class="col-md-4">
+               <div class="icon-box text-md-start">
+                 <i class="fa-regular fa-lightbulb" style="color: #c4fb6d"></i>
+                 <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
+                   digital marketing
+                 </h5>
+                 <p class="text-light pe-md-4 mt-3">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 </p>
+               </div>
+             </div>
+             <div data-aos="fade-up" data-aos-delay="200" class="col-md-4">
+   <div class="icon-box text-md-start">
+                 <i class="fa-regular fa-star" style="color: #c4fb6d"></i>
+                 <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
+                   branding design
+                 </h5>
+                 <p class="text-light pe-md-4 mt-3">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 </p>
+               </div>
+             </div>
+             <div data-aos="fade-up" data-aos-delay="400" class="col-md-4">
+               <div class="icon-box text-md-start">
+                 <i class="fa-regular fa-heart" style="color: #c4fb6d"></i>
+                 <h5 class="text-light mt-4 h5-text font-krona-one text-uppercase">
+                   user experience
+                 </h5>
+                 <p class="text-light pe-md-4 mt-3">
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 </p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>-->
 
 <?php
 include $BASE_URL . "View/User/footer.php"

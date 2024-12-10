@@ -47,7 +47,7 @@ class UsersController{
         $dataRequest['address'] = isset($dataRequest["address"]) ? $dataRequest["address"] : $dataOld['address'];
         $dataRequest['bio'] = isset($dataRequest["bio"]) ? $dataRequest["bio"] : $dataOld['bio'];
         $dataRequest['created_at'] = isset($dataRequest["created_at"]) ? $dataRequest["created_at"] : $dataOld['created_at'];
-        $dataRequest['role_id '] = isset($dataRequest["role_id "]) ? $dataRequest["role_id "] : $dataOld['role_id'];
+        $dataRequest['role_id'] = isset($dataRequest["role_id"]) ? $dataRequest["role_id"] : $dataOld['role_id'];
         $dataRequest["status"] = isset($dataRequest["status"]) && ($dataRequest["status"]==0 || $dataRequest["status"]==1) ? $dataRequest["status"] : $dataOld["status"];
         try {
             if($file["avatar"]['error']===UPLOAD_ERR_OK || (array_keys($file["avatar"]['error'], UPLOAD_ERR_OK, true) && is_array($file["avatar"]["error"]))){

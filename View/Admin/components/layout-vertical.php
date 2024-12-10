@@ -7,7 +7,7 @@
 <nav class="pc-sidebar">
     <div class="navbar-wrapper">
         <div class="m-header">
-            <a href="?role=admin&page=dashboard" class="b-brand text-primary">
+            <a href="?page=home" class="b-brand text-primary">
                 <img width="120px" height="100px"  src="<?= $BASE_URL ?>View/User/assets/image/logo1.png" alt="anhloi" class="logo my-3">
             </a>
         </div>
@@ -50,6 +50,14 @@
                                 class="pc-mtext">Giỏ hàng</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
                     <ul class="pc-submenu">
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=carts">Danh sách giỏ hàng</a></li>
+                    </ul>
+                </li>
+                <li class="pc-item pc-hasmenu">
+                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-duotone fa-light fa-box-open-full"></i></i></span><span
+                                class="pc-mtext">Danh mục sản phẩm</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
+                    <ul class="pc-submenu">
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=productcategories&function=add">Thêm danh mục sản phẩm</a></li>
+                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=productcategories">Danh sách danh mục sản phẩm</a></li>
                     </ul>
                 </li>
                 <li class="pc-item pc-hasmenu">
@@ -117,14 +125,7 @@
                         <li class="pc-item"><a class="pc-link" href="?role=admin&page=mypromotions">Danh sách list khuyến mãi</a></li>
                     </ul>
                 </li>
-                <li class="pc-item pc-hasmenu">
-                    <a href="#" class="pc-link"><span class="pc-micon"><i class="fa-duotone fa-light fa-box-open-full"></i></i></span><span
-                                class="pc-mtext">List sản phẩm</span><span class="pc-arrow"><i data-feather="chevron-right"></i></span></a>
-                    <ul class="pc-submenu">
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=productcategories&function=add">Thêm list sản phẩm</a></li>
-                        <li class="pc-item"><a class="pc-link" href="?role=admin&page=productcategories">Danh sách list sản phẩm</a></li>
-                    </ul>
-                </li>
+
         <!--<li class="pc-item">
           <a href="../../elements/bc_color.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>

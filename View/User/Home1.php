@@ -838,7 +838,7 @@ include $BASE_URL . "View/User/header.php";
                     class="row blog-cards mt-5"
             >
                 <!-- Col 1 -->
-                <a href="?page=mews" class="col-lg-4 col-md-6 text-decoration-none">
+                <a href="?page=news" class="col-lg-4 col-md-6 text-decoration-none">
                     <div class="blog-card bg-primary-custom">
                         <img
                                 class="img-hover"

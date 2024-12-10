@@ -1,6 +1,6 @@
 let index = 1;
 let allData;
-const newsHot = [11, 12, 13];
+const newsHot = [8, 9, 10];
 const viewAllNews = async (location) => {
     const frameNews = document.getElementById("frameNews");
     const request = new HTTPRequest("News");
