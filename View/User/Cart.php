@@ -8,6 +8,22 @@ include $BASE_URL . "View/User/header.php";
         }
     </style>
     <body>
+    <div class="modal fade" tabindex="-1" style="top: 25vh;" id="messageVoucher" data-bs-theme="dark">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><img src="./View/User/assets/image/logo2.png" alt="Logo" style="max-width: 70px;"></h5>
+                    <button type="button" class="btn-close btnClose" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary btnClose" data-bs-dismiss="modal">Đóng thông báo</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="bg-primary-custom custom-padding h-full w-100" style="z-index: 1" id="frame">
         <div class="container">
             <h2 data-aos="fade-up" class="text-light font-krona-one border-text border-info hero-text mb-2 text-center" style="--secondary-color: #ff0077">Giỏ hàng</h2>

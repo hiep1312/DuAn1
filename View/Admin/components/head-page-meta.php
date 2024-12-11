@@ -15,5 +15,5 @@ $BASE_URL = "./";
 <script src="<?= $BASE_URL ?>JS/WebHistory.js"></script>
 <script src="<?= $BASE_URL ?>View/User/dist/js/main.js"></script>
 <script>
-    const accessToken = new accessToken();
+    let pageLogin = false;
 </script>

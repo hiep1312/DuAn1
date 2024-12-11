@@ -1,5 +1,4 @@
 <?php
-
 class Carts extends Management
 {
     
@@ -41,5 +40,35 @@ class Carts extends Management
         $this->connect->executeSQL($this->sql, [$id], false, $mode);
         $this->sql = "DELETE FROM {$this->tableName} WHERE `cart_id` = ?";
         return $this->connect->executeSQL($this->sql, [$id], false, $mode);
+    }
+    public function checkExist($data, $mode = []){
+        $this->sql = "SELECT ct.cart_id, ct.quantity, ct.price FROM `carts` as ct
+                    WHERE ct.user_id = ? and ct.productVariant_id = ?";
+        $params = [$data['user_id'], $data['productVariant_id']];
+        return $this->connect->executeSQL($this->sql, $params, false, $mode);
+    }
+    public function backDataProducts($id, $mode = []){
+        $dataOld = $this->getDataById($id);
+        $this->deleteDataById($id);
+        $this->sql = "SELECT * FROM `productvariants` WHERE productVariant_id = ?";
+        $dataProductVariantsCurrent = $this->connect->executeSQL($this->sql, [$dataOld->productVariant_id], false, $mode);
+        $dataProductVariantsUpdate = [
+            "stock_quantity" => ($dataProductVariantsCurrent->stock_quantity+$dataOld->quantity),
+            "status" => $dataProductVariantsCurrent->status,
+            "productVariant_id" => $dataOld->productVariant_id,
+        ];
+        if($dataProductVariantsCurrent->status===0) $dataProductVariantsUpdate['status'] = 1;
+        $this->sql = "UPDATE `productvariants` SET `stock_quantity`=?, `status`=? WHERE `productVariant_id`=?";
+        $this->connect->executeSQL($this->sql, [$dataProductVariantsUpdate['stock_quantity'], $dataProductVariantsUpdate['status'], $dataProductVariantsUpdate['productVariant_id']], false, $mode);
+        $this->sql = "SELECT * FROM `products` WHERE product_id = ?";
+        $dataProductsCurrent = $this->connect->executeSQL($this->sql, [$dataProductVariantsCurrent->product_id], false, $mode);
+        $dataProductsUpdate = [
+            "stock_quantity" => ($dataProductsCurrent->stock_quantity+$dataOld->quantity),
+            "status" => $dataProductsCurrent->status,
+            "product_id" => $dataProductVariantsCurrent->product_id,
+        ];
+        if($dataProductsCurrent->status===0) $dataProductsUpdate['status'] = 1;
+        $this->sql = "UPDATE `products` SET `stock_quantity`=?, `status`=? WHERE `product_id`=?";
+        return $this->connect->executeSQL($this->sql, [$dataProductsUpdate['stock_quantity'], $dataProductsUpdate['status'], $dataProductsUpdate['product_id']], false, $mode);
     }
 }

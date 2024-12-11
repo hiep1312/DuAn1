@@ -1,10 +1,10 @@
 const validate = new Validate();
 let countImage = null;
-/*let checkImg = {
-    type: "textLimit",
+let checkImg = {
+    /*type: "textLimit",
     message: [" ", " "],
-    options: 0
-}*/
+    options: 0*/
+}
 let objcheck = {
     "#name": {
         type: "paragraph",

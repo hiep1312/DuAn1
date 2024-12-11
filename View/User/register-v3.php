@@ -87,7 +87,7 @@ include $BASE_URL . "View/Admin/components/head-css.php"
       </div>
     </div>
     <script>
-        const pageLogin = true;
+        pageLogin = true;
     </script>
 <?php
 include $BASE_URL ."View/Admin/components/footer-js.php";

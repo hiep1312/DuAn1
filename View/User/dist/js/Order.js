@@ -1,56 +1,64 @@
 const frameOrder = document.getElementById("frameOrder");
+let dataOld = null;
+let imageAllOld = null;
 if(localStorage.getItem("sessionId")){
+    const checkUnlike = (obj1, obj2) => {
+        return JSON.stringify(obj1) === JSON.stringify(obj2);
+    }
     const viewAllOrder = async () => {
-        console.log("Run")
-        frameOrder.innerHTML = "";
         const request = new HTTPRequest("OrdersUser");
         await accessToken.handleTokenLocal();
         const data = await request.getOne(accessToken.getInfo().user_id);
-        const imageAll = await new HTTPRequest("imageproducts").getAll();
-        if(data.status===200){
-            Object.entries(Object.groupBy(data.data, item => item.order_id)).forEach(orderItem => {
-                const row = document.createElement("tr");
-                let name = [];
-                orderItem[1].forEach(info => {
-                     name.push(`${info.title ?? "Không xác định"}(${info.material ?? "..."} - ${info.color ?? "..."})(${info.quantity ?? 0})`);
-                });
-                const totalPrice = orderItem[1].reduce((total, price) => (price.price*price.quantity)+total, 0);
-                const totalQuantity = orderItem[1].reduce((total, quantity) => (quantity.quantity)+total, 0);
-                row.innerHTML = `
-                    <td><img src="${imageAll.data?.filter(img => (img.location===0 && img.product_id===orderItem[1][0].product_id))?.[0].album.slice(1) ?? `https://news.khangz.com/wp-content/uploads/2021/10/404-not-found-la-gi-1.jpg`}" alt="Ảnh sản phẩm" class="img-thumbnail" style="max-width: 100px; max-height: 80px"></td>
+        const imageAll = await new HTTPRequest("Imageproducts").getAll();
+        if(!checkUnlike(data, dataOld) || !checkUnlike(imageAll, imageAllOld)){
+            frameOrder.innerHTML = "";
+            dataOld = data;
+            imageAllOld = imageAll;
+            if(data.status===200){
+                Object.entries(Object.groupBy(data.data, item => item.order_id)).forEach(orderItem => {
+                    const row = document.createElement("tr");
+                    let name = [];
+                    orderItem[1].forEach(info => {
+                        name.push(`${info.title ?? "Không xác định"}(${info.material ?? "..."} - ${info.color ?? "..."})(${info.quantity ?? 0})`);
+                    });
+                    const totalPrice = orderItem[1].reduce((total, price) => (price.price*price.quantity)+total, 0);
+                    const totalQuantity = orderItem[1].reduce((total, quantity) => (quantity.quantity)+total, 0);
+                    row.innerHTML = `
+                    <td><img src="${imageAll.data?.filter(img => (img.location===0 && img.product_id===orderItem[1][0].product_id))?.[0]?.album.slice(1) ?? `https://news.khangz.com/wp-content/uploads/2021/10/404-not-found-la-gi-1.jpg`}" alt="Ảnh sản phẩm" class="img-thumbnail" style="max-width: 100px; max-height: 80px"></td>
                     <td>${name.join(", ")}</td>
                     <td>
                         <input type="number" class="form-control text-center" value="${totalQuantity ?? 1}" style="width: 80px;" disabled>
                     </td>
-                    <td>${totalPrice ?? 0}đ + <span class="text-danger">40000đ(ship)</span></td>
+                    <td>${totalPrice ?? 0}đ + <span class="text-danger">30000đ(ship)</span></td>
                     <td>${orderItem[1][0].description?.slice(0, 15).concat("...") ?? ""}</td>
                     <td>${orderItem[1][0].created_at?.split('-').reverse().join("/") ?? "Không xác định"}</td>
                     <td>${orderItem[1][0].updated_at?.split('-').reverse().join("/") ?? "Không xác định"}</td>
                     <td class="${orderItem[1][0].status===0?"text-secondary":(orderItem[1][0].status===1?"text-success":"text-danger")}"><strong>${orderItem[1][0].status===0?"Đang chờ xử lý":(orderItem[1][0].status===1?"Đã xác nhận":"Đã hủy")}</strong></td>
                     <td><a role="button" class="text-decoration-none">Chi tiết</a></td>
                 `;
-                row.querySelector("a[role=button]").addEventListener("click", () => detailsOrder(orderItem[1][0].order_id));
+                    row.querySelector("a[role=button]").addEventListener("click", () => detailsOrder(orderItem[1][0].order_id));
+                    frameOrder.prepend(row);
+                });
+            }else{
+                const row = document.createElement("tr");
+                const col = document.createElement("td");
+                col.colSpan = 7;
+                row.append(col);
+                const alert = document.createElement("div");
+                alert.className = "alert alert-info d-flex align-items-center";
+                alert.role = "alert";
+                alert.dataset.aos = "flip-up";
+                alert.dataset.aosDuration = "1000";
+                alert.innerHTML = `
+              <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 50px;">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+              </svg>
+              <div>
+                Không có đơn hàng nào cả! Hãy mua hàng nhé!
+              </div>`;
+                col.append(alert);
                 frameOrder.prepend(row);
-            });
-        }else{
-            const row = document.createElement("tr");
-            const col = document.createElement("td");
-            col.colSpan = 7;
-            row.append(col);
-            const alert = document.createElement("div");
-            alert.className = "alert alert-info d-flex align-items-center";
-            alert.role = "alert";
-            alert.dataset.aos = "flip-up";
-            alert.dataset.aosDuration = "1000";
-            alert.innerHTML = `
-          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 50px;">
-            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
-          </svg>
-          <div>
-            Không có đơn hàng nào cả! Hãy mua hàng nhé!
-          </div>`;
-            col.append(alert);
-            frameOrder.prepend(row);
+            }
         }
     }
     viewAllOrder().then();
@@ -139,21 +147,31 @@ if(localStorage.getItem("sessionId")){
             }
             const handleSubmitView = async (e) => {
                 e.preventDefault();
-                const data = new FormData();
-                data.append("status", 2);
-                const response = await new HTTPRequest("Orders").put(id, data, false);
-                if (response.status === 200) {
-                    liveToast.setAttribute("style", "display: block; --bs-toast-bg: #b3ffabd9");
-                    liveToast.querySelector("#message").textContent = "Hủy đơn hàng thành công!";
+                const checkStatus = await new HTTPRequest("Orders").getOne(id);
+                if(checkStatus.data.status!==0){
+                    liveToast.setAttribute("style", "display: block; --bs-toast-bg: #ffababd9");
+                    liveToast.querySelector("#message").textContent = "Hủy đơn hàng không thành công! Bởi vì đơn hàng đã được xác nhận";
                     modal.nextElementSibling.setAttribute("style", "");
                     modal.style.display = "none";
-                } else {
-                    liveToast.setAttribute("style", "display: block; --bs-toast-bg: #ffababd9");
-                    liveToast.querySelector("#message").textContent = "Không thể hủy đơn hàng!";
+                    setTimeout(() => liveToast.style.display = "none", 3000);
+                    viewAllOrder();
+                }else{
+                    const data = new FormData();
+                    data.append("status", 2);
+                    const response = await new HTTPRequest("Orders").put(id, data, false);
+                    if (response.status === 200) {
+                        liveToast.setAttribute("style", "display: block; --bs-toast-bg: #b3ffabd9");
+                        liveToast.querySelector("#message").textContent = "Hủy đơn hàng thành công!";
+                        modal.nextElementSibling.setAttribute("style", "");
+                        modal.style.display = "none";
+                    } else {
+                        liveToast.setAttribute("style", "display: block; --bs-toast-bg: #ffababd9");
+                        liveToast.querySelector("#message").textContent = "Không thể hủy đơn hàng!";
+                    }
+                    setTimeout(() => liveToast.style.display = "none", 3000);
+                    viewAllOrder();
+                    e.target.removeEventListener("submit", handleSubmitView);
                 }
-                setTimeout(() => liveToast.style.display = "none", 3000);
-                await viewAllOrder();
-                e.target.removeEventListener("submit", handleSubmitView);
             }
             formView.addEventListener('submit', handleSubmitView);
         }else{
@@ -172,6 +190,7 @@ if(localStorage.getItem("sessionId")){
             formView.replaceWith(alert);
         }
     }
+    setInterval(viewAllOrder, 5000);
 }else{
     const alert = document.createElement("div");
     alert.className = "alert alert-warning d-flex align-items-center";

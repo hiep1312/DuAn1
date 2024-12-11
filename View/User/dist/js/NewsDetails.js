@@ -39,6 +39,7 @@ formComments.addEventListener("submit", async e => {
     if(validate.check("#content", "paragraph", 1)){
         const formdata = new FormData(e.target);
         formdata.append("news_id", item.news_id);
+        formdata.append("user_id", accessToken.getInfo().user_id);
         const request = new HTTPRequest("Comments");
         const response = await request.post(formdata, false);
         validate.resetForm(formComments);
@@ -71,7 +72,6 @@ let allDataComments;
 async function viewAllComments(location){
     if(location===1) allDataComments = await new HTTPRequest("NewsComments").getOne(item.news_id);
     if(allDataComments.status===404){
-        document.getElementById("moreComments").remove();
         const alert = document.createElement("div");
         alert.className = "alert alert-info d-flex align-items-center";
         alert.role = "alert";
@@ -89,7 +89,7 @@ async function viewAllComments(location){
     let dataComments = Object.create(null);
     Object.assign(dataComments, allDataComments);
     dataComments.data = dataComments.data.slice((location-1) * 10, location * 10);
-    if(allDataComments.data?.slice(location* 10, (location+1) * 10).length === 0) document.getElementById("moreComments").remove();
+    if(allDataComments.data?.slice(location* 10, (location+1) * 10).length === 0) document.getElementById("moreComments")?.remove();
     if(allDataComments.data.length > 0){
         const now = new Date(Date.now());
         dataComments.data.forEach(comment => {

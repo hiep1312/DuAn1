@@ -1,11 +1,11 @@
 const request = new HTTPRequest("OrdersDetails")
-const tbody = document.querySelector("#view tbody")
-const data = async ()=> {
-   tbody.innerHTML = "";
-   const res = await request.getAll("order_id");
-   let index = 0;
-   const now = new Date(Date.now());
-   for (let [id, item] of Object.entries(res.data)){
+const tbody = document.querySelector("#view tbody");
+const data = async (u) => {
+    tbody.innerHTML = "";
+    const res = await request.getAll("order_id");
+    let index = 0;
+    const now = new Date(Date.now());
+    for (let [id, item] of Object.entries(res.data)){
         const row = document.createElement("tr");
         const title = item.map(title => `${title.title ?? "Không xác định"}(${title.material ?? "..."} - ${title.color ?? "..."})(${title.quantity})`);
         const total = item.reduce((total, priceCurrent) => (priceCurrent.price*priceCurrent.quantity) + total, 0);
@@ -29,8 +29,8 @@ const data = async ()=> {
                 </div>
             </td>
         `
-        tbody.append(row);
-   }
+        tbody.prepend(row);
+    }
 }
 data().then();
 const liveToast = document.getElementById("liveToast");
@@ -143,7 +143,7 @@ async function detailsRow(id){
                 setTimeout(() => liveToast.style.display = "none", 3000);
             }
             await handleStatus(e.submitter.name === "confirm" ? 1 : 2, e.submitter.name);
-            await data();
+            data();
             e.target.removeEventListener('submit', handleSubmitView);
         }
         formView.addEventListener('submit', handleSubmitView);
@@ -178,6 +178,6 @@ async function deleteRow(id){
             liveToast.querySelector("#message").textContent = "Xóa đơn hàng thất bại!";
         }
         setTimeout(() => liveToast.style.display = "none", 3000);
-        await data();
+        data();
     }
 }

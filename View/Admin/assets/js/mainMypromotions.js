@@ -25,13 +25,13 @@ const data = async (location, count) => {
                   <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${
-                        item.mypromotions_id
+                        item.mypromotion_id
                   }">
                         ${promo.data.code ?? ""}
                       </button>
                     </h2>
                     <div id="collapse${
-                      item.mypromotions_id
+                      item.mypromotion_id
                     }" class="accordion-collapse collapse">
                       <div class="accordion-body">
                         <p>${promo.data.discount ?? ""} </p>
@@ -48,11 +48,11 @@ const data = async (location, count) => {
                 ${user?`<div class="accordion" id="accordionProducts">
                   <div class="accordion-item collapsed">
                     <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${item.mypromotions_id}">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${item.mypromotion_id}">
                         ${user.data.name ?? ""}
                       </button>
                     </h2>
-                    <div id="collapse${item.mypromotions_id}" class="accordion-collapse collapse">
+                    <div id="collapse${item.mypromotion_id}" class="accordion-collapse collapse">
                       <div class="accordion-body">
                         <p>${user.data.email ?? ""} </p>
                         <p>${user.data.bio ?? ""} </p>
@@ -65,8 +65,8 @@ const data = async (location, count) => {
             </td>
             <td>
                  <div class="btn-group border border-none gap-2" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-warning rounded" onclick="editRow(${item.mypromotions_id}, ${location})">Sửa</button>
-                    <button type="button" class="btn btn-outline-danger rounded" onclick="deleteRow(${item.mypromotions_id}, ${location})">Xóa</button>
+                    <button type="button" class="btn btn-warning rounded" onclick="editRow(${item.mypromotion_id}, ${location})">Sửa</button>
+                    <button type="button" class="btn btn-outline-danger rounded" onclick="deleteRow(${item.mypromotion_id}, ${location})">Xóa</button>
                 </div>
             </td>
             `;
@@ -159,7 +159,7 @@ async function editRow(id, currentPage) {
     value.data.forEach(item => {
       const option = document.createElement("option");
       option.setAttribute("value", item.promo_id);
-      option.textContent = item.name;
+      option.textContent = item.code;
       select.append(option);
     });
     const promoID = modal.querySelector(`#promo_id>option[value='${dataOld.data.promo_id ?? ''}']`);

@@ -22,7 +22,7 @@ const allProducts = async (reset = true, dataChange = null) => {
             }
             frameProduct.innerHTML = `
                     <div class="card h-100 border border-light bg-white">
-                        <img src="${item.imageProducts.filter(img => img.location===0)?.[0].album.slice(1) ?? `https://news.khangz.com/wp-content/uploads/2021/10/404-not-found-la-gi-1.jpg`}" class="card-img-top" style="max-height: 250px" alt="Ảnh sản phẩm">
+                        <img src="${item.imageProducts.filter(img => img.location===0)?.[0]?.album.slice(1) ?? `https://news.khangz.com/wp-content/uploads/2021/10/404-not-found-la-gi-1.jpg`}" class="card-img-top" style="max-height: 250px" alt="Ảnh sản phẩm">
                         <div class="card-body text-center px-2">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="text-primary">SL: ${item.stock_quantity ?? 0}</p>

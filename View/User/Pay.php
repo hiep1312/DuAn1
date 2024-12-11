@@ -44,12 +44,6 @@ include $BASE_URL . "View/User/header.php";
                                 Thanh toán bằng tiền mặt
                             </label>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="payment" id="transfer">
-                            <label class="form-check-label" for="transfer">
-                                Thanh toán qua tài khoản ngân hàng
-                            </label>
-                        </div>
                         <button type="submit" class="btn btn-success mt-4">Đặt hàng</button>
                     </div>
                 </div>

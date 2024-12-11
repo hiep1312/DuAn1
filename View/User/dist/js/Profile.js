@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     }
     validate.checkFormAndDisplay(checkforms);
-
     document.getElementById("formAdd").addEventListener("submit", async e=> {
     e.preventDefault();
     if(validate.checkForm(checkforms, true)){
@@ -43,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const request = new HTTPRequest("Users");
         const res = await request.put(accessToken.getInfo().user_id, formdata, true);
         const alert = document.getElementById('alert');
-        if (request.getStatus() == 200) {
+        if (res.status === 200) {
             alert.classList.add('alert-success');
             alert.textContent = "Cập nhật tài khoản thành công~~";
         }else {

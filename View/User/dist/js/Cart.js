@@ -51,13 +51,25 @@ const viewAllCart = async () => {
             if(dataNews.status===200){
                 for(let item of dataNews.data){
                     const request = new HTTPRequest("Carts");
-                    await request.delete(item.cart_id);
+                    const dataOld = await request.delete(item.cart_id);
+                    request.tableName = "Productvariants";
+                    const dataCurrentProductvariants = await request.getOne(dataOld.data.productVariant_id);
+                    const formdataUpdateProduct = new FormData();
+                    if(dataCurrentProductvariants.data.status===0) formdataUpdateProduct.append("status", 1);
+                    formdataUpdateProduct.append("stock_quantity", (dataCurrentProductvariants.data.stock_quantity+dataOld.data.quantity));
+                    await request.put(dataCurrentProductvariants.data.productVariant_id, formdataUpdateProduct, false);
+                    request.tableName = "Products";
+                    const dataCurrentProducts = await request.getOne(dataCurrentProductvariants.data.product_id);
+                    if(dataCurrentProducts.data.status===0) dataCurrentProducts.set("status", 1);
+                    formdataUpdateProduct.set("stock_quantity", (dataCurrentProducts.data.stock_quantity+dataOld.data.quantity));
+                    await request.put(dataCurrentProducts.data.product_id, formdataUpdateProduct, false);
                 }
                 viewAllCart();
             }
         }
     });
     let totalMoney = 0;
+    voucher.innerHTML = "";
     if(data.status===200){
         for(let item of data.data){
             const row = document.createElement("tr");
@@ -88,37 +100,118 @@ const viewAllCart = async () => {
             });
             row.querySelector("button").addEventListener("click", async e => {
                 const request = new HTTPRequest("Carts");
-                await request.delete(item.cart_id);
+                const dataOld = await request.delete(item.cart_id);
+                request.tableName = "Productvariants";
+                const dataCurrentProductvariants = await request.getOne(dataOld.data.productVariant_id);
+                const formdataUpdateProduct = new FormData();
+                if(dataCurrentProductvariants.data.status===0) formdataUpdateProduct.append("status", 1);
+                formdataUpdateProduct.append("stock_quantity", (dataCurrentProductvariants.data.stock_quantity+dataOld.data.quantity));
+                await request.put(dataCurrentProductvariants.data.productVariant_id, formdataUpdateProduct, false);
+                request.tableName = "Products";
+                const dataCurrentProducts = await request.getOne(dataCurrentProductvariants.data.product_id);
+                if(dataCurrentProducts.data.status===0) dataCurrentProducts.set("status", 1);
+                formdataUpdateProduct.set("stock_quantity", (dataCurrentProducts.data.stock_quantity+dataOld.data.quantity));
+                await request.put(dataCurrentProducts.data.product_id, formdataUpdateProduct, false);
                 viewAllCart();
             });
             frameCart.prepend(row);
         }
+        const webHistory = new WebHistory();
+        let vouchersOld = {};
         applyVoucher.addEventListener("click", async e => {
             const input = e.target.previousElementSibling.value;
             if(input.trim().length !== 0){
                 const request = new HTTPRequest("Vouchers");
                 const allVouchers = await request.getOne(accessToken.getInfo().user_id);
+                const messageSucces = document.getElementById("messageVoucher");
+                messageSucces.classList.add("show");
+                messageSucces.style.display = "block";
+                messageSucces.querySelectorAll(".btnClose").forEach(close => close.addEventListener("click", () => {
+                    messageSucces.classList.remove("show");
+                    messageSucces.style.display = "none";
+                }));
                 if(allVouchers.status===200){
                     const check = Array.from(allVouchers.data).filter(voucher => voucher.code===input);
                     if(check.length > 0){
-                        const priceVoucher = check[0].discount ?? 0;
-                        totalMoney = totalMoney - priceVoucher;
-                        total.innerHTML = totalMoney + "đ";
-                        voucher.innerHTML = "-" + priceVoucher + "đ";
+                        if(check[0].usage_limit<=0){
+                            messageSucces.querySelector(".modal-body").innerHTML = `
+                                <div class="alert alert-info d-flex align-items-center aos-init aos-animate" role="alert" data-aos="flip-up" data-aos-duration="1000">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 40px;">
+                                        <path style="fill: currentcolor;" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                    </svg>
+                                    <div>
+                                        Khuyến mãi đã hết lượt sử dụng!
+                                    </div>
+                                </div>
+                            `;
+                        }else{
+                            if(vouchersOld.code!==check[0].code){
+                                if(vouchersOld.code){
+                                    totalMoney = vouchersOld.totalOld;
+                                }
+                                vouchersOld.code = check[0].code;
+                                vouchersOld.totalOld = totalMoney;
+                                vouchersOld.promo_id = check[0].promo_id;
+                                vouchersOld.user_id = check[0].user_id;
+                                vouchersOld.discount = check[0].discount;
+                                vouchersOld.usage_limit = check[0].usage_limit;
+                                messageSucces.querySelector(".modal-body").innerHTML = `
+                                <div class="alert alert-info d-flex align-items-center aos-init aos-animate" role="alert" data-aos="flip-up" data-aos-duration="1000">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 40px;">
+                                        <path style="fill: currentcolor;" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                    </svg>
+                                    <div>
+                                        Áp dụng khuyến mãi thành công!
+                                    </div>
+                                </div>
+                            `;
+                                const priceVoucher = check[0].discount ?? 0;
+                                totalMoney = (totalMoney - priceVoucher)<=0?0:totalMoney - priceVoucher;
+                                total.innerHTML = totalMoney + "đ";
+                                voucher.innerHTML = "-" + priceVoucher + "đ";
+                            }else{
+                                messageSucces.querySelector(".btnClose").click();
+                            }
+                        }
                     }else{
-                        alert("Không tìm thấy khuyến mãi!");
+                        messageSucces.querySelector(".modal-body").innerHTML = `
+                            <div class="alert alert-info d-flex align-items-center aos-init aos-animate" role="alert" data-aos="flip-up" data-aos-duration="1000">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 40px;">
+                                    <path style="fill: currentcolor;" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                                <div>
+                                    Không tìm thấy khuyến mãi!
+                                </div>
+                            </div>
+                        `;
                     }
                 }else{
-                    alert("Không tìm thấy khuyến mãi!");
+                    messageSucces.querySelector(".modal-body").innerHTML = `
+                            <div class="alert alert-info d-flex align-items-center aos-init aos-animate" role="alert" data-aos="flip-up" data-aos-duration="1000">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" style="width: 40px;">
+                                    <path style="fill: currentcolor;" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                </svg>
+                                <div>
+                                    Không tìm thấy khuyến mãi!
+                                </div>
+                            </div>
+                    `;
                 }
             }else{
                 alert("Vui lòng điền khuyến mãi trước khi áp dụng nó!");
                 e.target.previousElementSibling.focus();
             }
         }, false);
+        if(webHistory.get()?.code){
+            setTimeout(() => {
+                applyVoucher.previousElementSibling.value = webHistory.get().code;
+                applyVoucher.click();
+            }, 1500);
+        }
         buttonOrder.addEventListener("click", async e => {
             const dataNews = await new HTTPRequest("CartsDetails").getOne(accessToken.getInfo().user_id);
             if(dataNews.status===200){
+                dataNews.vouchers = vouchersOld;
                 new WebHistory().create(dataNews, "?page=pay", false);
                 location.reload();
             }

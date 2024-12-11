@@ -1,6 +1,7 @@
 const formOrder = document.getElementById("formOrder");
 const webHistory = new WebHistory();
 const validate = new Validate();
+const vouchers = webHistory.get()?.vouchers ?? {};
 const form = {
     "#name": {
         type: "paragraph",
@@ -49,6 +50,23 @@ if(webHistory.get() && localStorage.getItem("sessionId")){
                     await new HTTPRequest("Orders").post(data, false);
                     const orderId = await new HTTPRequest("Orders").getAll();
                     let total = 0;
+                    let priceReduceVouchers;
+                    if(Object.keys(vouchers).length>0){
+                        const vouchersCurrent = await new HTTPRequest("Promotions").getOne(vouchers.promo_id);
+                        if(vouchersCurrent.data.usage_limit===0){
+                            if(window.confirm("Vouchers đã hết lượt sử dụng! Bạn có muốn quay về áp dụng khuyến mãi khác không?")){
+                                webHistory.create(null, "?page=cart", false);
+                                location.reload();
+                            }else{
+                                await viewInfo();
+                            }
+                        }else{
+                            const formdataUpdateVouchers = new FormData();
+                            formdataUpdateVouchers.append("usage_limit", vouchersCurrent.data.usage_limit - 1);
+                            await new HTTPRequest("Promotions").put(vouchersCurrent.data.promo_id, formdataUpdateVouchers, false);
+                            priceReduceVouchers = vouchersCurrent.data.discount;
+                        }
+                    }
                     for(let item of webHistory.get().data){
                         const request = new HTTPRequest("Carts");
                         const cart = await request.delete(item.cart_id);
@@ -57,6 +75,11 @@ if(webHistory.get() && localStorage.getItem("sessionId")){
                         delete cart.data.created_at;
                         total += cart.data.quantity;
                         cart.data.order_id = orderId.data?.at(-1).order_id;
+                        if(priceReduceVouchers){
+                            cart.data.price = (cart.data.price-priceReduceVouchers<=0)?0:cart.data.price-priceReduceVouchers;
+                            if(cart.data.price-priceReduceVouchers<=0) priceReduceVouchers = priceReduceVouchers - cart.data.price;
+                            else priceReduceVouchers = 0;
+                        }
                         request.changeToData(cart.data);
                         await request.post();
                     }
@@ -86,15 +109,22 @@ if(webHistory.get() && localStorage.getItem("sessionId")){
         nameProducts.textContent = filterName.join(", ");
         const total = Array.from(info.data).reduce((total, count) => count.quantity + total, 0);
         count.textContent = total;
-        const money = Array.from(info.data).reduce((total, money) => (money.price*money.quantity) + total, 0);
+        let money = Array.from(info.data).reduce((total, money) => (money.price*money.quantity) + total, 0);
+        if(Object.keys(vouchers).length>0){
+            if(vouchers?.usage_limit>0){
+                money = (money-vouchers.discount)<=0?0:money-vouchers.discount;
+            }
+        }
         totalMoney.textContent = money + 30000;
     }
     viewInfo().then();
-    document.getElementById("transfer").addEventListener("click", e => {
-        e.preventDefault();
-        alert("Phương thức này hiện đang bị khóa!");
-    }, false);
 }else{
     webHistory.create(null, "?page=cart", false);
     location.reload();
+}
+if(webHistory.get()?.pay){
+    const cartInHistory = webHistory.get();
+    window.addEventListener("unload", async e => {
+        navigator.sendBeacon(`http://localhost/DuAn1/Api/BackDataProduct/${cartInHistory.data[0].cart_id}`);
+    });
 }

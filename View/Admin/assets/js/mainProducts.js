@@ -46,7 +46,9 @@ getDataByQuantity();
 async function deleteRow(id, currentPage){
     const liveToast = document.getElementById("liveToast");
     if(window.confirm("Bạn có chắc chắn muốn xóa không!")){
-        const response = await request.delete(id);
+        const formdata = new FormData();
+        formdata.append("status", 0);
+        const response = await request.put(id, formdata, false);
         liveToast.querySelector('.button-close').addEventListener("click", e => {
             liveToast.style.display = "none";
         }, false);

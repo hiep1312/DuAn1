@@ -901,6 +901,31 @@ if($_GET['page']){
             $response->setResponse(405);
             $response->sendResponse();
         }
+    }elseif($page==="CheckCart"){
+        $connect = new CartsController();
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $data = $connect->checkCartExist($_POST);
+            $response->setResponse(200, "Check Carts Success!", $data);
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
+    }elseif($page==="BackDataProduct"){
+        $connect = new CartsController();
+        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $id = !empty($_GET["id"]) ? $_GET["id"] : false;
+            if($id){
+                $data = $connect->returnDataProduct($id);
+                $response->setResponse(200, (bool)$data);
+            }else{
+                $response->setResponse(503);
+            }
+            $response->sendResponse();
+        }else{
+            $response->setResponse(405);
+            $response->sendResponse();
+        }
     }else {
         $response->setResponse(404);
         $response->sendResponse();

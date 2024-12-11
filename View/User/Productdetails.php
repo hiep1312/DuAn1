@@ -78,7 +78,7 @@
                                 <label for="quantity" class="col-form-label" style="margin-left: 2px;">Số lượng: </label>
                             </div>
                             <div class="col-3">
-                                <input type="number" id="quantity" class="form-control" value="1">
+                                <input type="number" id="quantity" class="form-control" min="1" value="1">
                             </div>
                         </div>
                     </div>
@@ -114,12 +114,12 @@
 </div>
 
 <div class="container my-5">
-    <p class="fw-bold" style="color: #a5cf44;" data-aos="fade-right" data-aos-duration="800">Đánh giá</p>
+    <p class="fw-bold" style="color: #a5cf44;" data-aos="fade-right" data-aos-duration="800">Bình luận</p>
     <div class="container-fluid border rounded border-light p-3 rounded-1" data-aos="fade-up" data-aos-duration="1000">
         <div class="d-flex justify-content-between">
-            <p class="fw-bold h5">Đánh giá mới nhất</p>
+            <p class="fw-bold h5">Bình luận mới nhất</p>
             <a class="text-info text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvas" role="button">
-                Xem tất cả đánh giá
+                Xem tất cả bình luận
                 <i class="fas fa-chevron-circle-right"></i>
             </a>
         </div>
@@ -128,18 +128,18 @@
 
         </div>
         <hr>
-        <h5 data-aos="slide-up" data-aos-duration="800">Thêm đánh giá</h5>
+        <h5 data-aos="slide-up" data-aos-duration="800">Thêm bình luận</h5>
         <form enctype="multipart/form-data" method="post" class="mt-1" id="formReviews" style="--bs-form-invalid-color: #ff0077; --bs-form-invalid-border-color: #ff0077">
             <div class="mb-3" data-aos="slide-up" data-aos-duration="800">
-                <textarea rows="3" name="comment" id="comment" class="form-control" aria-label="Đánh giá"></textarea>
+                <textarea rows="3" name="comment" id="comment" class="form-control" aria-label="Bình luận"></textarea>
             </div>
             <div class="mb-3" data-aos="slide-up" data-aos-duration="1000">
-                <button type="submit" class="btn btn-primary">Đánh giá</button>
+                <button type="submit" class="btn btn-primary">Bình luận</button>
             </div>
         </form>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" data-bs-theme="dark">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title text-light" id="titleOffcanvas">Tất cả đánh giá</h5>
+                <h5 class="offcanvas-title text-light" id="titleOffcanvas">Tất cả bình luận</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body">

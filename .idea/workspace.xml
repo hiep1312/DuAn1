@@ -5,25 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bde54a8-4400-40f3-8d3a-063287b9519b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/View/Admin/chart/js/Chart.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/chart/js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/chart/js/driver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Admin/chart/src/ChartJS.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/prhome1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/prhome2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/User/assets/image/prhome3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/ConnectDatabase.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/ConnectDatabase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/404.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Home1.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Home1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/Reviews.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Reviews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/assets/image/tin7.webp" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/assets/image/tin7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Api/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/CartsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/CartsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/UsersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Carts.php" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Carts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/Products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/mainMypromotions.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/mainMypromotions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/mainOrders.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/mainOrders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/assets/js/mainProducts.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/assets/js/mainProducts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/components/head-page-meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/head-page-meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/components/layout-vertical.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/components/layout-vertical.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Admin/pages/Orders/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/Admin/pages/Orders/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Pay.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Pay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/Productdetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/Productdetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/News.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/News.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/NewsDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/NewsDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/Pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Pay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/Productdetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Productdetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/Products.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Products.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/User/dist/js/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/User/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/Promotion.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/Promotion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/dist/js/UserLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/dist/js/UserLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/login-v3.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/login-v3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/User/register-v3.php" beforeDir="false" afterPath="$PROJECT_DIR$/View/User/register-v3.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +83,7 @@
     &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/DuAn1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -216,6 +224,14 @@
       <workItem from="1733314116858" duration="4577000" />
       <workItem from="1733326464135" duration="3507000" />
       <workItem from="1733401127935" duration="25900000" />
+      <workItem from="1733484701605" duration="95000" />
+      <workItem from="1733485060403" duration="22000" />
+      <workItem from="1733486522385" duration="552000" />
+      <workItem from="1733487540561" duration="2589000" />
+      <workItem from="1733582166676" duration="328000" />
+      <workItem from="1733728678307" duration="194000" />
+      <workItem from="1733843828692" duration="9354000" />
+      <workItem from="1733885887336" duration="21156000" />
     </task>
     <servers />
   </component>

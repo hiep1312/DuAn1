@@ -48,4 +48,18 @@ class CartsController {
         settype($checkid, 'array');
         return !$this->execute->deleteDataById($id) ? false : $checkid;
     }
+
+    public function checkCartExist($dataRequest){
+        $dataRequest["user_id"] = isset($dataRequest["user_id"]) ? $dataRequest["user_id"] : null;
+        $dataRequest["productVariant_id"] = isset($dataRequest["productVariant_id"]) ? $dataRequest["productVariant_id"] : null;
+        if($dataRequest["user_id"] === null && $dataRequest["productVariant_id"] === null): return false;
+        endif;
+        return $this->execute->checkExist($dataRequest);
+    }
+    public function returnDataProduct($id){
+        $check = $this->getOne($id);
+        if(!$check): return false;
+        endif;
+        return $this->execute->backDataProducts($id);
+    }
 }

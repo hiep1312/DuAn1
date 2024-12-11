@@ -46,7 +46,19 @@
                 </div>
             </div>
         </div>
-        <h1 class="my-4">Danh sách đơn hàng</h1>
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="my-4">Danh sách đơn hàng</h1>
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <label for="status" class="form-label text-nowrap me-1 mt-2">Trạng thái</label>
+                <select name="status" id="status" class="form-select">
+                    <option value="all" selected>Tất cả</option>
+                    <option value="pending">Đang chờ xử lý</option>
+                    <option value="complete">Đã xác nhận</option>
+                    <option value="cancel">Đã bị hủy</option>
+
+                </select>
+            </div>
+        </div>
         <div class="table-responsive" id="view">
             <table class="table table-hover table-striped table-bordered border-light text-center">
                 <thead class="table-dark">

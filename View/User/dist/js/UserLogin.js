@@ -17,21 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (validate.checkForm(checkforms, true)) {
             const formdata = new FormData(e.target); // Lấy dữ liệu từ form trước khi gửi
             const request = new HTTPRequest("Login");
-                const res = await request.post(formdata, false);
-                const alert = document.getElementById("alert");
-                if ( request.getStatus() === 200 && res.message === true) {
-                    await accessToken.handleTokenLocal(res.data);
-                    accessToken.removeToken();
-                    accessToken.saveToken();
-                    alert.classList.add("alert-secondary");
-                    alert.textContent = "Đăng nhập thành công ~~";
-                    setTimeout(() => {
-                        window.location.href = "?page=home";
-                    }, 4000);
-                } else {
-                    alert.classList.add("alert-danger");
-                    alert.textContent = "Tài khoản hoặc mật khẩu không đúng!";
-                }
+            const res = await request.post(formdata, false);
+            const alert = document.getElementById("alert");
+            if ( request.getStatus() === 200 && res.message === true) {
+                await accessToken.handleTokenLocal(res.data);
+                accessToken.removeToken();
+                accessToken.saveToken();
+                alert.classList.add("alert-secondary");
+                alert.textContent = "Đăng nhập thành công ~~";
+                setTimeout(() => {
+                    window.location.href = "?page=home";
+                }, 4000);
+            } else {
+                alert.classList.add("alert-danger");
+                alert.textContent = "Tài khoản hoặc mật khẩu không đúng!";
+            }
         }
     });
 });

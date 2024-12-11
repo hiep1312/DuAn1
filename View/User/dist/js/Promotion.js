@@ -9,7 +9,6 @@ if(localStorage.getItem("sessionId")){
             for(let item of data.data){
                 const div = document.createElement("div");
                 div.className = "col-12 col-md-6 col-lg-4 d-flex flex-column mt-4 mt-lg-4";
-                console.log(item);
                 div.innerHTML = `
                     <div data-aos="fade-up" class="card text-primary-custom text-light">
                         <img src="https://inhophuc.com/wp-content/uploads/2023/11/in-voucher-3.jpg" class="card-img-top rounded-3" alt="Ảnh khuyến mãi">
@@ -17,16 +16,21 @@ if(localStorage.getItem("sessionId")){
                           <h5 class="font-krona-one text-center h5-text">
                             ${item.code ?? "Không xác định"}
                           </h5>
-                          <div class="text-bg-danger text-center bg-opacity-50 p-2 border border-3 border-warning border-end-0 border-top-0 border-bottom-0">Giảm ${item.discount ?? 0}đ</div>
+                          <div class="text-bg-danger text-center bg-opacity-50 p-2 border border-3 border-warning border-end-0 border-top-0 border-bottom-0">Giảm <span class="money">${item.discount ?? 0}</span></div>
                         </div>
                       <div class="d-flex justify-content-center gap-2 pb-5">
                         <a role="button" class="btn btn-outline-light">Chi tiết</a>
-                        <a href="?page=cart" class="btn btn-primary">Áp dụng ngay</a>
+                        <a role="button" data-voucher="apply" class="btn btn-primary">Áp dụng ngay</a>
                       </div>
                     </div>
             `;
+                div.querySelector("a[data-voucher=apply]").addEventListener("click", e => {
+                    new WebHistory().create({code: item.code}, "?page=cart", false);
+                    location.reload();
+                }, false);
                 framePromotion.prepend(div);
             }
+            document.querySelectorAll('.money').forEach(item => item.textContent = parseInt(item.textContent).toLocaleString("vi-VN", {style: "currency", currency: "VND"}));
         }else{
             const alert = document.createElement("div");
             alert.className = "alert alert-info d-flex align-items-center";
