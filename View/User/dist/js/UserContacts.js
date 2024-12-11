@@ -30,6 +30,8 @@ function contacts () {
             });
             keysToDelete.forEach(key => formdata.delete(key));
             const request = new HTTPRequest("Contacts");
+            await accessToken.handleTokenLocal();
+            formdata.append('user_id', accessToken.getInfo().user_id);
             const res = await request.post(formdata, false);
             const alert = document.getElementById('alert');
             validate.resetForm("#formAdd")

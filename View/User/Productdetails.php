@@ -100,7 +100,7 @@
                     <p class="card-text"><i class="fas fa-shield-alt"></i> Đầy Đủ COCQ nhập khẩu</p>
                     <div class="text-center mt-4">
                         <p class="text-uppercase fw-bold">Bạn cần hỗ trợ?</p>
-                        <div class="text-center"><a href="?page=contacts" class="btn text-info fw-bold">Liên hệ ngay</a></div>
+                        <div class="text-center"><a href="?page=Contacts" class="btn text-info fw-bold">Liên hệ ngay</a></div>
                     </div>
                 </div>
             </div>

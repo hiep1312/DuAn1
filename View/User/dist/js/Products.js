@@ -20,6 +20,7 @@ const allProducts = async (reset = true, dataChange = null) => {
                 webHistory.create(item, "?page=productdetails", false);
                 location.reload();
             }
+            // console.log(item.imageProducts.filter(img => img.location===0)?.[0])
             frameProduct.innerHTML = `
                     <div class="card h-100 border border-light bg-white">
                         <img src="${item.imageProducts.filter(img => img.location===0)?.[0]?.album.slice(1) ?? `https://news.khangz.com/wp-content/uploads/2021/10/404-not-found-la-gi-1.jpg`}" class="card-img-top" style="max-height: 250px" alt="Ảnh sản phẩm">
